@@ -1,5 +1,3 @@
-- [x] `eval_spec.md` に再発防止のためのPVベンチマークを追加
-- [x] `ishigaki_en.json` のPV予測値をなだらかな成長曲線に修正
-- [x] `ishigaki_hotels_en.json` のPV予測値をなだらかな成長曲線に修正
-- [/] 修正後の全体整合性の確認
-- [ ] Walkthroughの作成
+- [x] QualityTab.tsx の各カードに `evaluatedAt` を表示する
+- [x] ローカル環境で表示崩れがないか確認する
+- [x] 変更内容を Walkthrough にまとめる

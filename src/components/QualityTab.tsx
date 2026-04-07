@@ -99,6 +99,7 @@ const QualityTab: React.FC<QualityTabProps> = ({ evaluations }) => {
                     <div style={{ display: "flex", gap: 6, marginBottom: 6, flexWrap: "wrap" }}>
                       <span style={{ fontSize: 10, color: pc, border: `1px solid ${pc}40`, borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>{q.lang}</span>
                       <span style={{ fontSize: 10, color: SLATE, border: "1px solid #1e293b", borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>{q.type}</span>
+                      <span style={{ fontSize: 10, color: SLATE, border: "1px solid #1e293b", borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>評価：{ev.evaluatedAt}</span>
                       {issueH > 0 && <span style={{ fontSize: 10, color: ROSE, border: `1px solid ${ROSE}40`, borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>要対応×{issueH}</span>}
                       {daysSince !== null && (
                         <span style={{
