@@ -73,8 +73,8 @@
       "url": "/en/destinations/cham-island/",
       "title": "Cham Island Travel Guide（英語）",
       "stream": "hen",
-      "overall": 95,
-      "evaluatedAt": "2026-04-05",
+      "overall": 92,
+      "evaluatedAt": "2026-04-07",
       "lang": "EN",
       "type": "ガイド"
     },
@@ -97,6 +97,16 @@
       "evaluatedAt": "2026-04-05",
       "lang": "EN",
       "type": "ランニング"
+    },
+    "hoian_hotels_en": {
+      "file": "hoian_hotels_en.json",
+      "url": "/en/hotels/hoian-old-town/",
+      "title": "Hoi An Old Town Hotels（英語）",
+      "stream": "hen",
+      "overall": 94,
+      "evaluatedAt": "2026-04-07",
+      "lang": "EN",
+      "type": "ホテル"
     }
   }
 }

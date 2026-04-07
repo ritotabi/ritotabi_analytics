@@ -1,22 +1,30 @@
-# UI表示の微調整（月表示・フォント・配色）計画
+# RITOTABI ページ評価：Hoi An Old Town Hotels (EN) [再評価]
 
-### ユーザーレビューが必要な項目
+提供されたスクリーンショット（Google リッチリザルトテスト）に基づき、JSON-LD の評価を修正し、データを更新します。また、AI モデル（Claude 等）が JSON-LD を検出できない技術的な課題について解説します。
 
+## User Review Required
 > [!IMPORTANT]
-> - 合計列の色を `PINK` から `TEAL` または `SLATE` に変更します。これにより「ホイアン/チャム 英語」ストリームの色と重複しなくなり、視認性が向上します。
-> - 数字フォントにはオリジナル (v8) で多用されていた `monospace` を適用し、読みやすさを向上させます。
+> 前回の評価では検出されなかった「よくある質問 (FAQ)」等の構造化データが実在することが判明したため、SEO スコアおよび総合スコアを引き上げます。
 
-## 提案される変更点
+## Proposed Changes
 
-### UI/UX の改善
+### [Evaluation Data]
 
-#### [MODIFY] [TableTab.tsx](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/components/TableTab.tsx)
-- 表の左端の月表示を `{row.m}` (英語) から `{row.mp}` (日本語) に変更します。
-- 金額、PV数、スコアなどの数値セルに `fontFamily: "monospace"` を適用します。
-- 「月次合計」「累計合計」「フッターの合計」の色を `PINK` から変更します。
+#### [MODIFY] [hoian_hotels_en.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/hoian_hotels_en.json)
+JSON-LD に関するチェックリスト（faq: true）と SEO スコアを更新します。
 
-#### [MODIFY] [OverviewTab.tsx](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/components/OverviewTab.tsx)
-- 収益額やPV数などの数値表示部分に `fontFamily: "monospace"` を追加します。
+#### [MODIFY] [_registry.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/_registry.json)
+更新された総合スコアをレジストリに反映します。
 
-#### [MODIFY] [QualityTab.tsx](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/components/QualityTab.tsx)
-- サマリー統計やカード内のスコア表示に `fontFamily: "monospace"` を徹底します。
+## 評価プロトコル（修正）
+- スクリーンショットにより「記事」「パンくずリスト」「カルーセル」「よくある質問」の有効性が確認されたため、これを反映。
+- AI モデルが JSON-LD を見落とす原因（Markdown 変換時のタグ削除、動的レンダリング等）の分析。
+
+## Open Questions
+- 現時点で不明な点はありません。
+
+## Verification Plan
+
+### Automated Tests
+- `hoian_hotels_en.json` の `seoChecklist.faq` が `true` になっているかの確認。
+- 総合スコアが加算されているかの確認。
