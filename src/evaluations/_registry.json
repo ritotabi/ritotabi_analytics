@@ -1,0 +1,102 @@
+{
+  "lastUpdated": "2026-04-07",
+  "streams": [
+    { "key": "r", "label": "楽天（日本離島）", "color": "#f59e0b", "cvr": 0.0032, "unit": 750 },
+    { "key": "cjp", "label": "コンダオ 日本語", "color": "#8b5cf6", "cvr": 0.0035, "unit": 1500 },
+    { "key": "cen", "label": "コンダオ 英語", "color": "#2dd4bf", "cvr": 0.008, "unit": 2500 },
+    { "key": "hjp", "label": "ホイアン/チャム 日本語", "color": "#06b6d4", "cvr": 0.004, "unit": 1000 },
+    { "key": "hen", "label": "ホイアン/チャム 英語", "color": "#ec4899", "cvr": 0.009, "unit": 2000 }
+  ],
+  "evaluations": {
+    "hotel_jp": {
+      "file": "hotel_jp.json",
+      "url": "/hotels/con-dao-island/",
+      "title": "コンダオ ホテルガイド（日本語）",
+      "stream": "cjp",
+      "overall": 96,
+      "evaluatedAt": "2026-03-25",
+      "lang": "JP",
+      "type": "ホテル"
+    },
+    "hotel_en": {
+      "file": "hotel_en.json",
+      "url": "/en/hotels/con-dao-island/",
+      "title": "コンダオ ホテルガイド（英語）",
+      "stream": "cen",
+      "overall": 95,
+      "evaluatedAt": "2026-03-25",
+      "lang": "EN",
+      "type": "ホテル"
+    },
+    "guide_jp": {
+      "file": "guide_jp.json",
+      "url": "/destinations/con-dao-island/",
+      "title": "コンダオ 総合ガイド（日本語）",
+      "stream": "cjp",
+      "overall": 97,
+      "evaluatedAt": "2026-03-22",
+      "lang": "JP",
+      "type": "ガイド"
+    },
+    "guide_en": {
+      "file": "guide_en.json",
+      "url": "/en/destinations/con-dao-island/",
+      "title": "コンダオ 総合ガイド（英語）",
+      "stream": "cen",
+      "overall": 95,
+      "evaluatedAt": "2026-03-26",
+      "lang": "EN",
+      "type": "ガイド"
+    },
+    "top_jp": {
+      "file": "top_jp.json",
+      "url": "/",
+      "title": "日本語トップページ",
+      "stream": "r",
+      "overall": 88,
+      "evaluatedAt": "2026-04-04",
+      "lang": "JP",
+      "type": "トップ"
+    },
+    "top_en": {
+      "file": "top_en.json",
+      "url": "/en/",
+      "title": "英語トップページ",
+      "stream": "cen",
+      "overall": 80,
+      "evaluatedAt": "2026-04-04",
+      "lang": "EN",
+      "type": "トップ"
+    },
+    "cham_en": {
+      "file": "cham_en.json",
+      "url": "/en/destinations/cham-island/",
+      "title": "Cham Island Travel Guide（英語）",
+      "stream": "hen",
+      "overall": 95,
+      "evaluatedAt": "2026-04-05",
+      "lang": "EN",
+      "type": "ガイド"
+    },
+    "running_jp": {
+      "file": "running_jp.json",
+      "url": "/destinations/con-dao-island/running/",
+      "title": "コンダオ島ランニングコース（日本語）",
+      "stream": "cjp",
+      "overall": 91,
+      "evaluatedAt": "2026-04-04",
+      "lang": "JP",
+      "type": "ランニング"
+    },
+    "running_en": {
+      "file": "running_en.json",
+      "url": "/en/destinations/con-dao-island/running/",
+      "title": "コンダオ島ランニングコース（英語）",
+      "stream": "cen",
+      "overall": 92,
+      "evaluatedAt": "2026-04-05",
+      "lang": "EN",
+      "type": "ランニング"
+    }
+  }
+}

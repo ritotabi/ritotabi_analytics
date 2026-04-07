@@ -1,0 +1,79 @@
+:root {
+  --bg-primary: #080f1a;
+  --bg-card: #0f172a;
+  --bg-banner: #0c1829;
+  --bg-input: #080f1a;
+  --border: #1e293b;
+  --teal: #2dd4bf;
+  --cyan: #06b6d4;
+  --amber: #f59e0b;
+  --rose: #f43f5e;
+  --slate: #94a3b8;
+  --green: #4ade80;
+  --pink: #ec4899;
+  --violet: #8b5cf6;
+  --orange: #fb923c;
+  --text-primary: #e2e8f0;
+  --text-secondary: #64748b;
+  --text-muted: #334155;
+  --font-serif: 'Georgia', 'Hiragino Mincho ProN', serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+pre, code, .monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.btn-tab {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.btn-tab.active {
+  background-color: var(--border);
+  color: var(--text-primary);
+  border-bottom-color: var(--pink);
+}
+
+.btn-tab:hover:not(.active) {
+  color: var(--text-primary);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

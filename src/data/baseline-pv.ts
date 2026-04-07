@@ -1,0 +1,28 @@
+import type { BasePVRow } from "../utils/calc";
+
+export const BASE_PV_OBJ: BasePVRow[] = [
+  { m: "Apr'26", mp: "4月", pv: { r: 60, cjp: 20, cen: 0, hjp: 0, hen: 0 } },
+  { m: "May'26", mp: "5月", pv: { r: 120, cjp: 20, cen: 5, hjp: 30, hen: 5 } },
+  { m: "Jun'26", mp: "6月", pv: { r: 280, cjp: 80, cen: 30, hjp: 80, hen: 30 } },
+  { m: "Jul'26", mp: "7月", pv: { r: 700, cjp: 150, cen: 80, hjp: 150, hen: 80 } },
+  { m: "Aug'26", mp: "8月", pv: { r: 1200, cjp: 250, cen: 150, hjp: 250, hen: 150 } },
+  { m: "Sep'26", mp: "9月", pv: { r: 750, cjp: 300, cen: 200, hjp: 300, hen: 200 } },
+  { m: "Oct'26", mp: "10月", pv: { r: 1100, cjp: 400, cen: 300, hjp: 400, hen: 300 } },
+  { m: "Nov'26", mp: "11月", pv: { r: 1500, cjp: 500, cen: 400, hjp: 500, hen: 400 } },
+  { m: "Dec'26", mp: "12月", pv: { r: 1800, cjp: 600, cen: 500, hjp: 600, hen: 500 } },
+  { m: "Jan'27", mp: "1月", pv: { r: 1200, cjp: 700, cen: 700, hjp: 800, hen: 700 } },
+  { m: "Feb'27", mp: "2月", pv: { r: 1600, cjp: 900, cen: 900, hjp: 1000, hen: 900 } },
+  { m: "Mar'27", mp: "3月", pv: { r: 2800, cjp: 1100, cen: 1200, hjp: 1300, hen: 1200 } },
+  { m: "Apr'27", mp: "4月", pv: { r: 4000, cjp: 1400, cen: 1800, hjp: 1800, hen: 1800 } },
+  { m: "May'27", mp: "5月", pv: { r: 5500, cjp: 1800, cen: 2500, hjp: 2500, hen: 2500 } },
+  { m: "Jun'27", mp: "6月", pv: { r: 4500, cjp: 2000, cen: 3000, hjp: 3000, hen: 3000 } },
+  { m: "Jul'27", mp: "7月", pv: { r: 7500, cjp: 2200, cen: 3500, hjp: 3500, hen: 3500 } },
+  { m: "Aug'27", mp: "8月", pv: { r: 9000, cjp: 2400, cen: 4000, hjp: 4000, hen: 4000 } },
+  { m: "Sep'27", mp: "9月", pv: { r: 6500, cjp: 2600, cen: 4500, hjp: 4500, hen: 4500 } },
+  { m: "Oct'27", mp: "10月", pv: { r: 8000, cjp: 2800, cen: 5000, hjp: 5000, hen: 5000 } },
+  { m: "Nov'27", mp: "11月", pv: { r: 10000, cjp: 3000, cen: 5500, hjp: 5500, hen: 5500 } },
+  { m: "Dec'27", mp: "12月", pv: { r: 10800, cjp: 3200, cen: 6000, hjp: 6000, hen: 6000 } },
+  { m: "Jan'28", mp: "1月", pv: { r: 7500, cjp: 3200, cen: 6000, hjp: 6000, hen: 6000 } },
+  { m: "Feb'28", mp: "2月", pv: { r: 9000, cjp: 3400, cen: 6500, hjp: 6500, hen: 6500 } },
+  { m: "Mar'28", mp: "3月", pv: { r: 12800, cjp: 3600, cen: 7000, hjp: 7000, hen: 7000 } },
+];
