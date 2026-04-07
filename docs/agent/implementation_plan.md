@@ -1,34 +1,31 @@
-# 英語トップページのカテゴリ分類修正
+# ページ評価スキルの柔軟性と事実ベース評価の両立改善
 
-英語のトップページ (`/en/`) が「コンダオ (英語)」に誤分類されている問題を修正し、`page_evaluator` スキルの自動判定ロジックを現行のレジストリ定義に合わせて更新します。
+定量的な評価基準（事実ベース・推測排除）を維持しつつ、チェックリストには現れない細かな品質上の懸念（タイトルの不一致など）を柔軟に拾い上げられるよう、スキルの指示と評価仕様を改善します。
 
 ## ユーザーレビューが必要な項目
 > [!IMPORTANT]
-> スキル (`SKILL.md`) の判定ロジックを、従来の簡略化された `r`, `ren` から、現在のレジストリで使われている `jp_ishigaki`, `en_ishigaki` 等の詳細なキーに更新します。
+> 「推測表現（〜の可能性がある）」を禁止するルールは継続しますが、代わりに「事実（AとBが不一致である）」に基づく「リスク/懸念」の記述を推奨するルールに変更します。これにより、エージェントが「確証がないから指摘しない」という萎縮を防ぎます。
 
 ## 変更内容
 
-### 評価データ修正
-
-#### [MODIFY] [top_en.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/top_en.json)
-- `stream` を `cen` から `en_other` に修正します。
-
-#### [MODIFY] [_registry.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/_registry.json)
-- `top_en` エントリの `stream` を `cen` から `en_other` に修正します。
-
-### スキル定義の更新
+### 評価スキルの指示更新
 
 #### [MODIFY] [SKILL.md](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/.agent/skills/page_evaluator/SKILL.md)
-- `Step 3: JSON生成` の `stream` 判定ロジックを以下のように修正・拡充します。
-  - トップページ (`/`, `/en/`) の判定を追加。
-  - 日本エリアの判定を詳細化（`jp_ishigaki`, `en_ishigaki` 等）。
-  - `/en/` が付いている場合に「コンダオ」が優先されないよう判定順序を調整。
+- `issues` 抽出ルールの拡充：チェックリスト外の事実（不一致、情報の古さ、UX上の違和感等）も報告対象に含めることを明文化。
+- 記述スタイルの指示追加：「〜の可能性がある」ではなく「事実（AとBが不一致）」を起点に書くようガイド。
+- `curl` を用いたRAWデータ確認の徹底（meta/h1等の正確な照合のため）。
+
+### 評価仕様書の具体化
+
+#### [MODIFY] [eval_spec.md](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/.agent/skills/page_evaluator/resources/eval_spec.md)
+- 「SEO技術実装」の評価基準に「タイトルとh1の整合性」「meta descriptionの独自性」等の具体例を追加。
+- 「ユーザー体験(UX)」の評価基準に「情報の正確性と一貫性」を追加。
+- ペナルティ対象となる「怠漫な推測」と、報告すべき「重要な懸念（事実に基づくリスク）」の区別を定義。
 
 ## 検証計画
 
 ### 自動テスト
-- 特になし（JSONの構造チェックのみ）
+- なし
 
 ### 手動確認
-- `npm run dev` で起動しているダッシュボードにおいて、英語トップページが「その他 日本 (英語)」カテゴリに表示されることを確認します。
-- 必要に応じて、`page_evaluator` スキルを再度呼び出し、正しい `stream` が提案されるかシミュレーション（または実際に実行）します。
+- 改訂後の `page_evaluator` スキルを使い、過去に「不一致」が指摘されたページ（`/en/destinations/con-dao-island/`）をシミュレーション評価し、正しく「事実に基づく課題」として抽出されるか確認します。
