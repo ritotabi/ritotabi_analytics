@@ -1,3 +1,5 @@
-- [x] `_registry.json` のエリア名（label）を日本語・統一スタイルに変更する
-- [x] 画面上での表示が正しく更新されているか確認する
-- [x] 修正内容のまとめ
+- [x] 評価結果のJSON作成 (`src/evaluations/ishigaki_running_en.json`)
+- [x] 評価レジストリの更新 (`src/evaluations/_registry.json`)
+- [x] ローカル環境での表示確認
+- [x] ドキュメント類の見直しと保存 (`docs/agent/`)
+- [x] 修正内容の確認 (Walkthrough) 作成

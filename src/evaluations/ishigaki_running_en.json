@@ -1,0 +1,58 @@
+{
+  "id": "ishigaki_running_en",
+  "url": "https://ritotabi.com/en/destinations/ishigaki-island/running/",
+  "evaluatedAt": "2026-04-07",
+  "evaluatedBy": "skill",
+  "stream": "en_ishigaki",
+  "sum": "8,245",
+  "ap": "2,061",
+  "an": "4,123",
+  "ao": "10,306",
+  "pp": [0, 8, 20, 45, 90, 150, 220, 280, 330, 370, 400, 420, 435, 445, 450, 450, 450, 450, 450, 450, 450, 450, 450, 450],
+  "pn": [0, 15, 40, 80, 150, 250, 350, 450, 550, 620, 680, 720, 750, 770, 780, 780, 780, 780, 780, 780, 780, 780, 780, 780],
+  "po": [0, 25, 70, 150, 300, 500, 750, 1000, 1250, 1450, 1600, 1750, 1850, 1920, 1950, 1950, 1950, 1950, 1950, 1950, 1950, 1950, 1950, 1950],
+  "memo": "実地調査に基づいた高い専門性と、ランナーが必要とする細かな利便情報（トイレ・自販機の場所等）が網羅されており、ガイドとして非常に質が高い。石垣島エリア×英語の戦略に適合したアフィリエイト配置と、FAQ JSON-LDの実装も確認済み。公開直後のため、成長カーブはTier 3の基準に依拠しつつ、エリアの強さを考慮して成熟期をやや高めに設定。",
+  "quality": {
+    "title": "Ishigaki & Taketomi Island Running Guide: Scenic Coastal & Cat Routes 2026 | RITOTABI",
+    "lang": "EN",
+    "type": "ランニング",
+    "overall": 91,
+    "publishedDate": "2026-04-05",
+    "scores": {
+      "コンテンツ独自性": 90,
+      "写真・ビジュアル": 85,
+      "アフィリエイト設計": 95,
+      "内部リンク": 90,
+      "SEO技術実装": 95,
+      "ユーザー体験(UX)": 92,
+      "英語品質": 90
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "minClicks": 2
+    },
+    "strengths": [
+      "実際に走行したランナーの視点による詳細なルート案内（Runner's Voice）",
+      "独自ドメイン内のオリジナル写真（18枚）が豊富に使用されており、現地感が極めて高い",
+      "Googleマップに記載のない舗装道の存在など、実体験に基づいた情報の信頼性",
+      "石垣島×英語向けの複数OTA戦略（Agoda, Booking, Rakuten）を網羅したリンク設計"
+    ],
+    "issues": [
+      {
+        "level": "低",
+        "text": "コース全容を俯瞰できる簡易的な図解やマップがあれば、よりUXが向上する懸念がある。"
+      }
+    ]
+  }
+}

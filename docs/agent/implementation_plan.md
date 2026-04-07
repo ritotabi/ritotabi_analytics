@@ -1,31 +1,44 @@
-# ページ評価スキルの柔軟性と事実ベース評価の両立改善
+# 石垣島・竹富島ランニングガイド (EN) 品質評価計画
 
-定量的な評価基準（事実ベース・推測排除）を維持しつつ、チェックリストには現れない細かな品質上の懸念（タイトルの不一致など）を柔軟に拾い上げられるよう、スキルの指示と評価仕様を改善します。
+## 概要
+ユーザーから指定されたURL（https://ritotabi.com/en/destinations/ishigaki-island/running/）のコンテンツ品質を評価し、収益予測（PV予測）を含む評価レポート（JSON）を作成します。また、評価レジストリに追加することで、ダッシュボードに反映させます。
 
-## ユーザーレビューが必要な項目
-> [!IMPORTANT]
-> 「推測表現（〜の可能性がある）」を禁止するルールは継続しますが、代わりに「事実（AとBが不一致である）」に基づく「リスク/懸念」の記述を推奨するルールに変更します。これにより、エージェントが「確証がないから指摘しない」という萎縮を防ぎます。
+## 公開日
+- 2026-04-05 (鮮度: new / 2日経過)
+
+## 評価ステータス
+- ページ内容取得: 完了
+- テクニカルSEO分析: 完了 (curlにて確認済)
+  - Title: Ishigaki & Taketomi Island Running Guide: Scenic Coastal & Cat Routes 2026 | RITOTABI
+  - h1: (Titleと整合)
+  - 独自写真: 18枚確認
+  - FAQ JSON-LD: 存在を確認
+- アフィリエイトリンク確認: 完了 (Agoda/Booking/Rakutenの複数OTA戦略を確認)
+
+## 提案事項
+### 1. 品質スコアリング (案)
+- **コンテンツ独自性**: 90 (ランナー視点の具体的かつ実用的な現地情報)
+- **写真・ビジュアル**: 85 (独自ドメイン画像18枚、機材の使い分けによるリアルな現地感)
+- **アフィリエイト設計**: 95 (石垣島×英語戦略（Agodaメイン、Stay22サブ等）への適合)
+- **内部リンク**: 90 (石垣島ガイド、ホテルまとめ等への適切な誘導)
+- **SEO技術実装**: 95 (FAQリッチリザルト、タイトルKW、hreflangの設置を確認)
+- **ユーザー体験 (UX)**: 92 (コースマップ代わりの詳細説明、利便情報の網羅)
+- **英語品質**: 90 (没入感のあるコピー、自然な語彙選択)
+- **Overall**: 91
+
+### 2. 収益予測 (PVモデル)
+- 公開2ヶ月目: 15 PV/月 (Tier 3 ランニングカテゴリ)
+- 12ヶ月後以降: 450 PV/月 (Tier 3 成長上限付近)
 
 ## 変更内容
 
-### 評価スキルの指示更新
+### [新規] [ishigaki_running_en.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/ishigaki_running_en.json)
+- 評価スコア、チェックリスト、PV予測配列を格納。
 
-#### [MODIFY] [SKILL.md](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/.agent/skills/page_evaluator/SKILL.md)
-- `issues` 抽出ルールの拡充：チェックリスト外の事実（不一致、情報の古さ、UX上の違和感等）も報告対象に含めることを明文化。
-- 記述スタイルの指示追加：「〜の可能性がある」ではなく「事実（AとBが不一致）」を起点に書くようガイド。
-- `curl` を用いたRAWデータ確認の徹底（meta/h1等の正確な照合のため）。
+### [修正] [_registry.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/_registry.json)
+- `ishigaki_running_en` のエントリを追加。
 
-### 評価仕様書の具体化
-
-#### [MODIFY] [eval_spec.md](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/.agent/skills/page_evaluator/resources/eval_spec.md)
-- 「SEO技術実装」の評価基準に「タイトルとh1の整合性」「meta descriptionの独自性」等の具体例を追加。
-- 「ユーザー体験(UX)」の評価基準に「情報の正確性と一貫性」を追加。
-- ペナルティ対象となる「怠漫な推測」と、報告すべき「重要な懸念（事実に基づくリスク）」の区別を定義。
-
-## 検証計画
-
+## 検証プラン
 ### 自動テスト
-- なし
-
-### 手動確認
-- 改訂後の `page_evaluator` スキルを使い、過去に「不一致」が指摘されたページ（`/en/destinations/con-dao-island/`）をシミュレーション評価し、正しく「事実に基づく課題」として抽出されるか確認します。
+- `npm run dev` 実行中の環境で、ダッシュボードの「石垣島 (英語)」セクションに評価カードが追加されていることを確認します。
+- スコア詳細を開き、レーダーチャートとチェックリストが正しく反映されていることを確認します。

@@ -1,23 +1,26 @@
-# 修正内容の確認 (Walkthrough)
+# 修正内容の確認 (Walkthrough) - 石垣島・竹富島ランニングガイド (EN) 評価
 
-品質評価のトップページ（カード一覧）に評価日を表示するための修正が完了しました。
+## 概要
+指定されたURL（https://ritotabi.com/en/destinations/ishigaki-island/running/）の品質評価および収益予測を完了しました。評価結果は `src/evaluations/ishigaki_running_en.json` に保存され、ダッシュボードに反映済みです。
 
-## 変更内容
+## 実施した内容
 
-### UIコンポーネント (QualityTab.tsx)
-- [MODIFY] [QualityTab.tsx](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/components/QualityTab.tsx)
-- 各評価カードの言語やタイプが表示されているメタ情報エリアに、「評価：YYYY-MM-DD」という形式で評価日チップを追加しました。
-- これにより、詳細画面を開くことなく、その評価がいつ行われたものかを確認できるようになりました。
+### 1. 品質評価JSONの作成
+- [NEW] [ishigaki_running_en.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/ishigaki_running_en.json)
+- コンテンツ独自性、ビジュアル、アフィリエイト設計など7軸でスコアリング（Overall: 91）。
+- 石垣島（英語）の戦略に基づいた評価と、ランニングカテゴリ特有の成長モデルを適用。
 
-## 検証結果
+### 2. レジストリの更新
+- [MODIFY] [_registry.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/_registry.json)
+- 新しい評価データをリストに追加し、`lastUpdated` を2026-04-07に更新。
 
-### 視覚的確認
-- `QualityDetail`（詳細画面）での表示形式に基づき、`SLATE` 色のボーダー付きチップとして実装しました。
-- 他のチップ（言語、タイプ）の右側に並ぶように配置し、カードのレイアウト崩れがないことを確認しました。
+### 3. 表示確認
+- すでに起動中の `npm run dev` 環境において、URLパスが正しく紐付けられ、ダッシュボードの「品質評価」→「石垣島 (英語)」セクションにカードが表示されることを確認しました。
 
-### コード品質
-- 既存の `ev.evaluatedAt` プロパティを参照しており、データ構造に変更はありません。
-- React の構文に従い、適切に挿入されています。
+## 評価のポイント
+- **現地情報の解像度**: 自販機やトイレの場所、Googleマップにない舗装道の存在など、実際に走った人間にしか書けない情報が評価の柱となりました。
+- **SEO技術**: FAQ JSON-LDが適切に実装されており、検索結果での視認性向上が期待できる設計です。
+- **収益予測**: Tier 3（ランニング）基準をベースにしつつ、石垣島のブランド力を加味して成熟期の上限を強めに設定しています。
 
 ## 今後の対応
-- 日時に関連する表示をさらに直感的にする場合、ブラウザの現在時刻と比較して「本日」や「昨日」などの相対的な表示にすることも検討可能です。
+- 今回作成した評価ファイルを基に、実際のアクセス推移をモニタリングし、予測モデルのチューニングを継続します。

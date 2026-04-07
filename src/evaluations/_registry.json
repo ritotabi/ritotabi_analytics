@@ -168,6 +168,16 @@
       "evaluatedAt": "2026-04-07",
       "lang": "EN",
       "type": "ホテル"
+    },
+    "ishigaki_running_en": {
+      "file": "ishigaki_running_en.json",
+      "url": "/en/destinations/ishigaki-island/running/",
+      "title": "Ishigaki & Taketomi Running Guide（英語）",
+      "stream": "en_ishigaki",
+      "overall": 91,
+      "evaluatedAt": "2026-04-07",
+      "lang": "EN",
+      "type": "ランニング"
     }
   }
 }
