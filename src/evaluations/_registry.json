@@ -5,7 +5,8 @@
     { "key": "cjp", "label": "コンダオ 日本語", "color": "#8b5cf6", "cvr": 0.0035, "unit": 1500 },
     { "key": "cen", "label": "コンダオ 英語", "color": "#2dd4bf", "cvr": 0.008, "unit": 2500 },
     { "key": "hjp", "label": "ホイアン/チャム 日本語", "color": "#06b6d4", "cvr": 0.004, "unit": 1000 },
-    { "key": "hen", "label": "ホイアン/チャム 英語", "color": "#ec4899", "cvr": 0.009, "unit": 2000 }
+    { "key": "hen", "label": "ホイアン/チャム 英語", "color": "#ec4899", "cvr": 0.009, "unit": 2000 },
+    { "key": "ren", "label": "日本離島 英語", "color": "#10b981", "cvr": 0.008, "unit": 2000 }
   ],
   "evaluations": {
     "hotel_jp": {
@@ -63,8 +64,8 @@
       "url": "/en/",
       "title": "英語トップページ",
       "stream": "cen",
-      "overall": 80,
-      "evaluatedAt": "2026-04-04",
+      "overall": 94,
+      "evaluatedAt": "2026-04-07",
       "lang": "EN",
       "type": "トップ"
     },
@@ -103,10 +104,51 @@
       "url": "/en/hotels/hoian-old-town/",
       "title": "Hoi An Old Town Hotels（英語）",
       "stream": "hen",
-      "overall": 94,
+      "overall": 95,
       "evaluatedAt": "2026-04-07",
       "lang": "EN",
       "type": "ホテル"
+    },
+    "anbang_hotels_en": {
+      "file": "anbang_hotels_en.json",
+      "url": "/en/hotels/an-bang/",
+      "title": "An Bang Beach Hotels（英語）",
+      "stream": "hen",
+      "overall": 96,
+      "evaluatedAt": "2026-04-07",
+      "lang": "EN",
+      "type": "ホテル"
+    },
+    "hoian_running_en": {
+      "file": "hoian_running_en.json",
+      "url": "/en/destinations/hoian-old-town/running/",
+      "title": "Hoi An Running Guide（英語）",
+      "stream": "hen",
+      "overall": 94,
+      "evaluatedAt": "2026-04-07",
+      "lang": "EN",
+      "type": "ランニング"
+    },
+    "anbang_running_en": {
+      "file": "anbang_running_en.json",
+      "url": "/en/destinations/an-bang/running/",
+      "title": "An Bang Running Guide: Rice Fields & Shore（英語）",
+      "stream": "hen",
+      "overall": 76,
+      "evaluatedAt": "2026-04-07",
+      "lang": "EN",
+      "type": "ランニング"
+    },
+    "ishigaki_en": {
+      "file": "ishigaki_en.json",
+      "url": "/en/destinations/ishigaki-island/",
+      "title": "Ishigaki & Taketomi Island Guide 2026（英語）",
+      "stream": "ren",
+      "overall": 81,
+      "evaluatedAt": "2026-04-07",
+      "lang": "EN",
+      "type": "ガイド"
     }
   }
 }
+

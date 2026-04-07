@@ -22,20 +22,20 @@
     "title": "5 Best Hoi An Old Town Hotels（英語）",
     "lang": "EN",
     "type": "ホテル",
-    "overall": 94,
+    "overall": 95,
     "publishedDate": "2026-04-05",
     "scores": {
       "コンテンツ独自性": 96,
       "写真・ビジュアル": 88,
       "アフィリエイト設計": 94,
       "内部リンク": 95,
-      "SEO技術実装": 92,
+      "SEO技術実装": 97,
       "ユーザー体験(UX)": 93,
       "英語品質": 97
     },
     "seoChecklist": {
       "hreflang": true,
-      "faq": false,
+      "faq": true,
       "keyword": true,
       "meta": true,
       "canonical": true,
@@ -52,13 +52,9 @@
       "全ての宿に対し「Runner's Review」が掲載されており、特定のターゲット層に刺さる独自情報が際立っている",
       "「スタッフからWhatsAppでサポートを受けた」などの具体的なエピソードが、信頼性とホスピタリティの質を担保している",
       "「Nightlife lover」「Wellness seeker」など、読者のニーズに合わせたペルソナ別の推薦理由が明確で、ユーザー体験(UX)が高い",
-      "AgodaとBooking.comの両リンクを提供し、ユーザーの好みに合わせた予約動線を確保している"
+      "AgodaとBooking.comの両リンクを提供し、ユーザーの好みに合わせた予約動線を確保している",
+      "「記事」「パンくずリスト」「カルーセル」「よくある質問」の4種類の構造化データ（JSON-LD）が適切に実装されており、検索結果でのリッチリザルト表示が最適化されている"
     ],
-    "issues": [
-      {
-        "level": "低",
-        "text": "FAQ JSON-LDが実装されていないため、検索結果での占有率向上の余地がある。"
-      }
-    ]
+    "issues": []
   }
 }

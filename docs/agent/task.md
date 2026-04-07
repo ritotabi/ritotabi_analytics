@@ -1,6 +1,9 @@
-# RITOTABI ページ評価タスクリスト
-
-- [x] Hoi An Old Town Hotels (EN) の品質詳細評価
-- [x] `hoian_hotels_en.json` の作成・保存
-- [x] `_registry.json` の更新
-- [x] 完了報告（Walkthrough）の作成
+- [x] ページ内容の取得と分析
+- [x] 実装計画の作成と承認
+- [/] SKILL (`eval_spec.md`) の更新：アフィリエイト戦略の明文化
+- [ ] SKILL (`SKILL.md`) の更新：ストリーム自動判定ロジックの追加
+- [ ] `_registry.json` への新規ストリーム `ren` の追加
+- [ ] 石垣島評価データ `ishigaki_en.json` の生成と保存
+- [ ] `_registry.json` への石垣島データの登録
+- [ ] ドキュメントの `docs/agent` への保存
+- [ ] 最終確認（ダッシュボード表示確認）

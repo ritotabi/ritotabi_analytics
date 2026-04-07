@@ -1,0 +1,56 @@
+{
+  "id": "ishigaki_en",
+  "url": "https://ritotabi.com/en/destinations/ishigaki-island/",
+  "evaluatedAt": "2026-04-07",
+  "evaluatedBy": "skill",
+  "stream": "ren",
+  "sum": "22,500",
+  "ap": "15,000",
+  "an": "7,500",
+  "ao": "0",
+  "pp": [0, 4500, 9000, 13500, 18000, 22500, 22500, 22500, 22500, 22500, 22500, 22500],
+  "pn": [0, 1500, 3000, 4500, 6000, 7500, 7500, 7500, 7500, 7500, 7500, 7500],
+  "po": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "memo": "石垣島・竹富島ガイド（英語版）。日本エリア（英語）の新アフィリエイト戦略（Agoda/Booking/楽天）に基づき評価。",
+  "quality": {
+    "title": "Ishigaki & Taketomi Island Guide 2026",
+    "lang": "EN",
+    "type": "ガイド",
+    "overall": 81,
+    "publishedDate": "2026-04-06",
+    "scores": {
+      "コンテンツ独自性": 85,
+      "写真・ビジュアル": 75,
+      "アフィリエイト設計": 70,
+      "内部リンク": 90,
+      "SEO技術実装": 85,
+      "ユーザー体験(UX)": 80,
+      "英語品質": 85
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": false,
+      "minClicks": 1
+    },
+    "strengths": [
+      "実践的な現地情報：川平湾の無料駐車場案内や、竹富島でのランチ難民回避策（フェリー乗り場での弁当調達）などの有益なTipsが含まれている。",
+      "高品質な英語ライティング：'Emerald world recognized by the world' や 'Silver path leading into the sea' など、没入感を高める情緒的な表現が優れている。",
+      "強固なクラスター構造：総合ガイド、ホテル、ランニングコースの間で適切な双方向リンクが形成されており、回遊性が高い。"
+    ],
+    "issues": [
+      { "level": "低", "text": "Googleリッチリザルトテストにおいて、カルーセル（Carousel）構造化データに重大でない問題が検出されている。" },
+      { "level": "中", "text": "アフィリエイト戦略：現状は内部リンクや特定ホテルの紹介に留まっており、新戦略で必須とされる「Agoda/Booking.com/楽天」の複数OTA選択肢が明示されていない。", "isSpeculation": false },
+      { "level": "中", "text": "ビジュアルの確認：見出し構成からは豊富な写真が推察されるが、Markdown抽出内容からは独自の現地写真の枚数や配置を正確に定量化できなかった。" }
+    ]
+  }
+}

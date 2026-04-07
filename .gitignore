@@ -25,3 +25,5 @@ dist-ssr
 
 # Evaluation cache / temporary files
 /src/evaluations/*.tmp.json
+
+/docs/agent/*
