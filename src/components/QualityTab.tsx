@@ -6,11 +6,12 @@ import ScoreBar from "./ScoreBar";
 
 interface QualityTabProps {
   evaluations: PageEvaluation[];
+  streams: { key: string; label: string; color: string }[];
 }
 
 const AXES = ["コンテンツ独自性", "写真・ビジュアル", "アフィリエイト設計", "内部リンク", "SEO技術実装", "ユーザー体験(UX)", "英語品質"] as const;
 
-const QualityTab: React.FC<QualityTabProps> = ({ evaluations }) => {
+const QualityTab: React.FC<QualityTabProps> = ({ evaluations, streams }) => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const avg = Math.round(evaluations.reduce((s, p) => s + p.quality.overall, 0) / evaluations.length) || 0;
@@ -47,7 +48,7 @@ const QualityTab: React.FC<QualityTabProps> = ({ evaluations }) => {
   return (
     <div>
       {/* 統計サマリー */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10, marginBottom: 22 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10, marginBottom: 32 }}>
         {[
           { label: "平均スコア", val: avg + "点", c: TEAL },
           { label: "評価ページ数", val: evaluations.length + " P", c: CYAN },
@@ -60,95 +61,118 @@ const QualityTab: React.FC<QualityTabProps> = ({ evaluations }) => {
         ))}
       </div>
 
-      {/* グリッド一覧 */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(440px, 1fr))", gap: 10 }}>
-        {evaluations
-          .sort((a, b) => b.quality.overall - a.quality.overall)
-          .map((ev) => {
-            const q = ev.quality;
-            const pc = scoreColor(q.overall);
-            const issueH = q.issues?.filter(i => i.level === "高").length || 0;
+      {/* エリアごとのグループ表示 */}
+      {streams.map((stream) => {
+        const streamEvals = evaluations
+          .filter(ev => ev.stream === stream.key)
+          .sort((a, b) => b.quality.overall - a.quality.overall);
 
-            const publishedDate = q.publishedDate;
-            let daysSince: number | null = null;
-            if (publishedDate) {
-              const d = new Date(publishedDate);
-              const today = new Date("2026-04-04");
-              daysSince = Math.floor((today.getTime() - d.getTime()) / (86400000));
-            }
+        if (streamEvals.length === 0) return null;
 
-            return (
-              <div
-                key={ev.id}
-                onClick={() => setSelectedId(ev.id)}
-                style={{
-                  background: "#0f172a",
-                  border: `1px solid ${pc}25`,
-                  borderTop: `3px solid ${pc}`,
-                  borderRadius: 10,
-                  padding: "14px 16px",
-                  cursor: "pointer",
-                  transition: "border-color 0.25s"
-                }}
-                onMouseEnter={e => e.currentTarget.style.borderColor = pc}
-                onMouseLeave={e => e.currentTarget.style.borderColor = pc + "25"}
-              >
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 12, marginBottom: 12 }}>
-                  <OverallGauge score={q.overall} color={pc} size={72} />
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ display: "flex", gap: 6, marginBottom: 6, flexWrap: "wrap" }}>
-                      <span style={{ fontSize: 10, color: pc, border: `1px solid ${pc}40`, borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>{q.lang}</span>
-                      <span style={{ fontSize: 10, color: SLATE, border: "1px solid #1e293b", borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>{q.type}</span>
-                      <span style={{ fontSize: 10, color: SLATE, border: "1px solid #1e293b", borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>評価：{ev.evaluatedAt}</span>
-                      {issueH > 0 && <span style={{ fontSize: 10, color: ROSE, border: `1px solid ${ROSE}40`, borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>要対応×{issueH}</span>}
-                      {daysSince !== null && (
-                        <span style={{
-                          fontSize: 10,
-                          color: (daysSince ?? 0) < 30 ? ROSE : (daysSince ?? 0) < 90 ? AMBER : (daysSince ?? 0) < 180 ? CYAN : GRN,
-                          border: `1px solid ${( (daysSince ?? 0) < 30 ? ROSE : (daysSince ?? 0) < 90 ? AMBER : (daysSince ?? 0) < 180 ? CYAN : GRN)}40`,
-                          borderRadius: 4, padding: "1px 7px", fontFamily: "monospace"
-                        }}>
-                          公開{daysSince}日
-                        </span>
-                      )}
-                    </div>
-                    <p style={{ color: "#e2e8f0", fontWeight: 700, fontSize: 13, margin: "0 0 3px", lineHeight: 1.3, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                      {q.title}
-                    </p>
-                    <p style={{ color: "#334155", fontFamily: "monospace", fontSize: 10, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                      {ev.url}
-                    </p>
-                  </div>
-                </div>
+        return (
+          <div key={stream.key} style={{ marginBottom: 40 }}>
+            <div style={{ 
+              display: "flex", 
+              alignItems: "center", 
+              gap: 12, 
+              marginBottom: 16, 
+              borderBottom: "1px solid #1e293b", 
+              paddingBottom: 8 
+            }}>
+              <div style={{ width: 4, height: 18, background: stream.color, borderRadius: 2 }}></div>
+              <h3 style={{ fontSize: 15, fontWeight: 700, margin: 0, color: "#f8fafc" }}>{stream.label}</h3>
+              <span style={{ fontSize: 11, color: SLATE, background: "#1e293b", padding: "1px 8px", borderRadius: 10 }}>{streamEvals.length}</span>
+            </div>
 
-                {/* サブスコア・グリッド (Axis Scores) */}
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2px 16px" }}>
-                  {AXES.map((ax) => {
-                    const v = (q.scores as any)[ax];
-                    if (v === null || v === undefined) return null;
-                    const c = scoreColor(v);
-                    return (
-                      <div key={ax} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "2px 0" }}>
-                        <span style={{ fontSize: 10, color: "#475569", maxWidth: 110, lineHeight: 1.2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{ax}</span>
-                        <span style={{ fontSize: 11, color: c, fontFamily: "monospace", fontWeight: 700, minWidth: 24, textAlign: "right" }}>{v}</span>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(440px, 1fr))", gap: 10 }}>
+              {streamEvals.map((ev) => {
+                const q = ev.quality;
+                const pc = scoreColor(q.overall);
+                const issueH = q.issues?.filter(i => i.level === "高").length || 0;
+
+                const publishedDate = q.publishedDate;
+                let daysSince: number | null = null;
+                if (publishedDate) {
+                  const d = new Date(publishedDate);
+                  const today = new Date("2026-04-07"); // Updated to match current system date
+                  daysSince = Math.floor((today.getTime() - d.getTime()) / (86400000));
+                }
+
+                return (
+                  <div
+                    key={ev.id}
+                    onClick={() => setSelectedId(ev.id)}
+                    style={{
+                      background: "#0f172a",
+                      border: `1px solid ${pc}25`,
+                      borderTop: `3px solid ${pc}`,
+                      borderRadius: 10,
+                      padding: "14px 16px",
+                      cursor: "pointer",
+                      transition: "border-color 0.25s"
+                    }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = pc}
+                    onMouseLeave={e => e.currentTarget.style.borderColor = pc + "25"}
+                  >
+                    <div style={{ display: "flex", alignItems: "flex-start", gap: 12, marginBottom: 12 }}>
+                      <OverallGauge score={q.overall} color={pc} size={72} />
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div style={{ display: "flex", gap: 6, marginBottom: 6, flexWrap: "wrap" }}>
+                          <span style={{ fontSize: 10, color: pc, border: `1px solid ${pc}40`, borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>{q.lang}</span>
+                          <span style={{ fontSize: 10, color: SLATE, border: "1px solid #1e293b", borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>{q.type}</span>
+                          <span style={{ fontSize: 10, color: SLATE, border: "1px solid #1e293b", borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>評価：{ev.evaluatedAt}</span>
+                          {issueH > 0 && <span style={{ fontSize: 10, color: ROSE, border: `1px solid ${ROSE}40`, borderRadius: 4, padding: "1px 7px", fontFamily: "monospace" }}>要対応×{issueH}</span>}
+                          {daysSince !== null && (
+                            <span style={{
+                              fontSize: 10,
+                              color: (daysSince ?? 0) < 30 ? ROSE : (daysSince ?? 0) < 90 ? AMBER : (daysSince ?? 0) < 180 ? CYAN : GRN,
+                              border: `1px solid ${( (daysSince ?? 0) < 30 ? ROSE : (daysSince ?? 0) < 90 ? AMBER : (daysSince ?? 0) < 180 ? CYAN : GRN)}40`,
+                              borderRadius: 4, padding: "1px 7px", fontFamily: "monospace"
+                            }}>
+                              公開{daysSince}日
+                            </span>
+                          )}
+                        </div>
+                        <p style={{ color: "#e2e8f0", fontWeight: 700, fontSize: 13, margin: "0 0 3px", lineHeight: 1.3, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                          {q.title}
+                        </p>
+                        <p style={{ color: "#334155", fontFamily: "monospace", fontSize: 10, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                          {ev.url}
+                        </p>
                       </div>
-                    );
-                  })}
-                </div>
+                    </div>
 
-                {/* 下部ステータス */}
-                <div style={{ marginTop: 10, paddingTop: 8, borderTop: "1px solid #1e293b", display: "flex", gap: 8, alignItems: "center" }}>
-                  {[["高", ROSE], ["中", AMBER], ["低", CYAN]].map(([lv, color]) => {
-                    const cnt = q.issues?.filter(i => i.level === lv).length || 0;
-                    if (!cnt) return null;
-                    return <span key={lv} style={{ fontSize: 10, color: color, fontFamily: "monospace" }}>{lv}: {cnt}件</span>;
-                  })}
-                  <span style={{ fontSize: 10, color: "#334155", marginLeft: "auto" }}>詳細を見る →</span>
-                </div>
-              </div>
-            );
-          })}
-      </div>
+                    {/* サブスコア・グリッド (Axis Scores) */}
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2px 16px" }}>
+                      {AXES.map((ax) => {
+                        const v = (q.scores as any)[ax];
+                        if (v === null || v === undefined) return null;
+                        const c = scoreColor(v);
+                        return (
+                          <div key={ax} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "2px 0" }}>
+                            <span style={{ fontSize: 10, color: "#475569", maxWidth: 110, lineHeight: 1.2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{ax}</span>
+                            <span style={{ fontSize: 11, color: c, fontFamily: "monospace", fontWeight: 700, minWidth: 24, textAlign: "right" }}>{v}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    {/* 下部ステータス */}
+                    <div style={{ marginTop: 10, paddingTop: 8, borderTop: "1px solid #1e293b", display: "flex", gap: 8, alignItems: "center" }}>
+                      {[["高", ROSE], ["中", AMBER], ["低", CYAN]].map(([lv, color]) => {
+                        const cnt = q.issues?.filter(i => i.level === lv).length || 0;
+                        if (!cnt) return null;
+                        return <span key={lv} style={{ fontSize: 10, color: color, fontFamily: "monospace" }}>{lv}: {cnt}件</span>;
+                      })}
+                      <span style={{ fontSize: 10, color: "#334155", marginLeft: "auto" }}>詳細を見る →</span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -165,7 +189,7 @@ const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation }) => {
   let daysSince: number | null = null;
   if (publishedDate) {
     const d = new Date(publishedDate);
-    const today = new Date("2026-04-04");
+    const today = new Date("2026-04-07");
     daysSince = Math.floor((today.getTime() - d.getTime()) / (86400000));
   }
 

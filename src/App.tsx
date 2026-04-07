@@ -104,7 +104,7 @@ const App: React.FC = () => {
         {tab === "chart" && <ChartTab data={data} streams={activeStreams} />}
         {tab === "table" && <TableTab data={data} streams={activeStreams} sum={sum} />}
         {tab === "eval" && <EvalTab lastUpdated={registry.lastUpdated} evalCount={Object.keys(evaluations).length} />}
-        {tab === "quality" && <QualityTab evaluations={Object.values(evaluations)} />}
+        {tab === "quality" && <QualityTab evaluations={Object.values(evaluations)} streams={activeStreams} />}
       </div>
     </div>
   );
