@@ -1,4 +1,5 @@
-- [x] 評価JSONの生成 (`ishigaki_hotels_en.json`)
-- [x] レジストリの更新 (`_registry.json`)
-- [x] 画面表示の確認
-- [x] Walkthroughの作成
+- [x] `eval_spec.md` に再発防止のためのPVベンチマークを追加
+- [x] `ishigaki_en.json` のPV予測値をなだらかな成長曲線に修正
+- [x] `ishigaki_hotels_en.json` のPV予測値をなだらかな成長曲線に修正
+- [/] 修正後の全体整合性の確認
+- [ ] Walkthroughの作成

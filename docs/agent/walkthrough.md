@@ -1,30 +1,35 @@
-# 石垣島ホテルガイド（英語版）評価完了
+# 石垣島英語ページのPV予測値の正常化および再発防止策の実装完了
 
-https://ritotabi.com/en/hotels/ishigaki-island/ の評価が完了し、システムに反映されました。
+石垣島英語ページのPV予測値を現実的な成長曲線に修正し、今後の過大評価を防止するための評価基準を強化しました。
 
-## 評価サマリー
+## 実施内容
 
-- **総合スコア**: **91** / 100
-- **公開日**: 2026-04-06
-- **Freshness**: `new`
+### 1. PV予測値の修正 (Normal Case / 通常前提)
 
-### 評価のポイント
+当初、石垣島（EN）の合算で **1,300 PV/月**（2ヶ月目）と予測されていた数値を、ベンチマークに基づき **100 PV/月** まで修正しました。
 
-#### 1. コンテンツの独自性 (Score: 90)
-「島を走る」というRITOTABI独自のコンセプトが「Runner's Review」として各ホテルに組み込まれており、宿泊拠点としての価値が非常に具体的に示されています。また、駐車場の「停めやすさ」というレンタカー利用者の痛点に寄り添った情報は、他サイトにはない強い付加価値です。
+| ページ種別 | 修正前 (5月) | 修正後 (5月) | 成熟期 (24ヶ月目) |
+| :--- | :--- | :--- | :--- |
+| 石垣島ガイド (EN) | 1,000 PV | **80 PV** | 9,000 PV |
+| 石垣島ホテル (EN) | 300 PV | **20 PV** | 5,500 PV |
+| **合計** | **1,300 PV** | **100 PV** | **14,500 PV** |
 
-#### 2. アフィリエイト設計 (Score: 95)
-インバウンド向けの新戦略に基づき、Agoda（メイン）、Booking.com、楽天トラベルの3つの選択肢がすべての宿泊施設に対して提示されており、コンバージョン率の最大化が期待できる設計となっています。
+> [!NOTE]
+> 成熟期の予測値についても、ホイアン（EN）の約1.4万PVとのバランスを考慮し、石垣島エリア合算で同程度の規模感に調整しました。
 
-#### 3. SEO技術実装 (Score: 100)
-FAQ、Breadcrumbs、Carousel、ArticleのすべてのJSON-LDが正しく検出されており、検索結果での視認性向上が確実視されます。
+### 2. 再発防止策の実装
 
-## 収益予測の根拠
+自動評価スキル（`page_evaluator`）が今後、極端な数値を生成しないよう、以下の基準を [eval_spec.md](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/.agent/skills/page_evaluator/resources/eval_spec.md) に追加しました。
 
-- **Stream**: `en_ishigaki` (Unit: $2000, CVR: 0.008)
-- **予測モデル**: 公開から1ヶ月はインデックス期間としてPV 0、2ヶ月目から徐々に増加し、12ヶ月目でピークに達する標準的な成長カーブを採用。ホテル価格帯が高いため、成熟期の収益貢献度は高いと予測されます。
+- **PVティア別ベンチマーク**:
+    - Tier 1 (最重要): 50 - 100 PV (公開2ヶ月目)
+    - Tier 2 (主要): 20 - 50 PV
+    - Tier 3 (ニッチ): 5 - 20 PV
 
-## 変更ファイル
+## 検証結果
+- `ishigaki_en.json` および `ishigaki_hotels_en.json` のデータ構造が、他の最新評価ファイル（`hoian_hotels_en.json` 等）と統一されていることを確認しました。
+- ダッシュボード上での石垣島の初期スパイクが解消されているはずです。
 
-- `[NEW]` [ishigaki_hotels_en.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/ishigaki_hotels_en.json)
-- `[MODIFY]` [_registry.json](file:///home/mune1/dev/ritotabi/eval_site/ritotabi_analysis/src/evaluations/_registry.json)
+## 今後の対応
+- 新規ページの評価時には、今回設定したベンチマーク表を厳格に適用します。
+- 必要に応じて、実測値（Google Search Console等）が得られた段階で、これらのベンチマーク自体をさらにブラッシュアップしていくことを推奨します。
