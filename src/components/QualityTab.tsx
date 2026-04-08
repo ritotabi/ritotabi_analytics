@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import type { PageEvaluation } from "../types/evaluation";
-import { SLATE, scoreColor, TEAL, AMBER, ROSE, CYAN, GRN } from "../utils/colors";
+import { SLATE, scoreColor, TEAL, AMBER, ROSE, CYAN, GRN, VIOLET, ORANGE } from "../utils/colors";
 import OverallGauge from "./OverallGauge";
 import ScoreBar from "./ScoreBar";
 
