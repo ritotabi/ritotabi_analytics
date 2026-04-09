@@ -19,8 +19,8 @@
     { "key": "hen", "label": "ホイアン/チャム (英語)", "color": "#ec4899", "cvr": 0.009, "unit": 2000 }
   ],
   "evaluations": {
-    "hotel_jp": {
-      "file": "hotel_jp.json",
+    "hotels_con-dao-island": {
+      "file": "condao_hotels_jp.json",
       "url": "/hotels/con-dao-island/",
       "title": "コンダオ ホテルガイド（日本語）",
       "stream": "cjp",
@@ -29,18 +29,18 @@
       "lang": "JP",
       "type": "ホテル"
     },
-    "hotel_en": {
-      "file": "hotel_en.json",
+    "en_hotels_con-dao-island": {
+      "file": "condao_hotels_en.json",
       "url": "/en/hotels/con-dao-island/",
-      "title": "6 Best Con Dao Hotels: Luxury Stays & Six Senses Alternatives",
+      "title": "6 Best Con Dao Hotels 2026: Luxury to Local Stays | RITOTABI",
       "stream": "cen",
-      "overall": 94,
-      "evaluatedAt": "2026-04-07",
+      "overall": 98,
+      "evaluatedAt": "2026-04-09",
       "lang": "EN",
       "type": "ホテル"
     },
-    "guide_jp": {
-      "file": "guide_jp.json",
+    "destinations_con-dao-island": {
+      "file": "condao_guide_jp.json",
       "url": "/destinations/con-dao-island/",
       "title": "コンダオ 総合ガイド（日本語）",
       "stream": "cjp",
@@ -49,8 +49,8 @@
       "lang": "JP",
       "type": "ガイド"
     },
-    "guide_en": {
-      "file": "guide_en.json",
+    "en_destinations_con-dao-island": {
+      "file": "condao_guide_en.json",
       "url": "/en/destinations/con-dao-island/",
       "title": "コンダオ 総合ガイド（英語）",
       "stream": "cen",
@@ -59,7 +59,7 @@
       "lang": "EN",
       "type": "ガイド"
     },
-    "top_jp": {
+    "root": {
       "file": "top_jp.json",
       "url": "/",
       "title": "日本語トップページ",
@@ -69,7 +69,7 @@
       "lang": "JP",
       "type": "トップ"
     },
-    "top_en": {
+    "en_root": {
       "file": "top_en.json",
       "url": "/en/",
       "title": "英語トップページ",
@@ -79,7 +79,7 @@
       "lang": "EN",
       "type": "トップ"
     },
-    "cham_en": {
+    "en_destinations_cham-island": {
       "file": "cham_en.json",
       "url": "/en/destinations/cham-island/",
       "title": "Cham Island Guide 2026: Hoi An's Hidden Treasure | RITOTABI",
@@ -89,8 +89,8 @@
       "lang": "EN",
       "type": "ガイド"
     },
-    "running_jp": {
-      "file": "running_jp.json",
+    "destinations_con-dao-island_running": {
+      "file": "condao_running_jp.json",
       "url": "/destinations/con-dao-island/running/",
       "title": "コンダオ島ランニングコース（日本語）",
       "stream": "cjp",
@@ -99,8 +99,8 @@
       "lang": "JP",
       "type": "ランニング"
     },
-    "running_en": {
-      "file": "running_en.json",
+    "en_destinations_con-dao-island_running": {
+      "file": "condao_running_en.json",
       "url": "/en/destinations/con-dao-island/running/",
       "title": "コンダオ島ランニングコース（英語）",
       "stream": "cen",
@@ -109,7 +109,7 @@
       "lang": "EN",
       "type": "ランニング"
     },
-    "hoian_hotels_en": {
+    "en_hotels_hoian-old-town": {
       "file": "hoian_hotels_en.json",
       "url": "/en/hotels/hoian-old-town/",
       "title": "Hoi An Old Town Hotels（英語）",
@@ -119,7 +119,7 @@
       "lang": "EN",
       "type": "ホテル"
     },
-    "anbang_hotels_en": {
+    "en_hotels_an-bang": {
       "file": "anbang_hotels_en.json",
       "url": "/en/hotels/an-bang/",
       "title": "An Bang Beach Hotels（英語）",
@@ -129,7 +129,7 @@
       "lang": "EN",
       "type": "ホテル"
     },
-    "hoian_running_en": {
+    "en_destinations_hoian-old-town_running": {
       "file": "hoian_running_en.json",
       "url": "/en/destinations/hoian-old-town/running/",
       "title": "Hoi An Running Guide 2026: Old Town & Riverside | RITOTABI",
@@ -139,7 +139,7 @@
       "lang": "EN",
       "type": "ランニング"
     },
-    "anbang_running_en": {
+    "en_destinations_an-bang_running": {
       "file": "anbang_running_en.json",
       "url": "/en/destinations/an-bang/running/",
       "title": "An Bang Running Guide: Rice Fields & Shore（英語）",
@@ -149,7 +149,7 @@
       "lang": "EN",
       "type": "ランニング"
     },
-    "ishigaki_en": {
+    "en_destinations_ishigaki-island": {
       "file": "ishigaki_en.json",
       "url": "/en/destinations/ishigaki-island/",
       "title": "Ishigaki Island Guide 2026: Beaches, Gourmet & Stays | RITOTABI",
@@ -159,7 +159,7 @@
       "lang": "EN",
       "type": "ガイド"
     },
-    "ishigaki_hotels_en": {
+    "en_hotels_ishigaki-island": {
       "file": "ishigaki_hotels_en.json",
       "url": "/en/hotels/ishigaki-island/",
       "title": "5 Best Ishigaki Island Hotels 2026: Scenic Stays | RITOTABI",
@@ -169,7 +169,7 @@
       "lang": "EN",
       "type": "ホテル"
     },
-    "ishigaki_running_en": {
+    "en_destinations_ishigaki-island_running": {
       "file": "ishigaki_running_en.json",
       "url": "/en/destinations/ishigaki-island/running/",
       "title": "Ishigaki & Taketomi Running Guide（英語）",
@@ -181,4 +181,3 @@
     }
   }
 }
-

@@ -2,6 +2,7 @@ export interface BasePVRow {
   m: string;
   mp: string;
   pv: Record<string, number>;
+  rev?: Record<string, number>; // 実績報酬があれば直接指定可能
 }
 
 export interface StreamDef {
@@ -20,7 +21,10 @@ export interface CalculatedRow {
   cumVN: number;
   s_total: string;
   s_cum: string;
-  [key: string]: any; // rev_*, s_rev_*, cum_*
+  isActual: boolean;
+  actualPvTotal?: number;
+  forecastPvTotal?: number;
+  [key: string]: any; // rev_*, s_rev_*, cum_*, pv_*
 }
 
 export function calcData(pvObj: BasePVRow[], streams: StreamDef[]): CalculatedRow[] {
@@ -31,6 +35,7 @@ export function calcData(pvObj: BasePVRow[], streams: StreamDef[]): CalculatedRo
   let cumTotal = 0,
     cumVN = 0;
   return pvObj.map((row) => {
+    const isActual = (row as any).isActual || false;
     const res: CalculatedRow = {
       m: row.m,
       mp: row.mp,
@@ -39,10 +44,15 @@ export function calcData(pvObj: BasePVRow[], streams: StreamDef[]): CalculatedRo
       cumVN: 0,
       s_total: "¥0",
       s_cum: "¥0",
+      isActual,
     };
+
+    let rowPvTotal = 0;
     streams.forEach((s) => {
       const pv = row.pv[s.key] || 0;
-      const rev = Math.round(pv * s.cvr * s.unit);
+      rowPvTotal += pv;
+      // 実績値があれば優先、なければ推計
+      const rev = (row as any).rev?.[s.key] ?? Math.round(pv * s.cvr * s.unit);
       res[`rev_${s.key}`] = rev;
       res[`pv_${s.key}`] = pv;
       res[`s_rev_${s.key}`] = "¥" + rev.toLocaleString();
@@ -52,6 +62,13 @@ export function calcData(pvObj: BasePVRow[], streams: StreamDef[]): CalculatedRo
       res[`cum_${s.key}`] = cum[s.key];
       if (s.key !== "r") cumVN += rev;
     });
+
+    if (isActual) {
+      res.actualPvTotal = rowPvTotal;
+    } else {
+      res.forecastPvTotal = rowPvTotal;
+    }
+
     cumTotal += res.total;
     res.cumTotal = cumTotal;
     res.cumVN = cumVN;

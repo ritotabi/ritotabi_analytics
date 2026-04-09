@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BASE_PV_OBJ } from "./data/baseline-pv";
+import { ACTUAL_PV_OBJ } from "./data/actual-pv";
 import { calcData, sumRevDyn, addEvalsToPv } from "./utils/calc";
 import type { PageEvaluation, EvalRegistry } from "./types/evaluation";
 import { TEAL, CYAN, PINK, SLATE } from "./utils/colors";
@@ -32,10 +33,14 @@ const App: React.FC = () => {
   useEffect(() => {
     const loadEvaluations = async () => {
       const loadedEvals: Record<string, PageEvaluation> = {};
-      for (const path in evaluationModules) {
-        if (path.includes("_registry.json")) continue;
-        const module = (await evaluationModules[path]()) as { default: PageEvaluation };
-        loadedEvals[module.default.id] = module.default;
+      for (const registryKey in registry.evaluations) {
+        const entry = registry.evaluations[registryKey as keyof typeof registry.evaluations];
+        const path = `./evaluations/${entry.file}`;
+        
+        if (evaluationModules[path]) {
+          const module = (await evaluationModules[path]()) as { default: PageEvaluation };
+          loadedEvals[registryKey] = module.default;
+        }
       }
       setEvaluations(loadedEvals);
       setLoading(false);
@@ -53,11 +58,17 @@ const App: React.FC = () => {
   );
 
   // Derive PV and Revenue Data
-  const baseData = calcData(BASE_PV_OBJ, streams);
+  // Merge Actuals and Baseline
+  const mergedBasePv = [
+    ...ACTUAL_PV_OBJ.map(row => ({ ...row, isActual: true })),
+    ...BASE_PV_OBJ.map(row => ({ ...row, isActual: false }))
+  ];
+
+  const baseData = calcData(mergedBasePv, streams);
   const baseSum = sumRevDyn(baseData, streams);
 
-  const accPvObj = addEvalsToPv(BASE_PV_OBJ, evaluations, scenario, streams);
-  const currentPvObj = useAccumulated ? accPvObj : BASE_PV_OBJ;
+  const accPvObj = addEvalsToPv(mergedBasePv, evaluations, scenario, streams);
+  const currentPvObj = useAccumulated ? accPvObj : mergedBasePv;
   
   const data = calcData(currentPvObj, streams);
   const sum = sumRevDyn(data, streams);

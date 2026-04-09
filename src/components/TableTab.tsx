@@ -1,6 +1,6 @@
 import React from "react";
 import type { StreamDef, CalculatedRow } from "../utils/calc";
-import { SLATE } from "../utils/colors";
+import { SLATE, PINK } from "../utils/colors";
 
 interface TableTabProps {
   data: CalculatedRow[];
@@ -25,10 +25,13 @@ const TableTab: React.FC<TableTabProps> = ({ data, streams, sum }) => {
         <tbody>
           {data.map((row, i) => (
             <tr key={row.m} style={{ borderBottom: "1px solid #1e293b15", background: i % 2 === 0 ? "transparent" : "#0f172a50" }}>
-              <td style={{ padding: "8px 16px", color: SLATE, fontWeight: 700 }}>{row.mp}</td>
+              <td style={{ padding: "8px 16px", color: row.isActual ? PINK : SLATE, fontWeight: 700 }}>
+                {row.mp}
+                {row.isActual && <span style={{ fontSize: 9, marginLeft: 6, fontWeight: 400, opacity: 0.8 }}>(実績)</span>}
+              </td>
               <td style={{ padding: "8px 16px", textAlign: "right", fontFamily: "monospace" }}>
                 <div style={{ fontSize: 11, fontWeight: 700 }}>{row.s_total}</div>
-                {/* Total PV for this month could go here too if needed, but the user primarily wanted stream-wise PV. */}
+                <div style={{ fontSize: 9, opacity: 0.6 }}>{(row.actualPvTotal || row.forecastPvTotal || 0).toLocaleString()} PV</div>
               </td>
               {streams.map((s) => (
                 <td key={s.key} style={{ padding: "8px 16px", textAlign: "right", fontFamily: "monospace" }}>

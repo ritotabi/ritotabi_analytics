@@ -1,0 +1,74 @@
+{
+  "id": "condao_hotels_en",
+  "url": "https://ritotabi.com/en/hotels/con-dao-island/",
+  "evaluatedAt": "2026-04-09",
+  "evaluatedBy": "skill",
+  "stream": "cen",
+  "sum": "2500",
+  "ap": "0.008",
+  "an": "1.0",
+  "ao": "0.008",
+  "pp": [5, 45, 120, 280, 520, 850, 1200, 1550, 1900, 2150, 2350, 2500, 2500, 2550, 2550, 2600, 2600, 2650, 2650, 2700, 2700, 2750, 2750, 2800],
+  "pn": [5, 45, 120, 280, 520, 850, 1200, 1550, 1900, 2150, 2350, 2500, 2500, 2550, 2550, 2600, 2600, 2650, 2650, 2700, 2700, 2750, 2750, 2800],
+  "po": [5, 45, 120, 280, 520, 850, 1200, 1550, 1900, 2150, 2350, 2500, 2500, 2550, 2550, 2600, 2600, 2650, 2650, 2700, 2700, 2750, 2750, 2800],
+  "memo": "2026年4月9日のアフィリエイト評価基準更新（海外エリアでの楽天トラベル必須化解除）に伴う再評価。AgodaおよびBooking.comの複数OTAが揃っており、アフィリエイト設計は満点に近い評価となる。ブランド品質と一次情報の深さは極めて高い。",
+  "quality": {
+    "title": "6 Best Con Dao Hotels 2026: Luxury to Local Stays | RITOTABI",
+    "lang": "EN",
+    "type": "ホテル",
+    "overall": 98,
+    "publishedDate": "2026-04-09",
+    "scores": {
+      "コンテンツ独自性": 98,
+      "写真・ビジュアル": 96,
+      "アフィリエイト設計": 96,
+      "内部リンク": 95,
+      "SEO技術実装": 92,
+      "ユーザー体験(UX)": 97,
+      "英語品質": 96
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "筆者自身の現地調査に基づく 'Truth'（真実）という切り口でのホテル選定と解説",
+      "Runner's Review による、ランナー視点での宿泊メリットの提示（計6箇所）",
+      "53枚の豊富な独自写真と、それに基づく情景描写（一次情報）",
+      "ペルソナ（〜したい方）に基づいた Pros の記述が全ホテルで徹底されている",
+      "FAQ JSON-LD による検索結果での視認性向上"
+    ],
+    "issues": [
+      { "level": "低", "text": "Meta Title（6 Best...）と H1（Choosing a Hotel The “Truth”...）の文言が完全に一致していない（意図的な可能性はあるが、SEOセオリーからは外れる）。" },
+      { "level": "低", "text": "比較表が見出しとして存在するが、HTML構造が Table 形式になっておらず、アクセシビリティや機械可読性の観点で改善の余地がある。" }
+    ]
+  }
+}

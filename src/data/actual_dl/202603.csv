@@ -1,0 +1,40 @@
+# ----------------------------------------
+# ページとスクリーン: ページパスとスクリーン クラス
+# アカウント: ritotabi
+# プロパティ: ritotabi
+# ----------------------------------------
+# 
+# すべてのユーザー
+# 開始日: 20260301
+# 終了日: 20260331
+ページパスとスクリーン クラス,表示回数,アクティブ ユーザー,アクティブ ユーザーあたりのビュー,アクティブ ユーザーあたりの平均エンゲージメント時間,イベント数,キーイベント,合計収益
+/profile/,7,6,1.1666666666666667,50.5,15,0,0
+/hotels/yoron-island/,104,11,9.454545454545455,470.3636363636364,213,2,0
+/hotels/okinawa-main/,62,8,7.75,218.375,133,5,0
+/hotels/miyako-island/,104,16,6.5,344.8125,275,22,0
+/hotels/kume-island/,27,2,13.5,169.5,52,0,0
+/hotels/ishigaki-island/,42,8,5.25,110.375,88,0,0
+/hotels/con-dao-island/,33,11,3,22.818181818181817,57,0,0
+/hotels/amami-island/,36,6,6,89.16666666666667,89,2,0
+/hotels/aka-island/,34,7,4.857142857142857,134.28571428571428,87,5,0
+/en/hotels/con-dao-island/,18,10,1.8,38.9,44,0,0
+/en/destinations/con-dao-island/running/,1,1,1,6,1,0,0
+/en/destinations/con-dao-island/,12,3,4,34.666666666666664,19,0,0
+/en/destinations/cham-island/,3,2,1.5,290.5,6,0,0
+/en/,16,5,3.2,39.2,43,0,0
+/destinations/yoron-island/running/,29,9,3.2222222222222223,124.44444444444444,72,0,0
+/destinations/yoron-island/beaches/,130,25,5.2,151.76,302,0,0
+/destinations/yoron-island/,33,4,8.25,166,59,0,0
+/destinations/miyako-island/running/,133,48,2.7708333333333335,56.645833333333336,330,0,0
+/destinations/miyako-island/beaches/,34,8,4.25,38.875,62,0,0
+/destinations/miyako-island/,42,11,3.8181818181818183,144.63636363636363,80,0,0
+/destinations/kume-island/,5,4,1.25,11.75,12,0,0
+/destinations/ishigaki-island/running/,90,22,4.090909090909091,20.181818181818183,207,0,0
+/destinations/ishigaki-island/,9,4,2.25,31.5,20,0,0
+/destinations/con-dao-island/running/,2,2,1,12.5,3,0,0
+/destinations/con-dao-island/,37,6,6.166666666666667,130.16666666666666,69,0,0
+/destinations/cham-island/,32,2,16,1536,76,0,0
+/destinations/amami-island/,3,2,1.5,1,5,0,0
+/destinations/aka-island/,17,12,1.4166666666666667,48.583333333333336,55,0,0
+/aitemap.xml,1,1,1,3,2,0,0
+/,341,73,4.671232876712328,69.12328767123287,900,0,0

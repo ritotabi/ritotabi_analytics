@@ -1,7 +1,6 @@
-- [x] `package.json` の名称変更
-- [x] `package-lock.json` の名称変更
-- [x] `index.html` の `<title>` 変更
-- [x] `docs/agent/implementation_plan.md` 内のパス更新
-- [x] `docs/agent/walkthrough.md` 内のパス更新
-- [x] 全体の `grep` 確認
-- [x] Walkthrough の作成
+- [x] `src/data/actual-pv.ts` の新規作成（実績データの定義）
+- [x] `src/utils/calc.ts` の修正（実績値/予測値の計算ロジック拡張）
+- [x] `src/App.tsx` の修正（実績データの読込と適用）
+- [x] `src/components/ChartTab.tsx` の修正（実績と予測の比較グラフ化）
+- [x] `src/components/TableTab.tsx` の修正（実績と予測の乖離表示）
+- [x] 動作確認（ダミーデータ、またはスクショの実績値での表示確認）

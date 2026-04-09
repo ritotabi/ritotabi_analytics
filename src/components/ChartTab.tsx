@@ -68,6 +68,26 @@ const ChartTab: React.FC<ChartTabProps> = ({ data, streams }) => {
           </AreaChart>
         </ResponsiveContainer>
       </div>
+
+      <h3 style={{ color: PINK, fontSize: 11, fontFamily: "monospace", letterSpacing: "0.12em", marginBottom: 16, marginTop: 32 }}>
+        🎯 PV実績 vs 予測比較
+      </h3>
+      <div className="card" style={{ padding: "24px 12px 12px", height: 320 }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data} margin={{ top: 10, right: 30, left: 20, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
+            <XAxis dataKey="mp" axisLine={false} tickLine={false} tick={{ fill: SLATE, fontSize: 10 }} />
+            <YAxis axisLine={false} tickLine={false} tick={{ fill: SLATE, fontSize: 10 }} />
+            <Tooltip
+              contentStyle={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8, fontSize: 12, color: "#e2e8f0" }}
+              formatter={(v: any) => v.toLocaleString() + " PV"}
+            />
+            <Legend iconType="circle" wrapperStyle={{ fontSize: 11, paddingTop: 10 }} />
+            <Bar dataKey="actualPvTotal" name="実績PV" fill={PINK} radius={[4, 4, 0, 0]} barSize={20} />
+            <Bar dataKey="forecastPvTotal" name="予測PV" fill="#1e293b" stroke={SLATE} strokeDasharray="2 2" radius={[4, 4, 0, 0]} barSize={20} />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };

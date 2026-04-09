@@ -1,39 +1,28 @@
-# 修正内容の確認 (Walkthrough) - プロジェクト名変更
+# 実績PVデータの統合（Actual vs Forecast）
 
-プロジェクト名を `ritotabi_analysis` から `ritotabi_analytics` に変更する作業が完了しました。
+Google Analyticsのデータを元に、実績値と予測値を同じタイムライン上で比較・分析できる機能を追加しました。
 
 ## 実施内容
 
-以下のファイルにおいて、古い名称 `ritotabi_analysis` を `ritotabi_analytics` に置換しました。
+### 1. 実績データの定義と反映
+- 提供いただいたCSVファイルから3月のPV数を合算して登録しました。
+- **収益の修正**: 3月は開発・テスト用のクリックが含まれており、実際のアフィリエイト収益は発生していない（0円）とのことでしたので、システム上でも**3月の収益を0円として上書き設定**しました。
+- 今後も、PVはあるが収益が発生しなかった月や、逆にPVが少なくても高単価案件が決まった月などは、実績値を直接入力して正確に反映できるようになっています。
 
-### 1. 設定ファイルの更新
-- **[package.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/package.json)**: `name` フィールドを更新しました。
-- **[package-lock.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/package-lock.json)**: 内部のプロジェクト名参照を更新しました。
-- **[index.html](file:///home/mune1/dev/ritotabi/ritotabi_analytics/index.html)**: `<title>` タグの内容を更新しました。
+### 2. 計算ロジックの拡張
+- `src/utils/calc.ts` の `CalculatedRow` インターフェースを拡張。
+- 実績期間かどうかを判定する `isActual` フラグと、実績PV・予測PVの合計を保持するフィールドを追加しました。
 
-### 2. スキル定義の更新
-- **[.agent/skills/page_evaluator/SKILL.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/.agent/skills/page_evaluator/SKILL.md)**: 評価データの保存先パスに含まれるプロジェクト名を更新しました。
+### 3. UIの更新
+- **グラフ（ChartTab）**: 下部に「PV実績 vs 予測比較」グラフを追加しました。実績はピンクの実線、予測は点線（中抜き）で表示されます。
+- **テーブル（TableTab）**: 実績がある月には「(実績)」ラベルを表示し、各行に合計PV数を表示するようにしました。
 
-### 3. ドキュメントの更新
-- **[docs/agent/implementation_plan.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/docs/agent/implementation_plan.md)**: ファイルパスの記述を更新しました。
-- **[docs/agent/walkthrough.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/docs/agent/walkthrough.md)**: 過去のログに含まれる絶対パスを更新しました。
+## 確認方法
 
-## 検証結果
+1. **グラフタブ**: ページ下部までスクロールして、新しく追加された比較グラフを確認してください。
+2. **月次一覧タブ**: 3月の行がピンク色で強調され、「(実績)」と表示されていることを確認してください。
 
-- `grep` コマンドによる全体走査を行い、`dist/` フォルダ（ビルド生成物）以外のソースコードおよびドキュメント内に `ritotabi_analysis` が残っていないことを確認しました。
+## 今後の活用
 
-## ユーザー様へのお願い（重要）
-
-> [!IMPORTANT]
-> **ディレクトリ名のリネーム**
-> エージェントは現在の物理ディレクトリ名を変更できません。本作業完了後、ターミナル等で以下のコマンドを実行し、ディレクトリ名を変更してください。
-> ```bash
-> mv ritotabi_analysis ritotabi_analytics
-> ```
-
-> [!TIP]
-> **GitHub での作業**
-> GitHub 上のリポジトリ名も変更される場合は、以下のコマンドでリモートURLを更新してください。
-> ```bash
-> git remote set-url origin https://github.com/ritotabi/ritotabi_analytics.git
-> ```
+今後、毎月の実績値が確定したタイミングで `src/data/actual-pv.ts` に追記していくことで、常に最新の達成状況を確認できるようになります。
+また、この実績値をベースに、将来の期待値（予測）を上方修正・下方修正する判断材料として活用いただけます。
