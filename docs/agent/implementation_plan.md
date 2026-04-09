@@ -1,40 +1,47 @@
-# ページ評価：https://ritotabi.com/en/hotels/ishigaki-island/
+# プロジェクト名変更の実装計画 (ritotabi_analytics -> ritotabi_analytics)
 
-石垣島のホテルまとめページ（英語版）の再評価を行います。最新の評価仕様（v2.0）に基づき、収益予測と品質スコアを生成し、JSONファイルを更新します。
+プロジェクトの名称を `ritotabi_analytics` から `ritotabi_analytics` に統一し、設定ファイルおよびドキュメント内の記述を更新します。
 
-## ユーザーレビューが必要な事項
-- 特になし。
+## User Review Required
 
-## 変更内容
+> [!IMPORTANT]
+> **ディレクトリ名の変更について**
+> エージェントは現在の作業ディレクトリを直接リネームすることができません。ファイル内容の修正完了後、ユーザー様ご自身でディレクトリ名を `ritotabi_analytics` から `ritotabi_analytics` に変更していただく必要があります。
 
-### 評価の実施とデータ保存
+> [!WARNING]
+> **GitHub リポジトリ名の変更**
+> GitHub上のリポジトリ名も変更される場合は、リモートURLの更新（`git remote set-url origin ...`）が必要になります。
 
-#### [NEW] [en_ishigaki_hotel.json](file:///home/mune1/dev/ritotabi/ritotabi_analysis/src/evaluations/en_ishigaki_hotel.json)
-- URL: `https://ritotabi.com/en/hotels/ishigaki-island/` の評価結果を保存。
-- 以下の軸でスコアを算出：
-  - コンテンツ独自性
-  - 写真・ビジュアル（独自写真9枚、OTA5枚を確認済み）
-  - アフィリエイト設計（複数OTA対応、マイクロコピーの有無）
-  - 内部リンク（ガイド・ランニングへの動線）
-  - SEO技術実装（FAQ JSON-LD, Canonical等の確認）
-  - ユーザー体験(UX)
-  - 英語品質
+## Proposed Changes
 
-#### [MODIFY] [_registry.json](file:///home/mune1/dev/ritotabi/ritotabi_analysis/src/evaluations/_registry.json)
-- 新規評価データの追加。
+### Configuration Files
 
-## 公開済みの情報に基づく事実確認（完了済み）
-- **画像数**: 合計15枚、独自画像9枚、OTA画像5枚。
-- **SEOタグ**: Canonical（絶対パス）、FAQ JSON-LD（2件）を確認。
-- **アフィリエイト**: Agoda, Booking.com, 楽天トラベルの3種類が概ね設置されている（ENホテルとして適切）。
-- **ブランド品質**: 一次情報（冷蔵庫の音、駐車場の狭さ等）が豊富に含まれている。
+#### [MODIFY] [package.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/package.json)
+- `name` フィールドを `ritotabi_analytics` に変更します。
 
-## 実施計画
-1. 詳細なコンテンツ分析（ブランドチェックリスト、カテゴリチェックリストの判定）。
-2. 24ヶ月分のPV予測値の生成。
-3. `en_ishigaki_hotel.json` の作成。
-4. `_registry.json` の更新。
+#### [MODIFY] [package-lock.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/package-lock.json)
+- `name` フィールド（2箇所）を `ritotabi_analytics` に変更します。
 
-## 検証プラン
-- 生成されたJSONファイルがスキーマに従っているか確認。
-- `_registry.json` に正しく登録されているか確認。
+#### [MODIFY] [index.html](file:///home/mune1/dev/ritotabi/ritotabi_analytics/index.html)
+- `<title>` タグの内容を `ritotabi_analytics` に変更します。
+
+### Documentation
+
+#### [MODIFY] [docs/agent/implementation_plan.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/docs/agent/implementation_plan.md)
+- ファイルパスに含まれる `ritotabi_analytics` を `ritotabi_analytics` に置換します。
+
+#### [MODIFY] [docs/agent/walkthrough.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/docs/agent/walkthrough.md)
+- ファイルパスに含まれる `ritotabi_analytics` を `ritotabi_analytics` に置換します。
+
+## Open Questions
+
+- GitHubリポジトリ側の名称変更は既にお済みでしょうか？（未完了の場合、ファイル修正後に変更することをお勧めします）
+
+## Verification Plan
+
+### Automated Tests
+- `grep -r "ritotabi_analytics" .` を実行し、想定外の箇所に古い名称が残っていないか確認します。
+
+### Manual Verification
+- `npm install` (または `npm list`) を実行し、`package-lock.json` が正しく整合しているか確認していただきます。
+- ブラウザで `index.html` を開き、タイトルが更新されていることを確認します。

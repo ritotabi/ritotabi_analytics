@@ -1,5 +1,7 @@
-- [x] 内容の調査（Markdown取得、HTML解析）
-- [x] 画像枚数・SEOタグ・アフィリエイトリンクの技術確認
-- [x] 評価JSONの生成（ishigaki_hotels_en.json）
-- [x] _registry.json への追加・更新
-- [x] 最終確認
+- [x] `package.json` の名称変更
+- [x] `package-lock.json` の名称変更
+- [x] `index.html` の `<title>` 変更
+- [x] `docs/agent/implementation_plan.md` 内のパス更新
+- [x] `docs/agent/walkthrough.md` 内のパス更新
+- [x] 全体の `grep` 確認
+- [x] Walkthrough の作成

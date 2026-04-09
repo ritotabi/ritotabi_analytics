@@ -1,30 +1,39 @@
-# 修正内容の確認 (Walkthrough) - 石垣島ホテルページ再評価
+# 修正内容の確認 (Walkthrough) - プロジェクト名変更
 
-URL: https://ritotabi.com/en/hotels/ishigaki-island/
+プロジェクト名を `ritotabi_analysis` から `ritotabi_analytics` に変更する作業が完了しました。
 
 ## 実施内容
-石垣島のホテルまとめページ（英語版）を、最新の評価仕様（v2.0）に基づいて再評価しました。
 
-### 1. 技術的品質の確認（事実ベース）
-- **独自写真の定量化**: `curl` を使用したHTML解析により、独自ドメイン画像（`/images/destinations/`）が**9枚**、OTA画像（Agoda等）が5枚、計15枚の画像が正しく配置されていることを確認しました。
-- **SEOタグの整合性**: canonical（絶対パス・末尾スラッシュあり）、hreflang（JA/EN/x-default）、FAQ JSON-LD（2件）の正常な実装を確認しました。
-- **アフィリエイト**: 日本エリアの英語版戦略に従い、Agoda、Booking.com、楽天トラベルの3社リンクが設置されていることを確認しました。
+以下のファイルにおいて、古い名称 `ritotabi_analysis` を `ritotabi_analytics` に置換しました。
 
-### 2. 評価スコアの更新
-- **Overall Score**: 91 → **92**
-- **理由**:
-  - 写真枚数が正確に把握され、独自写真の豊富さがスコアに反映されました（80→85）。
-  - 新たなチェックリスト（Brand/Category/Tech）に基づき、一次情報（冷蔵庫の音、駐車場の使い勝手など）の質が高く評価されました。
-  - 一方で、ホテルページに必須の「比較表（comparisonTable）」が未設置であるため、その分を `issues` として記録し、改善の余地があることを示しました。
+### 1. 設定ファイルの更新
+- **[package.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/package.json)**: `name` フィールドを更新しました。
+- **[package-lock.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/package-lock.json)**: 内部のプロジェクト名参照を更新しました。
+- **[index.html](file:///home/mune1/dev/ritotabi/ritotabi_analytics/index.html)**: `<title>` タグの内容を更新しました。
 
-### 3. 保存ファイル
-- **評価データ**: [ishigaki_hotels_en.json](file:///home/mune1/dev/ritotabi/ritotabi_analysis/src/evaluations/ishigaki_hotels_en.json)
-- **レジストリ**: [_registry.json](file:///home/mune1/dev/ritotabi/ritotabi_analysis/src/evaluations/_registry.json) (スコアと評価日を更新)
+### 2. スキル定義の更新
+- **[.agent/skills/page_evaluator/SKILL.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/.agent/skills/page_evaluator/SKILL.md)**: 評価データの保存先パスに含まれるプロジェクト名を更新しました。
 
-## 課題 (Next Steps)
-- **比較表の設置**: ホテルごとのスペックを一覧できるテーブルの追加。
-- **アフィリエイト・マイクロコピー**: リンク直前にベネフィットを伝える短文（例：「最新のセール価格をチェックする」）の追加。
+### 3. ドキュメントの更新
+- **[docs/agent/implementation_plan.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/docs/agent/implementation_plan.md)**: ファイルパスの記述を更新しました。
+- **[docs/agent/walkthrough.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/docs/agent/walkthrough.md)**: 過去のログに含まれる絶対パスを更新しました。
 
 ## 検証結果
-- JSONファイルが定義されたスキーマに適合していることを確認。
-- `_registry.json` の `lastUpdated` および該当エントリが正しく更新されていることを確認。
+
+- `grep` コマンドによる全体走査を行い、`dist/` フォルダ（ビルド生成物）以外のソースコードおよびドキュメント内に `ritotabi_analysis` が残っていないことを確認しました。
+
+## ユーザー様へのお願い（重要）
+
+> [!IMPORTANT]
+> **ディレクトリ名のリネーム**
+> エージェントは現在の物理ディレクトリ名を変更できません。本作業完了後、ターミナル等で以下のコマンドを実行し、ディレクトリ名を変更してください。
+> ```bash
+> mv ritotabi_analysis ritotabi_analytics
+> ```
+
+> [!TIP]
+> **GitHub での作業**
+> GitHub 上のリポジトリ名も変更される場合は、以下のコマンドでリモートURLを更新してください。
+> ```bash
+> git remote set-url origin https://github.com/ritotabi/ritotabi_analytics.git
+> ```
