@@ -1,58 +1,29 @@
-# 石垣島・竹富島ランニングコース ページ評価・収益予測 実装計画
+# SKILLへの評価ロジック・統計データの組み込み計画
 
-石垣島・竹富島のランニングガイドページ（https://ritotabi.com/destinations/ishigaki-island/running/）の詳細な品質評価を実施し、分析データとして登録します。
+今回定義した「市場規模 × 競合難易度」に基づくPV予測ロジックを `page_evaluator` スキルに統合し、今後の評価作業で高い精度を維持できるようにします。
 
-## ユーザーレビュー確認事項
+## 変更の目的
+これまでの評価はエージェントの一般的な知識や限定的な基準に基づいていましたが、今回の石垣島やホイアンの統計情報、および競合性を考慮した「妥当な予測係数」をスキル内に明文化することで、誰が（あるいはどのエージェントが）実行しても一貫した予測を出せるようにします。
 
-> [!NOTE]
-> 指定ページにおいて **FAQ JSON-LD (FAQPage)** がメタデータとして正しく実装されていることを確認しました。
-> ランニングページ固有のルール（視覚的セクションは任意）に基づき、`seoChecklist.faq` を `true` と判定し、SEOスコアを上方修正します。
+## 提案される変更
 
-## 提案事項
+### [Component Name] `page_evaluator` スキル
 
-### 分析対象ページ
-- **URL**: `https://ritotabi.com/destinations/ishigaki-island/running/`
-- **タイトル**: 石垣島を走る｜サザンゲートと市街地を巡る実走ガイド
-- **主要コンテンツ**:
-  - 市街地〜灯台 (12km)
-  - サザンゲート〜南ぬ浜町 (5km)
-  - 竹富島一周 (6km)
+#### [MODIFY] [SKILL.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/.agent/skills/page_evaluator/SKILL.md)
+- `Step 2: ページ分析` において、`resources/market_data.md` を参照してシミュレーション値を算出するよう、指示文を強化します。
 
----
+#### [MODIFY] [eval_spec.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/.agent/skills/page_evaluator/resources/eval_spec.md)
+- PV予測（pp, pn, po）の算出ロジックとして、「ベースラインに対する期待貢献度」と「市場浸透率（Penetration Rate）」の概念を追記します。
 
-### 分析データ (Analytics Data)
+#### [MODIFY] [baseline_pv.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/.agent/skills/page_evaluator/resources/baseline_pv.json)
+- 今回修正した `src/data/baseline-pv.ts` と内容を同期させ、最新のベースラインをスキルが把握できるようにします。
 
-#### [NEW] [jp_ishigaki_running.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/jp_ishigaki_running.json)
-- 評価ID: `jp_ishigaki_running`
-- 公開日: `2026-02-23`
-- 収益予測: Tier 3 (Niche) 基準（24ヶ月分）
-- 品質評価:
-  - コンテンツ独自性: 95 (実走による一次情報、Googleマップにない道の紹介)
-  - 写真・ビジュアル: 90 (独自写真18枚確認)
-  - アフィリエイト設計: 88 (ホテルへの導線とマイクロコピーが優秀)
-  - 内部リンク: 92 (メインガイドおよびホテルへの相互リンク)
-  - SEO技術実装: 92 (canonical, hreflang, FAQ-LD すべて良好)
-  - ユーザー体験(UX): 90 (自販機、トイレ、猫、灯台などの実用的な記述)
-  - ブランド品質: `toneAndManner`, `firstPersonInsight`, `benefitUpfront` すべて `true`
+#### [MODIFY] [streams.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/.agent/skills/page_evaluator/resources/streams.json)
+- `jp_ishigaki`, `en_ishigaki` 等の実際のストリームキーを含むよう、最新のレジストリと同期させます。
 
-#### [MODIFY] [_registry.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/_registry.json)
-- 新規評価データ `jp_ishigaki_running` をリストに追加。
-
----
-
-## オープンクエスチョン
-
-> [!IMPORTANT]
-> 「公開非 2026/02/23」との指示がありましたが、指定URLは現在公開状態でした。
-> JSON内の `publishedDate` は `2026-02-23` として扱いますが、もし別の意図がありましたらご指摘ください。
-
----
+#### [NEW] [market_data.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/.agent/skills/page_evaluator/resources/market_data.md)
+- 石垣島、宮古島、ホイアン、コンダオ島の観光統計（入域数、日英比率）を記録し、評価の根拠として利用可能にします。
 
 ## 検証プラン
 
-### 自動テスト
-- `npm run build` (プロジェクト全体の型定義整合性確認)
-- `node -e "JSON.parse(require('fs').readFileSync('src/evaluations/jp_ishigaki_running.json'))"` (JSON構文チェック)
-
-### 手動確認
-- 生成されたJSONの内容が `eval_spec.md` のルーブリックに合致しているか再確認。
+- スキルを適用して、テスト的に石垣島の評価値を再算出させ、今回修正した数値と矛盾がないかを確認します。

@@ -2,16 +2,16 @@
   "lastUpdated": "2026-04-10",
   "streams": [
     { "key": "jp_ishigaki", "label": "石垣島 (日本語)", "color": "#f59e0b", "cvr": 0.0032, "unit": 750 },
-    { "key": "jp_miyako", "label": "宮古島 (日本語)", "color": "#f97316", "cvr": 0.0032, "unit": 750 },
-    { "key": "jp_yoron", "label": "与論島 (日本語)", "color": "#f43f5e", "cvr": 0.0032, "unit": 750 },
-    { "key": "jp_kume", "label": "久米島 (日本語)", "color": "#84cc16", "cvr": 0.0032, "unit": 750 },
-    { "key": "jp_aka", "label": "阿嘉島 (日本語)", "color": "#ef4444", "cvr": 0.0032, "unit": 750 },
-    { "key": "jp_other", "label": "その他 日本 (日本語)", "color": "#64748b", "cvr": 0.0032, "unit": 750 },
     { "key": "en_ishigaki", "label": "石垣島 (英語)", "color": "#10b981", "cvr": 0.008, "unit": 2000 },
+    { "key": "jp_miyako", "label": "宮古島 (日本語)", "color": "#f97316", "cvr": 0.0032, "unit": 750 },
     { "key": "en_miyako", "label": "宮古島 (英語)", "color": "#14b8a6", "cvr": 0.008, "unit": 2000 },
+    { "key": "jp_yoron", "label": "与論島 (日本語)", "color": "#f43f5e", "cvr": 0.0032, "unit": 750 },
     { "key": "en_yoron", "label": "与論島 (英語)", "color": "#6366f1", "cvr": 0.008, "unit": 2000 },
+    { "key": "jp_kume", "label": "久米島 (日本語)", "color": "#84cc16", "cvr": 0.0032, "unit": 750 },
     { "key": "en_kume", "label": "久米島 (英語)", "color": "#0ea5e9", "cvr": 0.008, "unit": 2000 },
+    { "key": "jp_aka", "label": "阿嘉島 (日本語)", "color": "#ef4444", "cvr": 0.0032, "unit": 750 },
     { "key": "en_aka", "label": "阿嘉島 (英語)", "color": "#8b5cf6", "cvr": 0.008, "unit": 2000 },
+    { "key": "jp_other", "label": "その他 日本 (日本語)", "color": "#64748b", "cvr": 0.0032, "unit": 750 },
     { "key": "en_other", "label": "その他 日本 (英語)", "color": "#94a3b8", "cvr": 0.008, "unit": 2000 },
     { "key": "cjp", "label": "コンダオ (日本語)", "color": "#8b5cf6", "cvr": 0.0035, "unit": 1500 },
     { "key": "cen", "label": "コンダオ (英語)", "color": "#2dd4bf", "cvr": 0.008, "unit": 2500 },
@@ -197,6 +197,16 @@
       "overall": 91,
       "evaluatedAt": "2026-04-07",
       "lang": "EN",
+      "type": "ランニング"
+    },
+    "destinations_ishigaki-island_running": {
+      "file": "jp_ishigaki_running.json",
+      "url": "/destinations/ishigaki-island/running/",
+      "title": "石垣島を走る｜サザンゲートと市街地を巡る実走ガイド | RITOTABI",
+      "stream": "jp_ishigaki",
+      "overall": 92,
+      "evaluatedAt": "2026-04-10",
+      "lang": "JP",
       "type": "ランニング"
     }
   }

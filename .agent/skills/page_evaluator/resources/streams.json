@@ -1,5 +1,8 @@
 [
-  { "key": "r", "label": "楽天（日本離島）", "cvr": 0.0032, "unit": 750 },
+  { "key": "jp_ishigaki", "label": "石垣島 日本語", "cvr": 0.0032, "unit": 750 },
+  { "key": "en_ishigaki", "label": "石垣島 英語", "cvr": 0.008, "unit": 2000 },
+  { "key": "jp_miyako", "label": "宮古島 日本語", "cvr": 0.0032, "unit": 750 },
+  { "key": "en_miyako", "label": "宮古島 英語", "cvr": 0.008, "unit": 2000 },
   { "key": "cjp", "label": "コンダオ 日本語", "cvr": 0.0035, "unit": 1500 },
   { "key": "cen", "label": "コンダオ 英語", "cvr": 0.008, "unit": 2500 },
   { "key": "hjp", "label": "ホイアン/チャム 日本語", "cvr": 0.004, "unit": 1000 },

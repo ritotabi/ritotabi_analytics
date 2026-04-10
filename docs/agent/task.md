@@ -1,4 +1,6 @@
-- [x] `src/evaluations/jp_ishigaki_running.json` の生成
-- [ ] `src/evaluations/_registry.json` への追記
-- [ ] JSON構文および型のバリデーション
-- [ ] `docs/agent/` への作業ログ（task.md, walkthrough.md）の保存
+- [x] 指標事項の調査と原因特定
+- [x] implementation_plan.md の作成
+- [x] ユーザー承認
+- [x] baseline-pv.ts の修正
+- [x] 評価ファイルの再検証と修正（石垣島EN, コンダオEN）
+- [x] walkthrough.md の作成
