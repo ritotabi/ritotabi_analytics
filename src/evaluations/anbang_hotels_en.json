@@ -1,106 +1,31 @@
 {
   "id": "anbang_hotels_en",
   "url": "/en/hotels/an-bang/",
-  "evaluatedAt": "2026-04-07",
+  "evaluatedAt": "2026-04-13",
   "evaluatedBy": "skill",
   "stream": "hen",
-  "sum": "An Bang Beach Hotels (EN)。実体験ベースのランナー目線レビューと、4種の構造化データが実装された高品質な宿泊ガイド。",
+  "sum": "An Bangホテルの再評価。ランナー目線の独自情報は非常に強力だが、日本語の残存とタイトル不一致というケアレスミスが品質を下げている。",
   "ap": "悲観前提",
   "an": "通常前提",
   "ao": "楽観前提",
-  "pp": [
-    0,
-    2,
-    17,
-    42,
-    71,
-    60,
-    75,
-    120,
-    175,
-    280,
-    495,
-    750,
-    1170,
-    1500,
-    1650,
-    1838,
-    1900,
-    1350,
-    1250,
-    1650,
-    2100,
-    2400,
-    3575,
-    4375
-  ],
-  "pn": [
-    0,
-    6,
-    33,
-    84,
-    143,
-    120,
-    150,
-    240,
-    350,
-    560,
-    990,
-    1500,
-    2340,
-    3000,
-    3300,
-    3675,
-    3800,
-    2700,
-    2500,
-    3300,
-    4200,
-    4800,
-    7150,
-    8750
-  ],
-  "po": [
-    0,
-    8,
-    50,
-    126,
-    214,
-    180,
-    225,
-    360,
-    525,
-    840,
-    1485,
-    2250,
-    3510,
-    4500,
-    4950,
-    5513,
-    5700,
-    4050,
-    3750,
-    4950,
-    6300,
-    7200,
-    10725,
-    13125
-  ],
-  "memo": "スキルベースの自動評価。2026-04-07時点の最新コンテンツ。全ホテルにRunner's Reviewがあり、構造化データの充実度が非常に高い。 (2026-04-13: 季節性バイアス適用済みモデルで再計算)",
+  "pp": [33, 245, 1684, 2144, 2425, 1837, 1786, 2450, 3216, 4083, 6176, 7657, 7962, 7350, 6738, 6432, 5819, 3675, 3063, 3675, 4288, 4900, 6738, 7657],
+  "pn": [47, 350, 2406, 3063, 3464, 2625, 2552, 3500, 4594, 5833, 8823, 10938, 11375, 10500, 9625, 9188, 8313, 5250, 4375, 5250, 6125, 7000, 9625, 10938],
+  "po": [71, 525, 3609, 4595, 5196, 3938, 3828, 5250, 6891, 8750, 13235, 16407, 17063, 15750, 14438, 13782, 12470, 7875, 6563, 7875, 9188, 10500, 14438, 16407],
+  "memo": "仕様v2.0に基づく再評価。季節性バイアス（ホイアン季節性）を適用。ランニングコース紹介セクションに日本語テキストが残存している点、およびタイトルと実弾数の不一致を課題として検出。コンテンツの核心部分は依然として高品質。",
   "quality": {
-    "title": "Best Hotels in An Bang Beach: 6 Hand-Picked Stays for a Failsafe Trip (2026)",
+    "title": "3 Best An Bang Beach Hotels: Luxury & Boutique 2026 | RITOTABI",
     "lang": "EN",
     "type": "ホテル",
-    "overall": 96,
+    "overall": 92,
     "publishedDate": "2026-04-05",
     "scores": {
       "コンテンツ独自性": 97,
       "写真・ビジュアル": 90,
       "アフィリエイト設計": 95,
       "内部リンク": 96,
-      "SEO技術実装": 98,
-      "ユーザー体験(UX)": 95,
-      "英語品質": 97
+      "SEO技術実装": 90,
+      "ユーザー体験(UX)": 92,
+      "英語品質": 90
     },
     "seoChecklist": {
       "hreflang": true,
@@ -115,16 +40,48 @@
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": true,
+      "mobileStickyCta": true,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 1,
       "minClicks": 1
     },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null,
+      "runningCvr": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "seasonalRisk": "洪水リスク (10月)",
     "strengths": [
-      "全ての宿に対し「Runner's Review」が掲載されており、ランナーという特定のターゲットに対する独自価値が非常に高い",
-      "「スタッフにWhatsAppでサポートされた」等の具体的エピソードを交えた紹介があり、情報の信頼性と具体性が高い",
-      "「Article」「Breadcrumb」「Carousel」「FAQ」の4種類の構造化データ（JSON-LD）が完備されており、SEOの技術実装レベルが高い",
-      "「Luxury & Secluded」「Strategic & Balanced」など、利用者のニーズ（ペルソナ）に合わせた分類が明確で、ユーザー体験(UX)が高い",
-      "AgodaとBooking.comの双方へのリンクが用意されており、ユーザーの好みに対応したアフィリエイト設計になっている"
+      "全ての宿泊施設に対しランナー視点での詳細な『Runner's Review』が含まれており、圧倒的な差別化ができている",
+      "掲載写真が豊富（27枚）で、現地の質感がよく伝わる",
+      "Agoda/Booking.comの複数OTA対応に加え、具体的なマイクロコピーと価格レンジ表示があり成約率が高まる設計",
+      "内部リンクが豊富で、周辺のランニングコースや別エリアのホテルガイドへの回遊性が高い"
     ],
-    "issues": [],
-    "seasonalRisk": "洪水リスク (10月)"
+    "issues": [
+      {
+        "level": "高",
+        "text": "『Recommended Spots Nearby』セクション内のランニングコース見出し・説明文に日本語（アンバンビーチ波打ち際 等）が残存しており、非日本語話者ユーザーの混乱を招く。"
+      },
+      {
+        "level": "中",
+        "text": "Meta Titleが『3 Best』となっている一方で、実際には6つのホテルを紹介しており、ページ内の他の箇所では『6 Hand-Picked Stays』と記述されているなど、数値の不整合がある。"
+      }
+    ]
   }
 }
