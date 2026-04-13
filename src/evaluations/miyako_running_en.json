@@ -1,30 +1,30 @@
 {
   "id": "miyako_running_en",
   "url": "https://ritotabi.com/en/destinations/miyako-island/running/",
-  "evaluatedAt": "2026-04-12",
+  "evaluatedAt": "2026-04-13",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
   "sum": "Miyako Island Running Guide with 4 field-tested courses and 23 original photos.",
-  "ap": "Focuses on 'Miyako Blue' visuals and runner-specific logistics like restrooms and sea breeze.",
-  "an": "Features FAQ JSON-LD and Next.js Image optimization, but uses relative paths for SEO links.",
-  "ao": "Solid niche potential as the definitive English resource for running in Miyako Island.",
-  "pp": [5, 20, 50, 100, 200, 300, 400, 450, 500, 520, 540, 560, 570, 580, 590, 600, 610, 615, 620, 625, 630, 635, 640, 650],
-  "pn": [10, 50, 120, 250, 450, 650, 800, 900, 1000, 1050, 1100, 1150, 1170, 1190, 1210, 1230, 1250, 1260, 1270, 1280, 1290, 1300, 1310, 1350],
-  "po": [25, 120, 300, 600, 1000, 1500, 1800, 2000, 2200, 2300, 2400, 2500, 2550, 2600, 2650, 2700, 2750, 2800, 2850, 2900, 2950, 3000, 3100, 3200],
-  "memo": "宮古島の実走調査に基づいた非常に質の高いガイド。特に4つの主要コース（来間橋、池間橋、17END、ヒルトン周辺）について、ランナーが最も気にするトイレの有無、強風の影響、路面の質を網羅している。23枚の独自写真は圧巻。SEO面でhreflang等が相対パスである点と、コースバッジの欠落が惜しいが、コンテンツ力は抜群。",
+  "ap": "Focuses on 'Miyako Blue' visuals and runner-specific logistics like restrooms and sea breeze. SEO tech improved to absolute paths.",
+  "an": "Features FAQ JSON-LD and Next.js Image optimization. Run badges and absolute URI links are verified.",
+  "ao": "Solid niche potential as the definitive English resource for running in Miyako Island, with realistic traffic expectations.",
+  "pp": [5, 20, 50, 100, 150, 200, 250, 280, 300, 320, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460, 480],
+  "pn": [10, 50, 100, 200, 300, 450, 600, 700, 800, 850, 900, 1000, 1050, 1100, 1150, 1200, 1220, 1240, 1260, 1280, 1300, 1320, 1350, 1400],
+  "po": [25, 100, 250, 500, 750, 1000, 1200, 1300, 1400, 1450, 1500, 1600, 1650, 1700, 1750, 1800, 1850, 1900, 1950, 2000, 2050, 2100, 2200, 2300],
+  "memo": "宮古島の実走調査に基づいた非常に質の高いガイド。4つの主要コース（来間橋、池間橋、17END、ヒルトン周辺）の利便性と魅力を網羅している。前回課題だったSEO関連の絶対パス化および実走バッジが実装されたことを確認し、品質スコアを高評価に更新。収益予測については、市場規模(JPの1/4)とTier 2/3の基準に合わせ、過大だった数値を現実的な期待値に修正した。",
   "quality": {
     "title": "Miyako Island Running | Kurima, Ikema & 17END Course Guide | RITOTABI",
     "lang": "EN",
     "type": "ランニング",
-    "overall": 84,
+    "overall": 92,
     "publishedDate": "2026-04-12",
     "scores": {
       "コンテンツ独自性": 92,
       "写真・ビジュアル": 88,
       "アフィリエイト設計": 80,
-      "内部リンク": 85,
-      "SEO技術実装": 65,
-      "ユーザー体験(UX)": 88,
+      "内部リンク": 90,
+      "SEO技術実装": 96,
+      "ユーザー体験(UX)": 90,
       "英語品質": 92
     },
     "seoChecklist": {
@@ -52,7 +52,7 @@
       "comparisonTable": null,
       "affiliateMicroCopy": null,
       "courseSpecs": true,
-      "runBadge": false
+      "runBadge": true
     },
     "techChecklist": {
       "nextImage": true,
@@ -63,12 +63,12 @@
       "23枚の豊富で具体的な現地写真（独自ドメイン内）",
       "ランナー視点の「Field Impression」が極めて具体的（トイレ、自販機、日陰情報）",
       "FAQ JSON-LDの適切な実装と具体的回答",
+      "SEO技術（hreflang, canonical）が絶対パスで正しく実装されている",
       "情緒的な英語表現（sensation of floating 等）による没入感"
     ],
     "issues": [
-      { "level": "中", "text": "hreflang および canonical が絶対パスではなく相対パスで記述されている。", "isSpeculation": false },
-      { "level": "低", "text": "ランニングコースごとの実走評価バッジ（S/A/B等）が視覚的に付与されていない。", "isSpeculation": false },
-      { "level": "低", "text": "datePublished (2026-02-20) と実際の公開指定日 (2026-04-12) の整合性を確認する必要がある。", "isSpeculation": false }
+      { "level": "低", "text": "datePublished (2026-02-20) と実際の公開指定日 (2026-04-12) の整合性を今後確認する必要がある。", "isSpeculation": false }
     ]
   }
+
 }

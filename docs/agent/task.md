@@ -1,6 +1,8 @@
-- [x] miyako_guide_en.json の修正（逆転現象の解消、統計ベースの再計算）
-- [x] miyako_running_en.json の修正（スケールエラーの解消、ニッチ需要基準への調整）
-- [x] miyako_beaches_en.json の修正（成長カーブの平滑化）
-- [x] miyako_hotels_en.json の修正（シナリオ別分散の付与）
-- [x] 全ファイルの整合性検証（pp <= pn <= po、単調増加）
-- [x] walkthrough.md の作成
+- [x] `miyako_running_en.json` の更新
+    - [x] `evaluatedAt` の更新
+    - [x] 各種スコアの調整
+    - [x] チェックリストの更新
+    - [x] PV予測（pp, pn, po）の修正
+    - [x] 強みと課題の更新
+- [x] `_registry.json` の更新
+- [x] 最終検証

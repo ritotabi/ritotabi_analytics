@@ -1,30 +1,28 @@
-# 宮古島評価データのPV予測値修正完了
+# 宮古島ランニングガイド（英語版）再評価完了
 
-宮古島（英語版）の各ページにおける異常なPV予測値を修正し、統計データおよびSEO成長曲線に基づいた現実的な予測値に更新しました。
+最新のページ状態に基づき、品質評価と収益予測の更新が完了しました。
 
-## 修正内容
+## 修正内容の要約
 
-### 1. 逆転現象および市場規模の整合性修正
-- **[miyako_guide_en.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/miyako_guide_en.json)**:
-  - 悲観予測（pp）が通常予測（pn）を上回っていた問題を解消しました。
-  - 楽観予測（po）を石垣島の市場規模（約85%）に合わせて下方修正しました。
+### 1. 技術的改善の反映とスコア向上
+- **SEO技術基盤**: 前回課題だった `hreflang` および `canonical` タグが絶対パスで正しく実装されていることを確認しました。
+- **実走バッジ**: 各コースに実走評価バッジ（Rating: A 等）が視覚的に付与されていることを確認しました。
+- **品質スコア**: 上記の改善により、SEO技術実装スコアを **65 → 96**、総合スコアを **84 → 92** に引き上げました。
 
-### 2. スケールエラーの解消
-- **[miyako_running_en.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/miyako_running_en.json)**:
-  - 楽観予測が 71,420 PV/月 という非現実的な数値になっていたエラーを修正し、Tier 3（ニッチ）基準の最大 3,200 PV/月 程度に調整しました。
-  - 極端に低かった通常予測も現実的な成長曲線に引き上げました。
+### 2. 収益予測（PV予測）の適正化
+- `market_data.md` の統計基準（宮古島ENはJPの約1/4、Tier 2/3相当）に基づき、過大だった期待値を修正しました。
+- **成熟期（24ヶ月目）の予測値**:
+  - Pessimistic: 480 PV/月
+  - Normal: 1,400 PV/月
+  - Optimistic: 2,300 PV/月（修正前: 3,200 PV）
 
-### 3. 成長曲線の平滑化と分散の付与
-- **[miyako_beaches_en.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/miyako_beaches_en.json)**:
-  - 成長過程での不自然な予測値の増減を平滑化し、SEOの浸透を模した単調増加曲線に変更しました。
-- **[miyako_hotels_en.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/miyako_hotels_en.json)**:
-  - 全シナリオが同一値だった状態から、悲観・通常・楽観に応じた予測幅を設定しました。
+## 修正ファイル
+
+- [miyako_running_en.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/miyako_running_en.json)
+- [_registry.json](file:///home/mune1/dev/ritotabi/ritotabi_analytics/src/evaluations/_registry.json)
+- [task.md](file:///home/mune1/dev/ritotabi/ritotabi_analytics/docs/agent/task.md)
 
 ## 検証結果
-
-全てのファイルにおいて以下の整合性を確認済みです。
-- [x] **シナリオ整合性**: `悲観(pp) <= 通常(pn) <= 楽観(po)`
-- [x] **時系列整合性**: 月次の推移が概ね単調増加（成熟期まで）となっている。
-- [x] **市場比率**: 宮古島の旅行者統計（年間120万人規模）に対し、過大・過小すぎないリーチ率となっている。
-
-修正後のデータは、分析システムのダッシュボードや収益予測シミュレーションに即座に反映されます。
+- JSONスキーマの妥当性を確認済み。
+- PV予測配列（24ヶ月分）の整合性を確認済み。
+- レジストリへの反映（総合スコア 92）を確認済み。
