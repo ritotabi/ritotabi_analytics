@@ -1,8 +1,10 @@
-- [x] 久米島ホテルページの評価JSON (`kume_hotels_jp.json`) の作成
-- [x] 評価レジストリ (`_registry.json`) の更新
-- [x] 内容の最終確認と完了報告
+# タスクリスト: 石垣島英語版ガイド再評価
 
-## Walkthrough
-- 久米島ホテルページの評価JSON (`kume_hotels_jp.json`) を作成しました。
-- 評価レジストリ (`_registry.json`) に新しい評価データを登録しました。
-- 全てのタスクが完了しました。
+- [x] 指定URLのページ内容取得
+- [x] RAW HTMLによる技術実装検証（H1, FAQPage, sponsoredリンク）
+- [x] 画像アセットの独自性検証
+- [x] コンテンツ品質の精読と評価スコアリング
+- [x] 収益予測モデルの適用
+- [x] `src/evaluations/ishigaki_en.json` の更新
+- [x] `src/evaluations/_registry.json` の更新
+- [x] 修正内容の確認（Walkthrough）の作成
