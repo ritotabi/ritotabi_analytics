@@ -94,7 +94,7 @@ const QualityTab: React.FC<QualityTabProps> = ({ evaluations, streams }) => {
                 let daysSince: number | null = null;
                 if (publishedDate) {
                   const d = new Date(publishedDate);
-                  const today = new Date("2026-04-07"); // Updated to match current system date
+                  const today = new Date();
                   daysSince = Math.floor((today.getTime() - d.getTime()) / (86400000));
                 }
 
@@ -189,7 +189,7 @@ const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation }) => {
   let daysSince: number | null = null;
   if (publishedDate) {
     const d = new Date(publishedDate);
-    const today = new Date("2026-04-07");
+    const today = new Date();
     daysSince = Math.floor((today.getTime() - d.getTime()) / (86400000));
   }
 

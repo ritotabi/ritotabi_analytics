@@ -1,0 +1,91 @@
+{
+  "id": "en_destinations_amami-island",
+  "url": "/en/destinations/amami-island/",
+  "evaluatedAt": "2026-04-24",
+  "evaluatedBy": "skill",
+  "stream": "en_amami",
+  "sum": "奄美大島（英語）ガイドページの評価。一次情報に基づいた高品質なコピーライティングと、レンタカー導線を含めた実用的なUXが高く評価される。",
+  "ap": "38",
+  "an": "45",
+  "ao": "58",
+  "pp": [
+    8, 65, 65, 280, 472, 250, 630, 675, 935, 715, 900, 1445, 1440, 2340, 1170, 2520, 2430, 900, 1620, 1350, 1530, 990, 1080, 1530
+  ],
+  "pn": [
+    12, 90, 90, 400, 650, 350, 850, 900, 1200, 1000, 1200, 1800, 2000, 3250, 1625, 3500, 3375, 1250, 2250, 1875, 2125, 1375, 1500, 2125
+  ],
+  "po": [
+    20, 150, 150, 600, 950, 500, 1200, 1300, 1700, 1500, 1800, 2500, 3000, 4875, 2437, 5250, 5062, 1875, 3375, 2812, 3187, 2062, 2250, 3187
+  ],
+  "memo": "英語化された奄美大島ガイド。日本語版の構成を忠実に再現しつつ、インバウンド旅行者向けに「レンタカーの必須性」や「LCCの活用」など実用的な情報を強化している。画像も全て独自ドメインの一次情報であり、視覚的な没入感が非常に高い。",
+  "quality": {
+    "title": "Amami Oshima Travel Guide 2026 | Tomori Beach & Island Cuisine | RITOTABI",
+    "lang": "EN",
+    "type": "ガイド",
+    "overall": 95,
+    "publishedDate": "2026-04-24",
+    "scores": {
+      "コンテンツ独自性": 96,
+      "写真・ビジュアル": 92,
+      "アフィリエイト設計": 88,
+      "内部リンク": 95,
+      "SEO技術実装": 98,
+      "ユーザー体験(UX)": 94,
+      "英語品質": 96
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": false,
+      "mobileStickyCta": true,
+      "carRentalLink": true,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "categoryChecklist": {
+      "comparisonTable": null,
+      "affiliateMicroCopy": null,
+      "courseSpecs": null,
+      "runBadge": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "一次情報に基づいた圧倒的な独自性（曇り空の海の描写、シャワーの有無等の実用的詳細）",
+      "高品質な独自撮影写真（11枚以上の独自ドメイン画像を核とした構成）",
+      "インバウンド目線での実用情報（レンタカーの必須性、LCCによる低予算アクセスの提示）",
+      "完璧なSEO技術実装（絶対パスによるhreflang、正規化、FAQ構造化データ）"
+    ],
+    "issues": [
+      {
+        "level": "中",
+        "text": "社会的証明（OTAのクチコミスコア等）のハードコードされた記述がないため、信頼性の補強余地あり。"
+      },
+      {
+        "level": "低",
+        "text": "アクティビティ予約（シュノーケリング等）への導線が未実装。"
+      }
+    ]
+  }
+}

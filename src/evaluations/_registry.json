@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22",
+  "lastUpdated": "2026-04-24",
   "streams": [
     { "key": "jp_ishigaki", "label": "石垣島 (日本語)", "color": "#f59e0b", "cvr": 0.0032, "unit": 750 },
     { "key": "en_ishigaki", "label": "石垣島 (英語)", "color": "#10b981", "cvr": 0.008, "unit": 2000 },
@@ -336,9 +336,19 @@
       "url": "/destinations/amami-island/",
       "title": "奄美大島観光ガイド2026｜土盛海岸と絶品グルメ | RITOTABI",
       "stream": "jp_amami",
-      "overall": 92,
-      "evaluatedAt": "2026-04-15",
+      "overall": 95,
+      "evaluatedAt": "2026-04-24",
       "lang": "JP",
+      "type": "ガイド"
+    },
+    "en_destinations_amami-island": {
+      "file": "en_destinations_amami-island.json",
+      "url": "/en/destinations/amami-island/",
+      "title": "Amami Oshima Travel Guide 2026 | Tomori Beach & Island Cuisine | RITOTABI",
+      "stream": "en_amami",
+      "overall": 95,
+      "evaluatedAt": "2026-04-24",
+      "lang": "EN",
       "type": "ガイド"
     },
     "hotels_amami-island": {
@@ -349,6 +359,16 @@
       "overall": 94,
       "evaluatedAt": "2026-04-15",
       "lang": "JP",
+      "type": "ホテル"
+    },
+    "en_hotels_amami-island": {
+      "file": "amami_hotels_en.json",
+      "url": "/en/hotels/amami-island/",
+      "title": "Best Hotels in Amami Oshima: Area Guide & Expert Picks | RITOTABI",
+      "stream": "en_amami",
+      "overall": 94,
+      "evaluatedAt": "2026-04-24",
+      "lang": "EN",
       "type": "ホテル"
     },
     "destinations_kume-island": {

@@ -1,0 +1,83 @@
+{
+  "id": "en_hotels_amami-island",
+  "url": "/en/hotels/amami-island/",
+  "evaluatedAt": "2026-04-24",
+  "evaluatedBy": "skill",
+  "stream": "en_amami",
+  "sum": "94",
+  "ap": "95",
+  "an": "90",
+  "ao": "90",
+  "pp": [9, 70, 70, 300, 579, 321, 675, 643, 774, 530, 611, 911, 857, 1393, 1393, 1500, 1446, 804, 1071, 893, 1013, 1143, 1221, 1425],
+  "pn": [7, 56, 56, 240, 463, 257, 540, 514, 619, 424, 489, 729, 686, 1114, 1114, 1200, 1157, 643, 857, 714, 810, 914, 977, 1140],
+  "po": [11, 84, 84, 360, 695, 385, 810, 772, 929, 636, 733, 1093, 1029, 1672, 1672, 1800, 1735, 965, 1285, 1071, 1215, 1371, 1465, 1710],
+  "memo": "奄美大島ホテルガイド（英語版）。宿泊体験に基づいた非常に解像度の高いコンテンツ。名瀬市街地の利便性と北部のリゾート性の対比が明確で、ユーザーの意思決定を強力にサポートしている。技術的にも hreflang や FAQ JSON-LD が完璧に実装されており、インバウンド検索での高い成果が期待できる。",
+  "quality": {
+    "title": "Best Hotels in Amami Oshima: Area Guide & Expert Picks | RITOTABI",
+    "lang": "EN",
+    "type": "ホテル",
+    "overall": 94,
+    "publishedDate": "2026-04-24",
+    "scores": {
+      "コンテンツ独自性": 90,
+      "写真・ビジュアル": 85,
+      "アフィリエイト設計": 95,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
+      "英語品質": 100
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "seasonalRisk": "台風（9月）による大規模キャンセルの可能性あり。",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": true,
+      "mobileStickyCta": true,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 1,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null,
+      "runningCvr": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "宿泊体験に基づいた具体的で説得力のあるホテル紹介（特に名瀬の Sundays vs West Court）",
+      "ランナー視点での周辺環境（名瀬港の海上保安庁の船、サトウキビ畑の朝陽等）の解像度の高い描写",
+      "hreflang、FAQ、絶対パス canonical 等の技術的SEOの完璧な実装",
+      "モバイルスティッキーCTAやマイクロコピーによる高いアフィリエイト導線設計"
+    ],
+    "issues": [
+      {
+        "level": "低",
+        "text": "レンタカーやアクティビティへの直接的なアフィリエイトリンクは設置されていない（FAQやスポット紹介でのガイド誘導のみ）。"
+      }
+    ]
+  }
+}
