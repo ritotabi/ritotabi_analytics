@@ -1,106 +1,31 @@
 {
-  "id": "miyako_beaches_en",
-  "url": "https://ritotabi.com/en/destinations/miyako-island/beaches/",
-  "evaluatedAt": "2026-04-12",
+  "id": "en_destinations_miyako-island_beaches",
+  "url": "/en/destinations/miyako-island/beaches/",
+  "evaluatedAt": "2026-04-25",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "宮古島の穴場ビーチ7選を紹介する英語ガイドページ。17ENDだけでなく、漁港やリゾート奥地の秘密の小道など、ランニング調査を通じた一次情報が極めて豊富。技術的SEO（hreflang、JSON-LD）も完璧に実装されており、最高水準の品質を実現している。",
-  "ap": "悲観前提",
-  "an": "通常前提",
-  "ao": "楽観前提",
-  "pp": [
-    12,
-    39,
-    52,
-    280,
-    473,
-    225,
-    495,
-    525,
-    723,
-    550,
-    720,
-    1190,
-    1280,
-    2340,
-    1300,
-    3080,
-    3240,
-    1300,
-    2520,
-    2250,
-    2635,
-    1760,
-    1980,
-    2890
-  ],
-  "pn": [
-    24,
-    78,
-    98,
-    490,
-    878,
-    425,
-    990,
-    1050,
-    1445,
-    1100,
-    1440,
-    2380,
-    2560,
-    4680,
-    2600,
-    6160,
-    6480,
-    2550,
-    4860,
-    4275,
-    5015,
-    3355,
-    3780,
-    5525
-  ],
-  "po": [
-    56,
-    182,
-    228,
-    1120,
-    1890,
-    900,
-    2070,
-    2250,
-    3230,
-    2530,
-    3300,
-    5525,
-    6000,
-    11050,
-    6175,
-    14700,
-    15525,
-    6150,
-    11790,
-    10350,
-    12155,
-    8140,
-    9180,
-    13600
-  ],
-  "memo": "新規公開ページ。宮古島の主要ビーチ（前浜、砂山等）を敢えて『混雑する場所』として相対化し、独自の穴場を提案する構成が素晴らしい。FAQ JSON-LDによる絶対パス、Hreflangの完全実装を確認。アフィリエイトは宿泊まとめページへの内部リンクが中心だが、マイクロコピーによる動線確保が良質である。24ヶ月PVはTier 1の中央値から品質加味で1.3xの成長を予測。 (2026-04-13: 季節性バイアス適用済みモデルで再計算)",
+  "sum": "96",
+  "ap": "96",
+  "an": "92",
+  "ao": "94",
+  "pp": [50, 150, 350, 800, 1200, 1800, 2500, 3200, 3800, 4200, 4500, 4800, 5200, 5600, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500, 10000, 10500],
+  "pn": [40, 120, 280, 640, 960, 1440, 2000, 2560, 3040, 3360, 3600, 3840, 4160, 4480, 4800, 5200, 5600, 6000, 6400, 6800, 7200, 7600, 8000, 8400],
+  "po": [60, 180, 420, 960, 1440, 2160, 3000, 3840, 4560, 5040, 5400, 5760, 6240, 6720, 7200, 7800, 8400, 9000, 9600, 10200, 10800, 11400, 12000, 12600],
+  "memo": "宮古島の隠れ家的ビーチに特化したインバウンド向けガイド。再評価の結果、ランニングによる実走調査に基づいた圧倒的な一次情報の質と、15枚以上の独自写真によるビジュアルの強さを再確認。SEO実装も絶対パス対応を含め完璧であり、インバウンド需要の受け皿として極めて高い品質を維持している。",
   "quality": {
-    "title": "Miyako Island Hidden Beach Guide | From 17END to Secret Spots | RITOTABI",
+    "title": "Miyako Island Hidden Beach Guide: 17END to Secret Spots | RITOTABI",
     "lang": "EN",
     "type": "ガイド",
     "overall": 96,
-    "publishedDate": "2026-04-12",
+    "publishedDate": "2026-04-12T09:00:00+09:00",
     "scores": {
-      "コンテンツ独自性": 98,
-      "写真・ビジュアル": 95,
+      "コンテンツ独自性": 96,
+      "写真・ビジュアル": 94,
       "アフィリエイト設計": 92,
       "内部リンク": 95,
-      "SEO技術実装": 100,
+      "SEO技術実装": 98,
       "ユーザー体験(UX)": 96,
-      "英語品質": 98
+      "英語品質": 97
     },
     "seoChecklist": {
       "hreflang": true,
@@ -110,12 +35,19 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "growing",
+    "seasonalRisk": "9月の台風リスクによる大規模キャンセル懸念あり。",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
-      "minClicks": 1
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
     },
     "brandChecklist": {
       "toneAndManner": true,
@@ -124,8 +56,8 @@
       "personaDrivenPros": null
     },
     "categoryChecklist": {
-      "comparisonTable": null,
-      "affiliateMicroCopy": null,
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
       "courseSpecs": null,
       "runBadge": null
     },
@@ -135,11 +67,20 @@
       "affiliateRel": true
     },
     "strengths": [
-      "圧倒的な一次情報：ランニング調査に基づいた『漁港脇』や『農村公園横』など、ガイドブックに載らない正確な穴場特定とアクセスの詳細記述",
-      "完璧な技術SEO：絶対パスによるhreflang、canonical、構造化データ（FAQPage, Article）の精密な実装",
-      "良質なマイクロコピー：内部リンクにおいて『Zero distance from the Orient's finest beach』などの具体的ベネフィットを提示"
+      "ランニングによる全島踏破から得られた、他サイトにはない圧倒的な一次情報の質",
+      "15枚以上の独自写真と詳細なキャプションによる、現地の質感が伝わるビジュアル",
+      "NearbySpotOptimizerによるホテル・観光・ランニングの高度な導線統合",
+      "SEO技術実装（絶対パス、Hreflang、FAQ JSON-LD）が完璧な水準にある"
     ],
-    "issues": [],
-    "seasonalRisk": "台風リスク (9月)"
+    "issues": [
+      {
+        "level": "中",
+        "text": "レンタカー必須のエリア特性に対し、レンタカー予約（アフィリエイト）への導線が欠如している。"
+      },
+      {
+        "level": "低",
+        "text": "ホテルの価格帯や社会的証明（スコア）がJSX内に明記されておらず、アフィリエイトCVRの最大化に余地がある。"
+      }
+    ]
   }
 }

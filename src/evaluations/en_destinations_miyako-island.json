@@ -1,0 +1,90 @@
+{
+  "id": "en_destinations_miyako-island",
+  "url": "https://ritotabi.com/en/destinations/miyako-island/",
+  "evaluatedAt": "2026-04-25",
+  "evaluatedBy": "skill",
+  "stream": "en_miyako",
+  "sum": "96",
+  "ap": "94",
+  "an": "96",
+  "ao": "98",
+  "pp": [12, 168, 450, 1100, 2400, 1200, 3200, 3100, 1250, 2200, 1800, 2100, 2300, 3500, 6800, 6200, 10500, 5200, 11500, 11000, 4200, 7800, 6500, 7500],
+  "pn": [10, 150, 400, 1000, 2200, 1100, 3000, 2900, 1150, 2000, 1650, 1900, 2100, 3200, 6300, 5800, 9800, 4800, 10800, 10200, 3900, 7200, 6000, 6900],
+  "po": [8, 120, 320, 800, 1800, 900, 2400, 2300, 900, 1600, 1300, 1500, 1700, 2600, 5000, 4600, 7800, 3800, 8600, 8200, 3100, 5800, 4800, 5500],
+  "memo": "宮古島ガイド（英語版）の最新評価です。一次情報に基づくリアルな懸念点（駐車場の狭さ、トイレの古さ等）が盛り込まれており、コンテンツの信頼性が非常に高いです。SEO実装も絶対パス指定やhreflang等、技術仕様を完璧に満たしています。収益面では、インバウンド需要の高まりと高い英語品質により、公開2ヶ月目以降の急速な成長が期待されます。",
+  "quality": {
+    "title": "Miyako Island Complete Guide: Field-Tested & Honest Report | RITOTABI",
+    "lang": "EN",
+    "type": "ガイド",
+    "overall": 96,
+    "publishedDate": "2026-04-12",
+    "seasonalRisk": "9月の台風によるキャンセルリスク、および夏季（7-8月）のレンタカー・ホテル供給不足。",
+    "scores": {
+      "コンテンツ独自性": 98,
+      "写真・ビジュアル": 96,
+      "アフィリエイト設計": 94,
+      "内部リンク": 96,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 98
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "categoryChecklist": {
+      "comparisonTable": null,
+      "affiliateMicroCopy": null,
+      "courseSpecs": null,
+      "runBadge": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "一次情報に基づいた正直な記述（来間前浜港の駐車場利用推奨、竜宮城展望台のトイレへの警告など）",
+      "「Miyako Blue」への没入感を高める洗練された英語コピーライティング",
+      "JSON-LD (Article, FAQ, Breadcrumb) の完璧な実装と絶対URLの遵守",
+      "宿泊エリアの選び方を「Gourmet & Mobility」と「Scenery & Silence」で分けるペルソナ別の提案"
+    ],
+    "issues": [
+      {
+        "level": "中",
+        "text": "モバイル閲覧時の追従CTA（Sticky CTA）が未実装。コンバージョン率向上のため実装を検討。"
+      },
+      {
+        "level": "低",
+        "text": "ホテル価格（Price range）や社会的証明（OTAスコア）がハードコードされていない。情報の鮮度は保たれるが、即時的な判断材料に欠ける。"
+      },
+      {
+        "level": "低",
+        "text": "レンタカーやアクティビティへの直接的なアフィリエイトリンクが不足。"
+      }
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 {
   "id": "miyako_running_en",
   "url": "https://ritotabi.com/en/destinations/miyako-island/running/",
-  "evaluatedAt": "2026-04-13",
+  "evaluatedAt": "2026-04-25",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "Miyako Island Running Guide with 4 field-tested courses and 23 original photos.",
-  "ap": "Focuses on 'Miyako Blue' visuals and runner-specific logistics like restrooms and sea breeze. SEO tech improved to absolute paths.",
-  "an": "Features FAQ JSON-LD and Next.js Image optimization. Run badges and absolute URI links are verified.",
-  "ao": "Solid niche potential as the definitive English resource for running in Miyako Island, with realistic traffic expectations.",
+  "sum": "Miyako Island Running Guide with 4 field-tested courses and high-quality localized copy.",
+  "ap": "Focuses on 'Miyako Blue' visuals and runner-specific logistics. SEO tech is fully optimized with absolute paths.",
+  "an": "Features Article and FAQ JSON-LD, Next.js Image optimization, and optimized affiliate links through NearbySpotOptimizer.",
+  "ao": "Excellent niche potential as the definitive English resource for running in Miyako Island.",
   "pp": [
     4,
     26,
@@ -86,21 +86,21 @@
     1320,
     1955
   ],
-  "memo": "宮古島の実走調査に基づいた非常に質の高いガイド。4つの主要コース（来間橋、池間橋、17END、ヒルトン周辺）の利便性と魅力を網羅している。前回課題だったSEO関連の絶対パス化および実走バッジが実装されたことを確認し、品質スコアを高評価に更新。収益予測については、市場規模(JPの1/4)とTier 2/3の基準に合わせ、過大だった数値を現実的な期待値に修正した。 (2026-04-13: 季節性バイアス適用済みモデルで再計算)",
+  "memo": "宮古島の実走調査に基づいた非常に質の高いガイド。4つの主要コース（来間橋、池間橋、17END、ヒルトン周辺）の利便性と魅力を網羅している。SEO関連の絶対パス化、FAQ JSON-LD、および実走バッジが完璧に実装されていることを確認。インバウンドランナー向けのホテル導線（NearbySpotOptimizer）も複数OTA対応で最適化されており、アフィリエイト設計のスコアを上方修正した。",
   "quality": {
     "title": "Miyako Island Running | Kurima, Ikema & 17END Course Guide | RITOTABI",
     "lang": "EN",
     "type": "ランニング",
-    "overall": 92,
+    "overall": 93,
     "publishedDate": "2026-04-12",
     "scores": {
-      "コンテンツ独自性": 92,
-      "写真・ビジュアル": 88,
-      "アフィリエイト設計": 80,
-      "内部リンク": 90,
-      "SEO技術実装": 96,
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 88,
+      "内部リンク": 92,
+      "SEO技術実装": 98,
       "ユーザー体験(UX)": 90,
-      "英語品質": 92
+      "英語品質": 95
     },
     "seoChecklist": {
       "hreflang": true,
@@ -114,7 +114,13 @@
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": false,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
       "minClicks": 1
     },
     "brandChecklist": {
@@ -129,9 +135,9 @@
       "courseSpecs": true,
       "runBadge": true,
       "runningCvr": {
-        "internalHotelLinks": 3,
+        "internalHotelLinks": 6,
         "directAffiliateLinks": 0,
-        "hotelCtaPerCourse": 0.75,
+        "hotelCtaPerCourse": 1.5,
         "runnerPersonaMatch": true
       }
     },
@@ -141,16 +147,16 @@
       "affiliateRel": true
     },
     "strengths": [
-      "23枚の豊富で具体的な現地写真（独自ドメイン内）",
-      "ランナー視点の「Field Impression」が極めて具体的（トイレ、自販機、日陰情報）",
-      "FAQ JSON-LDの適切な実装と具体的回答",
-      "SEO技術（hreflang, canonical）が絶対パスで正しく実装されている",
-      "情緒的な英語表現（sensation of floating 等）による没入感"
+      "ランナー視点の「Field Impression」が極めて具体的（トイレ、自販機、路面状況、伊良部大橋の警告）",
+      "独自ドメイン内の高品質な現地写真（各コース複数枚）",
+      "NearbySpotOptimizerによるインバウンド向けホテル導線の最適化（複数OTA対応）",
+      "SEO技術（hreflang, canonical, FAQ/Article JSON-LD）が絶対パスで完璧に実装されている",
+      "情緒的かつコンバージョン志向の英語表現（sensation of floating 等）"
     ],
     "issues": [
       {
         "level": "低",
-        "text": "datePublished (2026-02-20) と実際の公開指定日 (2026-04-12) の整合性を今後確認する必要がある。",
+        "text": "ホテル導線は充実しているが、レンタカー予約やアクティビティ予約への導線を追加することで、さらに収益機会を最大化できる可能性がある。",
         "isSpeculation": false
       }
     ],
