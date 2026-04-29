@@ -196,7 +196,7 @@ export function sumRevDyn(data: CalculatedRow[], streams: StreamDef[]): Record<s
   return res;
 }
 
-function getPageTypeCvrMultiplier(type: string): number {
+export function getPageTypeCvrMultiplier(type: string): number {
   switch (type) {
     case "ホテル":    return 1.0;
     case "ガイド":    return 0.5;

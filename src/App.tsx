@@ -117,7 +117,7 @@ const App: React.FC = () => {
       </div>
 
       <div style={{ padding: "18px 24px" }}>
-        {tab === "overview" && <OverviewTab streams={activeStreams} sum={sum} baseSum={baseSum} evaluations={evaluations} />}
+        {tab === "overview" && <OverviewTab streams={activeStreams} sum={sum} baseSum={baseSum} evaluations={evaluations} scenario={scenario} />}
         {tab === "chart" && <ChartTab data={data} streams={activeStreams} />}
         {tab === "table" && <TableTab data={data} streams={activeStreams} sum={sum} />}
         {tab === "eval" && <EvalTab lastUpdated={registry.lastUpdated} evalCount={Object.keys(evaluations).length} />}

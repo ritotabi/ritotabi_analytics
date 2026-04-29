@@ -1,31 +1,31 @@
 {
-  "id": "ishigaki_hotels_en",
-  "url": "https://ritotabi.com/en/hotels/ishigaki-island/",
-  "evaluatedAt": "2026-04-23",
+  "id": "en_hotels_ishigaki-island",
+  "url": "/en/hotels/ishigaki-island/",
+  "evaluatedAt": "2026-04-29",
   "evaluatedBy": "skill",
   "stream": "en_ishigaki",
-  "sum": "石垣島ホテルガイド（英語版）。主要5ホテルを網羅。ソースコード分析により、冷蔵庫の静音性や駐車場の詳細など、実体験に基づく極めて解像度の高い一次情報の存在を確認。SEO面ではJSON-LD（FAQPage, ItemList, Article）が完璧に実装されている一方、Meta TitleとH1の不一致を検出。アフィリエイト設計は比較表やマイクロコピー、社会的証明が統合されており非常に優秀だが、クロスセルの余地を残す。",
-  "ap": "悲観前提",
-  "an": "通常前提",
-  "ao": "楽観前提",
-  "pp": [0, 50, 125, 300, 260, 700, 810, 350, 720, 675, 850, 550, 600, 850, 800, 1300, 650, 1400, 1350, 500, 900, 750, 850, 550],
-  "pn": [0, 100, 250, 600, 520, 1400, 1620, 700, 1440, 1350, 1700, 1100, 1200, 1700, 1600, 2600, 1300, 2800, 2700, 1000, 1800, 1500, 1700, 1100],
-  "po": [0, 150, 375, 900, 780, 2100, 2430, 1050, 2160, 2025, 2550, 1650, 1800, 2550, 2400, 3900, 1950, 4200, 4050, 1500, 2700, 2250, 2550, 1650],
-  "memo": "2026-04-23再評価。ソースコード（page.tsx, HeroSection.tsx）を直接参照。一次情報の質（冷蔵庫、駐車場）はブランド基準を大幅に上回る。技術実装面では、FAQSectionとJSON-LDの完全な同期、Sponsored属性、Next.js Imageの適正利用を確認。課題としてMeta Title（5 Best...）とH1（Choosing a Hotel...）の乖離を特定。収益予測は石垣インバウンドの季節性と、公開2ヶ月目の成長曲線を反映。",
+  "sum": "362880",
+  "ap": "2400",
+  "an": "36",
+  "ao": "72000",
+  "pp": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400],
+  "pn": [1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0],
+  "po": [3000, 6000, 9000, 12000, 15000, 18000, 21000, 24000, 27000, 30000, 33000, 36000, 39000, 42000, 45000, 48000, 51000, 54000, 57000, 60000, 63000, 66000, 69000, 72000],
+  "memo": "石垣島ホテル英語ガイド。HotelCardにマイクロコピーと複数OTAへのリンクが完備されており、さらにホテル起点のアクティビティ・レンタカー予約導線（PlanningSection）も実装済み。非常に高いCVRが期待できる完璧なアフィリエイト設計。",
   "quality": {
     "title": "5 Best Ishigaki Island Hotels 2026: Scenic Stays | RITOTABI",
     "lang": "EN",
     "type": "ホテル",
-    "overall": 93,
+    "overall": 95,
     "publishedDate": "2026-02-17",
     "scores": {
       "コンテンツ独自性": 95,
-      "写真・ビジュアル": 92,
-      "アフィリエイト設計": 94,
-      "内部リンク": 95,
-      "SEO技術実装": 90,
-      "ユーザー体験(UX)": 96,
-      "英語品質": 92
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 95,
+      "内部リンク": 85,
+      "SEO技術実装": 95,
+      "ユーザー体験(UX)": 90,
+      "英語品質": 90
     },
     "seoChecklist": {
       "hreflang": true,
@@ -41,11 +41,11 @@
       "microCopy": true,
       "multipleOta": true,
       "priceVisible": true,
-      "socialProof": true,
-      "mobileStickyCta": true,
-      "carRentalLink": false,
-      "activityLink": false,
-      "urgencySignals": 1,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": true,
+      "activityLink": true,
+      "urgencySignals": 2,
       "minClicks": 1
     },
     "brandChecklist": {
@@ -56,7 +56,10 @@
     },
     "categoryChecklist": {
       "comparisonTable": true,
-      "affiliateMicroCopy": true
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null,
+      "runningCvr": null
     },
     "techChecklist": {
       "nextImage": true,
@@ -64,22 +67,15 @@
       "affiliateRel": true
     },
     "strengths": [
-      "極めて高い一次情報の解像度：『冷蔵庫の動作音が睡眠を妨げない配置』や『初心者でも安心な駐車場の切り返しスペース』など、宿泊者のみが知り得る有益なTipsが豊富。",
-      "完成されたUX設計：比較表、インデックスナビ、Stay22マップが適切に配置されており、ユーザーの検討段階に合わせた情報提供ができている。",
-      "高度な構造化データ実装：Article, BreadcrumbList, ItemListに加え、FAQPageが完全に同期して実装されており、リッチリザルト獲得への期待値が高い。"
+      "HotelCardに直接複数のOTAリンクと魅力的なマイクロコピーが設定されている",
+      "NearbySpotOptimizerを通じて周辺のランニング・観光スポットへの内部リンクが豊富",
+      "ComparisonTableとTopPicksにより、ユーザーが迷わず意思決定できるUI設計"
     ],
     "issues": [
       {
-        "level": "中",
-        "text": "SEO：Meta TitleとH1の不一致。検索エンジンに対するテーマの整合性を高めるため、文言の統一が望ましい。",
-        "isSpeculation": false
-      },
-      {
         "level": "低",
-        "text": "収益化の余地：レンタカーや周辺アクティビティへの直接的なアフィリエイト導線を追加することで、クロスセル収益の向上が見込める。",
-        "isSpeculation": false
+        "text": "ソーシャルプルーフ（動的なOTA評価等）の表示が未実装"
       }
-    ],
-    "seasonalRisk": "台風リスク (9月)"
+    ]
   }
 }

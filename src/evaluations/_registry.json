@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25",
+  "lastUpdated": "2026-04-29",
   "streams": [
     { "key": "jp_ishigaki", "label": "石垣島 (日本語)", "color": "#f59e0b", "cvr": 0.0032, "unit": 750 },
     { "key": "en_ishigaki", "label": "石垣島 (英語)", "color": "#10b981", "cvr": 0.008, "unit": 2000 },
@@ -157,7 +157,7 @@
       "title": "Ishigaki Island Guide 2026: Beaches, Gourmet & Stays | RITOTABI",
       "stream": "en_ishigaki",
       "overall": 93,
-      "evaluatedAt": "2026-04-22",
+      "evaluatedAt": "2026-04-29",
       "lang": "EN",
       "type": "ガイド"
     },
@@ -186,8 +186,8 @@
       "url": "/en/hotels/ishigaki-island/",
       "title": "5 Best Ishigaki Island Hotels 2026: Scenic Stays | RITOTABI",
       "stream": "en_ishigaki",
-      "overall": 93,
-      "evaluatedAt": "2026-04-23",
+      "overall": 95,
+      "evaluatedAt": "2026-04-29",
       "lang": "EN",
       "type": "ホテル"
     },
@@ -197,7 +197,7 @@
       "title": "Ishigaki & Taketomi Running Guide: Coastal & Cat Routes | RITOTABI",
       "stream": "en_ishigaki",
       "overall": 94,
-      "evaluatedAt": "2026-04-22",
+      "evaluatedAt": "2026-04-29",
       "lang": "EN",
       "type": "ランニング"
     },
