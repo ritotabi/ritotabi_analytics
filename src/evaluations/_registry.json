@@ -214,10 +214,10 @@
     "en_hotels_miyako-island": {
       "file": "miyako_hotels_en.json",
       "url": "/en/hotels/miyako-island/",
-      "title": "Best Hotels in Miyako Island: 9 Expertly Curated Luxury & Budget Stays | RITOTABI",
+      "title": "9 Best Hotels in Miyako Island: Luxury & Budget Stays | RITOTABI",
       "stream": "en_miyako",
-      "overall": 90,
-      "evaluatedAt": "2026-04-25",
+      "overall": 95,
+      "evaluatedAt": "2026-04-29",
       "lang": "EN",
       "type": "ホテル"
     },
@@ -227,17 +227,17 @@
       "title": "Miyako Island Complete Guide: Field-Tested & Honest Report | RITOTABI",
       "stream": "en_miyako",
       "overall": 96,
-      "evaluatedAt": "2026-04-25",
+      "evaluatedAt": "2026-04-29",
       "lang": "EN",
       "type": "ガイド"
     },
     "en_destinations_miyako-island_beaches": {
       "file": "miyako_beaches_en.json",
       "url": "/en/destinations/miyako-island/beaches/",
-      "title": "Miyako Island Hidden Beach Guide | From 17END to Secret Spots | RITOTABI",
+      "title": "Miyako Island Hidden Beach Guide: 17END to Secret Spots | RITOTABI",
       "stream": "en_miyako",
       "overall": 96,
-      "evaluatedAt": "2026-04-25",
+      "evaluatedAt": "2026-04-29",
       "lang": "EN",
       "type": "ガイド"
     },

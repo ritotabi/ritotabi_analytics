@@ -1,17 +1,17 @@
 {
   "id": "en_destinations_miyako-island_beaches",
   "url": "/en/destinations/miyako-island/beaches/",
-  "evaluatedAt": "2026-04-25",
+  "evaluatedAt": "2026-04-29",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "96",
-  "ap": "96",
-  "an": "92",
-  "ao": "94",
-  "pp": [50, 150, 350, 800, 1200, 1800, 2500, 3200, 3800, 4200, 4500, 4800, 5200, 5600, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500, 10000, 10500],
-  "pn": [40, 120, 280, 640, 960, 1440, 2000, 2560, 3040, 3360, 3600, 3840, 4160, 4480, 4800, 5200, 5600, 6000, 6400, 6800, 7200, 7600, 8000, 8400],
-  "po": [60, 180, 420, 960, 1440, 2160, 3000, 3840, 4560, 5040, 5400, 5760, 6240, 6720, 7200, 7800, 8400, 9000, 9600, 10200, 10800, 11400, 12000, 12600],
-  "memo": "宮古島の隠れ家的ビーチに特化したインバウンド向けガイド。再評価の結果、ランニングによる実走調査に基づいた圧倒的な一次情報の質と、15枚以上の独自写真によるビジュアルの強さを再確認。SEO実装も絶対パス対応を含め完璧であり、インバウンド需要の受け皿として極めて高い品質を維持している。",
+  "sum": "Miyako Island Hidden Beach Guide, localized in English. Focuses on beaches beyond standard maps with insights based on running. Features ComparisonTable, strong UX, and good integration of NearbySpotOptimizer without excessive affiliate links.",
+  "ap": "Strong first-person runner's perspective ensuring high brand alignment. Exceptional UX with TOC, sticky nav, and comparison table. SEO perfectly localized with hreflang, FAQ JSON-LD, and Next.js Image components.",
+  "an": "No dynamic pricing or multiple OTA links for hotels (expected for a guide page but limits direct hotel CVR).",
+  "ao": "The inclusion of Activity and Rental Car affiliate links is highly appropriate for beach pages and should convert well.",
+  "pp": [50, 150, 300, 500, 800, 1100, 1400, 1700, 2000, 2300, 2500, 2700, 2900, 3100, 3300, 3500, 3700, 3900, 4100, 4300, 4500, 4600, 4700, 4800],
+  "pn": [30, 80, 150, 250, 400, 550, 700, 850, 1000, 1150, 1250, 1350, 1450, 1550, 1650, 1750, 1850, 1950, 2050, 2150, 2250, 2300, 2350, 2400],
+  "po": [20, 50, 100, 150, 250, 350, 450, 550, 650, 750, 850, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500, 1550],
+  "memo": "アフィリエイトページ評価仕様(eval_spec.md)に基づき、コード(Next.js)を直接解析して評価を実施。ブランド要件である一人称の体験談、五感に基づく事実描写が英語でも完璧にローカライズされています。ガイドページとしての要件（周辺ホテルへの適切なリンク、アクティビティ・レンタカーの訴求）も満たしており、高いコンバージョンが見込めます。",
   "quality": {
     "title": "Miyako Island Hidden Beach Guide: 17END to Secret Spots | RITOTABI",
     "lang": "EN",
@@ -19,13 +19,13 @@
     "overall": 96,
     "publishedDate": "2026-04-12T09:00:00+09:00",
     "scores": {
-      "コンテンツ独自性": 96,
-      "写真・ビジュアル": 94,
-      "アフィリエイト設計": 92,
-      "内部リンク": 95,
-      "SEO技術実装": 98,
-      "ユーザー体験(UX)": 96,
-      "英語品質": 97
+      "コンテンツ独自性": 10,
+      "写真・ビジュアル": 9,
+      "アフィリエイト設計": 8,
+      "内部リンク": 9,
+      "SEO技術実装": 10,
+      "ユーザー体験(UX)": 10,
+      "英語品質": 9
     },
     "seoChecklist": {
       "hreflang": true,
@@ -35,17 +35,16 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "growing",
-    "seasonalRisk": "9月の台風リスクによる大規模キャンセル懸念あり。",
+    "freshness": "new",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": true,
+      "multipleOta": false,
       "priceVisible": false,
       "socialProof": false,
       "mobileStickyCta": false,
-      "carRentalLink": false,
-      "activityLink": false,
+      "carRentalLink": true,
+      "activityLink": true,
       "urgencySignals": 0,
       "minClicks": 2
     },
@@ -56,10 +55,11 @@
       "personaDrivenPros": null
     },
     "categoryChecklist": {
-      "comparisonTable": true,
-      "affiliateMicroCopy": true,
+      "comparisonTable": null,
+      "affiliateMicroCopy": null,
       "courseSpecs": null,
-      "runBadge": null
+      "runBadge": null,
+      "runningCvr": null
     },
     "techChecklist": {
       "nextImage": true,
@@ -67,20 +67,15 @@
       "affiliateRel": true
     },
     "strengths": [
-      "ランニングによる全島踏破から得られた、他サイトにはない圧倒的な一次情報の質",
-      "15枚以上の独自写真と詳細なキャプションによる、現地の質感が伝わるビジュアル",
-      "NearbySpotOptimizerによるホテル・観光・ランニングの高度な導線統合",
-      "SEO技術実装（絶対パス、Hreflang、FAQ JSON-LD）が完璧な水準にある"
+      "h1とメタタイトルが一致し、SEOのベストプラクティスが徹底されている。",
+      "一人称のランナー視点による独自体験が豊富でブランド要件を完全に満たしている。",
+      "比較表、TOC、スティッキーナビゲーションによる優れたユーザー体験。",
+      "NearbySpotOptimizerを用いた自然で押し付けがましくないアフィリエイト導線設計。",
+      "レンタカーとアクティビティのアフィリエイトリンクが文脈に合わせて適切に配置されている。"
     ],
     "issues": [
-      {
-        "level": "中",
-        "text": "レンタカー必須のエリア特性に対し、レンタカー予約（アフィリエイト）への導線が欠如している。"
-      },
-      {
-        "level": "低",
-        "text": "ホテルの価格帯や社会的証明（スコア）がJSX内に明記されておらず、アフィリエイトCVRの最大化に余地がある。"
-      }
+      { "level": "低", "text": "モバイル追従CTAは実装されていません（ガイドページのため意図的と判断）。" },
+      { "level": "低", "text": "価格表示や複数OTAへのリンクがありません（ガイドページのため意図的と判断）。" }
     ]
   }
 }
