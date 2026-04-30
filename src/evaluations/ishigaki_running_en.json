@@ -1,17 +1,26 @@
 {
   "id": "en_destinations_ishigaki-island_running",
-  "url": "/en/destinations/ishigaki-island/running/",
-  "evaluatedAt": "2026-04-29",
+  "url": "https://ritotabi.com/en/destinations/ishigaki-island/running/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "en_ishigaki",
-  "sum": "52800",
-  "ap": "1150",
-  "an": "5.75",
-  "ao": "11500",
-  "pp": [50, 80, 120, 160, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150],
-  "pn": [0.25, 0.4, 0.6, 0.8, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 4.25, 4.5, 4.75, 5.0, 5.25, 5.5, 5.75],
-  "po": [500, 800, 1200, 1600, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500, 10000, 10500, 11000, 11500],
-  "memo": "石垣島ランニング英語ガイド。NearbySpotOptimizerにより周辺ホテルが的確にアサインされており、ランナーのペルソナに合わせたマイクロコピー（Official Running Hub等）が高いクリックを誘発する設計。一次情報（野良猫、自販機事情等）の質も非常に高い。",
+  "sum": "Ishigaki Island Running Guide (English)",
+  "ap": "15,000",
+  "an": "4,500",
+  "ao": "20,000",
+  "pp": [
+    0, 5, 12, 22, 35, 52, 75, 105, 140, 185, 240, 310,
+    390, 485, 600, 735, 890, 1070, 1280, 1530, 1820, 2160, 2560, 3200
+  ],
+  "pn": [
+    0, 1, 3, 6, 10, 15, 22, 31, 42, 55, 72, 93,
+    117, 145, 180, 220, 267, 321, 384, 459, 546, 648, 768, 960
+  ],
+  "po": [
+    0, 11, 26, 48, 77, 114, 165, 231, 308, 407, 528, 682,
+    858, 1067, 1320, 1617, 1958, 2354, 2816, 3366, 4004, 4752, 5632, 7040
+  ],
+  "memo": "An authentic English running guide for Ishigaki and Taketomi. It effectively captures the 'field-tested' spirit of the brand, providing international runners with both scenic joy and practical safety advice. Course-specific hotel recommendations create a seamless UX.",
   "quality": {
     "title": "Ishigaki & Taketomi Running Guide: Coastal & Cat Routes | RITOTABI",
     "lang": "EN",
@@ -19,13 +28,13 @@
     "overall": 94,
     "publishedDate": "2026-02-21",
     "scores": {
-      "コンテンツ独自性": 95,
-      "写真・ビジュアル": 95,
+      "コンテンツ独自性": 100,
+      "写真・ビジュアル": 90,
       "アフィリエイト設計": 90,
       "内部リンク": 95,
-      "SEO技術実装": 95,
-      "ユーザー体験(UX)": 95,
-      "英語品質": 90
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
+      "英語品質": 96
     },
     "seoChecklist": {
       "hreflang": true,
@@ -35,7 +44,7 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "growing",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
@@ -46,7 +55,7 @@
       "carRentalLink": false,
       "activityLink": false,
       "urgencySignals": 0,
-      "minClicks": 1
+      "minClicks": 2
     },
     "brandChecklist": {
       "toneAndManner": true,
@@ -61,8 +70,8 @@
       "runBadge": true,
       "runningCvr": {
         "internalHotelLinks": 7,
-        "directAffiliateLinks": 7,
-        "hotelCtaPerCourse": 2.33,
+        "directAffiliateLinks": 0,
+        "hotelCtaPerCourse": 2,
         "runnerPersonaMatch": true
       }
     },
@@ -72,10 +81,15 @@
       "affiliateRel": true
     },
     "strengths": [
-      "NearbySpotOptimizerを通じた各ランニングコース周辺ホテルへの動線とOTA連携が完璧",
-      "WritersRunMemoによる詳細な一次情報（給水ポイント、道の舗装状態）が読者の信頼を獲得する",
-      "距離や駐車場の有無などのスペックがコンポーネントで統一的に明記されている"
+      "Faithful English translation of first-person insights, such as the warning about windbreaks obscuring coastal views",
+      "Engaging content about the local 'feline paradise' that adds an emotional layer for international readers",
+      "Precise course specs (distance) and embedded maps that facilitate easy trip planning"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "低",
+        "text": "Specific elevation data (gain/loss) for each course is mentioned in text but not yet integrated into the technical spec table"
+      }
+    ]
   }
 }

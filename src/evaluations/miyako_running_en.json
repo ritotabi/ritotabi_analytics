@@ -1,26 +1,26 @@
 {
-  "id": "en_destinations_miyako-island_running",
-  "url": "/en/destinations/miyako-island/running/",
-  "evaluatedAt": "2026-04-30",
+  "id": "miyako_running_en",
+  "url": "https://ritotabi.com/en/destinations/miyako-island/running/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "English running guide for Miyako. Provides essential field-tested insights for active international travelers. Authentic 'Runner's Voice' implementation.",
-  "ap": "Pessimistic",
-  "an": "Normal",
-  "ao": "Optimistic",
+  "sum": "Miyako Island Running Guide (English)",
+  "ap": "15,000",
+  "an": "4,500",
+  "ao": "20,000",
   "pp": [
-    5, 25, 20, 50, 45, 20, 45, 45, 50, 60, 70, 80,
-    90, 120, 120, 150, 100, 180, 170, 100, 150, 130, 150, 140
+    0, 5, 12, 22, 35, 52, 75, 105, 140, 185, 240, 310,
+    390, 485, 600, 735, 890, 1070, 1280, 1530, 1820, 2160, 2560, 3200
   ],
   "pn": [
-    10, 50, 40, 100, 90, 40, 90, 90, 100, 120, 140, 160,
-    180, 240, 240, 300, 200, 360, 340, 200, 300, 260, 300, 280
+    0, 1, 3, 6, 10, 15, 22, 31, 42, 55, 72, 93,
+    117, 145, 180, 220, 267, 321, 384, 459, 546, 648, 768, 960
   ],
   "po": [
-    20, 100, 80, 200, 180, 80, 180, 180, 200, 240, 280, 320,
-    360, 480, 480, 600, 400, 720, 680, 400, 600, 520, 600, 560
+    0, 11, 26, 48, 77, 114, 165, 231, 308, 407, 528, 682,
+    858, 1067, 1320, 1617, 1958, 2354, 2816, 3366, 4004, 4752, 5632, 7040
   ],
-  "memo": "Authentic content for the 'Active Traveler' niche. Strong technical foundation.",
+  "memo": "Expertly localized English running guide for Miyako Island. It maintains the core value of 'field-testing' and provides critical safety warnings (e.g., Irabu Bridge dangers) for international runners.",
   "quality": {
     "title": "Miyako Island Running | Kurima, Ikema & 17END Course Guide | RITOTABI",
     "lang": "EN",
@@ -28,12 +28,12 @@
     "overall": 95,
     "publishedDate": "2026-04-12",
     "scores": {
-      "コンテンツ独自性": 98,
-      "写真・ビジュアル": 92,
+      "コンテンツ独自性": 100,
+      "写真・ビジュアル": 95,
       "アフィリエイト設計": 90,
       "内部リンク": 95,
-      "SEO技術実装": 97,
-      "ユーザー体験(UX)": 96,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
       "英語品質": 96
     },
     "seoChecklist": {
@@ -44,16 +44,16 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "growing",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": false,
+      "multipleOta": true,
       "priceVisible": false,
       "socialProof": false,
       "mobileStickyCta": false,
-      "carRentalLink": false,
-      "activityLink": false,
+      "carRentalLink": true,
+      "activityLink": true,
       "urgencySignals": 0,
       "minClicks": 2
     },
@@ -64,6 +64,8 @@
       "personaDrivenPros": null
     },
     "categoryChecklist": {
+      "comparisonTable": null,
+      "affiliateMicroCopy": null,
       "courseSpecs": true,
       "runBadge": true,
       "runningCvr": {
@@ -79,14 +81,14 @@
       "affiliateRel": true
     },
     "strengths": [
-      "Reliable information about restrooms and parking for international visitors",
-      "Engaging descriptions that communicate the unique feeling of running on Miyako's bridges",
-      "Precise technical SEO implementation"
+      "Faithful English translation of specific first-person insights (e.g., 'wild' restrooms at Kurima)",
+      "High utility for international runners looking for scenic yet safe routes",
+      "Effective internal linking to hotel pages, localized for each course"
     ],
     "issues": [
       {
-        "level": "中",
-        "text": "Call-to-actions for hotels could be more tailored to a runner's recovery needs"
+        "level": "低",
+        "text": "Direct links to international running communities (Strava clubs, etc.) could further enhance engagement"
       }
     ]
   }

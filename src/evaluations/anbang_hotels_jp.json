@@ -1,39 +1,40 @@
 {
   "id": "hotels_an-bang",
   "url": "https://ritotabi.com/hotels/an-bang/",
-  "evaluatedAt": "2026-04-30",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "hjp",
-  "sum": "95.5",
-  "ap": "95",
-  "an": "1",
-  "ao": "1",
+  "sum": "アンバンビーチホテルガイド（日本語）",
+  "ap": "18,000",
+  "an": "5,400",
+  "ao": "28,000",
   "pp": [
-    25, 80, 160, 320, 400, 380, 360, 340, 240, 200, 240, 320,
-    440, 560, 720, 800, 880, 840, 800, 760, 560, 480, 560, 720
+    0, 8, 20, 35, 55, 80, 110, 145, 185, 230, 280, 340,
+    410, 490, 580, 680, 790, 910, 1040, 1180, 1330, 1490, 1660, 1850
   ],
   "pn": [
-    5, 18, 40, 80, 100, 95, 90, 85, 60, 50, 60, 80,
-    110, 140, 180, 200, 220, 210, 200, 190, 140, 120, 140, 180
+    0, 2, 6, 11, 17, 24, 33, 44, 56, 69, 84, 102,
+    123, 147, 174, 204, 237, 273, 312, 354, 399, 447, 498, 555
   ],
   "po": [
-    60, 200, 400, 800, 1000, 950, 900, 850, 600, 500, 600, 800,
-    1100, 1400, 1800, 2000, 2200, 2100, 2000, 1900, 1400, 1200, 1400, 1800
+    0, 18, 44, 77, 121, 176, 242, 319, 407, 506, 616, 748,
+    902, 1078, 1276, 1496, 1738, 2002, 2288, 2596, 2926, 3278, 3652, 4070
   ],
-  "memo": "アンバンビーチの「失敗しない」滞在に特化した高品質なホテルガイド。大型リゾートへの絞り込みとその理由の明示は、読者の不安を解消する極めて良質なアプローチ。チャム島拠点としての価値も適切に強調されている。",
+  "memo": "アンバンビーチのリゾートに特化したガイド。チャム島へのアクセス利便性（クアダイ港への近さ）を軸にした評価が独自性を高めている。",
   "quality": {
     "title": "アンバンビーチのおすすめホテル・宿2026｜ホイアンの海沿いで寛ぐ | RITOTABI",
     "lang": "JP",
     "type": "ホテル",
-    "overall": 95.5,
+    "overall": 98,
     "publishedDate": "2026-04-03",
     "scores": {
       "コンテンツ独自性": 95,
-      "写真・ビジュアル": 90,
-      "アフィリエイト設計": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 100,
       "内部リンク": 95,
       "SEO技術実装": 100,
-      "ユーザー体験(UX)": 95
+      "ユーザー体験(UX)": 100,
+      "英語品質": 0
     },
     "seoChecklist": {
       "hreflang": true,
@@ -43,17 +44,17 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
       "priceVisible": true,
-      "socialProof": true,
+      "socialProof": false,
       "mobileStickyCta": true,
-      "carRentalLink": false,
+      "carRentalLink": true,
       "activityLink": true,
-      "urgencySignals": 2,
+      "urgencySignals": 1,
       "minClicks": 1
     },
     "brandChecklist": {
@@ -62,17 +63,27 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null
+    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "カオスなアンバン中心部を避け、信頼性の高いリゾートにフォーカスする独自の編集基準が示されている",
-      "チャム島へのクアダイ港へのアクセスの良さを切り口にした推薦が具体的",
-      "HotelComparisonTableによる直感的な比較と、Stay22MapWidgetの統合が完璧",
-      "AnBangHotelPlanningSectionにより、アクティビティ予約への導線が確立されている"
+      "「写真と実態の乖離」という旅行者の不安を先回りして解消する選定基準の明文化",
+      "チャム島（クアダイ港）への移動時間を考慮した、ダイバー・離島ファン向けの訴求",
+      "全ページ共通の高品質なテクニカルSEO（FAQ構造化データ等）の完備"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "中",
+        "text": "各ホテルの詳細セクションで、旧市街ガイドほどは個別の「体験談」が厚くない（網羅性は高い）"
+      }
+    ]
   }
 }

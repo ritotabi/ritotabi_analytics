@@ -1,0 +1,83 @@
+{
+  "id": "hotels_aka-island",
+  "url": "https://ritotabi.com/hotels/aka-island/",
+  "evaluatedAt": "2026-05-01",
+  "evaluatedBy": "skill",
+  "stream": "jp_aka",
+  "sum": "阿嘉島ホテルガイド（日本語）",
+  "ap": "12,000",
+  "an": "4,000",
+  "ao": "20,000",
+  "pp": [
+    0, 2, 5, 8, 12, 18, 25, 33, 42, 52, 63, 75,
+    90, 105, 122, 140, 160, 182, 205, 230, 257, 286, 317, 360
+  ],
+  "pn": [
+    0, 1, 1, 2, 3, 5, 7, 9, 11, 14, 17, 20,
+    24, 28, 33, 38, 43, 49, 55, 62, 69, 77, 86, 97
+  ],
+  "po": [
+    0, 3, 7, 12, 18, 27, 38, 50, 63, 78, 95, 113,
+    135, 158, 183, 210, 240, 273, 308, 345, 386, 429, 476, 540
+  ],
+  "memo": "阿嘉島・慶留間島の宿泊施設を網羅したガイド。高級ヴィラからひとり旅向けの宿まで、目的別に最適解を提示。夕食難民への警告や繁忙期の予約時期など、離島滞在におけるクリティカルな情報が網羅されている。動的な最低価格表示も実装済み。",
+  "quality": {
+    "title": "阿嘉島ホテル厳選：実録レポートで選ぶ絶景・おすすめ3宿 | RITOTABI",
+    "lang": "JP",
+    "type": "ホテル",
+    "overall": 95,
+    "publishedDate": "2026-02-18",
+    "scores": {
+      "コンテンツ独自性": 98,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 100,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 0
+    },
+    "seoChecklist": {
+      "hreflang": false,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "mature",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「夕食付きプランを選ぶべき」という離島特有の事情に対する明確な推奨が、ユーザーの失敗を防ぐ良質なアドバイスになっている",
+      "ハナムロ系列の異なる特徴（高級ヴィラ vs スタンダード）を実録レポート形式で分かりやすく比較できている",
+      "動的な最低価格表示（useHotelData）による高い情報の鮮度"
+    ],
+    "issues": [
+      {
+        "level": "低",
+        "text": "hreflangの設定が確認できなかった。阿嘉島は多言語需要があるため、将来的なEN版との紐付けが推奨される"
+      }
+    ]
+  }
+}

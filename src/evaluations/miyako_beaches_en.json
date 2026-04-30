@@ -1,26 +1,26 @@
 {
-  "id": "en_destinations_miyako-island_beaches",
-  "url": "/en/destinations/miyako-island/beaches/",
-  "evaluatedAt": "2026-04-30",
+  "id": "miyako_beaches_en",
+  "url": "https://ritotabi.com/en/destinations/miyako-island/beaches/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "English version of Miyako Hidden Beach Guide. Features professionally curated copywriting that captures the essence of 'Miyako Blue'. Solid SEO and technical foundation.",
-  "ap": "Pessimistic",
-  "an": "Normal",
-  "ao": "Optimistic",
+  "sum": "Miyako Island Hidden Beach Guide (English)",
+  "ap": "12,000",
+  "an": "3,600",
+  "ao": "18,000",
   "pp": [
-    10, 40, 25, 60, 55, 20, 45, 45, 50, 60, 70, 90,
-    100, 150, 250, 300, 500, 300, 600, 550, 300, 500, 400, 500
+    0, 5, 12, 22, 35, 52, 75, 105, 140, 185, 240, 310,
+    390, 485, 600, 735, 890, 1070, 1280, 1530, 1820, 2160, 2560, 3200
   ],
   "pn": [
-    20, 80, 50, 120, 110, 40, 90, 90, 100, 120, 140, 180,
-    200, 300, 500, 600, 1000, 600, 1200, 1100, 600, 1000, 800, 1000
+    0, 1, 3, 6, 10, 15, 22, 31, 42, 55, 72, 93,
+    117, 145, 180, 220, 267, 321, 384, 459, 546, 648, 768, 960
   ],
   "po": [
-    40, 160, 100, 240, 220, 80, 180, 180, 200, 240, 280, 360,
-    400, 600, 1000, 1200, 2000, 1200, 2400, 2200, 1200, 2000, 1600, 2000
+    0, 11, 26, 48, 77, 114, 165, 231, 308, 407, 528, 682,
+    858, 1067, 1320, 1617, 1958, 2354, 2816, 3366, 4004, 4752, 5632, 7040
   ],
-  "memo": "Excellent localization and SEO implementation. Needs more international-focused affiliate options like car rentals.",
+  "memo": "Expertly localized English guide for Miyako's hidden beaches. It maintains the core value of 'honest reporting' and provides critical survival tips for international drivers reaching these remote spots.",
   "quality": {
     "title": "Miyako Island Hidden Beach Guide: 17END to Secret Spots | RITOTABI",
     "lang": "EN",
@@ -28,12 +28,12 @@
     "overall": 96,
     "publishedDate": "2026-04-12",
     "scores": {
-      "コンテンツ独自性": 96,
-      "写真・ビジュアル": 92,
-      "アフィリエイト設計": 95,
-      "内部リンク": 98,
-      "SEO技術実装": 97,
-      "ユーザー体験(UX)": 96,
+      "コンテンツ独自性": 98,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 85,
+      "内部リンク": 90,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
       "英語品質": 96
     },
     "seoChecklist": {
@@ -44,16 +44,16 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "growing",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": false,
+      "multipleOta": true,
       "priceVisible": false,
       "socialProof": false,
       "mobileStickyCta": false,
-      "carRentalLink": false,
-      "activityLink": false,
+      "carRentalLink": true,
+      "activityLink": true,
       "urgencySignals": 0,
       "minClicks": 2
     },
@@ -69,14 +69,14 @@
       "affiliateRel": true
     },
     "strengths": [
-      "Natural and persuasive English copywriting focused on conversion",
-      "Perfect implementation of canonical and hreflang absolute paths",
-      "Maintains the high informational density of the original Japanese version"
+      "Precise English descriptions of the 'Miyako Blue' gradients found at specific hidden locations",
+      "Inclusion of essential 'Rules and Etiquette' (e.g., Utaki sacred sites) localized for international respect",
+      "Practical advice on car rental necessity, addressing a major pain point for overseas visitors"
     ],
     "issues": [
       {
         "level": "中",
-        "text": "Lack of international car rental affiliate links (Klook, etc.)"
+        "text": "Specific map links for some highly obscure spots could be more prominent for better navigation"
       }
     ]
   }

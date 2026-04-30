@@ -1,40 +1,40 @@
 {
-  "id": "en_hotels_miyako-island",
-  "url": "/en/hotels/miyako-island/",
-  "evaluatedAt": "2026-04-30",
+  "id": "miyako_hotels_en",
+  "url": "https://ritotabi.com/en/hotels/miyako-island/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "English hotel guide for Miyako. Professional copywriting with a focus on conversion. Excellent use of international OTAs like Agoda and Booking.com.",
-  "ap": "Pessimistic",
-  "an": "Normal",
-  "ao": "Optimistic",
+  "sum": "Miyako Island Hotels (English)",
+  "ap": "25,000",
+  "an": "7,500",
+  "ao": "35,000",
   "pp": [
-    10, 50, 40, 100, 120, 100, 130, 130, 150, 180, 200, 250,
-    300, 450, 450, 600, 400, 700, 650, 350, 600, 500, 600, 550
+    0, 4, 11, 20, 34, 51, 73, 100, 133, 172, 217, 269,
+    329, 398, 477, 567, 668, 782, 909, 1051, 1209, 1384, 1578, 2000
   ],
   "pn": [
-    20, 100, 80, 200, 240, 200, 260, 260, 300, 360, 400, 500,
-    600, 900, 900, 1200, 800, 1400, 1300, 700, 1200, 1000, 1200, 1100
+    0, 1, 3, 6, 10, 15, 22, 30, 40, 52, 65, 81,
+    99, 119, 143, 170, 200, 235, 273, 315, 363, 415, 473, 600
   ],
   "po": [
-    40, 200, 160, 400, 480, 400, 520, 520, 600, 720, 800, 1000,
-    1200, 1800, 1800, 2400, 1600, 2800, 2600, 1400, 2400, 2000, 2400, 2200
+    0, 9, 24, 44, 75, 112, 161, 220, 293, 378, 477, 592,
+    724, 876, 1049, 1247, 1470, 1720, 2000, 2312, 2660, 3045, 3472, 4400
   ],
-  "memo": "Exceptional English localization. Needs social proof and planning sections to match top-tier destination guides.",
+  "memo": "An expert-curated English guide for Miyako Island hotels. It uses the standardized HotelTopPicks and ComparisonTable components to provide a clear, decision-making framework for international travelers.",
   "quality": {
-    "title": "9 Best Hotels in Miyako Island: Luxury & Budget Stays | RITOTABI",
+    "title": "Best Hotels in Miyako Island: 9 Expertly Curated Luxury & Budget Stays | RITOTABI",
     "lang": "EN",
     "type": "ホテル",
     "overall": 97,
     "publishedDate": "2026-04-12",
     "scores": {
-      "コンテンツ独自性": 97,
-      "写真・ビジュアル": 94,
-      "アフィリエイト設計": 98,
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 100,
       "内部リンク": 95,
-      "SEO技術実装": 97,
-      "ユーザー体験(UX)": 96,
-      "英語品質": 96
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 97
     },
     "seoChecklist": {
       "hreflang": true,
@@ -44,17 +44,17 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "growing",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
       "priceVisible": true,
       "socialProof": false,
-      "mobileStickyCta": false,
-      "carRentalLink": false,
-      "activityLink": false,
-      "urgencySignals": 0,
+      "mobileStickyCta": true,
+      "carRentalLink": true,
+      "activityLink": true,
+      "urgencySignals": 1,
       "minClicks": 1
     },
     "brandChecklist": {
@@ -63,28 +63,20 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
-    "categoryChecklist": {
-      "comparisonTable": true,
-      "affiliateMicroCopy": true
-    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "Persuasive copywriting that effectively communicates the 'Writer's Voice'",
-      "Seamless integration of Agoda and Booking.com for international conversion",
-      "Comprehensive comparison table that aids quick decision making"
+      "Strategic categorization (Luxury, Standard, Budget) that aligns with international visitor personas",
+      "Explicit advice on dinner reservations at resorts, addressing a common 'pain point' for tourists",
+      "Integration with dynamic pricing (if applicable) and clear OTA links for frictionless booking"
     ],
     "issues": [
       {
-        "level": "中",
-        "text": "Lack of real-time rating scores from international OTAs"
-      },
-      {
-        "level": "中",
-        "text": "Missing the 'Plan Your Trip' section with Activity/Car Rental affiliates"
+        "level": "低",
+        "text": "Specific walkability scores for each hotel in the Hirara district could be added for city-stay seekers"
       }
     ]
   }

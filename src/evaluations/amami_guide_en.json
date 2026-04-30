@@ -1,0 +1,83 @@
+{
+  "id": "amami_guide_en",
+  "url": "https://ritotabi.com/en/destinations/amami-island/",
+  "evaluatedAt": "2026-05-01",
+  "evaluatedBy": "skill",
+  "stream": "en_amami",
+  "sum": "Amami Island Guide 2026 | RITOTABI",
+  "ap": "8,000",
+  "an": "2,400",
+  "ao": "12,000",
+  "pp": [
+    0, 5, 12, 20, 30, 45, 65, 90, 120, 155, 195, 240,
+    290, 345, 405, 470, 540, 615, 695, 780, 870, 965, 1065, 1200
+  ],
+  "pn": [
+    0, 2, 4, 6, 9, 14, 20, 27, 36, 47, 59, 72,
+    87, 104, 122, 141, 162, 185, 209, 234, 261, 290, 320, 360
+  ],
+  "po": [
+    0, 11, 26, 44, 66, 99, 143, 198, 264, 341, 429, 528,
+    638, 759, 891, 1034, 1188, 1353, 1529, 1716, 1914, 2123, 2343, 2640
+  ],
+  "memo": "Targeting high-end international travelers interested in World Heritage nature. The persona-driven English descriptions effectively communicate the 'Galapagos of the East' concept.",
+  "quality": {
+    "title": "Amami Oshima Travel Guide 2026 | Tomori Beach & Island Cuisine | RITOTABI",
+    "lang": "EN",
+    "type": "ガイド",
+    "overall": 90,
+    "publishedDate": "2026-02-18",
+    "scores": {
+      "コンテンツ独自性": 90,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 85,
+      "内部リンク": 90,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
+      "英語品質": 90
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "growing",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": true,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "High visual quality with original photography of the 'Amami Blue' sea",
+      "Essential survival tips for international drivers (wildlife hazards, roadkill prevention)",
+      "Clear explanation of the World Heritage status and unique ecosystems"
+    ],
+    "issues": [
+      {
+        "level": "中",
+        "text": "Specific local gourmet details (Chicken Rice/Keihan) could be more descriptive about the 'experience' of eating it"
+      }
+    ]
+  }
+}

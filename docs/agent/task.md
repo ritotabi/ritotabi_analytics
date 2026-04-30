@@ -1,9 +1,9 @@
-# タスクリスト: コンダオ島 6ページ再評価
-
-- [x] `destinations_con-dao-island` (JP Guide) の評価
-- [x] `hotels_con-dao-island` (JP Hotels) の評価
-- [x] `destinations_con-dao-island_running` (JP Running) の評価
-- [x] `en_destinations_con-dao-island` (EN Guide) の評価
-- [x] `en_hotels_con-dao-island` (EN Hotels) の評価
-- [x] `en_destinations_con-dao-island_running` (EN Running) の評価
-- [x] `_registry.json` の最終更新確認
+- [x] 石垣島クラスタの再評価 (JP/EN 6ページ)
+- [x] 与論島クラスタの再評価 (JP 4ページ)
+- [x] 阿嘉島クラスタの再評価 (JP 2ページ)
+    - [x] 阿嘉島 観光ガイド (JP)
+    - [x] 阿嘉島 ホテルガイド (JP)
+- [x] 沖縄本島クラスタの再評価 (JP 1ページ)
+    - [x] 沖縄本島 ホテルガイド (JP)
+- [x] `_registry.json` の同期 (阿嘉島・沖縄本島)
+- [x] バリデーションチェック (スキーマ準拠確認)

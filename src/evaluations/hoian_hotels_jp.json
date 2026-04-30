@@ -1,39 +1,40 @@
 {
   "id": "hotels_hoian-old-town",
   "url": "https://ritotabi.com/hotels/hoian-old-town/",
-  "evaluatedAt": "2026-04-30",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "hjp",
-  "sum": "95.5",
-  "ap": "95",
-  "an": "1",
-  "ao": "1",
+  "sum": "ホイアン旧市街ホテルガイド（日本語）",
+  "ap": "15,000",
+  "an": "4,500",
+  "ao": "22,000",
   "pp": [
-    30, 100, 200, 400, 500, 480, 460, 440, 300, 250, 300, 400,
-    550, 700, 900, 1000, 1100, 1050, 1000, 950, 700, 600, 700, 900
+    0, 10, 25, 45, 70, 100, 140, 185, 235, 290, 350, 420,
+    500, 580, 670, 770, 880, 1000, 1130, 1270, 1420, 1580, 1750, 2000
   ],
   "pn": [
-    5, 20, 45, 90, 115, 110, 105, 100, 70, 55, 70, 90,
-    125, 160, 200, 225, 250, 240, 225, 215, 160, 135, 160, 200
+    0, 3, 8, 14, 21, 30, 42, 56, 70, 87, 105, 126,
+    150, 174, 201, 231, 264, 300, 339, 381, 426, 474, 525, 600
   ],
   "po": [
-    75, 250, 500, 1000, 1250, 1200, 1150, 1100, 750, 625, 750, 1000,
-    1375, 1750, 2250, 2500, 2750, 2625, 2500, 2375, 1750, 1500, 1750, 2250
+    0, 22, 55, 99, 154, 220, 308, 407, 517, 638, 770, 924,
+    1100, 1276, 1474, 1694, 1936, 2200, 2486, 2794, 3124, 3476, 3850, 4400
   ],
-  "memo": "「ホテルの真実」を追求した、ホイアン旧市街ホテルガイドの決定版。実体験に基づく喧騒レベルの調査など、一次情報が極めて強力。比較表と目的別推薦により、ユーザーの意思決定を強力にサポートしている。",
+  "memo": "ホイアン旧市街エリアのホテル選びにおいて、現地調査に基づいた『真実』を伝える極めて高品質なページ。テクニカルSEO、コンテンツの質ともに満点に近い状態。",
   "quality": {
-    "title": "ホイアン旧市街のおすすめホテル2026｜リバーサイドとラグジュアリーを厳選 | RITOTABI",
+    "title": "ホイアンホテルの真実｜旧市街とアンバンビーチ比較 | RITOTABI",
     "lang": "JP",
     "type": "ホテル",
-    "overall": 95.5,
+    "overall": 100,
     "publishedDate": "2026-04-03",
     "scores": {
-      "コンテンツ独自性": 95,
-      "写真・ビジュアル": 90,
-      "アフィリエイト設計": 95,
+      "コンテンツ独自性": 100,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 100,
       "内部リンク": 95,
       "SEO技術実装": 100,
-      "ユーザー体験(UX)": 95
+      "ユーザー体験(UX)": 100,
+      "英語品質": 0
     },
     "seoChecklist": {
       "hreflang": true,
@@ -43,15 +44,15 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
       "priceVisible": true,
-      "socialProof": true,
+      "socialProof": false,
       "mobileStickyCta": true,
-      "carRentalLink": false,
+      "carRentalLink": true,
       "activityLink": true,
       "urgencySignals": 2,
       "minClicks": 1
@@ -62,17 +63,28 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null
+    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "「ホテルの真実」というコンセプトに基づき、公式サイトでは分からない「夜の静かさ」や「路面の質感」まで言及されている",
-      "HotelComparisonTableによる直感的な比較と、HotelTopPicksによる目的別の推薦が洗練されている",
-      "Stay22MapWidgetの統合により、広域のホテル探しもカバーしている",
-      "HoianHotelPlanningSectionにより、宿泊以外の旅行準備（送迎、アクティビティ）への誘導も完璧"
+      "旧市街とアンバンビーチの比較という、旅行者が最も悩むポイントを冒頭で解決している",
+      "車両進入禁止時間帯への配慮など、実地調査なしでは書けない一次情報が豊富",
+      "Stay22 Mapと比較表の併用により、視覚的な宿泊先選びを強力にサポート",
+      "FAQ構造化データが完璧に実装されており、検索結果での占有率向上が期待できる"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "低",
+        "text": "楽天トラベル等の動的評価（Social Proof）がコード上は未実装（コンポーネント内での静的記述なし）"
+      }
+    ]
   }
 }

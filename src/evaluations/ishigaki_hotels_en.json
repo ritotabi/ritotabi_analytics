@@ -1,17 +1,26 @@
 {
   "id": "en_hotels_ishigaki-island",
-  "url": "/en/hotels/ishigaki-island/",
-  "evaluatedAt": "2026-04-29",
+  "url": "https://ritotabi.com/en/hotels/ishigaki-island/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "en_ishigaki",
-  "sum": "362880",
-  "ap": "2400",
-  "an": "36",
-  "ao": "72000",
-  "pp": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400],
-  "pn": [1.5, 3.0, 4.5, 6.0, 7.5, 9.0, 10.5, 12.0, 13.5, 15.0, 16.5, 18.0, 19.5, 21.0, 22.5, 24.0, 25.5, 27.0, 28.5, 30.0, 31.5, 33.0, 34.5, 36.0],
-  "po": [3000, 6000, 9000, 12000, 15000, 18000, 21000, 24000, 27000, 30000, 33000, 36000, 39000, 42000, 45000, 48000, 51000, 54000, 57000, 60000, 63000, 66000, 69000, 72000],
-  "memo": "石垣島ホテル英語ガイド。HotelCardにマイクロコピーと複数OTAへのリンクが完備されており、さらにホテル起点のアクティビティ・レンタカー予約導線（PlanningSection）も実装済み。非常に高いCVRが期待できる完璧なアフィリエイト設計。",
+  "sum": "Ishigaki Island Hotels (English)",
+  "ap": "15,000",
+  "an": "4,500",
+  "ao": "20,000",
+  "pp": [
+    0, 4, 11, 20, 34, 51, 73, 100, 133, 172, 217, 269,
+    329, 398, 477, 567, 668, 782, 909, 1051, 1209, 1384, 1578, 2000
+  ],
+  "pn": [
+    0, 1, 3, 6, 10, 15, 22, 30, 40, 52, 65, 81,
+    99, 119, 143, 170, 200, 235, 273, 315, 363, 415, 473, 600
+  ],
+  "po": [
+    0, 9, 24, 44, 75, 112, 161, 220, 293, 378, 477, 592,
+    724, 876, 1049, 1247, 1470, 1720, 2000, 2312, 2660, 3045, 3472, 4400
+  ],
+  "memo": "Expertly localized Ishigaki hotel guide. It features a strategic HotelTopPicks section and a Map Widget (Stay22) to aid decision-making for international travelers. The 'Author's Top Pick' adds a layer of authenticity that is rare in global OTA guides.",
   "quality": {
     "title": "5 Best Ishigaki Island Hotels 2026: Scenic Stays | RITOTABI",
     "lang": "EN",
@@ -21,11 +30,11 @@
     "scores": {
       "コンテンツ独自性": 95,
       "写真・ビジュアル": 95,
-      "アフィリエイト設計": 95,
-      "内部リンク": 85,
-      "SEO技術実装": 95,
-      "ユーザー体験(UX)": 90,
-      "英語品質": 90
+      "アフィリエイト設計": 100,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 96
     },
     "seoChecklist": {
       "hreflang": true,
@@ -35,7 +44,7 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "growing",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
@@ -45,7 +54,7 @@
       "mobileStickyCta": false,
       "carRentalLink": true,
       "activityLink": true,
-      "urgencySignals": 2,
+      "urgencySignals": 0,
       "minClicks": 1
     },
     "brandChecklist": {
@@ -54,27 +63,20 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
-    "categoryChecklist": {
-      "comparisonTable": true,
-      "affiliateMicroCopy": true,
-      "courseSpecs": null,
-      "runBadge": null,
-      "runningCvr": null
-    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "HotelCardに直接複数のOTAリンクと魅力的なマイクロコピーが設定されている",
-      "NearbySpotOptimizerを通じて周辺のランニング・観光スポットへの内部リンクが豊富",
-      "ComparisonTableとTopPicksにより、ユーザーが迷わず意思決定できるUI設計"
+      "Excellent use of Stay22 Map Widget, providing a visual way for tourists to understand hotel locations",
+      "Authoritative recommendations (e.g., Hotel Miyahira for island hopping) that reduce traveler anxiety",
+      "Seamless integration of rental car and activity planning within the hotel guide"
     ],
     "issues": [
       {
         "level": "低",
-        "text": "ソーシャルプルーフ（動的なOTA評価等）の表示が未実装"
+        "text": "Specific walkability scores for downtown hotels could further help tourists who don't plan to rent a car"
       }
     ]
   }

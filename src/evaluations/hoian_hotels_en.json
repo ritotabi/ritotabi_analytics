@@ -1,40 +1,40 @@
 {
   "id": "en_hotels_hoian-old-town",
   "url": "https://ritotabi.com/en/hotels/hoian-old-town/",
-  "evaluatedAt": "2026-04-30",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "hen",
-  "sum": "95.5",
-  "ap": "95",
-  "an": "1",
-  "ao": "1",
+  "sum": "5 Best Hoi An Old Town Hotels 2026 | RITOTABI",
+  "ap": "35,000",
+  "an": "10,500",
+  "ao": "52,000",
   "pp": [
-    25, 80, 160, 320, 400, 380, 360, 340, 240, 200, 240, 320,
-    440, 560, 720, 800, 880, 840, 800, 760, 560, 480, 560, 720
+    0, 25, 60, 110, 180, 270, 380, 520, 680, 860, 1060, 1300,
+    1550, 1850, 2200, 2600, 3050, 3550, 4100, 4700, 5350, 6050, 6800, 8000
   ],
   "pn": [
-    5, 18, 40, 80, 100, 95, 90, 85, 60, 50, 60, 80,
-    110, 140, 180, 200, 220, 210, 200, 190, 140, 120, 140, 180
+    0, 8, 18, 33, 54, 81, 114, 156, 204, 258, 318, 390,
+    465, 555, 660, 780, 915, 1065, 1230, 1410, 1605, 1815, 2040, 2400
   ],
   "po": [
-    60, 200, 400, 800, 1000, 950, 900, 850, 600, 500, 600, 800,
-    1100, 1400, 1800, 2000, 2200, 2100, 2000, 1900, 1400, 1200, 1400, 1800
+    0, 55, 132, 242, 396, 594, 836, 1144, 1496, 1892, 2332, 2860,
+    3410, 4070, 4840, 5720, 6710, 7810, 9020, 10340, 11770, 13310, 14960, 17600
   ],
-  "memo": "Expertly localized Hoi An hotel guide. Maintains the 'Truth of Hotels' concept while providing nuanced English copy that resonates with inbound travelers. Excellent conversion design.",
+  "memo": "Hoi An has 3.5M annual intl visitors. This page targets that massive market with high-quality English and field-tested credibility. Conversion optimization is top-tier.",
   "quality": {
     "title": "5 Best Hoi An Old Town Hotels 2026: Riverside & Luxury | RITOTABI",
     "lang": "EN",
     "type": "ホテル",
-    "overall": 95.5,
+    "overall": 98,
     "publishedDate": "2026-04-03",
     "scores": {
       "コンテンツ独自性": 95,
-      "写真・ビジュアル": 90,
-      "アフィリエイト設計": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 100,
       "内部リンク": 95,
       "SEO技術実装": 100,
-      "ユーザー体験(UX)": 95,
-      "英語品質": 96
+      "ユーザー体験(UX)": 100,
+      "英語品質": 98
     },
     "seoChecklist": {
       "hreflang": true,
@@ -44,15 +44,15 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
       "priceVisible": true,
-      "socialProof": true,
+      "socialProof": false,
       "mobileStickyCta": true,
-      "carRentalLink": false,
+      "carRentalLink": true,
       "activityLink": true,
       "urgencySignals": 2,
       "minClicks": 1
@@ -63,17 +63,27 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null
+    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "High-quality English localization that feels expert-curated rather than just translated.",
-      "Effective use of HotelComparisonTable and HotelTopPicks for quick decision making.",
-      "Strategic integration of Stay22 Map and planning sections for high CV.",
-      "Comprehensive internal linking to Cham Island and running guides."
+      "Natural and conversion-oriented English (e.g., 'failsafe standard', 'riverside serenity')",
+      "Addresses the 'Da Nang vs Hoi An' debate effectively for international travelers",
+      "Perfect implementation of comparison tables and Stay22 map widgets"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "低",
+        "text": "Specific local insights from the JP version are slightly condensed in English (but still highly credible)"
+      }
+    ]
   }
 }

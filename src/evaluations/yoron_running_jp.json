@@ -1,48 +1,57 @@
 {
   "id": "destinations_yoron-island_running",
-  "url": "/destinations/yoron-island/running/",
-  "evaluatedAt": "2026-04-15",
+  "url": "https://ritotabi.com/destinations/yoron-island/running/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "jp_yoron",
-  "sum": "与論島ランニングコースガイド。実走調査に基づき、海が見える希少なルートを厳選した高付加価値コンテンツ。",
-  "ap": "悲観前提",
-  "an": "通常前提",
-  "ao": "楽観前提",
-  "pp": [1, 4, 9, 21, 54, 93, 57, 85, 115, 139, 93, 123, 216, 309, 425, 348, 580, 696, 502, 618, 773, 835, 580, 696],
-  "pn": [2, 7, 15, 36, 90, 155, 96, 142, 193, 232, 155, 206, 360, 515, 709, 580, 966, 1160, 838, 1031, 1289, 1392, 966, 1160],
-  "po": [3, 10, 22, 54, 135, 232, 144, 213, 289, 348, 232, 309, 540, 772, 1063, 870, 1449, 1740, 1257, 1546, 1933, 2088, 1449, 1740],
-  "memo": "2026-03-04 公開。実走インプレッション（Runner's Voice）が非常に強力。PV予測は与論島の季節性バイアスを適用。",
+  "sum": "与論島ランニングガイド（日本語）",
+  "ap": "20,000",
+  "an": "6,000",
+  "ao": "30,000",
+  "pp": [
+    0, 15, 35, 65, 105, 160, 230, 315, 415, 530, 660, 810,
+    980, 1170, 1380, 1610, 1860, 2130, 2420, 2730, 3060, 3410, 3780, 4500
+  ],
+  "pn": [
+    0, 4, 10, 19, 31, 48, 69, 94, 124, 159, 198, 243,
+    294, 351, 414, 483, 558, 639, 726, 819, 918, 1023, 1134, 1350
+  ],
+  "po": [
+    0, 22, 52, 97, 157, 240, 345, 472, 622, 795, 990, 1215,
+    1470, 1755, 2070, 2415, 2790, 3195, 3630, 4095, 4590, 5115, 5670, 6750
+  ],
+  "memo": "与論島の実走2コースを詳しく解説。Googleマップに載っていない秘密のルート（ビドウ遊歩道周辺）や、島特有の迷路のような路地裏ランニングの魅力を余すことなく伝えている。各コースに紐付いた周辺ホテル・ビーチの導線が非常にスムーズ。",
   "quality": {
-    "title": "与論島ランニング｜ヨロンブルーを望む絶景実走コース | RITOTABI",
+    "title": "与論島ランニングガイド：ヨロンブルーを駆け抜ける絶景2コース | RITOTABI",
     "lang": "JP",
     "type": "ランニング",
-    "overall": 95,
-    "publishedDate": "2026-03-04",
+    "overall": 94,
+    "publishedDate": "2026-02-21",
     "scores": {
-      "コンテンツ独自性": 98,
-      "写真・ビジュアル": 95,
-      "アフィリエイト設計": 55,
+      "コンテンツ独自性": 100,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 90,
       "内部リンク": 95,
-      "SEO技術実装": 95,
-      "ユーザー体験(UX)": 96,
-      "英語品質": null
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
+      "英語品質": 0
     },
     "seoChecklist": {
-      "hreflang": true,
-      "faq": true,
+      "hreflang": false,
+      "faq": false,
       "keyword": true,
       "meta": true,
       "canonical": true,
       "ogp": true
     },
-    "freshness": "growing",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": false,
+      "multipleOta": true,
       "priceVisible": false,
       "socialProof": false,
-      "mobileStickyCta": true,
+      "mobileStickyCta": false,
       "carRentalLink": false,
       "activityLink": false,
       "urgencySignals": 0,
@@ -62,7 +71,7 @@
       "runningCvr": {
         "internalHotelLinks": 2,
         "directAffiliateLinks": 0,
-        "hotelCtaPerCourse": 1.0,
+        "hotelCtaPerCourse": 1,
         "runnerPersonaMatch": true
       }
     },
@@ -72,14 +81,15 @@
       "affiliateRel": true
     },
     "strengths": [
-      "「防風林の壁」という実体験に基づいたルート選定の根拠提示",
-      "地図にないビドウ遊歩道周辺の舗装状況や高低差の網羅的な解説",
-      "独自写真13枚による高精細な現場情報の提供"
+      "「GoogleMap上には道が記載されていませんが、海沿いに舗装された道が続いています」といった、現地を走った者にしかわからない具体的かつ有益な情報",
+      "起点の漁港駐車場の情報など、ランナーが必要とする付帯情報の網羅",
+      "各コースに紐付いた「周辺ビーチ」「周辺ホテル」のセクション分けが、ランニング後の行動喚起として優れている"
     ],
     "issues": [
-      { "level": "中", "text": "直接的なアフィリエイト導線（楽天・Agoda等）が未設置であるため、予約フェーズへの即応性に改善の余地がある" },
-      { "level": "低", "text": "視覚的なコースマップ（Google Map等）が未設置" }
-    ],
-    "seasonalRisk": "台風・強風リスク（9月）"
+      {
+        "level": "中",
+        "text": "ソースコード上でJSON-LDの@graphにFAQPageが含まれておらず、検索結果でのFAQ表示が期待できない（他のページには実装されているため、統一が望まれる）"
+      }
+    ]
   }
 }

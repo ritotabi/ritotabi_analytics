@@ -1,0 +1,83 @@
+{
+  "id": "hotels_okinawa-main",
+  "url": "https://ritotabi.com/hotels/okinawa-main/",
+  "evaluatedAt": "2026-05-01",
+  "evaluatedBy": "skill",
+  "stream": "jp_other",
+  "sum": "那覇ホテルガイド（日本語）",
+  "ap": "45,000",
+  "an": "12,000",
+  "ao": "60,000",
+  "pp": [
+    0, 200, 500, 900, 1500, 2300, 3300, 4500, 5900, 7500, 9300, 11300,
+    13500, 16000, 18800, 21900, 25300, 29000, 33000, 37300, 41900, 46800, 52000, 60000
+  ],
+  "pn": [
+    0, 50, 120, 220, 360, 550, 790, 1080, 1420, 1800, 2230, 2710,
+    3240, 3840, 4510, 5250, 6070, 6960, 7920, 8950, 10050, 11230, 12480, 14400
+  ],
+  "po": [
+    0, 300, 750, 1350, 2250, 3450, 4950, 6750, 8850, 11250, 13950, 16950,
+    20250, 24000, 28200, 32850, 37950, 43500, 49500, 55950, 62850, 70200, 78000, 90000
+  ],
+  "memo": "沖縄の玄関口・那覇（国際通り・旭橋エリア）の主要5宿を徹底解説。朝食の質や国際通りへの距離、モノレール駅からの利便性など、実用的な比較軸で構成されている。Very High難易度の市場において、実録レポートの信頼性で差別化を図る設計。",
+  "quality": {
+    "title": "那覇ホテル実録：国際通り周辺のおすすめ厳選5宿 | RITOTABI",
+    "lang": "JP",
+    "type": "ホテル",
+    "overall": 96,
+    "publishedDate": "2026-02-18",
+    "scores": {
+      "コンテンツ独自性": 98,
+      "写真・ビジュアル": 92,
+      "アフィリエイト設計": 100,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 0
+    },
+    "seoChecklist": {
+      "hreflang": false,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "mature",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": true,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「国際通りど真ん中」という抽象表現を避け、具体的な徒歩分数や買い物への影響を記載できている",
+      "朝食セクションを独立させ、JALシティやグレイスリー等の競合ポイントを明確化している",
+      "モノレール旭橋駅直結という、那覇到着後や出発前の利便性にフォーカスしたセクション分け"
+    ],
+    "issues": [
+      {
+        "level": "低",
+        "text": "hreflangの設定が不足。那覇はインバウンド需要が極めて高いため、英語ページとの相互リンク設定が急務"
+      }
+    ]
+  }
+}

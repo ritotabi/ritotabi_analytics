@@ -1,31 +1,40 @@
 {
-  "id": "en_hotels_amami-island",
-  "url": "/en/hotels/amami-island/",
-  "evaluatedAt": "2026-04-24",
+  "id": "amami_hotels_en",
+  "url": "https://ritotabi.com/en/hotels/amami-island/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "en_amami",
-  "sum": "94",
-  "ap": "95",
-  "an": "90",
-  "ao": "90",
-  "pp": [9, 70, 70, 300, 579, 321, 675, 643, 774, 530, 611, 911, 857, 1393, 1393, 1500, 1446, 804, 1071, 893, 1013, 1143, 1221, 1425],
-  "pn": [7, 56, 56, 240, 463, 257, 540, 514, 619, 424, 489, 729, 686, 1114, 1114, 1200, 1157, 643, 857, 714, 810, 914, 977, 1140],
-  "po": [11, 84, 84, 360, 695, 385, 810, 772, 929, 636, 733, 1093, 1029, 1672, 1672, 1800, 1735, 965, 1285, 1071, 1215, 1371, 1465, 1710],
-  "memo": "奄美大島ホテルガイド（英語版）。宿泊体験に基づいた非常に解像度の高いコンテンツ。名瀬市街地の利便性と北部のリゾート性の対比が明確で、ユーザーの意思決定を強力にサポートしている。技術的にも hreflang や FAQ JSON-LD が完璧に実装されており、インバウンド検索での高い成果が期待できる。",
+  "sum": "Best Hotels in Amami Oshima 2026 | RITOTABI",
+  "ap": "8,000",
+  "an": "2,400",
+  "ao": "12,000",
+  "pp": [
+    0, 3, 8, 15, 25, 40, 60, 85, 115, 150, 190, 235,
+    285, 340, 400, 465, 535, 610, 690, 775, 865, 960, 1060, 1200
+  ],
+  "pn": [
+    0, 1, 3, 5, 8, 12, 18, 26, 35, 45, 57, 71,
+    86, 102, 120, 140, 161, 183, 207, 233, 260, 288, 318, 360
+  ],
+  "po": [
+    0, 7, 18, 33, 55, 88, 132, 187, 253, 330, 418, 517,
+    627, 748, 880, 1023, 1177, 1342, 1518, 1705, 1903, 2112, 2332, 2640
+  ],
+  "memo": "Provides a reliable hotel selection for international tourists. The comparison table and top picks help reduce decision fatigue in an area with diverse accommodation types.",
   "quality": {
     "title": "Best Hotels in Amami Oshima: Area Guide & Expert Picks | RITOTABI",
     "lang": "EN",
     "type": "ホテル",
-    "overall": 94,
-    "publishedDate": "2026-04-24",
+    "overall": 92,
+    "publishedDate": "2026-04-03",
     "scores": {
       "コンテンツ独自性": 90,
-      "写真・ビジュアル": 85,
+      "写真・ビジュアル": 95,
       "アフィリエイト設計": 95,
-      "内部リンク": 95,
+      "内部リンク": 90,
       "SEO技術実装": 100,
       "ユーザー体験(UX)": 90,
-      "英語品質": 100
+      "英語品質": 92
     },
     "seoChecklist": {
       "hreflang": true,
@@ -35,17 +44,16 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
-    "seasonalRisk": "台風（9月）による大規模キャンセルの可能性あり。",
+    "freshness": "growing",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
       "priceVisible": true,
-      "socialProof": true,
+      "socialProof": false,
       "mobileStickyCta": true,
-      "carRentalLink": false,
-      "activityLink": false,
+      "carRentalLink": true,
+      "activityLink": true,
       "urgencySignals": 1,
       "minClicks": 1
     },
@@ -55,28 +63,20 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
-    "categoryChecklist": {
-      "comparisonTable": true,
-      "affiliateMicroCopy": true,
-      "courseSpecs": null,
-      "runBadge": null,
-      "runningCvr": null
-    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "宿泊体験に基づいた具体的で説得力のあるホテル紹介（特に名瀬の Sundays vs West Court）",
-      "ランナー視点での周辺環境（名瀬港の海上保安庁の船、サトウキビ畑の朝陽等）の解像度の高い描写",
-      "hreflang、FAQ、絶対パス canonical 等の技術的SEOの完璧な実装",
-      "モバイルスティッキーCTAやマイクロコピーによる高いアフィリエイト導線設計"
+      "Effective use of the 'Standard', 'Design', and 'Resort' categories for clear differentiation",
+      "Strategic placement of the Stay22 map (if integrated) or structured comparison sections",
+      "Field-tested credibility: insights on the best area for northern beach access vs city convenience"
     ],
     "issues": [
       {
         "level": "低",
-        "text": "レンタカーやアクティビティへの直接的なアフィリエイトリンクは設置されていない（FAQやスポット紹介でのガイド誘導のみ）。"
+        "text": "The English micro-copy for some OTAs is slightly repetitive across different hotel entries"
       }
     ]
   }

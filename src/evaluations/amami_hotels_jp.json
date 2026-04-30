@@ -1,0 +1,83 @@
+{
+  "id": "hotels_amami-island",
+  "url": "https://ritotabi.com/hotels/amami-island/",
+  "evaluatedAt": "2026-05-01",
+  "evaluatedBy": "skill",
+  "stream": "jp_amami",
+  "sum": "奄美大島ホテルガイド（日本語）",
+  "ap": "15,000",
+  "an": "4,500",
+  "ao": "22,000",
+  "pp": [
+    0, 10, 25, 45, 70, 100, 140, 185, 235, 290, 350, 420,
+    500, 585, 675, 770, 870, 975, 1085, 1200, 1320, 1445, 1575, 1800
+  ],
+  "pn": [
+    0, 3, 8, 14, 21, 30, 42, 56, 71, 87, 105, 126,
+    150, 176, 203, 231, 261, 293, 326, 360, 396, 434, 473, 540
+  ],
+  "po": [
+    0, 22, 55, 99, 154, 220, 308, 407, 517, 638, 770, 924,
+    1100, 1287, 1485, 1694, 1914, 2145, 2387, 2640, 2904, 3179, 3465, 3960
+  ],
+  "memo": "名瀬市街地の利便性と北部のリゾート感を切り分けた、エリア別ホテル選定が秀逸。比較表による視認性の高さと、複数OTAへのスムーズな誘導が収益性を高めている。",
+  "quality": {
+    "title": "奄美大島ホテルの真実｜名瀬・北部エリア別徹底比較 | RITOTABI",
+    "lang": "JP",
+    "type": "ホテル",
+    "overall": 95,
+    "publishedDate": "2026-04-03",
+    "scores": {
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 100,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 0
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "growing",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": false,
+      "mobileStickyCta": true,
+      "carRentalLink": true,
+      "activityLink": true,
+      "urgencySignals": 1,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「ホテルサンデイズ奄美」を名瀬の決定版として推す、迷わせない推奨スタイル",
+      "HotelComparisonTableによる主要スペックの横並び比較の提供",
+      "AmamiHotelPlanningSectionでの旅のトータルコーディネート提案"
+    ],
+    "issues": [
+      {
+        "level": "低",
+        "text": "楽天・じゃらん以外のOTA（Agoda等）への個別リンクが一部のカードで省略されている（要検討）"
+      }
+    ]
+  }
+}

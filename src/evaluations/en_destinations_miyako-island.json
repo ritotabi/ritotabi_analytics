@@ -1,26 +1,26 @@
 {
   "id": "en_destinations_miyako-island",
-  "url": "/en/destinations/miyako-island/",
-  "evaluatedAt": "2026-04-30",
+  "url": "https://ritotabi.com/en/destinations/miyako-island/",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "English hub for Miyako tourism. Maintains the authoritative and personal tone of the original. High quality localization for international visitors.",
-  "ap": "Pessimistic",
-  "an": "Normal",
-  "ao": "Optimistic",
+  "sum": "Miyako Island Guide (English)",
+  "ap": "15,000",
+  "an": "4,500",
+  "ao": "20,000",
   "pp": [
-    5, 30, 20, 50, 45, 20, 40, 40, 45, 50, 60, 75,
-    90, 125, 200, 250, 350, 200, 450, 425, 200, 400, 300, 400
+    0, 5, 12, 22, 35, 52, 75, 105, 140, 185, 240, 310,
+    390, 485, 600, 735, 890, 1070, 1280, 1530, 1820, 2160, 2560, 3200
   ],
   "pn": [
-    10, 60, 40, 100, 90, 40, 80, 80, 90, 100, 120, 150,
-    180, 250, 400, 500, 700, 400, 900, 850, 400, 800, 600, 800
+    0, 1, 3, 6, 10, 15, 22, 31, 42, 55, 72, 93,
+    117, 145, 180, 220, 267, 321, 384, 459, 546, 648, 768, 960
   ],
   "po": [
-    20, 120, 80, 200, 180, 80, 160, 160, 180, 200, 240, 300,
-    360, 500, 800, 1000, 1400, 800, 1600, 1700, 800, 1600, 1200, 1600
+    0, 11, 26, 48, 77, 114, 165, 231, 308, 407, 528, 682,
+    858, 1067, 1320, 1617, 1958, 2354, 2816, 3366, 4004, 4752, 5632, 7040
   ],
-  "memo": "Solid English hub. Needs car rental affiliate integration for international drivers.",
+  "memo": "An expert-curated English guide for Miyako Island. It effectively translates the 'honesty' value of RITOTABI into localized copy, focusing on the unique 'Miyako Blue' and essential logistics for international travelers.",
   "quality": {
     "title": "Miyako Island Complete Guide: Field-Tested & Honest Report | RITOTABI",
     "lang": "EN",
@@ -28,13 +28,13 @@
     "overall": 95,
     "publishedDate": "2026-04-12",
     "scores": {
-      "コンテンツ独自性": 94,
-      "写真・ビジュアル": 92,
-      "アフィリエイト設計": 92,
-      "内部リンク": 98,
-      "SEO技術実装": 97,
-      "ユーザー体験(UX)": 95,
-      "英語品質": 96
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 85,
+      "内部リンク": 90,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
+      "英語品質": 95
     },
     "seoChecklist": {
       "hreflang": true,
@@ -44,16 +44,16 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "growing",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": false,
+      "multipleOta": true,
       "priceVisible": false,
       "socialProof": false,
       "mobileStickyCta": false,
-      "carRentalLink": false,
-      "activityLink": false,
+      "carRentalLink": true,
+      "activityLink": true,
       "urgencySignals": 0,
       "minClicks": 2
     },
@@ -69,14 +69,14 @@
       "affiliateRel": true
     },
     "strengths": [
-      "Authoritative content that guides international travelers with confidence",
-      "Clear categorization and internal linking to niche guides",
-      "Robust technical SEO with accurate hreflang and canonical setup"
+      "High-quality English localization following the established strategy (persona-driven copy)",
+      "Clear technical SEO implementation (FAQ, Hreflang) ensuring visibility in international search results",
+      "Field-tested reliability: specific tips on taxi shortages and airport differences (MMY vs SHI) are invaluable for non-Japanese speakers"
     ],
     "issues": [
       {
         "level": "中",
-        "text": "Lack of international car rental affiliate integration"
+        "text": "Some local gourmet terms could have more descriptive English explanations for first-time visitors"
       }
     ]
   }

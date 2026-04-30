@@ -1,40 +1,40 @@
 {
   "id": "en_hotels_an-bang",
   "url": "https://ritotabi.com/en/hotels/an-bang/",
-  "evaluatedAt": "2026-04-30",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "hen",
-  "sum": "95.5",
-  "ap": "95",
-  "an": "1",
-  "ao": "1",
+  "sum": "6 Best An Bang Beach Hotels 2026 | RITOTABI",
+  "ap": "40,000",
+  "an": "12,000",
+  "ao": "60,000",
   "pp": [
-    20, 60, 120, 240, 300, 280, 260, 240, 180, 150, 180, 240,
-    330, 420, 540, 600, 660, 630, 600, 570, 420, 360, 420, 540
+    0, 20, 50, 95, 155, 230, 325, 440, 580, 740, 925, 1140,
+    1380, 1660, 1980, 2350, 2770, 3250, 3800, 4400, 5050, 5750, 6500, 7500
   ],
   "pn": [
-    4, 12, 28, 55, 70, 65, 60, 55, 42, 35, 42, 55,
-    75, 95, 125, 140, 155, 145, 140, 130, 95, 80, 95, 125
+    0, 6, 15, 29, 47, 69, 98, 132, 174, 222, 278, 342,
+    414, 498, 594, 705, 831, 975, 1140, 1320, 1515, 1725, 1950, 2250
   ],
   "po": [
-    50, 150, 300, 600, 750, 700, 650, 600, 450, 375, 450, 600,
-    825, 1050, 1350, 1500, 1650, 1575, 1500, 1425, 1050, 900, 1050, 1350
+    0, 44, 110, 209, 341, 506, 715, 968, 1276, 1628, 2035, 2508,
+    3036, 3652, 4356, 5170, 6094, 7150, 8360, 9680, 11110, 12650, 14300, 16500
   ],
-  "memo": "A high-converting hotel guide for An Bang Beach. Effectively filters out low-quality options to provide a curated, trustworthy list for international travelers. Strong technical SEO and affiliate integration.",
+  "memo": "Targeting high-end international travelers looking for An Bang resorts. The 'Ultra-Luxury' categorization for Four Seasons adds significant authority and filtering value.",
   "quality": {
     "title": "6 Best An Bang Beach Hotels: Luxury & Boutique 2026 | RITOTABI",
     "lang": "EN",
     "type": "ホテル",
-    "overall": 95.5,
+    "overall": 98,
     "publishedDate": "2026-04-03",
     "scores": {
       "コンテンツ独自性": 95,
-      "写真・ビジュアル": 90,
-      "アフィリエイト設計": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 100,
       "内部リンク": 95,
       "SEO技術実装": 100,
-      "ユーザー体験(UX)": 95,
-      "英語品質": 96
+      "ユーザー体験(UX)": 100,
+      "英語品質": 98
     },
     "seoChecklist": {
       "hreflang": true,
@@ -44,17 +44,17 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
       "multipleOta": true,
       "priceVisible": true,
-      "socialProof": true,
+      "socialProof": false,
       "mobileStickyCta": true,
-      "carRentalLink": false,
+      "carRentalLink": true,
       "activityLink": true,
-      "urgencySignals": 2,
+      "urgencySignals": 1,
       "minClicks": 1
     },
     "brandChecklist": {
@@ -63,17 +63,27 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null
+    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "Expertly curated selection of reliable resorts, solving the 'photo vs reality' gap for travelers.",
-      "Clear positioning of An Bang as a strategic hub for Cham Island visits.",
-      "Excellent use of comparison tools and map-based search for higher CV.",
-      "Professional English copy that maintains the brand's 'Field-Tested' authority."
+      "Explicitly mentions 'public access' to the shore, answering a common concern for upscale beach resort areas",
+      "Strategic grouping by 'Luxury', 'Resort', and 'Value' helps quick decision-making",
+      "Strong localized copy: 'secluded sanctuary', 'strategic port access'"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "低",
+        "text": "Internal links to smaller An Bang guest houses are omitted (intentional focus on quality)"
+      }
+    ]
   }
 }

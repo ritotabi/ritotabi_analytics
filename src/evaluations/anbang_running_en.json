@@ -1,40 +1,40 @@
 {
   "id": "en_destinations_an-bang_running",
   "url": "https://ritotabi.com/en/destinations/an-bang/running/",
-  "evaluatedAt": "2026-04-30",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "hen",
-  "sum": "94.5",
-  "ap": "90",
-  "an": "1",
-  "ao": "1",
+  "sum": "An Bang Running Guide 2026 | RITOTABI",
+  "ap": "12,000",
+  "an": "3,600",
+  "ao": "18,000",
   "pp": [
-    12, 35, 65, 120, 150, 140, 130, 120, 80, 65, 80, 100,
-    150, 190, 240, 280, 310, 290, 270, 250, 170, 130, 170, 220
+    0, 12, 30, 55, 90, 135, 190, 260, 345, 445, 560, 695,
+    850, 1030, 1230, 1450, 1700, 1980, 2290, 2630, 3000, 3400, 3850, 4400
   ],
   "pn": [
-    2, 8, 15, 30, 38, 35, 32, 30, 20, 16, 20, 25,
-    38, 48, 60, 70, 78, 72, 68, 62, 42, 32, 42, 55
+    0, 4, 9, 17, 27, 41, 57, 78, 104, 134, 168, 209,
+    255, 309, 369, 435, 510, 594, 687, 789, 900, 1020, 1155, 1320
   ],
   "po": [
-    30, 90, 160, 300, 375, 350, 325, 300, 200, 160, 200, 250,
-    375, 475, 600, 700, 775, 725, 675, 625, 425, 325, 425, 550
+    0, 18, 45, 83, 135, 203, 285, 390, 518, 668, 840, 1043,
+    1275, 1545, 1845, 2175, 2550, 2970, 3435, 3945, 4500, 5100, 5775, 6600
   ],
-  "memo": "Expertly localized activity guide for An Bang. Effectively communicates the dual charm of rural rice fields and the energetic shoreline. Rich in practical field insights for international runners.",
+  "memo": "High potential for organic search in the 'An Bang activities' niche. The combination of beach and rice field routes provides a well-rounded picture of the area.",
   "quality": {
     "title": "An Bang Running Guide: Rice Fields & Shore | RITOTABI",
     "lang": "EN",
     "type": "ランニング",
-    "overall": 94.5,
+    "overall": 94,
     "publishedDate": "2026-04-01",
     "scores": {
-      "コンテンツ独自性": 95,
-      "写真・ビジュアル": 90,
+      "コンテンツ独自性": 100,
+      "写真・ビジュアル": 95,
       "アフィリエイト設計": 90,
       "内部リンク": 95,
       "SEO技術実装": 100,
       "ユーザー体験(UX)": 95,
-      "英語品質": 96
+      "英語品質": 94
     },
     "seoChecklist": {
       "hreflang": true,
@@ -44,7 +44,7 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
@@ -63,17 +63,33 @@
       "benefitUpfront": true,
       "personaDrivenPros": null
     },
+    "categoryChecklist": {
+      "comparisonTable": null,
+      "affiliateMicroCopy": true,
+      "courseSpecs": true,
+      "runBadge": true,
+      "runningCvr": {
+        "internalHotelLinks": 4,
+        "directAffiliateLinks": 0,
+        "hotelCtaPerCourse": 2,
+        "runnerPersonaMatch": true
+      }
+    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "Effectively positions An Bang as a diverse destination with both rural and beach charm.",
-      "Filled with gritty, essential field data like 'cow droppings' hazards and 'barefoot' strain warnings.",
-      "Clear, professional English copy that resonates with active, 'authentic-seeking' travelers.",
-      "Seamless integration of major An Bang resorts as base recommendations."
+      "Authentic field report style: 'No shortcuts, just miles'",
+      "Specific advice on barefoot running and recovery (foot-washing stations)",
+      "Good localization of 'Rice Fields' and 'Shoreline' charms"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "中",
+        "text": "The writersRunMemo points are highly specific; ensuring the English captures the 'spirit' of the local interaction is key."
+      }
+    ]
   }
 }

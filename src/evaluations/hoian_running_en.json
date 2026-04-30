@@ -1,35 +1,35 @@
 {
   "id": "en_destinations_hoian-old-town_running",
   "url": "https://ritotabi.com/en/destinations/hoian-old-town/running/",
-  "evaluatedAt": "2026-04-30",
+  "evaluatedAt": "2026-05-01",
   "evaluatedBy": "skill",
   "stream": "hen",
-  "sum": "94.5",
-  "ap": "90",
-  "an": "1",
-  "ao": "1",
+  "sum": "Hoi An Running Guide 2026 | RITOTABI",
+  "ap": "12,000",
+  "an": "3,600",
+  "ao": "18,000",
   "pp": [
-    12, 35, 65, 120, 150, 140, 130, 120, 80, 65, 80, 100,
-    150, 190, 240, 280, 310, 290, 270, 250, 170, 130, 170, 220
+    0, 10, 25, 45, 75, 110, 155, 210, 275, 350, 440, 545,
+    660, 790, 940, 1110, 1300, 1510, 1740, 1990, 2260, 2550, 2860, 3200
   ],
   "pn": [
-    2, 8, 15, 30, 38, 35, 32, 30, 20, 16, 20, 25,
-    38, 48, 60, 70, 78, 72, 68, 62, 42, 32, 42, 55
+    0, 3, 8, 14, 23, 33, 47, 63, 83, 105, 132, 164,
+    198, 237, 282, 333, 390, 453, 522, 597, 678, 765, 858, 960
   ],
   "po": [
-    30, 90, 160, 300, 375, 350, 325, 300, 200, 160, 200, 250,
-    375, 475, 600, 700, 775, 725, 675, 625, 425, 325, 425, 550
+    0, 15, 38, 68, 113, 165, 233, 315, 413, 525, 660, 818,
+    990, 1185, 1410, 1665, 1950, 2265, 2610, 2985, 3390, 3825, 4290, 4800
   ],
-  "memo": "Unique activity guide capturing Hoi An through a runner's perspective. High-quality English localization and practical field insights make it a valuable resource for active international travelers.",
+  "memo": "An excellent activity guide for international tourists. The concept of 'capturing historic streets through a runner’s eyes' is a powerful unique selling point.",
   "quality": {
     "title": "Hoi An Running Guide 2026: Old Town & Riverside | RITOTABI",
     "lang": "EN",
     "type": "ランニング",
-    "overall": 94.5,
+    "overall": 94,
     "publishedDate": "2026-04-01",
     "scores": {
-      "コンテンツ独自性": 95,
-      "写真・ビジュアル": 90,
+      "コンテンツ独自性": 100,
+      "写真・ビジュアル": 95,
       "アフィリエイト設計": 90,
       "内部リンク": 95,
       "SEO技術実装": 100,
@@ -44,7 +44,7 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "new",
+    "freshness": "mature",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
@@ -63,17 +63,33 @@
       "benefitUpfront": true,
       "personaDrivenPros": null
     },
+    "categoryChecklist": {
+      "comparisonTable": null,
+      "affiliateMicroCopy": true,
+      "courseSpecs": true,
+      "runBadge": true,
+      "runningCvr": {
+        "internalHotelLinks": 5,
+        "directAffiliateLinks": 0,
+        "hotelCtaPerCourse": 2,
+        "runnerPersonaMatch": true
+      }
+    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "Highlights the benefit of 'Early Morning Silence' in a typically crowded UNESCO site.",
-      "Rich with firsthand data on pavement quality, bridge vibrations, and insect precautions.",
-      "Effective integration of recommended base hotels within RunningCourseCards.",
-      "Professional English copy that reassures active travelers looking for authentic experiences."
+      "Vivid copywriting: 'Running through the morning mist', 'silence of a UNESCO site'",
+      "Practical advice for expats and travelers (bug spray, early finish)",
+      "Clear nearby hotel integration in the course cards"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "中",
+        "text": "The course specs (KM/Loop) are present but the 'Rating' (A, S) could be more prominently explained in English terms"
+      }
+    ]
   }
 }
