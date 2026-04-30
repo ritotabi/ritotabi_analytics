@@ -1,39 +1,38 @@
 {
   "id": "en_hotels_an-bang",
   "url": "https://ritotabi.com/en/hotels/an-bang/",
-  "evaluatedAt": "2026-04-29",
+  "evaluatedAt": "2026-04-30",
   "evaluatedBy": "skill",
   "stream": "hen",
-  "sum": "94",
+  "sum": "95.5",
   "ap": "95",
   "an": "1",
   "ao": "1",
   "pp": [
-    20, 75, 130, 190, 250, 230, 210, 190, 130, 100, 120, 150,
-    260, 310, 380, 400, 370, 330, 310, 280, 180, 140, 180, 210
+    20, 60, 120, 240, 300, 280, 260, 240, 180, 150, 180, 240,
+    330, 420, 540, 600, 660, 630, 600, 570, 420, 360, 420, 540
   ],
   "pn": [
-    4, 15, 25, 35, 45, 40, 35, 30, 20, 15, 20, 25,
-    45, 55, 70, 75, 70, 60, 55, 50, 30, 25, 30, 35
+    4, 12, 28, 55, 70, 65, 60, 55, 42, 35, 42, 55,
+    75, 95, 125, 140, 155, 145, 140, 130, 95, 80, 95, 125
   ],
   "po": [
-    40, 150, 260, 380, 500, 460, 420, 380, 260, 200, 240, 300,
-    520, 620, 760, 800, 740, 660, 620, 560, 360, 280, 360, 420
+    50, 150, 300, 600, 750, 700, 650, 600, 450, 375, 450, 600,
+    825, 1050, 1350, 1500, 1650, 1575, 1500, 1425, 1050, 900, 1050, 1350
   ],
-  "memo": "アンバンビーチのホテルガイド。独自の選定基準（大規模リゾート優先）が明記されており、読者の信頼を得やすい構成。チャム島へのアクセス拠点としての価値も強調されている。",
+  "memo": "A high-converting hotel guide for An Bang Beach. Effectively filters out low-quality options to provide a curated, trustworthy list for international travelers. Strong technical SEO and affiliate integration.",
   "quality": {
     "title": "6 Best An Bang Beach Hotels: Luxury & Boutique 2026 | RITOTABI",
     "lang": "EN",
     "type": "ホテル",
-    "overall": 94,
+    "overall": 95.5,
     "publishedDate": "2026-04-03",
-    "seasonalRisk": "10-11月の洪水・台風リスク",
     "scores": {
-      "コンテンツ独自性": 93,
+      "コンテンツ独自性": 95,
       "写真・ビジュアル": 90,
       "アフィリエイト設計": 95,
-      "内部リンク": 90,
-      "SEO技術実装": 94,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
       "ユーザー体験(UX)": 95,
       "英語品質": 96
     },
@@ -45,7 +44,7 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "growing",
+    "freshness": "new",
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
@@ -55,7 +54,7 @@
       "mobileStickyCta": true,
       "carRentalLink": false,
       "activityLink": true,
-      "urgencySignals": 1,
+      "urgencySignals": 2,
       "minClicks": 1
     },
     "brandChecklist": {
@@ -64,20 +63,16 @@
       "benefitUpfront": true,
       "personaDrivenPros": true
     },
-    "categoryChecklist": {
-      "comparisonTable": true,
-      "affiliateMicroCopy": true
-    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
     "strengths": [
-      "「信頼できる大規模リゾートに絞る」という独自の編集方針が示されており、安心感がある",
-      "チャム島への出発拠点（クアダイ港）への近さをメリットとして明確に提示",
-      "ビーチランニングと田園コースの紹介を含み、アクティブな層に刺さる",
-      "HotelComparisonTableとMapWidgetの併用でUXが非常に高い"
+      "Expertly curated selection of reliable resorts, solving the 'photo vs reality' gap for travelers.",
+      "Clear positioning of An Bang as a strategic hub for Cham Island visits.",
+      "Excellent use of comparison tools and map-based search for higher CV.",
+      "Professional English copy that maintains the brand's 'Field-Tested' authority."
     ],
     "issues": []
   }

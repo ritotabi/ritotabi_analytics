@@ -1,46 +1,58 @@
 {
-  "id": "en_destinations_con-dao-island_running",
+  "id": "condao_running_en",
   "url": "/en/destinations/con-dao-island/running/",
-  "evaluatedAt": "2026-04-29",
+  "evaluatedAt": "2026-04-30",
+  "evaluatedBy": "skill",
   "stream": "cen",
-  "pp": [0, 0, 0, 5, 13, 25, 33, 50, 67, 84, 117, 150, 201, 302, 419, 503, 587, 671, 755, 839, 923, 1007, 1007, 1090],
-  "pn": [0, 0, 0, 3, 9, 17, 23, 35, 46, 58, 81, 105, 140, 211, 293, 352, 410, 469, 528, 587, 646, 704, 704, 763],
-  "po": [0, 0, 0, 6, 16, 32, 42, 65, 87, 109, 152, 195, 261, 392, 544, 653, 763, 872, 981, 1090, 1199, 1309, 1309, 1417],
+  "sum": "English running guide for Con Dao. A unique niche resource providing first-hand route data and runner-specific travel tips.",
+  "ap": "If international runners cannot find specific details about road quality or hydration spots.",
+  "an": "Detailed course specs and 'Run Quality' badges. Practical local tips (e.g., 'Remos' repellent).",
+  "ao": "Rising interest in island running and sports-themed 'wellness' travel.",
+  "pp": [0, 5, 15, 30, 45, 62, 83, 100, 104, 137, 145, 175, 300, 325, 312, 300, 275, 250, 200, 150, 125, 150, 150, 175],
+  "pn": [0, 11, 31, 60, 91, 125, 166, 200, 208, 275, 290, 350, 600, 650, 625, 600, 550, 500, 400, 300, 250, 300, 300, 350],
+  "po": [0, 22, 62, 120, 182, 250, 332, 400, 416, 550, 580, 700, 1200, 1300, 1250, 1200, 1100, 1000, 800, 600, 500, 600, 600, 700],
+  "memo": "v2.0 re-evaluation. The English quality is high, and the content serves as a unique differentiator for the brand in the English-speaking market.",
   "quality": {
-    "title": "Con Dao Running Guide: Seaside & Lakefront Routes | RITOTABI",
+    "title": "Con Dao Running Guide 2026: Coastal & Lake Routes | RITOTABI",
     "lang": "EN",
     "type": "ランニング",
-    "overall": 94,
+    "overall": 95,
     "publishedDate": "2026-03-26",
     "scores": {
-      "コンテンツ独自性": 98,
-      "写真・ビジュアル": 92,
-      "アフィリエイト設計": 88,
-      "内部リンク": 90,
-      "SEO技術実装": 96,
-      "ユーザー体験(UX)": 95,
+      "コンテンツ独自性": 97,
+      "写真・ビジュアル": 94,
+      "アフィリエイト設計": 90,
+      "内部リンク": 95,
+      "SEO技術実装": 97,
+      "ユーザー体験(UX)": 96,
       "英語品質": 98
     },
-    "techChecklist": {
-      "nextImage": true,
-      "imageAlt": true,
-      "affiliateRel": true
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "growing",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
     },
     "brandChecklist": {
       "toneAndManner": true,
       "firstPersonInsight": true,
       "benefitUpfront": true,
       "personaDrivenPros": null
-    },
-    "affiliateChecklist": {
-      "ctaPosition": true,
-      "microCopy": true,
-      "multipleOta": false,
-      "priceVisible": false,
-      "carRentalLink": false,
-      "activityLink": false,
-      "urgencySignals": 0,
-      "minClicks": 2
     },
     "categoryChecklist": {
       "courseSpecs": true,
@@ -51,6 +63,18 @@
         "hotelCtaPerCourse": 2.5,
         "runnerPersonaMatch": true
       }
-    }
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "Rare first-hand running data (distances, pavement quality) for a niche destination in English.",
+      "Effective integration of runner-friendly hotel recommendations and local recovery tips (sugarcane juice).",
+      "Sophisticated English copywriting that makes the running experience feel 'mindful' and 'soul-cleansing'."
+    ],
+    "issues": [],
+    "seasonalRisk": "Strong winds and rough seas (Nov-Feb)"
   }
 }

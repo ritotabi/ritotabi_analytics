@@ -1,0 +1,78 @@
+{
+  "id": "hotels_hoian-old-town",
+  "url": "https://ritotabi.com/hotels/hoian-old-town/",
+  "evaluatedAt": "2026-04-30",
+  "evaluatedBy": "skill",
+  "stream": "hjp",
+  "sum": "95.5",
+  "ap": "95",
+  "an": "1",
+  "ao": "1",
+  "pp": [
+    30, 100, 200, 400, 500, 480, 460, 440, 300, 250, 300, 400,
+    550, 700, 900, 1000, 1100, 1050, 1000, 950, 700, 600, 700, 900
+  ],
+  "pn": [
+    5, 20, 45, 90, 115, 110, 105, 100, 70, 55, 70, 90,
+    125, 160, 200, 225, 250, 240, 225, 215, 160, 135, 160, 200
+  ],
+  "po": [
+    75, 250, 500, 1000, 1250, 1200, 1150, 1100, 750, 625, 750, 1000,
+    1375, 1750, 2250, 2500, 2750, 2625, 2500, 2375, 1750, 1500, 1750, 2250
+  ],
+  "memo": "「ホテルの真実」を追求した、ホイアン旧市街ホテルガイドの決定版。実体験に基づく喧騒レベルの調査など、一次情報が極めて強力。比較表と目的別推薦により、ユーザーの意思決定を強力にサポートしている。",
+  "quality": {
+    "title": "ホイアン旧市街のおすすめホテル2026｜リバーサイドとラグジュアリーを厳選 | RITOTABI",
+    "lang": "JP",
+    "type": "ホテル",
+    "overall": 95.5,
+    "publishedDate": "2026-04-03",
+    "scores": {
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 95,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": true,
+      "mobileStickyCta": true,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 2,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「ホテルの真実」というコンセプトに基づき、公式サイトでは分からない「夜の静かさ」や「路面の質感」まで言及されている",
+      "HotelComparisonTableによる直感的な比較と、HotelTopPicksによる目的別の推薦が洗練されている",
+      "Stay22MapWidgetの統合により、広域のホテル探しもカバーしている",
+      "HoianHotelPlanningSectionにより、宿泊以外の旅行準備（送迎、アクティビティ）への誘導も完璧"
+    ],
+    "issues": []
+  }
+}

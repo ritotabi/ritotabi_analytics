@@ -1,0 +1,78 @@
+{
+  "id": "destinations_an-bang_running",
+  "url": "https://ritotabi.com/destinations/an-bang/running/",
+  "evaluatedAt": "2026-04-30",
+  "evaluatedBy": "skill",
+  "stream": "hjp",
+  "sum": "94.5",
+  "ap": "90",
+  "an": "1",
+  "ao": "1",
+  "pp": [
+    15, 45, 80, 150, 180, 170, 160, 150, 100, 80, 100, 130,
+    180, 220, 280, 320, 350, 330, 310, 290, 200, 160, 200, 260
+  ],
+  "pn": [
+    3, 10, 20, 35, 45, 42, 40, 38, 25, 20, 25, 32,
+    45, 55, 70, 80, 88, 82, 78, 72, 50, 40, 50, 65
+  ],
+  "po": [
+    35, 110, 200, 375, 450, 425, 400, 375, 250, 200, 250, 325,
+    450, 550, 700, 800, 875, 825, 775, 725, 500, 400, 500, 650
+  ],
+  "memo": "田園とビーチというアンバンの二面性を「走る」ことで解き明かした傑作ガイド。牛の落とし物への注意や、裸足ランニングの身体的負担への言及など、実体験に裏打ちされたアドバイスが極めて有益。ホテル連携もスムーズ。",
+  "quality": {
+    "title": "アンバンビーチ・ランニング｜潮風を浴びる極上ルート | RITOTABI",
+    "lang": "JP",
+    "type": "ランニング",
+    "overall": 94.5,
+    "publishedDate": "2026-04-01",
+    "scores": {
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 90,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": false,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "ライスフィールド（田園）とビーチという、対照的な2コースを提示し、エリアの多面的な魅力を伝えている",
+      "「牛のうんち」や「貝殻の漂着物」など、現場を走らないと分からない泥臭くも重要な情報が満載",
+      "裸足ランニングが足首に与える負担への注意喚起など、ランナーの健康に配慮した視点が素晴らしい",
+      "アンバンの主要な大型リゾートへの宿泊誘導がRunningCourseCardを通じて自然に行われている"
+    ],
+    "issues": []
+  }
+}

@@ -1,39 +1,38 @@
 {
   "id": "en_destinations_an-bang_running",
   "url": "https://ritotabi.com/en/destinations/an-bang/running/",
-  "evaluatedAt": "2026-04-29",
+  "evaluatedAt": "2026-04-30",
   "evaluatedBy": "skill",
   "stream": "hen",
-  "sum": "94",
-  "ap": "92",
+  "sum": "94.5",
+  "ap": "90",
   "an": "1",
   "ao": "1",
   "pp": [
-    12, 55, 100, 150, 200, 180, 160, 140, 100, 70, 90, 110,
-    210, 260, 310, 330, 300, 270, 250, 230, 150, 110, 140, 170
+    12, 35, 65, 120, 150, 140, 130, 120, 80, 65, 80, 100,
+    150, 190, 240, 280, 310, 290, 270, 250, 170, 130, 170, 220
   ],
   "pn": [
-    2, 10, 15, 25, 35, 30, 25, 20, 15, 10, 15, 20,
-    35, 45, 55, 60, 55, 50, 45, 40, 25, 20, 25, 30
+    2, 8, 15, 30, 38, 35, 32, 30, 20, 16, 20, 25,
+    38, 48, 60, 70, 78, 72, 68, 62, 42, 32, 42, 55
   ],
   "po": [
-    24, 110, 200, 300, 400, 360, 320, 280, 200, 140, 180, 220,
-    420, 520, 620, 660, 600, 540, 500, 460, 300, 220, 280, 340
+    30, 90, 160, 300, 375, 350, 325, 300, 200, 160, 200, 250,
+    375, 475, 600, 700, 775, 725, 675, 625, 425, 325, 425, 550
   ],
-  "memo": "アンバンビーチのランニングガイド。「牛の糞」への注意喚起など、現地に立ったランナーならではの視点が秀逸。ビーチと田園の2コースの対比が読者の意欲をそそる。",
+  "memo": "Expertly localized activity guide for An Bang. Effectively communicates the dual charm of rural rice fields and the energetic shoreline. Rich in practical field insights for international runners.",
   "quality": {
     "title": "An Bang Running Guide: Rice Fields & Shore | RITOTABI",
     "lang": "EN",
-    "type": "ガイド",
-    "overall": 94,
+    "type": "ランニング",
+    "overall": 94.5,
     "publishedDate": "2026-04-01",
-    "seasonalRisk": "日中の酷暑、雨季の田園エリアのぬかるみ",
     "scores": {
-      "コンテンツ独自性": 96,
-      "写真・ビジュアル": 93,
-      "アフィリエイト設計": 92,
-      "内部リンク": 90,
-      "SEO技術実装": 94,
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 90,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
       "ユーザー体験(UX)": 95,
       "英語品質": 96
     },
@@ -45,10 +44,10 @@
       "canonical": true,
       "ogp": true
     },
-    "freshness": "growing",
+    "freshness": "new",
     "affiliateChecklist": {
       "ctaPosition": true,
-      "microCopy": false,
+      "microCopy": true,
       "multipleOta": false,
       "priceVisible": false,
       "socialProof": false,
@@ -70,10 +69,10 @@
       "affiliateRel": true
     },
     "strengths": [
-      "「Cow droppings」など、美辞麗句ではない本音のフィールドレポートが信頼性を高めている",
-      "裸足での波打ち際ランニングの快適さとリスクを両面的に解説",
-      "「An Bang style」のランニング文化への言及など、ブランドの専門性が際立っている",
-      "RunningCourseCardからアンバンの主要リゾートへ完璧な導線が引かれている"
+      "Effectively positions An Bang as a diverse destination with both rural and beach charm.",
+      "Filled with gritty, essential field data like 'cow droppings' hazards and 'barefoot' strain warnings.",
+      "Clear, professional English copy that resonates with active, 'authentic-seeking' travelers.",
+      "Seamless integration of major An Bang resorts as base recommendations."
     ],
     "issues": []
   }

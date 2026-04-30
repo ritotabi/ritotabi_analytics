@@ -1,0 +1,78 @@
+{
+  "id": "destinations_hoian-old-town_running",
+  "url": "https://ritotabi.com/destinations/hoian-old-town/running/",
+  "evaluatedAt": "2026-04-30",
+  "evaluatedBy": "skill",
+  "stream": "hjp",
+  "sum": "94.5",
+  "ap": "90",
+  "an": "1",
+  "ao": "1",
+  "pp": [
+    15, 45, 80, 150, 180, 170, 160, 150, 100, 80, 100, 130,
+    180, 220, 280, 320, 350, 330, 310, 290, 200, 160, 200, 260
+  ],
+  "pn": [
+    3, 10, 20, 35, 45, 42, 40, 38, 25, 20, 25, 32,
+    45, 55, 70, 80, 88, 82, 78, 72, 50, 40, 50, 65
+  ],
+  "po": [
+    35, 110, 200, 375, 450, 425, 400, 375, 250, 200, 250, 325,
+    450, 550, 700, 800, 875, 825, 775, 725, 500, 400, 500, 650
+  ],
+  "memo": "ホイアン旧市街を「ランナーの解像度」で切り取った、極めて独自性の高いアクティビティガイド。実走調査に基づく路面状況や橋の震動、虫除けの必要性など、ニッチながら需要の高い情報が凝縮されている。ホテルへの誘導も自然。",
+  "quality": {
+    "title": "ホイアン旧市街を走る｜ランタンの街を巡る実走ガイド | RITOTABI",
+    "lang": "JP",
+    "type": "ランニング",
+    "overall": 94.5,
+    "publishedDate": "2026-04-01",
+    "scores": {
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 90,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": false,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「観光客のいない早朝の静寂」というベネフィットが明確に提示されている",
+      "実走評価バッジや詳細なコースメモなど、ランナーが必要とする一次情報が豊富",
+      "RunningCourseCard内に「おすすめの拠点ホテル」を配置し、ホテル予約への導線が確保されている",
+      "橋の鉄板の震動や虫の発生など、実際に走らないと分からない注意点が具体的"
+    ],
+    "issues": []
+  }
+}

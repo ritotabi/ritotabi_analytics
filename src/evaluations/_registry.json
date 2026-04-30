@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29",
+  "lastUpdated": "2026-04-30",
   "streams": [
     { "key": "jp_ishigaki", "label": "石垣島 (日本語)", "color": "#f59e0b", "cvr": 0.0032, "unit": 750 },
     { "key": "en_ishigaki", "label": "石垣島 (英語)", "color": "#10b981", "cvr": 0.008, "unit": 2000 },
@@ -26,8 +26,8 @@
       "url": "/hotels/con-dao-island/",
       "title": "コンダオ ホテルガイド（日本語）",
       "stream": "cjp",
-      "overall": 96,
-      "evaluatedAt": "2026-03-25",
+      "overall": 97,
+      "evaluatedAt": "2026-04-30",
       "lang": "JP",
       "type": "ホテル"
     },
@@ -36,8 +36,8 @@
       "url": "/en/hotels/con-dao-island/",
       "title": "6 Best Con Dao Hotels 2026: Luxury to Local Stays | RITOTABI",
       "stream": "cen",
-      "overall": 98,
-      "evaluatedAt": "2026-04-29",
+      "overall": 97,
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
       "type": "ホテル"
     },
@@ -46,8 +46,8 @@
       "url": "/destinations/con-dao-island/",
       "title": "コンダオ 総合ガイド（日本語）",
       "stream": "cjp",
-      "overall": 97,
-      "evaluatedAt": "2026-03-22",
+      "overall": 96,
+      "evaluatedAt": "2026-04-30",
       "lang": "JP",
       "type": "ガイド"
     },
@@ -56,8 +56,8 @@
       "url": "/en/destinations/con-dao-island/",
       "title": "Con Dao Island Guide: Vietnam's Most Pristine Paradise | RITOTABI",
       "stream": "cen",
-      "overall": 98,
-      "evaluatedAt": "2026-04-29",
+      "overall": 96,
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
       "type": "ガイド"
     },
@@ -81,23 +81,33 @@
       "lang": "EN",
       "type": "トップ"
     },
+    "destinations_cham-island": {
+      "file": "cham_jp.json",
+      "url": "/destinations/cham-island/",
+      "title": "チャム島観光ガイド（日本語）",
+      "stream": "hjp",
+      "overall": 94,
+      "evaluatedAt": "2026-04-30",
+      "lang": "JP",
+      "type": "ガイド"
+    },
     "en_destinations_cham-island": {
       "file": "cham_en.json",
       "url": "/en/destinations/cham-island/",
       "title": "Cham Island Guide 2026: Hoi An's Hidden Treasure | RITOTABI",
       "stream": "hen",
-      "overall": 88,
-      "evaluatedAt": "2026-04-29",
+      "overall": 94,
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
       "type": "ガイド"
     },
     "destinations_con-dao-island_running": {
       "file": "condao_running_jp.json",
       "url": "/destinations/con-dao-island/running/",
-      "title": "コンダオ島を走る｜絶壁シーサイドと湖畔を巡る実走ガイド | RITOTABI",
+      "title": "コンダオ島を走る｜実走ガイド（日本語）",
       "stream": "cjp",
-      "overall": 96,
-      "evaluatedAt": "2026-04-19",
+      "overall": 95,
+      "evaluatedAt": "2026-04-30",
       "lang": "JP",
       "type": "ランニング"
     },
@@ -106,48 +116,88 @@
       "url": "/en/destinations/con-dao-island/running/",
       "title": "Con Dao Running Guide: Seaside & Lakefront Routes | RITOTABI",
       "stream": "cen",
-      "overall": 94,
-      "evaluatedAt": "2026-04-29",
+      "overall": 95,
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
       "type": "ランニング"
+    },
+    "hotels_hoian-old-town": {
+      "file": "hoian_hotels_jp.json",
+      "url": "/hotels/hoian-old-town/",
+      "title": "ホイアン旧市街ホテルガイド（日本語）",
+      "stream": "hjp",
+      "overall": 95,
+      "evaluatedAt": "2026-04-30",
+      "lang": "JP",
+      "type": "ホテル"
     },
     "en_hotels_hoian-old-town": {
       "file": "hoian_hotels_en.json",
       "url": "/en/hotels/hoian-old-town/",
-      "title": "5 Best Hoi An Old Town Hotels 2026: Riverside & Luxury | RITOTABI",
+      "title": "5 Best Hoi An Old Town Hotels 2026 | RITOTABI",
       "stream": "hen",
-      "overall": 93,
-      "evaluatedAt": "2026-04-29",
+      "overall": 95,
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
+      "type": "ホテル"
+    },
+    "hotels_an-bang": {
+      "file": "anbang_hotels_jp.json",
+      "url": "/hotels/an-bang/",
+      "title": "アンバンビーチホテルガイド（日本語）",
+      "stream": "hjp",
+      "overall": 95,
+      "evaluatedAt": "2026-04-30",
+      "lang": "JP",
       "type": "ホテル"
     },
     "en_hotels_an-bang": {
       "file": "anbang_hotels_en.json",
       "url": "/en/hotels/an-bang/",
-      "title": "6 Best An Bang Beach Hotels: Luxury & Boutique 2026 | RITOTABI",
+      "title": "6 Best An Bang Beach Hotels 2026 | RITOTABI",
       "stream": "hen",
-      "overall": 94,
-      "evaluatedAt": "2026-04-29",
+      "overall": 95,
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
       "type": "ホテル"
+    },
+    "destinations_hoian-old-town_running": {
+      "file": "hoian_running_jp.json",
+      "url": "/destinations/hoian-old-town/running/",
+      "title": "ホイアン旧市街ランニングガイド（日本語）",
+      "stream": "hjp",
+      "overall": 94,
+      "evaluatedAt": "2026-04-30",
+      "lang": "JP",
+      "type": "ランニング"
     },
     "en_destinations_hoian-old-town_running": {
       "file": "hoian_running_en.json",
       "url": "/en/destinations/hoian-old-town/running/",
-      "title": "Hoi An Running Guide 2026: Old Town & Riverside | RITOTABI",
+      "title": "Hoi An Running Guide 2026 | RITOTABI",
       "stream": "hen",
-      "overall": 93,
-      "evaluatedAt": "2026-04-29",
+      "overall": 94,
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
+      "type": "ランニング"
+    },
+    "destinations_an-bang_running": {
+      "file": "anbang_running_jp.json",
+      "url": "/destinations/an-bang/running/",
+      "title": "アンバンビーチランニングガイド（日本語）",
+      "stream": "hjp",
+      "overall": 94,
+      "evaluatedAt": "2026-04-30",
+      "lang": "JP",
       "type": "ランニング"
     },
     "en_destinations_an-bang_running": {
       "file": "anbang_running_en.json",
       "url": "/en/destinations/an-bang/running/",
-      "title": "An Bang Running Guide: Rice Fields & Shore | RITOTABI",
+      "title": "An Bang Running Guide 2026 | RITOTABI",
       "stream": "hen",
       "overall": 94,
-      "evaluatedAt": "2026-04-29",
+      "evaluatedAt": "2026-04-30",
       "lang": "EN",
       "type": "ランニング"
     },
@@ -164,7 +214,7 @@
     "destinations_ishigaki-island": {
       "file": "ishigaki_jp.json",
       "url": "/destinations/ishigaki-island/",
-      "title": "石垣島観光ガイド｜実走調査で見つける「嘘のない」離島情報 | RITOTABI",
+      "title": "石垣島観光ガイド｜実働レポート | RITOTABI",
       "stream": "jp_ishigaki",
       "overall": 88,
       "evaluatedAt": "2026-04-22",
@@ -204,7 +254,7 @@
     "destinations_ishigaki-island_running": {
       "file": "jp_ishigaki_running.json",
       "url": "/destinations/ishigaki-island/running/",
-      "title": "石垣島を走る｜サザンゲートと市街地を巡る実走ガイド | RITOTABI",
+      "title": "石垣島を走る｜実走ガイド | RITOTABI",
       "stream": "jp_ishigaki",
       "overall": 94,
       "evaluatedAt": "2026-04-22",
@@ -214,7 +264,7 @@
     "en_hotels_miyako-island": {
       "file": "miyako_hotels_en.json",
       "url": "/en/hotels/miyako-island/",
-      "title": "9 Best Hotels in Miyako Island: Luxury & Budget Stays | RITOTABI",
+      "title": "9 Best Hotels in Miyako Island | RITOTABI",
       "stream": "en_miyako",
       "overall": 95,
       "evaluatedAt": "2026-04-29",
@@ -224,7 +274,7 @@
     "en_destinations_miyako-island": {
       "file": "en_destinations_miyako-island.json",
       "url": "/en/destinations/miyako-island/",
-      "title": "Miyako Island Complete Guide: Field-Tested & Honest Report | RITOTABI",
+      "title": "Miyako Island Complete Guide | RITOTABI",
       "stream": "en_miyako",
       "overall": 96,
       "evaluatedAt": "2026-04-29",
@@ -234,7 +284,7 @@
     "en_destinations_miyako-island_beaches": {
       "file": "miyako_beaches_en.json",
       "url": "/en/destinations/miyako-island/beaches/",
-      "title": "Miyako Island Hidden Beach Guide: 17END to Secret Spots | RITOTABI",
+      "title": "Miyako Island Hidden Beach Guide | RITOTABI",
       "stream": "en_miyako",
       "overall": 96,
       "evaluatedAt": "2026-04-29",
@@ -244,7 +294,7 @@
     "en_destinations_miyako-island_running": {
       "file": "miyako_running_en.json",
       "url": "/en/destinations/miyako-island/running/",
-      "title": "Miyako Island Running | Kurima, Ikema & 17END Course Guide | RITOTABI",
+      "title": "Miyako Island Running Guide | RITOTABI",
       "stream": "en_miyako",
       "overall": 93,
       "evaluatedAt": "2026-04-25",
@@ -254,7 +304,7 @@
     "hotels_miyako-island": {
       "file": "miyako_hotels_jp.json",
       "url": "/hotels/miyako-island/",
-      "title": "宮古島のおすすめホテル：失敗しない「ラグジュアリー～コスパ」厳選9宿 | RITOTABI",
+      "title": "宮古島のおすすめホテル（日本語）",
       "stream": "jp_miyako",
       "overall": 96,
       "evaluatedAt": "2026-04-14",
@@ -264,7 +314,7 @@
     "destinations_miyako-island_beaches": {
       "file": "destinations_miyako-island_beaches.json",
       "url": "/destinations/miyako-island/beaches/",
-      "title": "宮古島ビーチガイド｜17ENDから穴場まで絶景を探す | RITOTABI",
+      "title": "宮古島ビーチガイド（日本語）",
       "stream": "jp_miyako",
       "overall": 96,
       "evaluatedAt": "2026-04-19",
@@ -274,7 +324,7 @@
     "destinations_miyako-island": {
       "file": "miyako_guide_jp.json",
       "url": "/destinations/miyako-island/",
-      "title": "宮古島観光完全ガイド：自分の足で稼いだ「嘘のない」実録レポート | RITOTABI",
+      "title": "宮古島観光完全ガイド（日本語）",
       "stream": "jp_miyako",
       "overall": 94,
       "evaluatedAt": "2026-04-14",
@@ -284,7 +334,7 @@
     "destinations_miyako-island_running": {
       "file": "miyako_running_jp.json",
       "url": "/destinations/miyako-island/running/",
-      "title": "宮古島ランニング｜来間・池間大橋＆17END 実走検証 | RITOTABI",
+      "title": "宮古島ランニング実走検証（日本語）",
       "stream": "jp_miyako",
       "overall": 95,
       "evaluatedAt": "2026-04-14",
@@ -294,7 +344,7 @@
     "hotels_yoron-island": {
       "file": "yoron_hotels_jp.json",
       "url": "/hotels/yoron-island/",
-      "title": "与論島のおすすめホテル：失敗しない「リゾート～隠れ家」厳選5宿 | RITOTABI",
+      "title": "与論島のおすすめホテル（日本語）",
       "stream": "jp_yoron",
       "overall": 94,
       "evaluatedAt": "2026-04-15",
@@ -304,7 +354,7 @@
     "destinations_yoron-island_beaches": {
       "file": "jp_yoron_beaches.json",
       "url": "/destinations/yoron-island/beaches/",
-      "title": "与論島ビーチガイド｜透明度抜群の海と静寂の穴場探し | RITOTABI",
+      "title": "与論島ビーチガイド（日本語）",
       "stream": "jp_yoron",
       "overall": 94,
       "evaluatedAt": "2026-04-15",
@@ -314,7 +364,7 @@
     "destinations_yoron-island": {
       "file": "yoron_guide_jp.json",
       "url": "/destinations/yoron-island/",
-      "title": "与論島観光ガイド2026｜ヨロンブルーと最高の宿探し | RITOTABI",
+      "title": "与論島観光ガイド（日本語）",
       "stream": "jp_yoron",
       "overall": 91,
       "evaluatedAt": "2026-04-15",
@@ -324,7 +374,7 @@
     "destinations_yoron-island_running": {
       "file": "yoron_running_jp.json",
       "url": "/destinations/yoron-island/running/",
-      "title": "与論島ランニング｜ヨロンブルーを望む絶景実走コース | RITOTABI",
+      "title": "与論島ランニング実走（日本語）",
       "stream": "jp_yoron",
       "overall": 95,
       "evaluatedAt": "2026-04-15",
@@ -334,7 +384,7 @@
     "destinations_amami-island": {
       "file": "amami_guide_jp.json",
       "url": "/destinations/amami-island/",
-      "title": "奄美大島観光ガイド2026｜土盛海岸と絶品グルメ | RITOTABI",
+      "title": "奄美大島観光ガイド（日本語）",
       "stream": "jp_amami",
       "overall": 95,
       "evaluatedAt": "2026-04-24",
@@ -344,7 +394,7 @@
     "en_destinations_amami-island": {
       "file": "en_destinations_amami-island.json",
       "url": "/en/destinations/amami-island/",
-      "title": "Amami Oshima Travel Guide 2026 | Tomori Beach & Island Cuisine | RITOTABI",
+      "title": "Amami Oshima Travel Guide | RITOTABI",
       "stream": "en_amami",
       "overall": 95,
       "evaluatedAt": "2026-04-24",
@@ -354,7 +404,7 @@
     "hotels_amami-island": {
       "file": "hotels_amami-island.json",
       "url": "/hotels/amami-island/",
-      "title": "奄美大島ホテルの真実｜北部・南部エリア別徹底比較 | RITOTABI",
+      "title": "奄美大島ホテルガイド（日本語）",
       "stream": "jp_amami",
       "overall": 94,
       "evaluatedAt": "2026-04-15",
@@ -364,7 +414,7 @@
     "en_hotels_amami-island": {
       "file": "amami_hotels_en.json",
       "url": "/en/hotels/amami-island/",
-      "title": "Best Hotels in Amami Oshima: Area Guide & Expert Picks | RITOTABI",
+      "title": "Best Hotels in Amami Oshima | RITOTABI",
       "stream": "en_amami",
       "overall": 94,
       "evaluatedAt": "2026-04-24",
@@ -374,7 +424,7 @@
     "destinations_kume-island": {
       "file": "jp_kume_guide.json",
       "url": "/destinations/kume-island/",
-      "title": "久米島観光ガイド｜実走調査で見つける「嘘のない」離島情報 | RITOTABI",
+      "title": "久米島観光ガイド（日本語）",
       "stream": "jp_kume",
       "overall": 82,
       "evaluatedAt": "2026-04-19",
@@ -384,7 +434,7 @@
     "hotels_kume-island": {
       "file": "kume_hotels_jp.json",
       "url": "/hotels/kume-island/",
-      "title": "久米島ホテル実録：現地調査で選ぶおすすめ3宿 | RITOTABI",
+      "title": "久米島ホテルガイド（日本語）",
       "stream": "jp_kume",
       "overall": 89,
       "evaluatedAt": "2026-04-19",

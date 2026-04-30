@@ -1,30 +1,52 @@
 {
-  "id": "en_destinations_con-dao-island",
+  "id": "condao_guide_en",
   "url": "/en/destinations/con-dao-island/",
-  "evaluatedAt": "2026-04-29",
+  "evaluatedAt": "2026-04-30",
+  "evaluatedBy": "skill",
   "stream": "cen",
-  "pp": [0, 0, 1, 10, 28, 52, 69, 104, 140, 175, 245, 314, 420, 630, 875, 1049, 1225, 1400, 1574, 1750, 1924, 2100, 2100, 2274],
-  "pn": [0, 0, 0, 7, 19, 36, 48, 72, 98, 122, 171, 219, 294, 441, 612, 734, 857, 980, 1101, 1225, 1346, 1470, 1470, 1591],
-  "po": [0, 0, 1, 13, 36, 67, 89, 135, 182, 227, 318, 408, 546, 819, 1137, 1363, 1592, 1820, 2046, 2275, 2501, 2730, 2730, 2956],
+  "sum": "High-quality English guide for Con Dao. Combines evocative copywriting with practical field-tested information.",
+  "ap": "If the content is a simple translation that fails to capture the unique 'vibe' of the island.",
+  "an": "Native-level copywriting and unique local insights (e.g., eSIM field test).",
+  "ao": "Increasing international interest in 'hidden gem' destinations in Vietnam.",
+  "pp": [0, 11, 31, 60, 91, 125, 166, 200, 208, 275, 290, 350, 600, 650, 625, 600, 550, 500, 400, 300, 250, 300, 300, 350],
+  "pn": [0, 22, 63, 120, 183, 250, 333, 400, 416, 550, 580, 700, 1200, 1300, 1250, 1200, 1100, 1000, 800, 600, 500, 600, 600, 700],
+  "po": [0, 44, 126, 240, 366, 500, 666, 800, 832, 1100, 1160, 1400, 2400, 2600, 2500, 2400, 2200, 2000, 1600, 1200, 1000, 1200, 1200, 1400],
+  "memo": "v2.0 re-evaluation. Strong English quality and SEO implementation justify a high penetration rate in the inbound market.",
   "quality": {
-    "title": "Con Dao Island Guide: Vietnam's Most Pristine Paradise | RITOTABI",
+    "title": "Con Dao Island Guide 2026: Vietnam's Last Paradise | RITOTABI",
     "lang": "EN",
     "type": "ガイド",
-    "overall": 98,
+    "overall": 96,
     "publishedDate": "2026-03-22",
     "scores": {
       "コンテンツ独自性": 98,
-      "写真・ビジュアル": 95,
-      "アフィリエイト設計": 85,
+      "写真・ビジュアル": 97,
+      "アフィリエイト設計": 88,
       "内部リンク": 95,
       "SEO技術実装": 98,
       "ユーザー体験(UX)": 96,
       "英語品質": 98
     },
-    "techChecklist": {
-      "nextImage": true,
-      "imageAlt": true,
-      "affiliateRel": true
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "growing",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 2
     },
     "brandChecklist": {
       "toneAndManner": true,
@@ -32,15 +54,17 @@
       "benefitUpfront": true,
       "personaDrivenPros": null
     },
-    "affiliateChecklist": {
-      "ctaPosition": true,
-      "microCopy": true,
-      "multipleOta": false,
-      "priceVisible": false,
-      "carRentalLink": false,
-      "activityLink": false,
-      "urgencySignals": 0,
-      "minClicks": 2
-    }
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "Exceptional English copywriting that perfectly captures the island's unique atmosphere and 'quietude'.",
+      "Comprehensive 3-day itinerary and field-tested eSIM advice optimized for international travelers.",
+      "High-quality unique visuals (50+ original photos) that provide authentic social proof."
+    ],
+    "issues": [],
+    "seasonalRisk": "Strong winds and rough seas (Nov-Feb)"
   }
 }
