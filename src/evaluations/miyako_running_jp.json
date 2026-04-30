@@ -1,23 +1,26 @@
 {
-  "id": "miyako_running_jp",
-  "url": "https://ritotabi.com/destinations/miyako-island/running/",
-  "evaluatedAt": "2026-04-14",
+  "id": "destinations_miyako-island_running",
+  "url": "/destinations/miyako-island/running/",
+  "evaluatedAt": "2026-04-30",
   "evaluatedBy": "skill",
   "stream": "jp_miyako",
-  "sum": "宮古島を代表する4コースを実走調査した、一次情報に基づく究極のランニングガイド（日本語版）。",
-  "ap": "実走者のみが知り得るトイレ・自販機・路面状況を詳細に記述。23枚の現地写真により高い没入感を提供。",
-  "an": "FAQ JSON-LD、Next.js Image、絶対パスSEO実装など、技術的にも完成されている。内部リンクによるホテル・ビーチへの導線も適切。",
-  "ao": "宮古島エリアにおけるランニング需要の決定版リソースとして、Tier 1基準の安定した成長と高い成約率が期待できる。",
+  "sum": "宮古島ランニングガイド。実走検証に基づくマニアックな一次情報（自販機、トイレ、風向き、Flightradar24活用等）が満載。ランナー目線でのホテル紹介も有益。",
+  "ap": "悲観前提",
+  "an": "通常前提",
+  "ao": "楽観前提",
   "pp": [
-    4, 16, 63, 126, 294, 735, 1260, 790, 1155, 1575, 1890, 1260, 1680, 2940, 4200, 5775, 4725, 7875, 9450, 6825, 8400, 10500, 11340, 7875
+    20, 100, 150, 400, 250, 600, 700, 350, 600, 600, 750, 800,
+    900, 1200, 1200, 2200, 1000, 2500, 2400, 1000, 2000, 1800, 2000, 1900
   ],
   "pn": [
-    5, 20, 79, 158, 368, 919, 1575, 987, 1444, 1969, 2363, 1575, 2100, 3675, 5250, 7219, 5906, 9844, 11813, 8531, 10500, 13125, 14175, 9844
+    40, 200, 300, 800, 500, 1200, 1400, 700, 1200, 1200, 1500, 1600,
+    1800, 2400, 2400, 4400, 2000, 5000, 4800, 2000, 4000, 3600, 4000, 3800
   ],
   "po": [
-    8, 30, 103, 205, 478, 1195, 2048, 1283, 1877, 2560, 3072, 2048, 2730, 4778, 6825, 9385, 7678, 12797, 15357, 11090, 13650, 17063, 18428, 12797
+    80, 400, 600, 1600, 1000, 2400, 2800, 1400, 2400, 2400, 3000, 3200,
+    3600, 4800, 4800, 8800, 4000, 10000, 9600, 4000, 8000, 7200, 8000, 7600
   ],
-  "memo": "実走調査に基づく非常に質の高いガイド。4つの主要コース（来間橋、池間橋、17END、ヒルトン周辺）の利便性と魅力を網羅している。SEO関連の絶対パス化および実走バッジ、FAQ実装が完備されていることを確認。品質スコアは最高水準の95点。収益予測は、宮古島（Tier 1）のベースラインに対し、高いコンテンツ品質による1.05倍の成長補正を適用した。",
+  "memo": "ニッチながらも「走る旅」という特定のニーズに対して非常に強力な訴求力を持つ。実走メモのクオリティが他社の追随を許さない。",
   "quality": {
     "title": "宮古島ランニング｜来間・池間大橋＆17END 実走検証 | RITOTABI",
     "lang": "JP",
@@ -27,10 +30,11 @@
     "scores": {
       "コンテンツ独自性": 98,
       "写真・ビジュアル": 92,
-      "アフィリエイト設計": 88,
+      "アフィリエイト設計": 90,
       "内部リンク": 95,
-      "SEO技術実装": 96,
-      "ユーザー体験(UX)": 95
+      "SEO技術実装": 97,
+      "ユーザー体験(UX)": 96,
+      "英語品質": null
     },
     "seoChecklist": {
       "hreflang": true,
@@ -44,14 +48,14 @@
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": true,
-      "priceVisible": true,
-      "socialProof": true,
-      "mobileStickyCta": true,
-      "carRentalLink": true,
-      "activityLink": true,
-      "urgencySignals": 1,
-      "minClicks": 1
+      "multipleOta": false,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
     },
     "brandChecklist": {
       "toneAndManner": true,
@@ -60,14 +64,12 @@
       "personaDrivenPros": null
     },
     "categoryChecklist": {
-      "comparisonTable": null,
-      "affiliateMicroCopy": null,
       "courseSpecs": true,
       "runBadge": true,
       "runningCvr": {
-        "internalHotelLinks": 5,
+        "internalHotelLinks": 8,
         "directAffiliateLinks": 0,
-        "hotelCtaPerCourse": 1.25,
+        "hotelCtaPerCourse": 2,
         "runnerPersonaMatch": true
       }
     },
@@ -77,13 +79,15 @@
       "affiliateRel": true
     },
     "strengths": [
-      "実走者のみが書ける『Runner's Voice』が極めて具体的で信頼性が高い",
-      "23枚の高品質な一次情報写真による圧倒的な視覚的訴求",
-      "ランニングコース周辺のホテル・ビーチへの導線が戦略的に配置されている",
-      "FAQ JSON-LDの実装により、検索結果での占有率と利便性が高い",
-      "絶対パスによるSEO技術実装が完璧に行われている"
+      "「伊良部大橋の非推奨理由」など、安全面と実用性を両立させた高度な一次情報",
+      "NearbySpotOptimizer による各コースから宿へのスムーズな導線",
+      "各コースのスペック（距離、駐車場）の整理整頓"
     ],
-    "issues": [],
-    "seasonalRisk": "台風リスク (9月)"
+    "issues": [
+      {
+        "level": "中",
+        "text": "ホテル導線のマイクロコピーが定型的であり、ランナー向けに最適化する余地がある"
+      }
+    ]
   }
 }

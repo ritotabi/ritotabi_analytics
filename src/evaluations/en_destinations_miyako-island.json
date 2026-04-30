@@ -1,31 +1,40 @@
 {
   "id": "en_destinations_miyako-island",
   "url": "/en/destinations/miyako-island/",
-  "evaluatedAt": "2026-04-29",
+  "evaluatedAt": "2026-04-30",
   "evaluatedBy": "skill",
   "stream": "en_miyako",
-  "sum": "宮古島の総合ガイド（英語ローカライズ版）。一人称の体験に基づいた圧倒的なコンテンツ量と、ホテル・レンタカー・アクティビティへの完璧なアフィリエイト導線が特徴。",
-  "ap": "悲観前提 (通常予測の75%)",
-  "an": "通常前提 (インバウンド成熟期ベース)",
-  "ao": "楽観前提 (通常予測の180%)",
-  "pp": [0, 32, 49, 280, 540, 300, 810, 900, 1275, 962, 1200, 1785, 1760, 2925, 1495, 3290, 3240, 1200, 2205, 1837, 2125, 1375, 1530, 2167],
-  "pn": [0, 65, 98, 560, 1080, 600, 1620, 1800, 2550, 1925, 2400, 3570, 3520, 5850, 2990, 6580, 6480, 2400, 4410, 3675, 4250, 2750, 3060, 4335],
-  "po": [0, 97, 147, 840, 1620, 900, 2430, 2700, 3825, 2887, 3600, 5355, 5280, 8775, 4485, 9870, 9720, 3600, 6615, 5512, 6375, 4125, 4590, 6502],
-  "memo": "宮古島の英語ガイドページ。一次情報に基づいた高品質なコピーライティングと、効果的なアフィリエイト導線（ホテル、レンタカー、アクティビティ）が実装されており、極めて完成度が高い。SEO技術要件も絶対パスやJSON-LDの整合性など完璧に満たしている。",
+  "sum": "English hub for Miyako tourism. Maintains the authoritative and personal tone of the original. High quality localization for international visitors.",
+  "ap": "Pessimistic",
+  "an": "Normal",
+  "ao": "Optimistic",
+  "pp": [
+    5, 30, 20, 50, 45, 20, 40, 40, 45, 50, 60, 75,
+    90, 125, 200, 250, 350, 200, 450, 425, 200, 400, 300, 400
+  ],
+  "pn": [
+    10, 60, 40, 100, 90, 40, 80, 80, 90, 100, 120, 150,
+    180, 250, 400, 500, 700, 400, 900, 850, 400, 800, 600, 800
+  ],
+  "po": [
+    20, 120, 80, 200, 180, 80, 160, 160, 180, 200, 240, 300,
+    360, 500, 800, 1000, 1400, 800, 1600, 1700, 800, 1600, 1200, 1600
+  ],
+  "memo": "Solid English hub. Needs car rental affiliate integration for international drivers.",
   "quality": {
     "title": "Miyako Island Complete Guide: Field-Tested & Honest Report | RITOTABI",
     "lang": "EN",
     "type": "ガイド",
-    "overall": 96,
+    "overall": 95,
     "publishedDate": "2026-04-12",
     "scores": {
-      "コンテンツ独自性": 96,
-      "写真・ビジュアル": 95,
-      "アフィリエイト設計": 90,
+      "コンテンツ独自性": 94,
+      "写真・ビジュアル": 92,
+      "アフィリエイト設計": 92,
       "内部リンク": 98,
-      "SEO技術実装": 100,
+      "SEO技術実装": 97,
       "ユーザー体験(UX)": 95,
-      "英語品質": 98
+      "英語品質": 96
     },
     "seoChecklist": {
       "hreflang": true,
@@ -39,14 +48,14 @@
     "affiliateChecklist": {
       "ctaPosition": true,
       "microCopy": true,
-      "multipleOta": true,
+      "multipleOta": false,
       "priceVisible": false,
       "socialProof": false,
       "mobileStickyCta": false,
-      "carRentalLink": true,
-      "activityLink": true,
-      "urgencySignals": 2,
-      "minClicks": 1
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
     },
     "brandChecklist": {
       "toneAndManner": true,
@@ -54,24 +63,21 @@
       "benefitUpfront": true,
       "personaDrivenPros": null
     },
-    "categoryChecklist": {
-      "comparisonTable": null,
-      "affiliateMicroCopy": null,
-      "courseSpecs": null,
-      "runBadge": null
-    },
     "techChecklist": {
       "nextImage": true,
       "imageAlt": true,
       "affiliateRel": true
     },
-    "seasonalRisk": "9月の台風リスクにより、交通・宿泊の大規模キャンセルが発生する可能性があります。",
     "strengths": [
-      "「Silence Observed」「Ultimate Island Time」など、インバウンド向けに洗練されたネイティブレベルのコピーライティング",
-      "レンタカー（TravelGuideSection）やアクティビティ（Viator/Klook）へのアフィリエイト導線が自然かつ効果的に配置されている",
-      "hreflang、canonical、OGPなどのURLがすべて絶対パスで正確に実装されている",
-      "FAQ構造化データ（JSON-LD）が適切に定義され、ユーザーの疑問を網羅している"
+      "Authoritative content that guides international travelers with confidence",
+      "Clear categorization and internal linking to niche guides",
+      "Robust technical SEO with accurate hreflang and canonical setup"
     ],
-    "issues": []
+    "issues": [
+      {
+        "level": "中",
+        "text": "Lack of international car rental affiliate integration"
+      }
+    ]
   }
 }
