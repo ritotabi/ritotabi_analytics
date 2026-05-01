@@ -4,7 +4,9 @@ import { BASE_PV_OBJ } from "./data/baseline-pv";
 import { ACTUAL_PV_OBJ } from "./data/actual-pv";
 import { calcData, sumRevDyn, addEvalsToPv, scaleBasePv } from "./utils/calc";
 import type { PageEvaluation, EvalRegistry } from "./types/evaluation";
-import { TEAL, CYAN, PINK, SLATE } from "./utils/colors";
+import type { MonthlyReport } from "./types/report";
+import type { ForecastHistory } from "./types/forecast";
+import { TEAL, CYAN, PINK, SLATE, VIOLET, GRN } from "./utils/colors";
 
 // Components
 import Header from "./components/Header";
@@ -14,13 +16,19 @@ import ChartTab from "./components/ChartTab";
 import TableTab from "./components/TableTab";
 import EvalTab from "./components/EvalTab";
 import QualityTab from "./components/QualityTab";
+import ReportTab from "./components/ReportTab";
+import ForecastTab from "./components/ForecastTab";
 
 // Static Data
 import _registry from "./evaluations/_registry.json";
 const registry = _registry as EvalRegistry;
 
-// Load all evaluation JSONs
+import _forecastHistory from "./data/forecast-vintages.json";
+const forecastHistory = _forecastHistory as ForecastHistory;
+
+// Load all evaluation JSONs and report JSONs
 const evaluationModules = import.meta.glob("./evaluations/*.json");
+const reportModules = import.meta.glob("./reports/*.json");
 
 const App: React.FC = () => {
   const [tab, setTab] = useState("overview");
@@ -29,10 +37,12 @@ const App: React.FC = () => {
   const [streams] = useState(registry.streams);
   const [useAccumulated, setUseAccumulated] = useState(true);
   const [evaluations, setEvaluations] = useState<Record<string, PageEvaluation>>({});
+  const [reports, setReports] = useState<Record<string, MonthlyReport>>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadEvaluations = async () => {
+    const loadData = async () => {
+      // Load evaluations
       const loadedEvals: Record<string, PageEvaluation> = {};
       for (const registryKey in registry.evaluations) {
         const entry = registry.evaluations[registryKey as keyof typeof registry.evaluations];
@@ -44,9 +54,19 @@ const App: React.FC = () => {
         }
       }
       setEvaluations(loadedEvals);
+
+      // Load reports
+      const loadedReports: Record<string, MonthlyReport> = {};
+      for (const path in reportModules) {
+        const fileName = path.split('/').pop()?.replace('.json', '') || '';
+        const module = (await reportModules[path]()) as { default: MonthlyReport };
+        loadedReports[fileName] = module.default;
+      }
+      setReports(loadedReports);
+
       setLoading(false);
     };
-    loadEvaluations();
+    loadData();
   }, []);
 
   if (loading) {
@@ -98,20 +118,23 @@ const App: React.FC = () => {
       {/* Tabs Navigation */}
       <div style={{ display: "flex", gap: 2, padding: "10px 24px 0", borderBottom: "1px solid #1e293b", overflowX: "auto" }}>
         {[
-          { id: "overview", label: "📋 概要" },
-          { id: "chart", label: "📊 グラフ" },
-          { id: "table", label: "📅 月次一覧" },
-          { id: "eval", label: "🔍 ページ評価" },
-          { id: "quality", label: "📊 品質評価" }
+          { id: "overview", label: "📋 概要", color: PINK },
+          { id: "chart", label: "📊 グラフ", color: PINK },
+          { id: "table", label: "📅 月次一覧", color: PINK },
+          { id: "eval", label: "🔍 ページ評価", color: CYAN },
+          { id: "quality", label: "📊 品質評価", color: TEAL },
+          { id: "report", label: "📋 月次レポート", color: GRN },
+          { id: "forecast", label: "📈 予実推移", color: VIOLET }
         ].map(t => (
           <button
             key={t.id}
             onClick={() => setTab(t.id)}
             className={`btn-tab ${tab === t.id ? "active" : ""}`}
-            style={{ borderBottomColor: tab === t.id ? (t.id === "quality" ? TEAL : t.id === "eval" ? CYAN : PINK) : "transparent" }}
+            style={{ borderBottomColor: tab === t.id ? t.color : "transparent" }}
           >
             {t.label}
             {t.id === "quality" && ` (${Object.keys(evaluations).length})`}
+            {t.id === "report" && ` (${Object.keys(reports).length})`}
           </button>
         ))}
       </div>
@@ -122,6 +145,8 @@ const App: React.FC = () => {
         {tab === "table" && <TableTab data={data} streams={activeStreams} sum={sum} />}
         {tab === "eval" && <EvalTab lastUpdated={registry.lastUpdated} evalCount={Object.keys(evaluations).length} />}
         {tab === "quality" && <QualityTab evaluations={Object.values(evaluations)} streams={activeStreams} />}
+        {tab === "report" && <ReportTab reports={reports} />}
+        {tab === "forecast" && <ForecastTab forecastHistory={forecastHistory} actuals={ACTUAL_PV_OBJ} />}
       </div>
     </div>
   );

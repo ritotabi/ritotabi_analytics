@@ -1,0 +1,63 @@
+# ----------------------------------------
+# ページとスクリーン: ページパスとスクリーン クラス
+# アカウント: ritotabi
+# プロパティ: ritotabi
+# ----------------------------------------
+# 
+# すべてのユーザー
+# 開始日: 20260401
+# 終了日: 20260430
+ページパスとスクリーン クラス,表示回数,アクティブ ユーザー,アクティブ ユーザーあたりのビュー,アクティブ ユーザーあたりの平均エンゲージメント時間,イベント数,キーイベント,合計収益
+/,427,50,8.54,130.54,1047,0,0
+/en/,160,25,6.4,90.24,393,0,0
+/destinations/miyako-island/running/,111,58,1.9137931034482758,50.08620689655172,304,7,0
+/destinations/yoron-island/beaches/,94,30,3.1333333333333333,110.26666666666667,248,18,0
+/hotels/miyako-island/,84,13,6.461538461538462,165.69230769230768,246,42,0
+/destinations/miyako-island/beaches/,80,18,4.444444444444445,172.11111111111111,209,18,0
+/destinations/miyako-island/,77,15,5.133333333333334,118.26666666666667,193,20,0
+/hotels/hoian-old-town/,76,3,25.333333333333332,1078,148,0,0
+/en/hotels/ishigaki-island/,72,3,24,474.6666666666667,158,13,0
+/destinations/con-dao-island/,71,20,3.55,210.3,221,0,0
+/en/destinations/ishigaki-island/,69,6,11.5,252.16666666666666,172,1,0
+/destinations/cham-island/,66,14,4.714285714285714,165.42857142857142,151,0,0
+/hotels/ishigaki-island/,64,7,9.142857142857142,218.85714285714286,193,32,0
+/destinations/ishigaki-island/running/,60,20,3,50.2,156,5,0
+/hotels/con-dao-island/,58,11,5.2727272727272725,217.45454545454547,124,0,0
+/destinations/ishigaki-island/,57,6,9.5,233,143,20,0
+/en/hotels/con-dao-island/,56,8,7,90.875,108,0,0
+/destinations/aka-island/,55,34,1.6176470588235294,100.82352941176471,208,8,0
+/destinations/amami-island/,53,15,3.533333333333333,176.53333333333333,160,13,0
+/en/destinations/an-bang/running/,53,14,3.7857142857142856,42.857142857142854,117,0,0
+/en/destinations/con-dao-island/,53,13,4.076923076923077,64.61538461538461,128,0,0
+/hotels/an-bang/,53,2,26.5,1466,106,0,0
+/en/destinations/cham-island/,52,16,3.25,80.5,121,0,0
+/destinations/hoi-an/running/,48,11,4.363636363636363,106,93,0,0
+/destinations/an-bang/running/,47,5,9.4,187.8,98,0,0
+/en/hotels/hoian-old-town/,46,6,7.666666666666667,110,78,0,0
+/en/hotels/an-bang/,38,5,7.6,171.8,75,0,0
+/hotels/yoron-island/,37,12,3.0833333333333335,94.25,140,28,0
+/hotels/amami-island/,35,8,4.375,139.125,116,21,0
+/destinations/yoron-island/,34,12,2.8333333333333335,59.583333333333336,92,10,0
+/en/hotels/miyako-island/,34,6,5.666666666666667,220.16666666666666,144,27,0
+/destinations/kume-island/,30,5,6,173,115,27,0
+/en/destinations/amami-island/,30,4,7.5,170.25,71,3,0
+/en/destinations/ishigaki-island/running/,28,4,7,109.25,73,0,0
+/en/destinations/hoi-an/running/,26,8,3.25,25.75,52,0,0
+/hotels/kume-island/,26,7,3.7142857142857144,121.14285714285714,110,24,0
+/en/destinations/miyako-island/,23,3,7.666666666666667,111.66666666666667,65,7,0
+/en/destinations/hoian-old-town/running/,21,5,4.2,48.2,46,0,0
+/hotels/okinawa-main/,21,3,7,204.33333333333334,93,24,0
+/destinations/hoian-old-town/running/,20,3,6.666666666666667,118,64,0,0
+/destinations/yoron-island/running/,20,9,2.2222222222222223,81.11111111111111,55,3,0
+/en/destinations/con-dao-island/running/,20,3,6.666666666666667,66.66666666666667,38,0,0
+/destinations/con-dao-island/running/,18,4,4.5,69.5,54,0,0
+/en/hotels/amami-island/,18,2,9,293,41,3,0
+/en/destinations/miyako-island/beaches/,17,4,4.25,125.5,44,3,0
+/hotels/aka-island/,17,6,2.8333333333333335,121.83333333333333,75,15,0
+/en/destinations/miyako-island/running/,13,2,6.5,96.5,30,1,0
+/contact/,3,2,1.5,11,6,0,0
+/en/contact/,2,2,1,12,5,0,0
+/en/profile/,2,2,1,4.5,4,0,0
+/profile/,2,2,1,8.5,3,0,0
+/en/privacy/,1,1,1,0,1,0,0
+/privacy/,1,1,1,27,2,0,0

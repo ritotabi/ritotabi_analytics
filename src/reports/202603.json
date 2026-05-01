@@ -1,0 +1,562 @@
+{
+  "reportMonth": "2026-03",
+  "generatedAt": "2026-05-01T00:37:34.808Z",
+  "generatedBy": "skill",
+  "periodStart": "2026-03-01",
+  "periodEnd": "2026-03-31",
+  "revenue": 0,
+  "summary": {
+    "totalPageviews": 1437,
+    "totalUsers": 329,
+    "totalKeyEvents": 36,
+    "totalRevenue": 0,
+    "highlights": [
+      "総PV 1,437、アクティブユーザー 329人",
+      "最もアクセスの多いページは「/」（341 PV）",
+      "キーイベント 36件が5ページで発生"
+    ]
+  },
+  "traffic": {
+    "byStream": [
+      {
+        "stream": "jp_other",
+        "label": "その他 (JP)",
+        "pageviews": 411,
+        "users": 88,
+        "pagesCount": 4
+      },
+      {
+        "stream": "jp_miyako",
+        "label": "宮古島 (JP)",
+        "pageviews": 313,
+        "users": 83,
+        "pagesCount": 4
+      },
+      {
+        "stream": "jp_yoron",
+        "label": "与論島 (JP)",
+        "pageviews": 296,
+        "users": 49,
+        "pagesCount": 4
+      },
+      {
+        "stream": "jp_ishigaki",
+        "label": "石垣島 (JP)",
+        "pageviews": 141,
+        "users": 34,
+        "pagesCount": 3
+      },
+      {
+        "stream": "cjp",
+        "label": "コンダオ (JP)",
+        "pageviews": 72,
+        "users": 19,
+        "pagesCount": 3
+      },
+      {
+        "stream": "jp_aka",
+        "label": "阿嘉島 (JP)",
+        "pageviews": 51,
+        "users": 19,
+        "pagesCount": 2
+      },
+      {
+        "stream": "jp_amami",
+        "label": "奄美大島 (JP)",
+        "pageviews": 39,
+        "users": 8,
+        "pagesCount": 2
+      },
+      {
+        "stream": "jp_kume",
+        "label": "久米島 (JP)",
+        "pageviews": 32,
+        "users": 6,
+        "pagesCount": 2
+      },
+      {
+        "stream": "hjp",
+        "label": "ホイアン/チャム (JP)",
+        "pageviews": 32,
+        "users": 2,
+        "pagesCount": 1
+      },
+      {
+        "stream": "cen",
+        "label": "コンダオ (EN)",
+        "pageviews": 31,
+        "users": 14,
+        "pagesCount": 3
+      },
+      {
+        "stream": "en_other",
+        "label": "その他 (EN)",
+        "pageviews": 16,
+        "users": 5,
+        "pagesCount": 1
+      },
+      {
+        "stream": "hen",
+        "label": "ホイアン/チャム (EN)",
+        "pageviews": 3,
+        "users": 2,
+        "pagesCount": 1
+      }
+    ],
+    "byLanguage": {
+      "jp": {
+        "pageviews": 1387,
+        "users": 308
+      },
+      "en": {
+        "pageviews": 50,
+        "users": 21
+      }
+    },
+    "topPages": [
+      {
+        "path": "/",
+        "pageviews": 341,
+        "users": 73,
+        "avgEngagementTime": 69.1,
+        "keyEvents": 0
+      },
+      {
+        "path": "/destinations/miyako-island/running/",
+        "pageviews": 133,
+        "users": 48,
+        "avgEngagementTime": 56.6,
+        "keyEvents": 0
+      },
+      {
+        "path": "/destinations/yoron-island/beaches/",
+        "pageviews": 130,
+        "users": 25,
+        "avgEngagementTime": 151.8,
+        "keyEvents": 0
+      },
+      {
+        "path": "/hotels/yoron-island/",
+        "pageviews": 104,
+        "users": 11,
+        "avgEngagementTime": 470.4,
+        "keyEvents": 2
+      },
+      {
+        "path": "/hotels/miyako-island/",
+        "pageviews": 104,
+        "users": 16,
+        "avgEngagementTime": 344.8,
+        "keyEvents": 22
+      },
+      {
+        "path": "/destinations/ishigaki-island/running/",
+        "pageviews": 90,
+        "users": 22,
+        "avgEngagementTime": 20.2,
+        "keyEvents": 0
+      },
+      {
+        "path": "/hotels/okinawa-main/",
+        "pageviews": 62,
+        "users": 8,
+        "avgEngagementTime": 218.4,
+        "keyEvents": 5
+      },
+      {
+        "path": "/hotels/ishigaki-island/",
+        "pageviews": 42,
+        "users": 8,
+        "avgEngagementTime": 110.4,
+        "keyEvents": 0
+      },
+      {
+        "path": "/destinations/miyako-island/",
+        "pageviews": 42,
+        "users": 11,
+        "avgEngagementTime": 144.6,
+        "keyEvents": 0
+      },
+      {
+        "path": "/destinations/con-dao-island/",
+        "pageviews": 37,
+        "users": 6,
+        "avgEngagementTime": 130.2,
+        "keyEvents": 0
+      }
+    ],
+    "newPages": []
+  },
+  "search": {
+    "google": {
+      "totalClicks": 85,
+      "totalImpressions": 3180,
+      "avgCtr": 2.67,
+      "avgPosition": 18.19,
+      "topPages": [
+        {
+          "url": "https://ritotabi.com/destinations/miyako-island/running/",
+          "clicks": 27,
+          "impressions": 322,
+          "ctr": 8.39,
+          "position": 4.97
+        },
+        {
+          "url": "https://ritotabi.com/destinations/ishigaki-island/running/",
+          "clicks": 19,
+          "impressions": 248,
+          "ctr": 7.66,
+          "position": 7.53
+        },
+        {
+          "url": "https://ritotabi.com/destinations/yoron-island/beaches/",
+          "clicks": 8,
+          "impressions": 676,
+          "ctr": 1.18,
+          "position": 28.47
+        },
+        {
+          "url": "https://ritotabi.com/hotels/miyako-island/",
+          "clicks": 7,
+          "impressions": 406,
+          "ctr": 1.72,
+          "position": 6.77
+        },
+        {
+          "url": "https://ritotabi.com/destinations/yoron-island/running/",
+          "clicks": 4,
+          "impressions": 40,
+          "ctr": 10,
+          "position": 5.6
+        },
+        {
+          "url": "https://ritotabi.com/destinations/aka-island/",
+          "clicks": 2,
+          "impressions": 245,
+          "ctr": 0.82,
+          "position": 5.5
+        },
+        {
+          "url": "https://ritotabi.com/hotels/yoron-island/",
+          "clicks": 2,
+          "impressions": 134,
+          "ctr": 1.49,
+          "position": 27.99
+        },
+        {
+          "url": "https://ritotabi.com/destinations/con-dao-island/",
+          "clicks": 2,
+          "impressions": 68,
+          "ctr": 2.94,
+          "position": 9.12
+        },
+        {
+          "url": "https://ritotabi.com/hotels/con-dao-island/",
+          "clicks": 2,
+          "impressions": 67,
+          "ctr": 2.99,
+          "position": 9.78
+        },
+        {
+          "url": "https://ritotabi.com/destinations/kume-island/",
+          "clicks": 2,
+          "impressions": 52,
+          "ctr": 3.85,
+          "position": 6.33
+        }
+      ],
+      "zeroCtrPages": [
+        {
+          "url": "https://ritotabi.com/destinations/yoron-island/",
+          "impressions": 282,
+          "position": 54.91
+        },
+        {
+          "url": "https://ritotabi.com/en/destinations/con-dao-island/",
+          "impressions": 111,
+          "position": 21.73
+        },
+        {
+          "url": "https://ritotabi.com/destinations/amami-island/",
+          "impressions": 73,
+          "position": 11.1
+        }
+      ]
+    },
+    "bing": {
+      "totalClicks": 12,
+      "totalImpressions": 55,
+      "avgCtr": 21.82,
+      "avgPosition": 4.84,
+      "topPages": [
+        {
+          "url": "https://ritotabi.com/destinations/yoron-island/beaches/",
+          "impressions": 16,
+          "clicks": 5,
+          "ctr": 31.25,
+          "position": 3.75
+        },
+        {
+          "url": "https://ritotabi.com/destinations/aka-island/",
+          "impressions": 9,
+          "clicks": 4,
+          "ctr": 44.44,
+          "position": 5.111111111111111
+        },
+        {
+          "url": "https://ritotabi.com/hotels/yoron-island/",
+          "impressions": 4,
+          "clicks": 2,
+          "ctr": 50,
+          "position": 4.5
+        },
+        {
+          "url": "https://ritotabi.com/destinations/miyako-island/running/",
+          "impressions": 1,
+          "clicks": 1,
+          "ctr": 100,
+          "position": 3
+        }
+      ]
+    },
+    "engineComparison": {
+      "googleShare": 87.63,
+      "bingShare": 12.37
+    }
+  },
+  "engagement": {
+    "topEngagedPages": [
+      {
+        "path": "/destinations/cham-island/",
+        "avgEngagementTime": 1536,
+        "users": 2
+      },
+      {
+        "path": "/hotels/yoron-island/",
+        "avgEngagementTime": 470.4,
+        "users": 11
+      },
+      {
+        "path": "/hotels/miyako-island/",
+        "avgEngagementTime": 344.8,
+        "users": 16
+      },
+      {
+        "path": "/en/destinations/cham-island/",
+        "avgEngagementTime": 290.5,
+        "users": 2
+      },
+      {
+        "path": "/hotels/okinawa-main/",
+        "avgEngagementTime": 218.4,
+        "users": 8
+      },
+      {
+        "path": "/hotels/kume-island/",
+        "avgEngagementTime": 169.5,
+        "users": 2
+      },
+      {
+        "path": "/destinations/yoron-island/",
+        "avgEngagementTime": 166,
+        "users": 4
+      },
+      {
+        "path": "/destinations/yoron-island/beaches/",
+        "avgEngagementTime": 151.8,
+        "users": 25
+      },
+      {
+        "path": "/destinations/miyako-island/",
+        "avgEngagementTime": 144.6,
+        "users": 11
+      },
+      {
+        "path": "/hotels/aka-island/",
+        "avgEngagementTime": 134.3,
+        "users": 7
+      }
+    ],
+    "lowEngagementPages": [
+      {
+        "path": "/destinations/amami-island/",
+        "avgEngagementTime": 1,
+        "users": 2
+      },
+      {
+        "path": "/destinations/kume-island/",
+        "avgEngagementTime": 11.8,
+        "users": 4
+      },
+      {
+        "path": "/destinations/con-dao-island/running/",
+        "avgEngagementTime": 12.5,
+        "users": 2
+      },
+      {
+        "path": "/destinations/ishigaki-island/running/",
+        "avgEngagementTime": 20.2,
+        "users": 22
+      },
+      {
+        "path": "/hotels/con-dao-island/",
+        "avgEngagementTime": 22.8,
+        "users": 11
+      }
+    ],
+    "keyEventPages": [
+      {
+        "path": "/hotels/miyako-island/",
+        "keyEvents": 22,
+        "users": 16,
+        "cvRate": 137.5
+      },
+      {
+        "path": "/hotels/okinawa-main/",
+        "keyEvents": 5,
+        "users": 8,
+        "cvRate": 62.5
+      },
+      {
+        "path": "/hotels/aka-island/",
+        "keyEvents": 5,
+        "users": 7,
+        "cvRate": 71.43
+      },
+      {
+        "path": "/hotels/yoron-island/",
+        "keyEvents": 2,
+        "users": 11,
+        "cvRate": 18.18
+      },
+      {
+        "path": "/hotels/amami-island/",
+        "keyEvents": 2,
+        "users": 6,
+        "cvRate": 33.33
+      }
+    ]
+  },
+  "conversion": {
+    "totalKeyEvents": 36,
+    "totalRevenue": 0,
+    "topCvPages": [
+      {
+        "path": "/hotels/miyako-island/",
+        "keyEvents": 22,
+        "users": 16,
+        "cvRate": 137.5
+      },
+      {
+        "path": "/hotels/okinawa-main/",
+        "keyEvents": 5,
+        "users": 8,
+        "cvRate": 62.5
+      },
+      {
+        "path": "/hotels/aka-island/",
+        "keyEvents": 5,
+        "users": 7,
+        "cvRate": 71.43
+      },
+      {
+        "path": "/hotels/yoron-island/",
+        "keyEvents": 2,
+        "users": 11,
+        "cvRate": 18.18
+      },
+      {
+        "path": "/hotels/amami-island/",
+        "keyEvents": 2,
+        "users": 6,
+        "cvRate": 33.33
+      }
+    ],
+    "hotelCvSummary": {
+      "totalKeyEvents": 36,
+      "pages": [
+        {
+          "path": "/hotels/miyako-island/",
+          "keyEvents": 22,
+          "cvRate": 137.5
+        },
+        {
+          "path": "/hotels/okinawa-main/",
+          "keyEvents": 5,
+          "cvRate": 62.5
+        },
+        {
+          "path": "/hotels/aka-island/",
+          "keyEvents": 5,
+          "cvRate": 71.43
+        },
+        {
+          "path": "/hotels/yoron-island/",
+          "keyEvents": 2,
+          "cvRate": 18.18
+        },
+        {
+          "path": "/hotels/amami-island/",
+          "keyEvents": 2,
+          "cvRate": 33.33
+        }
+      ]
+    }
+  },
+  "forecastComparison": {
+    "vintageId": "v0_initial",
+    "byStream": [],
+    "overallAccuracy": 0,
+    "calibrationApplied": {
+      "newVintageId": "v1_202604",
+      "factors": {
+        "jp_yoron": 26.43,
+        "jp_miyako": 4.69,
+        "jp_ishigaki": 2.15,
+        "jp_kume": 8,
+        "jp_aka": 14.4,
+        "jp_amami": 10,
+        "en_ishigaki": 6.04,
+        "en_miyako": 3.78,
+        "en_amami": 6,
+        "cjp": 21,
+        "cen": 13,
+        "hjp": 20,
+        "hen": 15,
+        "jp_other": 50.44,
+        "en_other": 41.25
+      }
+    }
+  },
+  "actionItems": [
+    {
+      "category": "ctr",
+      "priority": "高",
+      "description": "3ページがGoogle検索で表示されているがクリックゼロ。タイトル・descriptionの改善でCTR向上が見込める。",
+      "targetPages": [
+        "https://ritotabi.com/destinations/yoron-island/",
+        "https://ritotabi.com/en/destinations/con-dao-island/",
+        "https://ritotabi.com/destinations/amami-island/"
+      ]
+    },
+    {
+      "category": "engagement",
+      "priority": "中",
+      "description": "1ページでエンゲージメント時間が15秒未満。コンテンツの改善または導線の見直しが必要。",
+      "targetPages": [
+        "/destinations/kume-island/"
+      ]
+    },
+    {
+      "category": "conversion",
+      "priority": "高",
+      "description": "4ページにPVがあるがCVゼロ。アフィリエイトリンクの追加やCTA改善の余地あり。",
+      "targetPages": [
+        "/destinations/yoron-island/beaches/",
+        "/destinations/miyako-island/running/",
+        "/destinations/ishigaki-island/running/",
+        "/"
+      ]
+    }
+  ]
+}
