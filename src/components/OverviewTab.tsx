@@ -50,7 +50,10 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
 
       // 最も改善余地のある軸を特定
       const scores = ev.quality.scores;
-      const validAxes = QUALITY_AXES.filter(ax => scores[ax] !== null && scores[ax] !== undefined);
+      const validAxes = QUALITY_AXES.filter(ax => {
+        if (ax === "英語品質" && ev.quality?.lang === "JP") return false;
+        return scores[ax] !== null && scores[ax] !== undefined;
+      });
       const weakestAxis = validAxes.length > 0
         ? validAxes.reduce((w, ax) => (scores[ax] as number) < (scores[w] as number) ? ax : w)
         : null;
@@ -92,7 +95,10 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
       const unit = sDef?.unit ?? 0;
       const pageTypeMul = getPageTypeCvrMultiplier(ev.quality?.type ?? "");
       const scores = ev.quality.scores;
-      const validAxes = QUALITY_AXES.filter(ax => scores[ax] !== null && scores[ax] !== undefined);
+      const validAxes = QUALITY_AXES.filter(ax => {
+        if (ax === "英語品質" && ev.quality?.lang === "JP") return false;
+        return scores[ax] !== null && scores[ax] !== undefined;
+      });
       const n = validAxes.length;
       if (n === 0) return;
       validAxes.forEach(ax => {

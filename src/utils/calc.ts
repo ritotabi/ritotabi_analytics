@@ -278,8 +278,8 @@ export function addEvalsToPv(
       additions[ev.stream][i] += val;
       // 品質スコア × ページタイプ補正に基づいた収益予測
       revAdditions[ev.stream][i] += Math.round(val * streamCvr * streamUnit * qualityMul * pageTypeMul);
-      // スコア100とした場合の最大ポテンシャル
-      potAdditions[ev.stream][i] += Math.round(val * streamCvr * streamUnit);
+      // スコア100とした場合の最大ポテンシャル（ページタイプ補正込み：ガイド/ランニングをホテル相当と見做さない）
+      potAdditions[ev.stream][i] += Math.round(val * streamCvr * streamUnit * pageTypeMul);
     }
   });
 
