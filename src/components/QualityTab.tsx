@@ -18,11 +18,12 @@ interface StreamDef {
 interface QualityTabProps {
   evaluations: PageEvaluation[];
   streams: StreamDef[];
+  scenario: "pessimistic" | "normal" | "optimistic";
 }
 
 const AXES = ["コンテンツ独自性", "写真・ビジュアル", "アフィリエイト設計", "内部リンク", "SEO技術実装", "ユーザー体験(UX)", "英語品質", "キーワード獲得可能性"] as const;
 
-const QualityTab: React.FC<QualityTabProps> = ({ evaluations, streams }) => {
+const QualityTab: React.FC<QualityTabProps> = ({ evaluations, streams, scenario }) => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const avg = Math.round(evaluations.reduce((s, p) => s + p.quality.overall, 0) / evaluations.length) || 0;
@@ -51,7 +52,7 @@ const QualityTab: React.FC<QualityTabProps> = ({ evaluations, streams }) => {
         >
           ← 一覧に戻る
         </button>
-        <QualityDetail evaluation={selected} streams={streams} />
+        <QualityDetail evaluation={selected} streams={streams} scenario={scenario} />
       </div>
     );
   }
@@ -156,7 +157,7 @@ const QualityTab: React.FC<QualityTabProps> = ({ evaluations, streams }) => {
                     {/* サブスコア・グリッド (Axis Scores) */}
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2px 16px" }}>
                       {AXES.map((ax) => {
-                        const v = (q.scores as any)[ax];
+                        const v = q.scores[ax as keyof typeof q.scores];
                         if (v === null || v === undefined) return null;
                         if (ax === "英語品質" && q.lang === "JP") return null;
                         const c = scoreColor(v);
@@ -192,9 +193,10 @@ const QualityTab: React.FC<QualityTabProps> = ({ evaluations, streams }) => {
 interface QualityDetailProps {
   evaluation: PageEvaluation;
   streams: StreamDef[];
+  scenario: "pessimistic" | "normal" | "optimistic";
 }
 
-const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation, streams }) => {
+const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation, streams, scenario }) => {
   const q = evaluation.quality;
   const pc = scoreColor(q.overall);
 
@@ -208,12 +210,12 @@ const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation, streams }) =>
 
   // 機会損失計算
   const sDef = streams.find(s => s.key === evaluation.stream);
-  const pv24m = evaluation.pn.reduce((a, v) => a + v, 0);
+  const scArr = evaluation.scenarios?.[scenario] || [];
+  const pv24m = scArr.reduce((a, v) => a + v, 0);
   const cvr = sDef?.cvr ?? 0;
   const unit = sDef?.unit ?? 0;
   const qualityMul = (q.overall ?? 0) / 100;
   const pageTypeMul = getPageTypeCvrMultiplier(q.type ?? "");
-  const totalGap = pv24m * cvr * unit * (1 - qualityMul * pageTypeMul);
   const qualityGap = pv24m * cvr * unit * pageTypeMul * (1 - qualityMul);
   const typeGap = pv24m * cvr * unit * (1 - pageTypeMul);
 
@@ -253,7 +255,7 @@ const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation, streams }) =>
       </div>
 
       {/* 機会損失インパクトカード */}
-      {totalGap > 0 && (
+      {(qualityGap > 0 || typeGap > 0) && (
         <div style={{
           background: "linear-gradient(135deg, rgba(236,72,153,0.07), rgba(45,212,191,0.04))",
           border: "1px solid #ec489928",
@@ -267,19 +269,15 @@ const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation, streams }) =>
           alignItems: "flex-end",
         }}>
           <div>
-            <p style={{ color: SLATE, fontSize: 9, fontFamily: "monospace", marginBottom: 3 }}>24M 機会損失（合計）</p>
-            <p style={{ color: PINK, fontSize: 20, fontWeight: 700, fontFamily: "monospace", margin: 0 }}>-¥{Math.round(totalGap).toLocaleString()}</p>
-          </div>
-          <div>
             <div style={{ display: "flex", alignItems: "center", gap: 3, marginBottom: 3 }}>
-              <p style={{ color: SLATE, fontSize: 9, fontFamily: "monospace", margin: 0 }}>品質改善で回収可能</p>
+              <p style={{ color: SLATE, fontSize: 9, fontFamily: "monospace", margin: 0 }}>24M 品質改善ポテンシャル (回収可能)</p>
               <HelpIcon content={GAP_DESCRIPTIONS.qualityGap} width={220} />
             </div>
-            <p style={{ color: AMBER, fontSize: 16, fontWeight: 700, fontFamily: "monospace", margin: 0 }}>-¥{Math.round(qualityGap).toLocaleString()}</p>
+            <p style={{ color: PINK, fontSize: 20, fontWeight: 700, fontFamily: "monospace", margin: 0 }}>-¥{Math.round(qualityGap).toLocaleString()}</p>
           </div>
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 3, marginBottom: 3 }}>
-              <p style={{ color: SLATE, fontSize: 9, fontFamily: "monospace", margin: 0 }}>ページタイプ補正（構造的）</p>
+              <p style={{ color: SLATE, fontSize: 9, fontFamily: "monospace", margin: 0 }}>構造的減衰 (ページタイプ補正)</p>
               <HelpIcon content={GAP_DESCRIPTIONS.typeGap} width={220} />
             </div>
             <p style={{ color: TEAL, fontSize: 16, fontWeight: 700, fontFamily: "monospace", margin: 0 }}>-¥{Math.round(typeGap).toLocaleString()}</p>
@@ -290,7 +288,7 @@ const QualityDetail: React.FC<QualityDetailProps> = ({ evaluation, streams }) =>
       <div style={{ background: "#0f172a", border: `1px solid ${pc}25`, borderRadius: 10, padding: "16px 20px", marginBottom: 18 }}>
         {AXES.map((ax) => {
           if (ax === "英語品質" && q.lang === "JP") return null;
-          return <ScoreBar key={ax} label={ax} value={(q.scores as any)[ax] ?? null} />;
+          return <ScoreBar key={ax} label={ax} value={q.scores[ax as keyof typeof q.scores] ?? null} />;
         })}
       </div>
 

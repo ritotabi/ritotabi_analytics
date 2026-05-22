@@ -2,7 +2,7 @@ export interface PageEvaluation {
   id: string;
   url: string;
   evaluatedAt: string;
-  evaluatedBy: "skill" | "manual";
+  evaluatedBy: "skill" | "manual" | "Antigravity";
 
   // Revenue Forecast
   stream: string;
@@ -13,9 +13,11 @@ export interface PageEvaluation {
   ap: string;
   an: string;
   ao: string;
-  pp: number[];
-  pn: number[];
-  po: number[];
+  scenarios: {
+    pessimistic: number[];
+    normal: number[];
+    optimistic: number[];
+  };
   memo: string;
 
   // Quality Evaluation
@@ -39,11 +41,11 @@ export interface PageEvaluation {
 
     seoChecklist?: {
       hreflang: boolean;
-      faqJsonLd: boolean;
-      metaTitleKw: boolean;
-      metaDescLength: boolean;
-      canonicalUrl: boolean;
-      ogpTwitterCard: boolean;
+      faq: boolean;
+      keyword: boolean;
+      meta: boolean;
+      canonical: boolean;
+      ogp: boolean;
     };
 
     freshness?: "new" | "growing" | "indexing" | "mature";
@@ -55,6 +57,12 @@ export interface PageEvaluation {
       ctaPosition: boolean;
       microCopy: boolean;
       multipleOta: boolean;
+      priceVisible: boolean;
+      socialProof: boolean;
+      mobileStickyCta: boolean;
+      carRentalLink: boolean;
+      activityLink: boolean;
+      urgencySignals: number;
       minClicks: number;
     };
 

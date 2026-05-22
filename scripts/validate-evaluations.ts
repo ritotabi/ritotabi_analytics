@@ -9,22 +9,23 @@ function validateEvaluation(filePath: string) {
   let data;
   try {
     data = JSON.parse(content);
-  } catch (e) {
+  } catch {
     throw new Error(`Invalid JSON format in ${path.basename(filePath)}`);
   }
 
-  const requiredTopFields = ['id', 'url', 'evaluatedAt', 'stream', 'pp', 'pn', 'po', 'quality'];
+  const requiredTopFields = ['id', 'url', 'evaluatedAt', 'stream', 'scenarios', 'quality'];
   for (const field of requiredTopFields) {
     if (data[field] === undefined) {
       throw new Error(`Missing required field: "${field}" in ${path.basename(filePath)}`);
     }
   }
 
-  // Check array lengths (24 months)
-  const arrays = ['pp', 'pn', 'po'];
+  // Check scenarios (pessimistic, normal, optimistic)
+  const scenarios = data.scenarios;
+  const arrays = ['pessimistic', 'normal', 'optimistic'];
   for (const arr of arrays) {
-    if (!Array.isArray(data[arr]) || data[arr].length !== 24) {
-      throw new Error(`Field "${arr}" must be an array of length 24 in ${path.basename(filePath)}`);
+    if (!scenarios || !Array.isArray(scenarios[arr]) || scenarios[arr].length !== 24) {
+      throw new Error(`scenarios.${arr} must be an array of length 24 in ${path.basename(filePath)}`);
     }
   }
 
@@ -50,7 +51,7 @@ function validateRegistry() {
   let data;
   try {
     data = JSON.parse(content);
-  } catch (e) {
+  } catch {
     throw new Error(`Invalid JSON format in _registry.json`);
   }
 
@@ -58,11 +59,9 @@ function validateRegistry() {
     throw new Error(`_registry.json must have an "evaluations" object.`);
   }
 
-  const filesInDir = fs.readdirSync(EVALS_DIR).filter(f => f.endsWith('.json') && f !== '_registry.json');
-  const filesInRegistry = Object.values(data.evaluations).map((e: any) => e.file);
-
   // Check if all files in registry exist
-  for (const entry of Object.values(data.evaluations) as any[]) {
+  const evaluations = data.evaluations as Record<string, { file: string }>;
+  for (const entry of Object.values(evaluations)) {
     const filePath = path.join(EVALS_DIR, entry.file);
     if (!fs.existsSync(filePath)) {
       throw new Error(`Registry refers to missing file: ${entry.file}`);
@@ -86,8 +85,9 @@ function main() {
     }
 
     console.log('\nSUCCESS: All evaluation data passed validation.');
-  } catch (error: any) {
-    console.error(`\nVALIDATION FAILED: ${error.message}`);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(`\nVALIDATION FAILED: ${message}`);
     process.exit(1);
   }
 }

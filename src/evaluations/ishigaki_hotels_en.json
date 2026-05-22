@@ -8,18 +8,6 @@
   "ap": "15,000",
   "an": "4,500",
   "ao": "20,000",
-  "pp": [
-    0, 4, 11, 20, 34, 51, 73, 100, 133, 172, 217, 269,
-    329, 398, 477, 567, 668, 782, 909, 1051, 1209, 1384, 1578, 2000
-  ],
-  "pn": [
-    0, 1, 3, 6, 10, 15, 22, 30, 40, 52, 65, 81,
-    99, 119, 143, 170, 200, 235, 273, 315, 363, 415, 473, 600
-  ],
-  "po": [
-    0, 9, 24, 44, 75, 112, 161, 220, 293, 378, 477, 592,
-    724, 876, 1049, 1247, 1470, 1720, 2000, 2312, 2660, 3045, 3472, 4400
-  ],
   "memo": "Expertly localized Ishigaki hotel guide. It features a strategic HotelTopPicks section and a Map Widget (Stay22) to aid decision-making for international travelers. The 'Author's Top Pick' adds a layer of authenticity that is rare in global OTA guides.",
   "quality": {
     "title": "5 Best Ishigaki Island Hotels 2026: Scenic Stays | RITOTABI",
@@ -78,6 +66,86 @@
         "level": "低",
         "text": "Specific walkability scores for downtown hotels could further help tourists who don't plan to rent a car"
       }
+    ]
+  },
+  "scenarios": {
+    "pessimistic": [
+      0,
+      1,
+      3,
+      6,
+      10,
+      15,
+      22,
+      30,
+      40,
+      52,
+      65,
+      81,
+      99,
+      119,
+      143,
+      170,
+      200,
+      235,
+      273,
+      315,
+      363,
+      415,
+      473,
+      600
+    ],
+    "normal": [
+      0,
+      4,
+      11,
+      20,
+      34,
+      51,
+      73,
+      100,
+      133,
+      172,
+      217,
+      269,
+      329,
+      398,
+      477,
+      567,
+      668,
+      782,
+      909,
+      1051,
+      1209,
+      1384,
+      1578,
+      2000
+    ],
+    "optimistic": [
+      0,
+      9,
+      24,
+      44,
+      75,
+      112,
+      161,
+      220,
+      293,
+      378,
+      477,
+      592,
+      724,
+      876,
+      1049,
+      1247,
+      1470,
+      1720,
+      2000,
+      2312,
+      2660,
+      3045,
+      3472,
+      4400
     ]
   }
 }

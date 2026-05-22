@@ -8,18 +8,6 @@
   "ap": "15,000",
   "an": "4,500",
   "ao": "20,000",
-  "pp": [
-    0, 4, 11, 20, 34, 51, 73, 100, 133, 172, 217, 269,
-    329, 398, 477, 567, 668, 782, 909, 1051, 1209, 1384, 1578, 2000
-  ],
-  "pn": [
-    0, 1, 3, 6, 10, 15, 22, 30, 40, 52, 65, 81,
-    99, 119, 143, 170, 200, 235, 273, 315, 363, 415, 473, 600
-  ],
-  "po": [
-    0, 9, 24, 44, 75, 112, 161, 220, 293, 378, 477, 592,
-    724, 876, 1049, 1247, 1470, 1720, 2000, 2312, 2660, 3045, 3472, 4400
-  ],
   "memo": "Expert-curated English guide for Ishigaki and Taketomi. It effectively translates first-person insights (e.g., hidden free parking) into natural, conversion-oriented English. Technical SEO and affiliate integration are flawlessly localized.",
   "quality": {
     "title": "Ishigaki Island Guide 2026: Beaches, Gourmet & Stays | RITOTABI",
@@ -78,6 +66,86 @@
         "level": "低",
         "text": "Specific mention of car rental brands that cater well to English speakers could be added to the FAQ"
       }
+    ]
+  },
+  "scenarios": {
+    "pessimistic": [
+      0,
+      1,
+      3,
+      6,
+      10,
+      15,
+      22,
+      30,
+      40,
+      52,
+      65,
+      81,
+      99,
+      119,
+      143,
+      170,
+      200,
+      235,
+      273,
+      315,
+      363,
+      415,
+      473,
+      600
+    ],
+    "normal": [
+      0,
+      4,
+      11,
+      20,
+      34,
+      51,
+      73,
+      100,
+      133,
+      172,
+      217,
+      269,
+      329,
+      398,
+      477,
+      567,
+      668,
+      782,
+      909,
+      1051,
+      1209,
+      1384,
+      1578,
+      2000
+    ],
+    "optimistic": [
+      0,
+      9,
+      24,
+      44,
+      75,
+      112,
+      161,
+      220,
+      293,
+      378,
+      477,
+      592,
+      724,
+      876,
+      1049,
+      1247,
+      1470,
+      1720,
+      2000,
+      2312,
+      2660,
+      3045,
+      3472,
+      4400
     ]
   }
 }

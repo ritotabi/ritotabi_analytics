@@ -13,6 +13,12 @@ interface ModeBannerProps {
   baseTotal: number;
 }
 
+const SCENARIOS = [
+  { key: "pessimistic", label: "悲観", color: ROSE },
+  { key: "normal", label: "通常", color: TEAL },
+  { key: "optimistic", label: "楽観", color: GRN },
+] as const;
+
 const ModeBanner: React.FC<ModeBannerProps> = ({
   scenario,
   setScenario,
@@ -95,14 +101,10 @@ const ModeBanner: React.FC<ModeBannerProps> = ({
 
         <span style={{ fontSize: 10, color: "#334155", fontFamily: "monospace" }}>│</span>
         <span style={{ fontSize: 10, color: SLATE, fontFamily: "monospace" }}>シナリオ:</span>
-        {[
-          { key: "pessimistic", label: "悲観", color: ROSE },
-          { key: "normal", label: "通常", color: TEAL },
-          { key: "optimistic", label: "楽観", color: GRN },
-        ].map((s) => (
+        {SCENARIOS.map((s) => (
           <button
             key={s.key}
-            onClick={() => setScenario(s.key as any)}
+            onClick={() => setScenario(s.key)}
             style={{
               padding: "4px 14px",
               border: `1px solid ${scenario === s.key ? s.color : s.color + "40"}`,

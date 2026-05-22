@@ -29,7 +29,7 @@ type QualityAxis = typeof QUALITY_AXES[number];
 
 const LEVEL_COLOR: Record<string, string> = { 高: "#f43f5e", 中: "#f59e0b", 低: "#06b6d4" };
 
-const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) => {
+const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations, scenario }) => {
   const V6_STD = 878400;
   const [showGapBreakdown, setShowGapBreakdown] = useState(false);
   const [expandedPageId, setExpandedPageId] = useState<string | null>(null);
@@ -38,15 +38,16 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
   const pageGapRows = Object.values(evaluations)
     .filter(ev => ev.quality?.publishedDate)
     .map(ev => {
-      const pv24m = ev.pn.reduce((a, v) => a + v, 0);
+      const arr = ev.scenarios?.[scenario] || [];
+      const pv24m = arr.reduce((a, v) => a + v, 0);
       const sDef = streams.find(s => s.key === ev.stream);
       const cvr = sDef?.cvr ?? 0;
       const unit = sDef?.unit ?? 0;
       const qualityMul = (ev.quality?.overall ?? 0) / 100;
       const pageTypeMul = getPageTypeCvrMultiplier(ev.quality?.type ?? "");
-      const potRev = pv24m * cvr * unit;
-      const actRev = pv24m * cvr * unit * qualityMul * pageTypeMul;
-      const totalGap = potRev - actRev;
+      const qualityGap = pv24m * cvr * unit * pageTypeMul * (1 - qualityMul);
+      const typeGap = pv24m * cvr * unit * (1 - pageTypeMul);
+      const totalGap = qualityGap; // 合計機会損失は品質ギャップのみとする
 
       // 最も改善余地のある軸を特定
       const scores = ev.quality.scores;
@@ -67,21 +68,19 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
         type: ev.quality?.type ?? "",
         qualityScore: ev.quality?.overall ?? 0,
         pageTypeMul,
-        qualityGap: pv24m * cvr * unit * pageTypeMul * (1 - qualityMul),
-        typeGap: pv24m * cvr * unit * (1 - pageTypeMul),
+        qualityGap,
+        typeGap,
         totalGap,
         weakestAxis,
         weakestScore,
       };
     })
-    .sort((a, b) => b.totalGap - a.totalGap);
+    .sort((a, b) => b.qualityGap - a.qualityGap);
 
   const totalQualityGap = pageGapRows.reduce((a, r) => a + r.qualityGap, 0);
   const totalTypeGap    = pageGapRows.reduce((a, r) => a + r.typeGap, 0);
-  const totalGapAll     = totalQualityGap + totalTypeGap;
 
-  // 品質軸別 改善ポテンシャル計算
-  // overall ≈ avg(非null軸スコア) なので、軸iをスコアsからs'に改善すると overall が (s'-s)/n 増加する
+  // 品質軸別 改善ポテンシャル計算 (按分方式)
   const axisGaps: Record<QualityAxis, number> = Object.fromEntries(
     QUALITY_AXES.map(ax => [ax, 0])
   ) as Record<QualityAxis, number>;
@@ -89,22 +88,32 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
   Object.values(evaluations)
     .filter(ev => ev.quality?.publishedDate)
     .forEach(ev => {
-      const pv24m = ev.pn.reduce((a, v) => a + v, 0);
+      const arr = ev.scenarios?.[scenario] || [];
+      const pv24m = arr.reduce((a, v) => a + v, 0);
       const sDef = streams.find(s => s.key === ev.stream);
       const cvr = sDef?.cvr ?? 0;
       const unit = sDef?.unit ?? 0;
       const pageTypeMul = getPageTypeCvrMultiplier(ev.quality?.type ?? "");
+      const qualityMul = (ev.quality?.overall ?? 0) / 100;
+      const G_p = pv24m * cvr * unit * pageTypeMul * (1 - qualityMul); // qualityGap
+
       const scores = ev.quality.scores;
       const validAxes = QUALITY_AXES.filter(ax => {
         if (ax === "英語品質" && ev.quality?.lang === "JP") return false;
         return scores[ax] !== null && scores[ax] !== undefined;
       });
-      const n = validAxes.length;
-      if (n === 0) return;
-      validAxes.forEach(ax => {
+
+      const deficiencies = validAxes.map(ax => {
         const score = scores[ax] as number;
-        // この軸を100にすることで overall が (100-score)/n 上がり、収益が増える
-        axisGaps[ax] += pv24m * cvr * unit * pageTypeMul * (100 - score) / (100 * n);
+        return { ax, d: Math.max(0, 100 - score) };
+      });
+
+      const S_p = deficiencies.reduce((sum, item) => sum + item.d, 0);
+      if (S_p === 0) return;
+
+      deficiencies.forEach(item => {
+        const G_pi = G_p * (item.d / S_p);
+        axisGaps[item.ax] += G_pi;
       });
     });
 
@@ -156,6 +165,12 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
           </p>
         </div>
       </div>
+      <div style={{ marginTop: -10, marginBottom: 22, padding: "10px 14px", background: "rgba(245, 158, 11, 0.06)", border: "1px solid rgba(245, 158, 11, 0.2)", borderRadius: 6 }}>
+        <p style={{ color: AMBER, fontSize: 10, margin: 0, lineHeight: 1.5 }}>
+          ⚠️ <strong>仮説値バイアスに関する注釈：</strong><br />
+          算出されている予測売上は、初期段階のCVR/単価仮説に基づいています。実績データ（2026年4月）の分析により、特に「ランニング」（実績相対比率 0.05 vs 仮説 0.3）および「トップ」（実績 0.0 vs 仮説 0.2）のページタイプにおいて予測が過大評価されている可能性が高い点にご留意ください。ASP確定報酬データ蓄積後にモデル校正を行う予定です。
+        </p>
+      </div>
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
         <h3 style={{ color: PINK, fontSize: 11, fontFamily: "monospace", letterSpacing: "0.12em", margin: 0 }}>
@@ -189,26 +204,15 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
           {/* 原因別バー */}
           <div style={{ marginBottom: 18 }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
-              <span style={{ color: SLATE, fontSize: 10, fontFamily: "monospace" }}>原因別</span>
-              <span style={{ color: SLATE, fontSize: 10, fontFamily: "monospace" }}>合計 -¥{Math.round(totalGapAll).toLocaleString()}</span>
+              <span style={{ color: SLATE, fontSize: 10, fontFamily: "monospace" }}>品質改善ポテンシャル（回収可能な機会損失）</span>
+              <span style={{ color: AMBER, fontSize: 12, fontWeight: 700, fontFamily: "monospace" }}>-¥{Math.round(totalQualityGap).toLocaleString()}</span>
             </div>
             <div style={{ display: "flex", height: 14, borderRadius: 4, overflow: "hidden", background: "#1e293b" }}>
-              <div style={{ width: `${totalGapAll > 0 ? (totalQualityGap / totalGapAll * 100) : 0}%`, background: AMBER, transition: "width 0.3s" }} />
-              <div style={{ width: `${totalGapAll > 0 ? (totalTypeGap / totalGapAll * 100) : 0}%`, background: TEAL, transition: "width 0.3s" }} />
+              <div style={{ width: "100%", background: AMBER }} />
             </div>
-            <div style={{ display: "flex", gap: 24, marginTop: 8 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                <div style={{ width: 10, height: 10, borderRadius: 2, background: AMBER, flexShrink: 0 }} />
-                <span style={{ color: SLATE, fontSize: 10, fontFamily: "monospace" }}>
-                  品質スコア不足 -¥{Math.round(totalQualityGap).toLocaleString()} ({totalGapAll > 0 ? Math.round(totalQualityGap / totalGapAll * 100) : 0}%)
-                </span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                <div style={{ width: 10, height: 10, borderRadius: 2, background: TEAL, flexShrink: 0 }} />
-                <span style={{ color: SLATE, fontSize: 10, fontFamily: "monospace" }}>
-                  ページタイプ補正 -¥{Math.round(totalTypeGap).toLocaleString()} ({totalGapAll > 0 ? Math.round(totalTypeGap / totalGapAll * 100) : 0}%)
-                </span>
-              </div>
+            <div style={{ marginTop: 12, padding: "10px 14px", background: "rgba(45,212,191, 0.04)", border: `1px solid ${TEAL}20`, borderRadius: 6, fontSize: 10, color: SLATE, lineHeight: 1.5 }}>
+              ℹ️ <strong>構造的減衰（改善不可）：-¥{Math.round(totalTypeGap).toLocaleString()}</strong><br />
+              ガイド（0.5）、ランニング（0.3）、トップ（0.2）等のページタイプによる構造的なCVR減衰分です。これはコンテンツの品質改善では回収できない性質の損失であるため、改善アクションの対象外（機会損失の合計額から除外）としています。
             </div>
           </div>
 
@@ -340,7 +344,8 @@ const OverviewTab: React.FC<OverviewTabProps> = ({ streams, sum, evaluations }) 
       <div className="card">
         {Object.values(evaluations).map((ev, i, arr) => {
           const s = streams.find((st) => st.key === ev.stream);
-          const pnSum = ev.pn.reduce((a, v) => a + v, 0);
+          const scArr = ev.scenarios?.[scenario] || [];
+          const pnSum = scArr.reduce((a, v) => a + v, 0);
           return (
             <div key={ev.url} style={{ padding: "12px 18px", borderBottom: i < arr.length - 1 ? "1px solid #1e293b" : "none" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 12 }}>

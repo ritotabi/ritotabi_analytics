@@ -1,9 +1,12 @@
+import type { PageEvaluation } from "../types/evaluation";
+
 export interface BasePVRow {
   m: string;
   mp: string;
   pv: Record<string, number>;
   rev?: Record<string, number>; // スコア補正後の予測報酬
   potRev?: Record<string, number>; // 最大ポテンシャル報酬 (スコア100時)
+  isActual?: boolean;
 }
 
 /**
@@ -109,7 +112,7 @@ export interface CalculatedRow {
   isActual: boolean;
   actualPvTotal?: number;
   forecastPvTotal?: number;
-  [key: string]: any; // rev_*, pot_rev_*, s_rev_*, cum_*, pv_*
+  [key: string]: string | number | boolean | undefined; // rev_*, pot_rev_*, s_rev_*, cum_*, pv_*
 }
 
 export function calcData(pvObj: BasePVRow[], streams: StreamDef[]): CalculatedRow[] {
@@ -123,7 +126,7 @@ export function calcData(pvObj: BasePVRow[], streams: StreamDef[]): CalculatedRo
     cumPotTotal = 0,
     cumVN = 0;
   return pvObj.map((row) => {
-    const isActual = (row as any).isActual || false;
+    const isActual = row.isActual || false;
     const res: CalculatedRow = {
       m: row.m,
       mp: row.mp,
@@ -186,9 +189,9 @@ export function calcData(pvObj: BasePVRow[], streams: StreamDef[]): CalculatedRo
 export function sumRevDyn(data: CalculatedRow[], streams: StreamDef[]): Record<string, number> {
   const res: Record<string, number> = { total: 0, potTotal: 0, totalPv: 0 };
   streams.forEach((s) => {
-    res[s.key] = data.reduce((a, r) => a + (r[`rev_${s.key}`] || 0), 0);
-    res[`pot_${s.key}`] = data.reduce((a, r) => a + (r[`pot_rev_${s.key}`] || 0), 0);
-    res[`pv_${s.key}`] = data.reduce((a, r) => a + (r[`pv_${s.key}`] || 0), 0);
+    res[s.key] = data.reduce((a, r) => a + ((r[`rev_${s.key}`] as number) || 0), 0);
+    res[`pot_${s.key}`] = data.reduce((a, r) => a + ((r[`pot_rev_${s.key}`] as number) || 0), 0);
+    res[`pv_${s.key}`] = data.reduce((a, r) => a + ((r[`pv_${s.key}`] as number) || 0), 0);
   });
   res.total = streams.reduce((a, s) => a + (res[s.key] || 0), 0);
   res.potTotal = streams.reduce((a, s) => a + (res[`pot_${s.key}`] || 0), 0);
@@ -208,7 +211,7 @@ export function getPageTypeCvrMultiplier(type: string): number {
 
 export function addEvalsToPv(
   basePvObj: BasePVRow[],
-  storedEvals: Record<string, any>,
+  storedEvals: Record<string, PageEvaluation>,
   scenario: "pessimistic" | "normal" | "optimistic",
   streams: StreamDef[]
 ): BasePVRow[] {
@@ -223,8 +226,8 @@ export function addEvalsToPv(
   });
 
   Object.values(storedEvals).forEach((ev) => {
-    const arr =
-      scenario === "pessimistic" ? ev.pn : scenario === "optimistic" ? ev.po : ev.pp;
+    const arr = ev.scenarios?.[scenario];
+    if (!arr) return;
     const pubDate = ev.quality?.publishedDate;
     if (!pubDate) return;
 
@@ -285,7 +288,7 @@ export function addEvalsToPv(
 
   return basePvObj.map((row, i) => {
     // 実績月には予測データを加算しない（実績値をそのまま保持）
-    if ((row as any).isActual) {
+    if (row.isActual) {
       return { ...row };
     }
 

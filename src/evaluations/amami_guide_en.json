@@ -8,18 +8,6 @@
   "ap": "8,000",
   "an": "2,400",
   "ao": "12,000",
-  "pp": [
-    0, 5, 12, 20, 30, 45, 65, 90, 120, 155, 195, 240,
-    290, 345, 405, 470, 540, 615, 695, 780, 870, 965, 1065, 1200
-  ],
-  "pn": [
-    0, 2, 4, 6, 9, 14, 20, 27, 36, 47, 59, 72,
-    87, 104, 122, 141, 162, 185, 209, 234, 261, 290, 320, 360
-  ],
-  "po": [
-    0, 11, 26, 44, 66, 99, 143, 198, 264, 341, 429, 528,
-    638, 759, 891, 1034, 1188, 1353, 1529, 1716, 1914, 2123, 2343, 2640
-  ],
   "memo": "Targeting high-end international travelers interested in World Heritage nature. The persona-driven English descriptions effectively communicate the 'Galapagos of the East' concept.",
   "quality": {
     "title": "Amami Oshima Travel Guide 2026 | Tomori Beach & Island Cuisine | RITOTABI",
@@ -78,6 +66,86 @@
         "level": "中",
         "text": "Specific local gourmet details (Chicken Rice/Keihan) could be more descriptive about the 'experience' of eating it"
       }
+    ]
+  },
+  "scenarios": {
+    "pessimistic": [
+      0,
+      2,
+      4,
+      6,
+      9,
+      14,
+      20,
+      27,
+      36,
+      47,
+      59,
+      72,
+      87,
+      104,
+      122,
+      141,
+      162,
+      185,
+      209,
+      234,
+      261,
+      290,
+      320,
+      360
+    ],
+    "normal": [
+      0,
+      5,
+      12,
+      20,
+      30,
+      45,
+      65,
+      90,
+      120,
+      155,
+      195,
+      240,
+      290,
+      345,
+      405,
+      470,
+      540,
+      615,
+      695,
+      780,
+      870,
+      965,
+      1065,
+      1200
+    ],
+    "optimistic": [
+      0,
+      11,
+      26,
+      44,
+      66,
+      99,
+      143,
+      198,
+      264,
+      341,
+      429,
+      528,
+      638,
+      759,
+      891,
+      1034,
+      1188,
+      1353,
+      1529,
+      1716,
+      1914,
+      2123,
+      2343,
+      2640
     ]
   }
 }

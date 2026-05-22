@@ -24,7 +24,7 @@ const SEASONAL_BIAS: Record<string, Record<number, number>> = {
  * 月を移動させる（1-12の範囲に収める）
  */
 function addMonths(startMonth: number, add: number): number {
-  let m = (startMonth + add) % 12;
+  const m = (startMonth + add) % 12;
   return m === 0 ? 12 : m;
 }
 
@@ -48,7 +48,7 @@ function migrate() {
       return;
     }
 
-    const [year, month] = pubDateStr.split('-').map(Number);
+    const [, month] = pubDateStr.split('-').map(Number);
     
     let area = "okinawa";
     if (stream.startsWith("h")) area = "hoian"; 

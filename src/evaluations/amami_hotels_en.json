@@ -8,18 +8,6 @@
   "ap": "8,000",
   "an": "2,400",
   "ao": "12,000",
-  "pp": [
-    0, 3, 8, 15, 25, 40, 60, 85, 115, 150, 190, 235,
-    285, 340, 400, 465, 535, 610, 690, 775, 865, 960, 1060, 1200
-  ],
-  "pn": [
-    0, 1, 3, 5, 8, 12, 18, 26, 35, 45, 57, 71,
-    86, 102, 120, 140, 161, 183, 207, 233, 260, 288, 318, 360
-  ],
-  "po": [
-    0, 7, 18, 33, 55, 88, 132, 187, 253, 330, 418, 517,
-    627, 748, 880, 1023, 1177, 1342, 1518, 1705, 1903, 2112, 2332, 2640
-  ],
   "memo": "Provides a reliable hotel selection for international tourists. The comparison table and top picks help reduce decision fatigue in an area with diverse accommodation types.",
   "quality": {
     "title": "Best Hotels in Amami Oshima: Area Guide & Expert Picks | RITOTABI",
@@ -78,6 +66,86 @@
         "level": "低",
         "text": "The English micro-copy for some OTAs is slightly repetitive across different hotel entries"
       }
+    ]
+  },
+  "scenarios": {
+    "pessimistic": [
+      0,
+      1,
+      3,
+      5,
+      8,
+      12,
+      18,
+      26,
+      35,
+      45,
+      57,
+      71,
+      86,
+      102,
+      120,
+      140,
+      161,
+      183,
+      207,
+      233,
+      260,
+      288,
+      318,
+      360
+    ],
+    "normal": [
+      0,
+      3,
+      8,
+      15,
+      25,
+      40,
+      60,
+      85,
+      115,
+      150,
+      190,
+      235,
+      285,
+      340,
+      400,
+      465,
+      535,
+      610,
+      690,
+      775,
+      865,
+      960,
+      1060,
+      1200
+    ],
+    "optimistic": [
+      0,
+      7,
+      18,
+      33,
+      55,
+      88,
+      132,
+      187,
+      253,
+      330,
+      418,
+      517,
+      627,
+      748,
+      880,
+      1023,
+      1177,
+      1342,
+      1518,
+      1705,
+      1903,
+      2112,
+      2332,
+      2640
     ]
   }
 }

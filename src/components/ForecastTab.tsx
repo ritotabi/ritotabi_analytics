@@ -193,7 +193,7 @@ const ForecastTab: React.FC<ForecastTabProps> = ({ forecastHistory, actuals }) =
               <p style={{ color: VIOLET, fontSize: 16, fontWeight: 700, margin: 0, fontFamily: "monospace" }}>{currentVintage.calibration.baseMonth}</p>
             </div>
             <div style={{ background: "#0a1628", borderRadius: 8, padding: 12 }}>
-              <p style={{ color: SLATE, fontSize: 10, margin: "0 0 4px" }}>全体予測精度</p>
+              <p style={{ color: SLATE, fontSize: 10, margin: "0 0 4px" }}>実績/予測比率 (Actual vs Forecast Ratio)</p>
               <p style={{ color: currentVintage.calibration.overallAccuracy > 100 ? AMBER : GRN, fontSize: 16, fontWeight: 700, margin: 0, fontFamily: "monospace" }}>
                 {currentVintage.calibration.overallAccuracy}%
               </p>
@@ -217,7 +217,14 @@ const ForecastTab: React.FC<ForecastTabProps> = ({ forecastHistory, actuals }) =
                       borderRadius: 4, transition: "width 0.3s"
                     }} />
                   </div>
-                  <span style={{ color: AMBER, fontSize: 10, fontFamily: "monospace", minWidth: 50, textAlign: "right" }}>×{factor < 100 ? factor.toFixed(1) : "∞"}</span>
+                  <span style={{ color: AMBER, fontSize: 10, fontFamily: "monospace", minWidth: 120, textAlign: "right" }}>
+                    ×{factor < 100 ? factor.toFixed(1) : "∞"}{" "}
+                    {factor < 100 && (
+                      <span style={{ color: SLATE, fontSize: 9 }}>
+                        (適用実効: ×{Math.sqrt(factor).toFixed(1)})
+                      </span>
+                    )}
+                  </span>
                   {acc && (
                     <span style={{ color: SLATE, fontSize: 9, fontFamily: "monospace", minWidth: 80, textAlign: "right" }}>
                       {acc.forecastPv}→{acc.actualPv}
@@ -226,6 +233,12 @@ const ForecastTab: React.FC<ForecastTabProps> = ({ forecastHistory, actuals }) =
                 </div>
               );
             })}
+          <div style={{ marginTop: 14, padding: "10px 14px", background: "rgba(245, 158, 11, 0.06)", border: "1px solid rgba(245, 158, 11, 0.2)", borderRadius: 6 }}>
+            <p style={{ color: AMBER, fontSize: 10, margin: 0, lineHeight: 1.5 }}>
+              ⚠️ <strong>仮説値・ページタイプ別バイアスの注釈：</strong><br />
+              キャリブレーションで算出された補正係数は、PV予測値を実績レベルに合わせるためのものです。各ストリーム内の売上予測は依然として初期仮説値（CVR/単価）と「ページタイプ固定係数」に基づいているため、特に「ランニング」や「トップ」に分類されるページにおいて予測収益が実態より過大評価されている可能性があります。
+            </p>
+          </div>
         </div>
       )}
 

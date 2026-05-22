@@ -35,7 +35,7 @@ const ChartTab: React.FC<ChartTabProps> = ({ data, streams }) => {
             <Tooltip
               contentStyle={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8, fontSize: 12, color: "#e2e8f0" }}
               itemStyle={{ fontSize: 11, padding: "2px 0" }}
-              formatter={(v: any) => `¥${Number(v).toLocaleString()}`}
+              formatter={(v: unknown) => `¥${Number(v).toLocaleString()}`}
             />
             <Legend iconType="circle" wrapperStyle={{ fontSize: 11, paddingTop: 10 }} />
             {streams.map((s) => (
@@ -62,7 +62,7 @@ const ChartTab: React.FC<ChartTabProps> = ({ data, streams }) => {
             <YAxis axisLine={false} tickLine={false} tick={{ fill: SLATE, fontSize: 10 }} tickFormatter={(v) => `¥${v / 1000}k`} />
             <Tooltip
               contentStyle={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8, fontSize: 12, color: "#e2e8f0" }}
-              formatter={(v: any) => `¥${Number(v).toLocaleString()}`}
+              formatter={(v: unknown) => `¥${Number(v).toLocaleString()}`}
             />
             <Area type="monotone" dataKey="cumTotal" name="累計収益" stroke={PINK} fillOpacity={1} fill="url(#colorCum)" strokeWidth={3} />
           </AreaChart>
@@ -80,7 +80,7 @@ const ChartTab: React.FC<ChartTabProps> = ({ data, streams }) => {
             <YAxis axisLine={false} tickLine={false} tick={{ fill: SLATE, fontSize: 10 }} />
             <Tooltip
               contentStyle={{ background: "#0f172a", border: "1px solid #1e293b", borderRadius: 8, fontSize: 12, color: "#e2e8f0" }}
-              formatter={(v: any) => v.toLocaleString() + " PV"}
+              formatter={(v: unknown) => Number(v).toLocaleString() + " PV"}
             />
             <Legend iconType="circle" wrapperStyle={{ fontSize: 11, paddingTop: 10 }} />
             <Bar dataKey="actualPvTotal" name="実績PV" fill={PINK} radius={[4, 4, 0, 0]} barSize={20} />

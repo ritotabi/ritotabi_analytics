@@ -8,9 +8,6 @@
   "ap": "Strategic internal linking to localized hotel and destination guides. The layout minimizes friction for international users seeking trusted, first-hand information.",
   "an": "Excellent semantic structure. The meta description and hero copy use evocative language that resonates with the 'slow travel' and 'adventure' personas.",
   "ao": "Poised to capture 'hidden gem' and 'off the beaten path' search intent for Japan. Strong technical SEO foundation with correct dual-language mapping.",
-  "pp": [0, 40, 110, 250, 480, 650, 850, 1200, 1400, 1800, 2200, 2800, 3200, 3000, 3500, 3900, 4200, 3800, 4500, 4800, 3600, 3900, 3400, 3600],
-  "pn": [0, 30, 85, 200, 400, 550, 720, 1000, 1150, 1500, 1850, 2400, 2700, 2500, 3000, 3300, 3600, 3200, 3800, 4100, 3100, 3300, 2900, 3100],
-  "po": [0, 55, 150, 350, 650, 850, 1100, 1550, 1850, 2300, 2800, 3500, 4000, 3800, 4400, 4900, 5300, 4800, 5600, 6000, 4500, 4900, 4300, 4500],
   "memo": "Launched May 2026. Tailored for the inbound market with a focus on 'Field-tested' credibility. Crucial hub for directing traffic to monetization-heavy island pages.",
   "quality": {
     "title": "Guide to Japan’s Remote Islands | Miyako, Ishigaki, Amami | RITOTABI",
@@ -67,7 +64,90 @@
       "Effective FAQ section addressing common inbound traveler concerns"
     ],
     "issues": [
-      { "level": "低", "text": "Yoron Island content is currently hidden in the EN version (commented out), which limits the 'complete guide' feel compared to the JP version." }
+      {
+        "level": "低",
+        "text": "Yoron Island content is currently hidden in the EN version (commented out), which limits the 'complete guide' feel compared to the JP version."
+      }
+    ]
+  },
+  "scenarios": {
+    "pessimistic": [
+      0,
+      15,
+      43,
+      100,
+      200,
+      275,
+      360,
+      500,
+      575,
+      750,
+      925,
+      1200,
+      1350,
+      1250,
+      1500,
+      1650,
+      1800,
+      1600,
+      1900,
+      2050,
+      1550,
+      1650,
+      1450,
+      1550
+    ],
+    "normal": [
+      0,
+      20,
+      55,
+      125,
+      240,
+      325,
+      425,
+      600,
+      700,
+      900,
+      1100,
+      1400,
+      1600,
+      1500,
+      1750,
+      1950,
+      2100,
+      1900,
+      2250,
+      2400,
+      1800,
+      1950,
+      1700,
+      1800
+    ],
+    "optimistic": [
+      0,
+      28,
+      75,
+      175,
+      325,
+      425,
+      550,
+      775,
+      925,
+      1150,
+      1400,
+      1750,
+      2000,
+      1900,
+      2200,
+      2450,
+      2650,
+      2400,
+      2800,
+      3000,
+      2250,
+      2450,
+      2150,
+      2250
     ]
   }
 }

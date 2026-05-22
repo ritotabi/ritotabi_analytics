@@ -11,6 +11,56 @@ const CATEGORY_LABEL: Record<string, string> = {
   ctr: "CTR改善", engagement: "エンゲージメント", conversion: "コンバージョン", content: "コンテンツ"
 };
 
+interface SectionHeaderProps {
+  id: string;
+  icon: string;
+  title: string;
+  subtitle?: string;
+  expandedSection: string | null;
+  toggleSection: (id: string) => void;
+}
+
+const SectionHeader: React.FC<SectionHeaderProps> = ({
+  id,
+  icon,
+  title,
+  subtitle,
+  expandedSection,
+  toggleSection,
+}) => (
+  <div
+    onClick={() => toggleSection(id)}
+    style={{
+      display: "flex", justifyContent: "space-between", alignItems: "center",
+      cursor: "pointer", padding: "14px 20px",
+      background: expandedSection === id ? "rgba(45,212,191,0.05)" : "transparent",
+      borderBottom: "1px solid #1e293b", transition: "background 0.2s"
+    }}
+  >
+    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+      <span style={{ fontSize: 16 }}>{icon}</span>
+      <span style={{ color: "#e2e8f0", fontWeight: 700, fontSize: 13 }}>{title}</span>
+      {subtitle && <span style={{ color: SLATE, fontSize: 11, fontFamily: "monospace" }}>{subtitle}</span>}
+    </div>
+    <span style={{ color: SLATE, fontSize: 11 }}>{expandedSection === id ? "▲" : "▼"}</span>
+  </div>
+);
+
+interface ChangeIndicatorProps {
+  value: number;
+  suffix?: string;
+}
+
+const ChangeIndicator: React.FC<ChangeIndicatorProps> = ({ value, suffix = "%" }) => {
+  const color = value > 0 ? GRN : value < 0 ? ROSE : SLATE;
+  const arrow = value > 0 ? "↑" : value < 0 ? "↓" : "→";
+  return (
+    <span style={{ color, fontSize: 11, fontFamily: "monospace", fontWeight: 700 }}>
+      {arrow} {value > 0 ? "+" : ""}{value.toFixed(1)}{suffix}
+    </span>
+  );
+};
+
 const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
   const months = Object.keys(reports).sort().reverse();
   const [selectedMonth, setSelectedMonth] = useState(months[0] || "");
@@ -22,35 +72,6 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
   }
 
   const toggleSection = (id: string) => setExpandedSection(expandedSection === id ? null : id);
-
-  const SectionHeader = ({ id, icon, title, subtitle }: { id: string; icon: string; title: string; subtitle?: string }) => (
-    <div
-      onClick={() => toggleSection(id)}
-      style={{
-        display: "flex", justifyContent: "space-between", alignItems: "center",
-        cursor: "pointer", padding: "14px 20px",
-        background: expandedSection === id ? "rgba(45,212,191,0.05)" : "transparent",
-        borderBottom: "1px solid #1e293b", transition: "background 0.2s"
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-        <span style={{ fontSize: 16 }}>{icon}</span>
-        <span style={{ color: "#e2e8f0", fontWeight: 700, fontSize: 13 }}>{title}</span>
-        {subtitle && <span style={{ color: SLATE, fontSize: 11, fontFamily: "monospace" }}>{subtitle}</span>}
-      </div>
-      <span style={{ color: SLATE, fontSize: 11 }}>{expandedSection === id ? "▲" : "▼"}</span>
-    </div>
-  );
-
-  const ChangeIndicator = ({ value, suffix = "%" }: { value: number; suffix?: string }) => {
-    const color = value > 0 ? GRN : value < 0 ? ROSE : SLATE;
-    const arrow = value > 0 ? "↑" : value < 0 ? "↓" : "→";
-    return (
-      <span style={{ color, fontSize: 11, fontFamily: "monospace", fontWeight: 700 }}>
-        {arrow} {value > 0 ? "+" : ""}{value.toFixed(1)}{suffix}
-      </span>
-    );
-  };
 
   return (
     <div>
@@ -76,7 +97,7 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
 
       <div className="card" style={{ overflow: "hidden" }}>
         {/* 1. Summary */}
-        <SectionHeader id="summary" icon="📋" title="サマリー" />
+        <SectionHeader id="summary" icon="📋" title="サマリー" expandedSection={expandedSection} toggleSection={toggleSection} />
         {expandedSection === "summary" && (
           <div style={{ padding: "16px 20px" }}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 16 }}>
@@ -102,7 +123,7 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
         )}
 
         {/* 2. Traffic */}
-        <SectionHeader id="traffic" icon="📊" title="トラフィック" subtitle={`JP ${report.traffic.byLanguage.jp.pageviews} / EN ${report.traffic.byLanguage.en.pageviews}`} />
+        <SectionHeader id="traffic" icon="📊" title="トラフィック" subtitle={`JP ${report.traffic.byLanguage.jp.pageviews} / EN ${report.traffic.byLanguage.en.pageviews}`} expandedSection={expandedSection} toggleSection={toggleSection} />
         {expandedSection === "traffic" && (
           <div style={{ padding: "16px 20px" }}>
             <p style={{ color: TEAL, fontSize: 10, fontFamily: "monospace", letterSpacing: "0.08em", marginBottom: 10 }}>ストリーム別PV</p>
@@ -133,7 +154,7 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
         )}
 
         {/* 3. Search */}
-        <SectionHeader id="search" icon="🔍" title="検索パフォーマンス" subtitle={`G:${report.search.google.totalClicks} / B:${report.search.bing.totalClicks} クリック`} />
+        <SectionHeader id="search" icon="🔍" title="検索パフォーマンス" subtitle={`G:${report.search.google.totalClicks} / B:${report.search.bing.totalClicks} クリック`} expandedSection={expandedSection} toggleSection={toggleSection} />
         {expandedSection === "search" && (
           <div style={{ padding: "16px 20px" }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
@@ -191,7 +212,7 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
         )}
 
         {/* 4. Engagement */}
-        <SectionHeader id="engagement" icon="⏱" title="エンゲージメント" />
+        <SectionHeader id="engagement" icon="⏱" title="エンゲージメント" expandedSection={expandedSection} toggleSection={toggleSection} />
         {expandedSection === "engagement" && (
           <div style={{ padding: "16px 20px" }}>
             <p style={{ color: TEAL, fontSize: 10, fontFamily: "monospace", letterSpacing: "0.08em", marginBottom: 10 }}>高エンゲージメント Top 10</p>
@@ -220,7 +241,7 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
         )}
 
         {/* 5. Conversion */}
-        <SectionHeader id="conversion" icon="💰" title="コンバージョン" subtitle={`${report.conversion.totalKeyEvents} CV / ¥${report.conversion.totalRevenue}`} />
+        <SectionHeader id="conversion" icon="💰" title="コンバージョン" subtitle={`${report.conversion.totalKeyEvents} CV / ¥${report.conversion.totalRevenue}`} expandedSection={expandedSection} toggleSection={toggleSection} />
         {expandedSection === "conversion" && (
           <div style={{ padding: "16px 20px" }}>
             {report.conversion.hotelCvSummary.pages.length > 0 && (
@@ -239,7 +260,7 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
         )}
 
         {/* 6. Forecast Comparison */}
-        <SectionHeader id="forecast" icon="📈" title="予実対比" subtitle={`精度 ${report.forecastComparison.overallAccuracy}%`} />
+        <SectionHeader id="forecast" icon="📈" title="予実対比" subtitle={`精度 ${report.forecastComparison.overallAccuracy}%`} expandedSection={expandedSection} toggleSection={toggleSection} />
         {expandedSection === "forecast" && (
           <div style={{ padding: "16px 20px" }}>
             <p style={{ color: VIOLET, fontSize: 10, fontFamily: "monospace", marginBottom: 10 }}>
@@ -276,7 +297,7 @@ const ReportTab: React.FC<ReportTabProps> = ({ reports }) => {
         )}
 
         {/* 7. Action Items */}
-        <SectionHeader id="actions" icon="🎯" title="アクションアイテム" subtitle={`${report.actionItems.length}件`} />
+        <SectionHeader id="actions" icon="🎯" title="アクションアイテム" subtitle={`${report.actionItems.length}件`} expandedSection={expandedSection} toggleSection={toggleSection} />
         {expandedSection === "actions" && (
           <div style={{ padding: "16px 20px" }}>
             {report.actionItems.map((item, i) => (

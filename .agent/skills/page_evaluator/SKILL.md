@@ -126,7 +126,7 @@ description: RITOTABIのアフィリエイトページを評価し、収益予�
   6. ユーザー体験(UX)
   7. 英語品質（ENのみ）
 
-- **収益予測（pp, pn, po）の算出**:
+- **収益予測（scenarios）の算出**:
   - `resources/market_data.md` の統計情報と `eval_spec.md` (1-4) の競合難易度係数を組み合わせ、市場シェアに基づいた現実的な数値を算出してください。
   - 公開月を1ヶ月目として**24ヶ月分**の数値を配列で生成してください。
 
@@ -184,15 +184,17 @@ interface PageEvaluation {
   id: string;
   url: string;
   evaluatedAt: string;
-  evaluatedBy: "skill";
+  evaluatedBy: "skill" | "manual" | "Antigravity";
   stream: string;
   sum: string;
   ap: string;
   an: string;
   ao: string;
-  pp: number[];
-  pn: number[];
-  po: number[];
+  scenarios: {
+    pessimistic: number[];
+    normal: number[];
+    optimistic: number[];
+  };
   memo: string;
   quality: {
     title: string;
@@ -200,10 +202,27 @@ interface PageEvaluation {
     type: "ホテル" | "ガイド" | "ランニング" | "トップ";
     overall: number;
     publishedDate: string | null;
-    scores: Record<string, number>; // 固定キー: "コンテンツ独自性", "写真・ビジュアル", "アフィリエイト設計", "内部リンク", "SEO技術実装", "ユーザー体験(UX)", "英語品質"
-    seoChecklist: Record<string, boolean>; // 固定キー: "hreflang", "faq", "keyword", "meta", "canonical", "ogp"
-    freshness: "new" | "growing" | "indexing" | "mature";
-    affiliateChecklist: {
+    scores: {
+      "コンテンツ独自性": number;
+      "写真・ビジュアル": number;
+      "アフィリエイト設計": number;
+      "内部リンク": number;
+      "SEO技術実装": number;
+      "ユーザー体験(UX)": number;
+      "英語品質": number | null;
+      "キーワード獲得可能性": number | null;
+    };
+    seoChecklist?: {
+      hreflang: boolean;
+      faq: boolean;
+      keyword: boolean;
+      meta: boolean;
+      canonical: boolean;
+      ogp: boolean;
+    };
+    freshness?: "new" | "growing" | "indexing" | "mature";
+    competitorBenchmark?: "above" | "equal" | "below";
+    affiliateChecklist?: {
       ctaPosition: boolean;
       microCopy: boolean;
       multipleOta: boolean;
@@ -215,31 +234,31 @@ interface PageEvaluation {
       urgencySignals: number;
       minClicks: number;
     };
-    brandChecklist?: {                      // ブランド品質チェック（定性的審査）
-      toneAndManner: boolean;               // 抽象的形容詞を避け、五感・事実ベースの描写ができているか
-      firstPersonInsight: boolean;           // 一次情報（現場の質感）が最低1つ含まれているか
-      benefitUpfront: boolean;               // 冒頭で読者の疑問に対する結論を提示しているか
-      personaDrivenPros: boolean | null;     // Prosが「〜したい方」形式か（ホテルのみ、他はnull）
+    brandChecklist?: {
+      toneAndManner: boolean;
+      firstPersonInsight: boolean;
+      benefitUpfront: boolean;
+      personaDrivenPros: boolean | null;
     };
-    categoryChecklist?: {                   // カテゴリ固有チェック
-      comparisonTable: boolean | null;      // 比較表の設置（ホテルのみ、他はnull）
-      affiliateMicroCopy: boolean | null;   // マイクロコピーの有無（ホテルのみ、他はnull）
-      courseSpecs: boolean | null;           // コーススペックの明記（ランニングのみ、他はnull）
-      runBadge: boolean | null;             // 実走評価バッジの設定（ランニングのみ、他はnull）
-      runningCvr?: {                        // ランニング用CVR指標（ランニングのみ、他はnull）
+    categoryChecklist?: {
+      comparisonTable: boolean | null;
+      affiliateMicroCopy: boolean | null;
+      courseSpecs: boolean | null;
+      runBadge: boolean | null;
+      runningCvr?: {
         internalHotelLinks: number;
         directAffiliateLinks: number;
         hotelCtaPerCourse: number;
         runnerPersonaMatch: boolean;
       } | null;
     };
-    techChecklist?: {                       // 技術実装チェック（全ページ共通）
-      nextImage: boolean;                   // Next.js <Image> の使用
-      imageAlt: boolean;                    // 具体的なalt属性の付与
-      affiliateRel: boolean;                // rel="noopener sponsored" の設定
+    techChecklist?: {
+      nextImage: boolean;
+      imageAlt: boolean;
+      affiliateRel: boolean;
     };
     strengths: string[];
     issues: Array<{ level: "高" | "中" | "低", text: string, isSpeculation?: boolean }>;
   };
 }
-\`\`\`
+```
