@@ -9,11 +9,24 @@ description: 毎月のGA4/GSC/Bingデータから月次パフォーマンスレ�
 
 ユーザーから以下の情報が提供されます：
 - 対象月（例: "202605"）
-- 売上金額（円）
-- `src/data/actual_dl/` に以下の3ファイルが配置済み:
+- `src/data/actual_dl/` に以下のファイルが配置済み:
   - `YYYYMM.csv` (GA4)
   - `YYYYMM_google.csv` (GSC)
   - `YYYYMM_bing.csv` (Bing)
+  - `YYYYMM_rakuten.csv` (楽天アフィリエイトの売上情報) - 任意
+  - `YYYYMM_stay22.csv` (Stay22の売上情報) - 任意
+
+## 売上データの処理ルール
+
+アフィリエイトなどの売上データがある場合、以下のルールに従ってストリームにマッピングし、日本円に換算して集計します。
+
+1. **楽天アフィリエイト売上 (`YYYYMM_rakuten.csv`)**:
+   - 成果報酬額（rewards）を集計。
+   - 発生元ストリームが特定できないため、その他国内用ストリーム `jp_other` に全額計上する。
+2. **Stay22売上 (`YYYYMM_stay22.csv`)**:
+   - コミッション額（Commission）を集計。
+   - 通貨が米ドル (USD) のため、為替レートAPI `https://ritotabi.com/data/exchange_rate/latest.json` から最新の JPY 換算レート（`conversion_rates.JPY`、取得失敗時は `159.2466`）を取得して日本円に換算（四捨五入）する。
+   - `Campaign IDs` に基づいて該当ストリーム（例: `chamisland` であれば `hjp`）に計上する。
 
 ## 実行フロー
 
@@ -25,6 +38,8 @@ description: 毎月のGA4/GSC/Bingデータから月次パフォーマンスレ�
 src/data/actual_dl/YYYYMM.csv        ← GA4（ページパス、PV、ユーザー、エンゲージメント時間、キーイベント、収益）
 src/data/actual_dl/YYYYMM_google.csv  ← GSC（ページURL、クリック数、表示回数、CTR、掲載順位）
 src/data/actual_dl/YYYYMM_bing.csv    ← Bing（ページURL、Impressions、Clicks、CTR、Avg Position）
+src/data/actual_dl/YYYYMM_rakuten.csv ← 楽天売上（発生日、成果報酬、クリック数、売上件数、売上金額）
+src/data/actual_dl/YYYYMM_stay22.csv  ← Stay22売上（Commission、Campaign IDs、User Countryなど）
 ```
 
 また、以下を参照します：

@@ -17,7 +17,9 @@ src/reports/YYYYMM.json
 - **totalPageviews**: GA4全行の `表示回数` 合計
 - **totalUsers**: GA4全行の `アクティブ ユーザー` 合計
 - **totalKeyEvents**: GA4全行の `キーイベント` 合計
-- **totalRevenue**: GA4全行の `合計収益` 合計 + ユーザー提供の売上情報
+- **totalRevenue**: GA4全行の `合計収益` 合計（通常は0）+ ユーザー提供の売上情報（アフィリエイト売上の合計金額）
+  - 楽天アフィリエイト報酬: `jp_other` にマッピング
+  - Stay22売上: `Campaign IDs` に対応するストリーム（例: `chamisland` は `hjp`）にマッピングし、`https://ritotabi.com/data/exchange_rate/latest.json` から取得した為替レート（USD→JPY、取得失敗時は `159.2466`）を適用して円換算・四捨五入する。
 - **highlights**: データの特徴的な3ポイントを自然言語で記述
   - PV/ユーザーの規模
   - 最もアクセスの多いページ
