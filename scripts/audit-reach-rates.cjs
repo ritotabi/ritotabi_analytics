@@ -12,6 +12,8 @@ const STATISTICS = {
   en_miyako: { domestic: 83000, intl: 16000 },
   hjp: { domestic: 100000, intl: 260000 },
   hen: { domestic: 100000, intl: 260000 },
+  djp: { domestic: 100000, intl: 260000 },
+  den: { domestic: 100000, intl: 260000 },
   cjp: { domestic: 48000, intl: 1400 },
   cen: { domestic: 48000, intl: 1400 },
   jp_yoron: { domestic: 7000, intl: 1000 }, // 推定
@@ -57,7 +59,7 @@ function main() {
 
   const aggressive = results.filter(r => {
     const rate = parseFloat(r.reachRate);
-    if (r.id.includes('ishigaki') || r.id.includes('miyako') || r.id.includes('hoian')) {
+    if (r.id.includes('ishigaki') || r.id.includes('miyako') || r.id.includes('hoian') || r.id.includes('da-nang')) {
       return rate > 10; // 大拠点で10%超えは強気
     }
     return rate > 25; // ニッチで25%超えは強気

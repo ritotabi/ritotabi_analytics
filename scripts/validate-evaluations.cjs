@@ -12,6 +12,8 @@ const STATISTICS = {
   en_miyako: { domestic: 83000, intl: 16000 },
   hjp: { domestic: 100000, intl: 260000 },
   hen: { domestic: 100000, intl: 260000 },
+  djp: { domestic: 100000, intl: 260000 },
+  den: { domestic: 100000, intl: 260000 },
   cjp: { domestic: 48000, intl: 1400 },
   cen: { domestic: 48000, intl: 1400 },
   jp_yoron: { domestic: 7000, intl: 1000 },
@@ -147,7 +149,7 @@ function validateEvaluation(filePath) {
     
     // 大拠点（石垣、宮古、ホイアン）は 10% を上限（警告・エラー）
     // ニッチ拠点は 25% を上限とする
-    const isMajor = data.stream.includes('ishigaki') || data.stream.includes('miyako') || data.stream.startsWith('h');
+    const isMajor = data.stream.includes('ishigaki') || data.stream.includes('miyako') || data.stream.startsWith('h') || data.stream.startsWith('d');
     const limit = isMajor ? 0.10 : 0.25;
 
     if (reachRate > limit) {

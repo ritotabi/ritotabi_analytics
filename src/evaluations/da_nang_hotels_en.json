@@ -1,0 +1,80 @@
+{
+  "id": "en_hotels_da-nang",
+  "url": "https://ritotabi.com/en/hotels/da-nang/",
+  "evaluatedAt": "2026-06-04",
+  "evaluatedBy": "Antigravity",
+  "stream": "den",
+  "sum": "5 Best Hoi An/Danang Hotels 2026 | RITOTABI",
+  "ap": "10,000",
+  "an": "3,000",
+  "ao": "15,000",
+  "scenarios": {
+    "pessimistic": [0, 4, 10, 13, 16, 21, 33, 48, 75, 114, 156, 204, 246, 288, 330, 255, 210, 240, 285, 345, 420, 525, 600, 570],
+    "normal": [0, 15, 35, 45, 55, 70, 110, 160, 250, 380, 520, 680, 820, 960, 1100, 850, 700, 800, 950, 1150, 1400, 1750, 2000, 1900],
+    "optimistic": [0, 30, 70, 90, 110, 140, 220, 320, 500, 760, 1040, 1360, 1640, 1920, 2200, 1700, 1400, 1600, 1900, 2300, 2800, 3500, 4000, 3800]
+  },
+  "memo": "ベトナム・ダナンのインバウンド（英語圏）市場に向けたホテルまとめ。実際に宿泊した一次情報と高クオリティな英語ライティングにより、グローバルな旅行者に対して高い説得力を持つ。全ホテルに独自ドメインの現地自撮り写真が合計30枚使用されており、ビジュアルの信頼性も抜群である。PriceTierコンポーネントを通じて地域中央値に基づく具体的な目安金額（$35〜$70等）がツールチップ表示されており、価格帯提示も的確に行われている。",
+  "quality": {
+    "title": "Da Nang Hotels Near My Khe Beach: Runner-Tested | RITOTABI",
+    "lang": "EN",
+    "type": "ホテル",
+    "overall": 93,
+    "publishedDate": "2026-06-04",
+    "seasonalRisk": "10月の洪水リスク（雨季のピークにより観光活動が制限される可能性）",
+    "scores": {
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 83,
+      "内部リンク": 90,
+      "SEO技術実装": 98,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 95,
+      "キーワード獲得可能性": null
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "competitorBenchmark": "above",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": true,
+      "mobileStickyCta": true,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "Unicode文字が正しく使用され、'failsafe standard'や'seaside serenity'などコンバージョン指向の自然で質の高い英語が使われている。",
+      "客室の水圧、ジム、ランナー視点でのウォームアップルートなどの実地調査に基づいた極めて具体的かつニッチな一次情報が記述されている。",
+      "5つのホテルすべてに合計30枚 of 独自ドメインの自撮り写真が配置されており、OTA画像への依存がなく視覚的信頼性が非常に高い。"
+    ],
+    "issues": []
+  }
+}

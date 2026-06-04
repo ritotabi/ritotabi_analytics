@@ -6,5 +6,7 @@
   { "key": "cjp", "label": "コンダオ 日本語", "cvr": 0.0035, "unit": 1500 },
   { "key": "cen", "label": "コンダオ 英語", "cvr": 0.008, "unit": 2500 },
   { "key": "hjp", "label": "ホイアン/チャム 日本語", "cvr": 0.004, "unit": 1000 },
-  { "key": "hen", "label": "ホイアン/チャム 英語", "cvr": 0.009, "unit": 2000 }
+  { "key": "hen", "label": "ホイアン/チャム 英語", "cvr": 0.009, "unit": 2000 },
+  { "key": "djp", "label": "ダナン 日本語", "cvr": 0.004, "unit": 1000 },
+  { "key": "den", "label": "ダナン 英語", "cvr": 0.009, "unit": 2000 }
 ]

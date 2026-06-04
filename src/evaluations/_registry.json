@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09",
+  "lastUpdated": "2026-06-04",
   "streams": [
     { "key": "jp_ishigaki", "label": "石垣島 (日本語)", "color": "#f59e0b", "cvr": 0.0032, "unit": 750 },
     { "key": "en_ishigaki", "label": "石垣島 (英語)", "color": "#10b981", "cvr": 0.008, "unit": 2000 },
@@ -18,7 +18,9 @@
     { "key": "cjp", "label": "コンダオ (日本語)", "color": "#8b5cf6", "cvr": 0.0035, "unit": 1500 },
     { "key": "cen", "label": "コンダオ (英語)", "color": "#2dd4bf", "cvr": 0.008, "unit": 2500 },
     { "key": "hjp", "label": "ホイアン/チャム (日本語)", "color": "#06b6d4", "cvr": 0.004, "unit": 1000 },
-    { "key": "hen", "label": "ホイアン/チャム (英語)", "color": "#ec4899", "cvr": 0.009, "unit": 2000 }
+    { "key": "hen", "label": "ホイアン/チャム (英語)", "color": "#ec4899", "cvr": 0.009, "unit": 2000 },
+    { "key": "djp", "label": "ダナン (日本語)", "color": "#2563eb", "cvr": 0.004, "unit": 1000 },
+    { "key": "den", "label": "ダナン (英語)", "color": "#38bdf8", "cvr": 0.009, "unit": 2000 }
   ],
   "evaluations": {
     "japan_jp": {
@@ -509,6 +511,26 @@
       "overall": 96,
       "evaluatedAt": "2026-05-01",
       "lang": "JP",
+      "type": "ホテル"
+    },
+    "hotels_da-nang": {
+      "file": "da_nang_hotels_jp.json",
+      "url": "/hotels/da-nang/",
+      "title": "ダナンでどこに泊まる？ミーケビーチ周辺のホテル5選 | RITOTABI",
+      "stream": "djp",
+      "overall": 93,
+      "evaluatedAt": "2026-06-04",
+      "lang": "JP",
+      "type": "ホテル"
+    },
+    "en_hotels_da-nang": {
+      "file": "da_nang_hotels_en.json",
+      "url": "/en/hotels/da-nang/",
+      "title": "Da Nang Hotels Near My Khe Beach: Runner-Tested | RITOTABI",
+      "stream": "den",
+      "overall": 93,
+      "evaluatedAt": "2026-06-04",
+      "lang": "EN",
       "type": "ホテル"
     }
   }

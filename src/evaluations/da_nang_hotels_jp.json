@@ -1,0 +1,80 @@
+{
+  "id": "hotels_da-nang",
+  "url": "https://ritotabi.com/hotels/da-nang/",
+  "evaluatedAt": "2026-06-04",
+  "evaluatedBy": "Antigravity",
+  "stream": "djp",
+  "sum": "ダナンでどこに泊まる？ミーケビーチ周辺のホテル5選",
+  "ap": "3,000",
+  "an": "900",
+  "ao": "4,500",
+  "scenarios": {
+    "pessimistic": [0, 1, 3, 4, 5, 6, 10, 15, 24, 36, 48, 60, 72, 84, 96, 75, 60, 69, 84, 102, 126, 156, 180, 174],
+    "normal": [0, 5, 12, 15, 18, 22, 35, 50, 80, 120, 160, 200, 240, 280, 320, 250, 200, 230, 280, 340, 420, 520, 600, 580],
+    "optimistic": [0, 10, 24, 30, 36, 44, 70, 100, 160, 240, 320, 400, 480, 560, 640, 500, 400, 460, 560, 680, 840, 1040, 1200, 1160]
+  },
+  "memo": "ベトナム・ダナンのミーケビーチ周辺のホテル選びにおいて、実地滞在に基づいた極めて具体的な一次情報を伝える高品質なページ。水圧やジム、ランニングルートなどのランナー視点を含めたニッチかつ有益な情報が満載である。PriceTierコンポーネントを通じて地域中央値に基づく具体的な目安金額（$35〜$70等）がツールチップ表示されており、価格帯提示も的確に行われている。",
+  "quality": {
+    "title": "ダナンでどこに泊まる？ミーケビーチ周辺のホテル5選 | RITOTABI",
+    "lang": "JP",
+    "type": "ホテル",
+    "overall": 93,
+    "publishedDate": "2026-06-04",
+    "seasonalRisk": "10月の洪水リスク（雨季のピークにより観光活動が制限される可能性）",
+    "scores": {
+      "コンテンツ独自性": 95,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 83,
+      "内部リンク": 90,
+      "SEO技術実装": 98,
+      "ユーザー体験(UX)": 95,
+      "英語品質": null,
+      "キーワード獲得可能性": null
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "competitorBenchmark": "above",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": true,
+      "socialProof": true,
+      "mobileStickyCta": true,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 1
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": true,
+      "courseSpecs": null,
+      "runBadge": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "実際に宿泊した体験に基づく、客室の水圧、ジムの設備状況、ランナー視点でのウォームアップや走行時の注意点など、極めて具体的で信頼性の高い一次情報が記載されている。",
+      "紹介している5つのホテルすべてに5〜7枚の独自ドメインのオリジナル写真（計30枚）が使用されており、ストック画像やOTA画像に頼らない高いビジュアル品質を誇る。",
+      "目的別の最適解、詳細な比較表、インタラクティブなマップ、よくある質問（FAQ）が網羅されており、ユーザーの意思決定を強力にサポートする優れたUX構成である。"
+    ],
+    "issues": []
+  }
+}

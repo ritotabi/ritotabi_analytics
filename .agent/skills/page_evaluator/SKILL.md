@@ -165,6 +165,7 @@ description: RITOTABIのアフィリエイトページを評価し、収益予�
   - **海外（ベトナム）**:
     - コンダオ島 (`/con-dao-island/` を含む): `cjp` (JP), `cen` (EN)
     - ホイアン/チャム島 (`/hoian/`, `/cham/` を含む): `hjp` (JP), `hen` (EN)
+    - ダナン (`/da-nang/` を含む): `djp` (JP), `den` (EN)
 - 公開日（publishedDate）から鮮度（freshness）を自動判定します。
 - 評価項目のテキスト（`memo`, `quality.strengths`, `quality.issues`）は**日本語**で生成します。
 

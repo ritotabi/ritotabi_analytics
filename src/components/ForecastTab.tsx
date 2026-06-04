@@ -76,6 +76,7 @@ const ForecastTab: React.FC<ForecastTabProps> = ({ forecastHistory, actuals }) =
     jp_aka: "阿嘉島 JP", jp_amami: "奄美大島 JP", en_amami: "奄美大島 EN",
     cjp: "コンダオ JP", cen: "コンダオ EN",
     hjp: "ホイアン JP", hen: "ホイアン EN",
+    djp: "ダナン JP", den: "ダナン EN",
     jp_other: "その他 JP", en_other: "その他 EN"
   };
 
