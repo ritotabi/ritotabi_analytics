@@ -1,0 +1,156 @@
+{
+  "id": "en_destinations_yoron-island",
+  "url": "https://ritotabi.com/en/destinations/yoron-island/",
+  "evaluatedAt": "2026-06-22",
+  "evaluatedBy": "Antigravity",
+  "stream": "en_yoron",
+  "sum": "与論島総合ガイド（英語版）。一次情報に基づく魅力的な解説と充実したビジュアルで、Yoron Blueや百合ヶ浜などの観光スポットを紹介。内部リンク設計や技術SEOも高い水準で実装されている。",
+  "ap": "英語圏からの観光需要が限定的で、インバウンド層の流入が想定を下回る場合。",
+  "an": "検索順位の安定によるインバウンド観光客の流入増。KKdayやホテル予約への導線によるCVの発生。",
+  "ao": "SNSや海外旅行メディアでの与論島の露出増加に伴う、英語指名検索および来訪者数の急増。",
+  "scenarios": {
+    "pessimistic": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      11,
+      14,
+      18,
+      23,
+      29,
+      36,
+      45,
+      55,
+      67,
+      80,
+      95,
+      112,
+      130,
+      150,
+      172,
+      200
+    ],
+    "normal": [
+      0,
+      1,
+      2,
+      4,
+      7,
+      10,
+      15,
+      20,
+      27,
+      35,
+      45,
+      58,
+      75,
+      95,
+      120,
+      150,
+      185,
+      225,
+      270,
+      320,
+      375,
+      440,
+      515,
+      600
+    ],
+    "optimistic": [
+      0,
+      2,
+      5,
+      9,
+      15,
+      22,
+      32,
+      43,
+      56,
+      72,
+      92,
+      118,
+      150,
+      190,
+      240,
+      300,
+      370,
+      450,
+      540,
+      640,
+      750,
+      880,
+      1030,
+      1200
+    ]
+  },
+  "memo": "新規公開された英語版与論島ガイドの初期評価。日本語版の緻密な設計を引き継いでおり、KKdayや周辺ホテルへの導線が確保されている。インバウンド需要の回復とSEOの成長に期待。",
+  "quality": {
+    "title": "Yoron Island Guide: Yoron Blue & Bidou Promenade | RITOTABI",
+    "lang": "EN",
+    "type": "ガイド",
+    "overall": 94,
+    "publishedDate": "2026-06-22",
+    "scores": {
+      "コンテンツ独自性": 96,
+      "写真・ビジュアル": 92,
+      "アフィリエイト設計": 90,
+      "内部リンク": 100,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 95,
+      "英語品質": 94
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「Discover the island’s true character — earned on foot, one run at a time.」といった一次情報に基づいた情緒的で魅力的なイントロダクション",
+      "観光スポットから周辺ホテルやビーチ、ランニングコースへの内部リンクが極めて精緻に配置されており、回遊性が高い",
+      "KKdayを用いたアクティビティ予約へのアフィリエイト導線が自然に組み込まれている"
+    ],
+    "issues": [
+      {
+        "level": "低",
+        "text": "レンタカー案内セクションで紹介されている各社へのリンクが直接の公式ホームページとなっており、アフィリエイト経由での予約導線が導入されていないため、収益化の余地がある。"
+      },
+      {
+        "level": "低",
+        "text": "ホテルページではOTA評価などの社会的証明（Social Proof）が表示されているが、本ガイドページには導入されておらず、宿の信頼性をより直感的に伝える余地がある。"
+      }
+    ],
+    "seasonalRisk": "台風リスク (9月)"
+  }
+}

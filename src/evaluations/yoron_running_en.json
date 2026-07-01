@@ -1,0 +1,164 @@
+{
+  "id": "en_destinations_yoron-island_running",
+  "url": "https://ritotabi.com/en/destinations/yoron-island/running/",
+  "evaluatedAt": "2026-06-22",
+  "evaluatedBy": "Antigravity",
+  "stream": "en_yoron",
+  "sum": "与論島ランニングガイド（英語版）。実走に基づき、絶景の『ヨロンブルーコース（8km）』と手軽な『ウドノスビーチ往復コース（2.5km）』の2コースを収録。スペックや評価バッジ、ランナー目線の補給・路面状況を網羅。",
+  "ap": "島内のランニング需要が限定的で、インバウンド走者の訪問・回遊が低調な場合。",
+  "an": "実走した正確なコースデータや高低差情報の提供により、インバウンド走者の信頼を獲得し、周辺宿への送客が安定発生。",
+  "ao": "島内でのランニングイベント（ヨロンマラソン等）の海外認知拡大に伴い、英語圏からのランナー客によるアクセスが急増。",
+  "scenarios": {
+    "pessimistic": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10,
+      12,
+      15,
+      18,
+      21,
+      25,
+      30,
+      35,
+      41,
+      47,
+      54,
+      63
+    ],
+    "normal": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      5,
+      8,
+      11,
+      15,
+      20,
+      26,
+      33,
+      41,
+      50,
+      60,
+      72,
+      85,
+      100,
+      117,
+      136,
+      157,
+      180,
+      210
+    ],
+    "optimistic": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      10,
+      15,
+      21,
+      28,
+      37,
+      47,
+      59,
+      73,
+      89,
+      107,
+      128,
+      152,
+      179,
+      209,
+      242,
+      278,
+      317,
+      360
+    ]
+  },
+  "memo": "新規公開された英語版与論島ランニングガイドの初期評価。Googleマップに記載のない舗装路や、漁港駐車場の有無、バッジ評価など、ランナー視点での現地実走に基づく高い独自性が特徴。",
+  "quality": {
+    "title": "Yoron Island Running: Bidou Promenade & Yoron Blue | RITOTABI",
+    "lang": "EN",
+    "type": "ランニング",
+    "overall": 94,
+    "publishedDate": "2026-06-22",
+    "scores": {
+      "コンテンツ独自性": 100,
+      "写真・ビジュアル": 90,
+      "アフィリエイト設計": 90,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 90,
+      "英語品質": 94
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 0,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "categoryChecklist": {
+      "comparisonTable": null,
+      "affiliateMicroCopy": null,
+      "courseSpecs": true,
+      "runBadge": true,
+      "runningCvr": {
+        "internalHotelLinks": 2,
+        "directAffiliateLinks": 0,
+        "hotelCtaPerCourse": 1,
+        "runnerPersonaMatch": true
+      }
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「Google Maps on the road is often sparse...」など、実際に走った人間にしか書けない極めて実用的で有益な実走アドバイス",
+      "距離・高低差・舗装状況等のコーススペックの明記と、独自の実走評価バッジ（S/A+/A/B）の設定による信頼性の高さ",
+      "ランニングコースの途中に点在するビーチやホテルなどの周辺スポットとの緻密な連動設計"
+    ],
+    "issues": [
+      {
+        "level": "低",
+        "text": "ランニングコース詳細ページから提携ホテルへの直接アフィリエイトリンクが設定されておらず、内部リンク（ホテルまとめページ）を経由する必要があるため、予約の最小クリック数が増加している。"
+      }
+    ],
+    "seasonalRisk": "台風リスク (9月)"
+  }
+}

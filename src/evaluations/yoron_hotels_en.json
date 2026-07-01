@@ -1,0 +1,160 @@
+{
+  "id": "en_hotels_yoron-island",
+  "url": "https://ritotabi.com/en/hotels/yoron-island/",
+  "evaluatedAt": "2026-06-22",
+  "evaluatedBy": "Antigravity",
+  "stream": "en_yoron",
+  "sum": "与論島ホテルまとめ（英語版）。一次情報に基づき、島内唯一の大型リゾートからプライベートヴィラ、高台のコテージまで5つの推奨宿を紹介。比較表やランナーレビューなど、ユーザー体験を意識した設計が特徴。",
+  "ap": "グローバルOTAでの予約転換率が想定を下回り、インバウンドの収益貢献が弱い場合。",
+  "an": "欧米・アジア圏からのインバウンド来訪者によるアフィリエイト経由での客室予約の発生。",
+  "ao": "島全体のインバウンドプロモーション強化による海外富裕層・リピーターの急増と、高価格帯ヴィラでの成約増加。",
+  "scenarios": {
+    "pessimistic": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      12,
+      15,
+      18,
+      22,
+      27,
+      32,
+      38,
+      44,
+      51,
+      59,
+      68,
+      80
+    ],
+    "normal": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      5,
+      7,
+      10,
+      14,
+      19,
+      25,
+      32,
+      40,
+      50,
+      62,
+      75,
+      90,
+      106,
+      124,
+      144,
+      166,
+      190,
+      216,
+      250
+    ],
+    "optimistic": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      8,
+      12,
+      17,
+      24,
+      32,
+      42,
+      54,
+      68,
+      84,
+      102,
+      122,
+      145,
+      170,
+      198,
+      228,
+      260,
+      295,
+      332,
+      375
+    ]
+  },
+  "memo": "新規公開された英語版与論島ホテルまとめの初期評価。日本語版の高水準な解説と独自構成（比較表、Pros/Cons、ランナー視点レビュー）を引き継いでいる。一部宿のOTAリンク制限が課題。",
+  "quality": {
+    "title": "5 Best Yoron Island Hotels: Resorts to Hidden Villas | RITOTABI",
+    "lang": "EN",
+    "type": "ホテル",
+    "overall": 92,
+    "publishedDate": "2026-06-22",
+    "scores": {
+      "コンテンツ独自性": 98,
+      "写真・ビジュアル": 92,
+      "アフィリエイト設計": 88,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 94,
+      "英語品質": 94
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": true,
+      "mobileStickyCta": true,
+      "carRentalLink": false,
+      "activityLink": false,
+      "urgencySignals": 1,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": true
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "「My personal number-one recommendation...」やランナー目線での実走レビュー（runnersReview）など、一次情報に基づいた圧倒的な説得力",
+      "「Comparison Table」による施設タイプごとの特徴・おすすめシーンの視覚的な整理",
+      "グローバル向けに最適化された「Star Rating」および「Review Score」の表示仕様の実装"
+    ],
+    "issues": [
+      {
+        "level": "中",
+        "text": "ホテル紹介部分に「$$$$」といった価格帯の記号表記はあるが、具体的な参考宿泊料金（例：$120〜）の記載がなく、ユーザーが予算感を掴みにくい。"
+      },
+      {
+        "level": "低",
+        "text": "「Sunhills Fubusha」において、アフィリエイト予約リンクがじゃらん（Jalan）のみに限定されており、海外観光客が日常的に利用するAgodaやBooking.comなどのグローバルOTAへのリンクが設定されていないため、予約機会を逸している可能性がある。"
+      },
+      {
+        "level": "低",
+        "text": "宿泊を検討する旅行客に向けて、現地での移動手段（レンタカー）や現地体験（マリンアクティビティ）への予約リンク（クロスセル導線）が設置されておらず、シナジー効果を活かしきれていない。"
+      }
+    ],
+    "seasonalRisk": "台風リスク (9月)"
+  }
+}

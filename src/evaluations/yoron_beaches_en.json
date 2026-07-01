@@ -1,0 +1,162 @@
+{
+  "id": "en_destinations_yoron-island_beaches",
+  "url": "https://ritotabi.com/en/destinations/yoron-island/beaches/",
+  "evaluatedAt": "2026-06-22",
+  "evaluatedBy": "Antigravity",
+  "stream": "en_yoron",
+  "sum": "与論島ビーチガイド（英語版）。百合ヶ浜などのメジャービーチから、道なき道を進む隠れ家ビーチまで全15スポットを紹介。比較表や実体験に基づくアクセス攻略、KKdayでのツアー予約導線を統合。",
+  "ap": "海外からの個人旅行者が百合ヶ浜以外のビーチへ巡るハードルが高く、直リンクツアーのCVRが低迷する場合。",
+  "an": "与論島の透明なビーチ群に魅了されたインバウンド客による回遊と、百合ヶ浜ツアー予約の安定的な発生。",
+  "ao": "SNS等での『ヨロンブルー』の世界的認知拡大に伴い、インバウンドのビーチ巡りおよびツアー予約が劇的に増加。",
+  "scenarios": {
+    "pessimistic": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      12,
+      15,
+      20,
+      25,
+      31,
+      38,
+      46,
+      56,
+      67,
+      79,
+      92,
+      107,
+      123,
+      144
+    ],
+    "normal": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      9,
+      13,
+      18,
+      24,
+      31,
+      40,
+      50,
+      65,
+      82,
+      102,
+      126,
+      154,
+      186,
+      222,
+      262,
+      306,
+      355,
+      410,
+      480
+    ],
+    "optimistic": [
+      0,
+      2,
+      4,
+      8,
+      13,
+      19,
+      27,
+      37,
+      49,
+      64,
+      82,
+      103,
+      130,
+      164,
+      204,
+      252,
+      308,
+      372,
+      444,
+      524,
+      612,
+      710,
+      820,
+      960
+    ]
+  },
+  "memo": "新規公開された英語版与論島ビーチガイドの初期評価。実体験に基づくユニークなアクセス方法（お墓の横を通る、隠し階段を下りる等）や豊富な写真が非常に魅力的。一部画像のAlt欠損が課題。",
+  "quality": {
+    "title": "Yoron Island Beaches: Yurigahama, Akasaki & Hidden Coves | RITOTABI",
+    "lang": "EN",
+    "type": "ガイド",
+    "overall": 92,
+    "publishedDate": "2026-06-22",
+    "scores": {
+      "コンテンツ独自性": 96,
+      "写真・ビジュアル": 95,
+      "アフィリエイト設計": 90,
+      "内部リンク": 95,
+      "SEO技術実装": 100,
+      "ユーザー体験(UX)": 92,
+      "英語品質": 94
+    },
+    "seoChecklist": {
+      "hreflang": true,
+      "faq": true,
+      "keyword": true,
+      "meta": true,
+      "canonical": true,
+      "ogp": true
+    },
+    "freshness": "new",
+    "affiliateChecklist": {
+      "ctaPosition": true,
+      "microCopy": true,
+      "multipleOta": true,
+      "priceVisible": false,
+      "socialProof": false,
+      "mobileStickyCta": false,
+      "carRentalLink": false,
+      "activityLink": true,
+      "urgencySignals": 0,
+      "minClicks": 2
+    },
+    "brandChecklist": {
+      "toneAndManner": true,
+      "firstPersonInsight": true,
+      "benefitUpfront": true,
+      "personaDrivenPros": null
+    },
+    "categoryChecklist": {
+      "comparisonTable": true,
+      "affiliateMicroCopy": null,
+      "courseSpecs": null,
+      "runBadge": null
+    },
+    "techChecklist": {
+      "nextImage": true,
+      "imageAlt": true,
+      "affiliateRel": true
+    },
+    "strengths": [
+      "お墓の横を通るアクセスルートや看板のない階段など、実地を歩いた人間しか書けない極めて価値の高いシークレットビーチの調査情報",
+      "百合ヶ浜の満潮・干潮スケジュールの重要性を提示し、スムーズにKKdayの予約プラットフォームへ誘導する巧みなアフィリエイト設計",
+      "ほぼ全ての紹介ビーチに複数枚の高品質な独自写真を掲載しており、視覚的な美しさが圧倒的である"
+    ],
+    "issues": [
+      {
+        "level": "高",
+        "text": "「Akasaki Beach」のデータで 'imageAlt' と 'imageCaption' が空の文字列（''）になっており、画像コンポーネントにおけるスクリーンリーダー対応やSEO観点でのAltタグ評価に悪影響を及ぼしている。"
+      },
+      {
+        "level": "低",
+        "text": "各ビーチの紹介に最寄りの宿へのリンクはあるが、ビーチでの観光や滞在に直結するレンタカー予約リンクが実装されておらず、現地移動手段のシームレスな紹介が不足している。"
+      }
+    ],
+    "seasonalRisk": "台風リスク (9月)"
+  }
+}

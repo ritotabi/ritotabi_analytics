@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04",
+  "lastUpdated": "2026-06-22",
   "streams": [
     { "key": "jp_ishigaki", "label": "石垣島 (日本語)", "color": "#f59e0b", "cvr": 0.0032, "unit": 750 },
     { "key": "en_ishigaki", "label": "石垣島 (英語)", "color": "#10b981", "cvr": 0.008, "unit": 2000 },
@@ -421,6 +421,46 @@
       "overall": 94,
       "evaluatedAt": "2026-05-01",
       "lang": "JP",
+      "type": "ランニング"
+    },
+    "en_hotels_yoron-island": {
+      "file": "yoron_hotels_en.json",
+      "url": "/en/hotels/yoron-island/",
+      "title": "5 Best Yoron Island Hotels: Resorts to Hidden Villas | RITOTABI",
+      "stream": "en_yoron",
+      "overall": 92,
+      "evaluatedAt": "2026-06-22",
+      "lang": "EN",
+      "type": "ホテル"
+    },
+    "en_destinations_yoron-island_beaches": {
+      "file": "yoron_beaches_en.json",
+      "url": "/en/destinations/yoron-island/beaches/",
+      "title": "Yoron Island Beaches: Yurigahama, Akasaki & Hidden Coves | RITOTABI",
+      "stream": "en_yoron",
+      "overall": 92,
+      "evaluatedAt": "2026-06-22",
+      "lang": "EN",
+      "type": "ガイド"
+    },
+    "en_destinations_yoron-island": {
+      "file": "yoron_en.json",
+      "url": "/en/destinations/yoron-island/",
+      "title": "Yoron Island Guide: Yoron Blue & Bidou Promenade | RITOTABI",
+      "stream": "en_yoron",
+      "overall": 94,
+      "evaluatedAt": "2026-06-22",
+      "lang": "EN",
+      "type": "ガイド"
+    },
+    "en_destinations_yoron-island_running": {
+      "file": "yoron_running_en.json",
+      "url": "/en/destinations/yoron-island/running/",
+      "title": "Yoron Island Running: Bidou Promenade & Yoron Blue | RITOTABI",
+      "stream": "en_yoron",
+      "overall": 94,
+      "evaluatedAt": "2026-06-22",
+      "lang": "EN",
       "type": "ランニング"
     },
     "destinations_amami-island": {

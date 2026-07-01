@@ -1,0 +1,986 @@
+{
+  "reportMonth": "2026-06",
+  "generatedAt": "2026-07-01T00:12:17.064Z",
+  "generatedBy": "skill",
+  "periodStart": "2026-06-01",
+  "periodEnd": "2026-06-30",
+  "revenue": 509,
+  "summary": {
+    "totalPageviews": 1492,
+    "totalUsers": 705,
+    "totalKeyEvents": 64,
+    "totalRevenue": 509,
+    "highlights": [
+      "総PVは 1,492 PV（前月比 -21.14%）で、アクティブユーザーは 705 人（前月比 +17.70%）でした。",
+      "最もアクセスの多いページは「/destinations/miyako-island/running/」（136 PV）でした。",
+      "キーイベントは計 64 件発生し、合計売上（成果報酬額）は 509 円を達成しました。"
+    ],
+    "momComparison": {
+      "pageviewsChange": -21.14,
+      "usersChange": 17.7,
+      "keyEventsChange": -8.57
+    }
+  },
+  "traffic": {
+    "byStream": [
+      {
+        "stream": "jp_other",
+        "label": "その他 日本 (日本語)",
+        "pageviews": 402,
+        "users": 145,
+        "pagesCount": 13
+      },
+      {
+        "stream": "jp_miyako",
+        "label": "宮古島 (日本語)",
+        "pageviews": 272,
+        "users": 156,
+        "pagesCount": 3
+      },
+      {
+        "stream": "en_other",
+        "label": "その他 日本 (英語)",
+        "pageviews": 240,
+        "users": 84,
+        "pagesCount": 16
+      },
+      {
+        "stream": "hjp",
+        "label": "ホイアン/チャム (日本語)",
+        "pageviews": 123,
+        "users": 57,
+        "pagesCount": 4
+      },
+      {
+        "stream": "jp_yoron",
+        "label": "与論島 (日本語)",
+        "pageviews": 117,
+        "users": 60,
+        "pagesCount": 3
+      },
+      {
+        "stream": "jp_aka",
+        "label": "阿嘉島 (日本語)",
+        "pageviews": 106,
+        "users": 62,
+        "pagesCount": 1
+      },
+      {
+        "stream": "hen",
+        "label": "ホイアン/チャム (英語)",
+        "pageviews": 53,
+        "users": 29,
+        "pagesCount": 5
+      },
+      {
+        "stream": "en_miyako",
+        "label": "宮古島 (英語)",
+        "pageviews": 41,
+        "users": 24,
+        "pagesCount": 3
+      },
+      {
+        "stream": "cjp",
+        "label": "コンダオ (日本語)",
+        "pageviews": 41,
+        "users": 22,
+        "pagesCount": 3
+      },
+      {
+        "stream": "jp_ishigaki",
+        "label": "石垣島 (日本語)",
+        "pageviews": 40,
+        "users": 29,
+        "pagesCount": 2
+      },
+      {
+        "stream": "jp_kume",
+        "label": "久米島 (日本語)",
+        "pageviews": 17,
+        "users": 5,
+        "pagesCount": 1
+      },
+      {
+        "stream": "cen",
+        "label": "コンダオ (英語)",
+        "pageviews": 16,
+        "users": 14,
+        "pagesCount": 3
+      },
+      {
+        "stream": "en_ishigaki",
+        "label": "石垣島 (英語)",
+        "pageviews": 14,
+        "users": 10,
+        "pagesCount": 2
+      },
+      {
+        "stream": "en_amami",
+        "label": "奄美大島 (英語)",
+        "pageviews": 6,
+        "users": 5,
+        "pagesCount": 1
+      },
+      {
+        "stream": "jp_amami",
+        "label": "奄美大島 (日本語)",
+        "pageviews": 4,
+        "users": 3,
+        "pagesCount": 1
+      },
+      {
+        "stream": "en_yoron",
+        "label": "与論島 (英語)",
+        "pageviews": 0,
+        "users": 0,
+        "pagesCount": 0
+      },
+      {
+        "stream": "en_kume",
+        "label": "久米島 (英語)",
+        "pageviews": 0,
+        "users": 0,
+        "pagesCount": 0
+      },
+      {
+        "stream": "en_aka",
+        "label": "阿嘉島 (英語)",
+        "pageviews": 0,
+        "users": 0,
+        "pagesCount": 0
+      }
+    ],
+    "byLanguage": {
+      "jp": {
+        "pageviews": 1122,
+        "users": 539
+      },
+      "en": {
+        "pageviews": 370,
+        "users": 166
+      }
+    },
+    "topPages": [
+      {
+        "path": "/destinations/miyako-island/running/",
+        "pageviews": 136,
+        "users": 78,
+        "avgEngagementTime": 48.06410256410256,
+        "keyEvents": 1
+      },
+      {
+        "path": "/",
+        "pageviews": 126,
+        "users": 37,
+        "avgEngagementTime": 55.054054054054056,
+        "keyEvents": 0
+      },
+      {
+        "path": "/destinations/aka-island/",
+        "pageviews": 106,
+        "users": 62,
+        "avgEngagementTime": 72.69354838709677,
+        "keyEvents": 5
+      },
+      {
+        "path": "/destinations/miyako-island/beaches/",
+        "pageviews": 104,
+        "users": 60,
+        "avgEngagementTime": 44.13333333333333,
+        "keyEvents": 0
+      },
+      {
+        "path": "/destinations/yoron-island/beaches/",
+        "pageviews": 73,
+        "users": 35,
+        "avgEngagementTime": 87.4,
+        "keyEvents": 1
+      },
+      {
+        "path": "/destinations/cham-island/",
+        "pageviews": 70,
+        "users": 29,
+        "avgEngagementTime": 114.03448275862068,
+        "keyEvents": 0
+      },
+      {
+        "path": "/hotels/da-nang/",
+        "pageviews": 69,
+        "users": 26,
+        "avgEngagementTime": 172.57692307692307,
+        "keyEvents": 0
+      },
+      {
+        "path": "/hotels/aka-island/",
+        "pageviews": 48,
+        "users": 21,
+        "avgEngagementTime": 59.80952380952381,
+        "keyEvents": 19
+      },
+      {
+        "path": "/destinations/ishigaki-island/running/",
+        "pageviews": 39,
+        "users": 28,
+        "avgEngagementTime": 23.035714285714285,
+        "keyEvents": 0
+      },
+      {
+        "path": "/hotels/yoron-island/",
+        "pageviews": 39,
+        "users": 19,
+        "avgEngagementTime": 37.63157894736842,
+        "keyEvents": 12
+      }
+    ],
+    "newPages": [
+      "/en/hotels/yoron-island/",
+      "/en/destinations/yoron-island/",
+      "/en/destinations/kume-island/",
+      "/en/destinations/yoron-island/beaches/",
+      "/en/hotels/kume-island/",
+      "/en/hotels/aka-island/",
+      "/en/destinations/aka-island/",
+      "/en/hotels/da-nang/",
+      "/en/destinations/yoron-island/running/",
+      "/profile/",
+      "/en/destinations/cham-island/Marble Mountains/"
+    ]
+  },
+  "search": {
+    "google": {
+      "totalClicks": 305,
+      "totalImpressions": 14081,
+      "avgCtr": 2.17,
+      "avgPosition": 15.02,
+      "topPages": [
+        {
+          "url": "https://ritotabi.com/destinations/miyako-island/running/",
+          "clicks": 64,
+          "impressions": 359,
+          "ctr": 17.83,
+          "position": 3.65
+        },
+        {
+          "url": "https://ritotabi.com/destinations/miyako-island/beaches/",
+          "clicks": 38,
+          "impressions": 711,
+          "ctr": 5.34,
+          "position": 8.18
+        },
+        {
+          "url": "https://ritotabi.com/destinations/aka-island/",
+          "clicks": 26,
+          "impressions": 1191,
+          "ctr": 2.18,
+          "position": 8.33
+        },
+        {
+          "url": "https://ritotabi.com/destinations/ishigaki-island/running/",
+          "clicks": 25,
+          "impressions": 204,
+          "ctr": 12.25,
+          "position": 6.53
+        },
+        {
+          "url": "https://ritotabi.com/destinations/cham-island/",
+          "clicks": 21,
+          "impressions": 473,
+          "ctr": 4.44,
+          "position": 8.04
+        },
+        {
+          "url": "https://ritotabi.com/destinations/yoron-island/beaches/",
+          "clicks": 14,
+          "impressions": 1136,
+          "ctr": 1.23,
+          "position": 12.9
+        },
+        {
+          "url": "https://ritotabi.com/hotels/da-nang/",
+          "clicks": 11,
+          "impressions": 235,
+          "ctr": 4.68,
+          "position": 11.52
+        },
+        {
+          "url": "https://ritotabi.com/hotels/yoron-island/",
+          "clicks": 10,
+          "impressions": 685,
+          "ctr": 1.46,
+          "position": 34.31
+        },
+        {
+          "url": "https://ritotabi.com/en/destinations/an-bang/running/",
+          "clicks": 9,
+          "impressions": 62,
+          "ctr": 14.52,
+          "position": 4.61
+        },
+        {
+          "url": "https://ritotabi.com/en/destinations/hoian-old-town/running/",
+          "clicks": 6,
+          "impressions": 248,
+          "ctr": 2.42,
+          "position": 7.46
+        }
+      ],
+      "zeroCtrPages": [
+        {
+          "url": "https://ritotabi.com/en/hotels/con-dao-island/",
+          "impressions": 532,
+          "position": 18.13
+        },
+        {
+          "url": "https://ritotabi.com/en/destinations/miyako-island/beaches/",
+          "impressions": 391,
+          "position": 8.54
+        },
+        {
+          "url": "https://ritotabi.com/en/hotels/da-nang/",
+          "impressions": 384,
+          "position": 16.74
+        },
+        {
+          "url": "https://ritotabi.com/en/hotels/kume-island/",
+          "impressions": 238,
+          "position": 25.83
+        },
+        {
+          "url": "https://ritotabi.com/hotels/amami-island/",
+          "impressions": 73,
+          "position": 26.81
+        }
+      ]
+    },
+    "bing": {
+      "totalClicks": 47,
+      "totalImpressions": 976,
+      "avgCtr": 4.82,
+      "avgPosition": 5.28,
+      "topPages": [
+        {
+          "url": "https://ritotabi.com/destinations/aka-island/",
+          "clicks": 20,
+          "impressions": 569,
+          "ctr": 3.51,
+          "position": 4.771512653778558
+        },
+        {
+          "url": "https://ritotabi.com/hotels/aka-island/",
+          "clicks": 5,
+          "impressions": 26,
+          "ctr": 19.23,
+          "position": 4.499988461538462
+        },
+        {
+          "url": "https://ritotabi.com/destinations/miyako-island/running/",
+          "clicks": 4,
+          "impressions": 11,
+          "ctr": 36.36,
+          "position": 3
+        },
+        {
+          "url": "https://ritotabi.com/destinations/yoron-island/",
+          "clicks": 3,
+          "impressions": 162,
+          "ctr": 1.85,
+          "position": 7.530860493827161
+        },
+        {
+          "url": "https://ritotabi.com/destinations/yoron-island/beaches/",
+          "clicks": 3,
+          "impressions": 65,
+          "ctr": 4.62,
+          "position": 5.230761538461538
+        },
+        {
+          "url": "https://ritotabi.com/hotels/yoron-island/",
+          "clicks": 3,
+          "impressions": 39,
+          "ctr": 7.69,
+          "position": 6.000007692307692
+        },
+        {
+          "url": "https://ritotabi.com/hotels/an-bang/",
+          "clicks": 3,
+          "impressions": 4,
+          "ctr": 75,
+          "position": 1
+        },
+        {
+          "url": "https://ritotabi.com/destinations/con-dao-island/",
+          "clicks": 2,
+          "impressions": 56,
+          "ctr": 3.57,
+          "position": 5.160712500000001
+        },
+        {
+          "url": "https://ritotabi.com/destinations/cham-island/",
+          "clicks": 2,
+          "impressions": 22,
+          "ctr": 9.09,
+          "position": 4.590904545454546
+        },
+        {
+          "url": "https://ritotabi.com/hotels/con-dao-island/",
+          "clicks": 2,
+          "impressions": 3,
+          "ctr": 66.67,
+          "position": 2.6666666666666665
+        }
+      ]
+    },
+    "engineComparison": {
+      "googleShare": 86.65,
+      "bingShare": 13.35
+    }
+  },
+  "engagement": {
+    "topEngagedPages": [
+      {
+        "path": "/en/hotels/yoron-island/",
+        "avgEngagementTime": 553.25,
+        "users": 4
+      },
+      {
+        "path": "/en/hotels/kume-island/",
+        "avgEngagementTime": 236.33333333333334,
+        "users": 3
+      },
+      {
+        "path": "/hotels/da-nang/",
+        "avgEngagementTime": 172.57692307692307,
+        "users": 26
+      },
+      {
+        "path": "/destinations/kume-island/",
+        "avgEngagementTime": 158,
+        "users": 5
+      },
+      {
+        "path": "/en/vietnam/",
+        "avgEngagementTime": 155.5,
+        "users": 2
+      },
+      {
+        "path": "/hotels/kume-island/",
+        "avgEngagementTime": 153.75,
+        "users": 4
+      },
+      {
+        "path": "/vietnam/",
+        "avgEngagementTime": 149.5,
+        "users": 6
+      },
+      {
+        "path": "/destinations/con-dao-island/",
+        "avgEngagementTime": 127.53846153846153,
+        "users": 13
+      },
+      {
+        "path": "/destinations/cham-island/",
+        "avgEngagementTime": 114.03448275862068,
+        "users": 29
+      },
+      {
+        "path": "/hotels/hoian-old-town/",
+        "avgEngagementTime": 103.2,
+        "users": 10
+      }
+    ],
+    "lowEngagementPages": [
+      {
+        "path": "/en/hotels/ishigaki-island/",
+        "avgEngagementTime": 5.2,
+        "users": 5
+      },
+      {
+        "path": "/en/hotels/con-dao-island/",
+        "avgEngagementTime": 6.2,
+        "users": 5
+      },
+      {
+        "path": "/en/hotels/an-bang/",
+        "avgEngagementTime": 9,
+        "users": 4
+      },
+      {
+        "path": "/en/hotels/hoian-old-town/",
+        "avgEngagementTime": 9.5,
+        "users": 2
+      },
+      {
+        "path": "/hotels/amami-island/",
+        "avgEngagementTime": 11,
+        "users": 5
+      },
+      {
+        "path": "/en/destinations/ishigaki-island/",
+        "avgEngagementTime": 13.4,
+        "users": 5
+      },
+      {
+        "path": "/en/destinations/amami-island/",
+        "avgEngagementTime": 13.4,
+        "users": 5
+      },
+      {
+        "path": "/hotels/ishigaki-island/",
+        "avgEngagementTime": 17,
+        "users": 3
+      },
+      {
+        "path": "/en/hotels/miyako-island/",
+        "avgEngagementTime": 18.857142857142858,
+        "users": 7
+      },
+      {
+        "path": "/en/destinations/miyako-island/beaches/",
+        "avgEngagementTime": 22.333333333333332,
+        "users": 6
+      },
+      {
+        "path": "/en/destinations/miyako-island/running/",
+        "avgEngagementTime": 22.4,
+        "users": 10
+      },
+      {
+        "path": "/destinations/miyako-island/",
+        "avgEngagementTime": 23,
+        "users": 18
+      },
+      {
+        "path": "/destinations/ishigaki-island/running/",
+        "avgEngagementTime": 23.035714285714285,
+        "users": 28
+      },
+      {
+        "path": "/en/destinations/con-dao-island/running/",
+        "avgEngagementTime": 24,
+        "users": 2
+      },
+      {
+        "path": "/en/destinations/an-bang/running/",
+        "avgEngagementTime": 25.818181818181817,
+        "users": 11
+      },
+      {
+        "path": "/en/destinations/ishigaki-island/running/",
+        "avgEngagementTime": 26.2,
+        "users": 5
+      },
+      {
+        "path": "/en/destinations/con-dao-island/",
+        "avgEngagementTime": 26.285714285714285,
+        "users": 7
+      },
+      {
+        "path": "/en/destinations/miyako-island/",
+        "avgEngagementTime": 26.375,
+        "users": 8
+      },
+      {
+        "path": "/en/destinations/aka-island/",
+        "avgEngagementTime": 28.285714285714285,
+        "users": 7
+      }
+    ],
+    "keyEventPages": [
+      {
+        "path": "/hotels/aka-island/",
+        "keyEvents": 19,
+        "users": 21,
+        "cvRate": 90.48
+      },
+      {
+        "path": "/hotels/yoron-island/",
+        "keyEvents": 12,
+        "users": 19,
+        "cvRate": 63.16
+      },
+      {
+        "path": "/hotels/miyako-island/",
+        "keyEvents": 7,
+        "users": 10,
+        "cvRate": 70
+      },
+      {
+        "path": "/en/hotels/yoron-island/",
+        "keyEvents": 7,
+        "users": 4,
+        "cvRate": 175
+      },
+      {
+        "path": "/destinations/aka-island/",
+        "keyEvents": 5,
+        "users": 62,
+        "cvRate": 8.06
+      },
+      {
+        "path": "/en/destinations/kume-island/",
+        "keyEvents": 3,
+        "users": 6,
+        "cvRate": 50
+      },
+      {
+        "path": "/en/hotels/kume-island/",
+        "keyEvents": 2,
+        "users": 3,
+        "cvRate": 66.67
+      },
+      {
+        "path": "/en/hotels/aka-island/",
+        "keyEvents": 2,
+        "users": 5,
+        "cvRate": 40
+      },
+      {
+        "path": "/en/destinations/aka-island/",
+        "keyEvents": 2,
+        "users": 7,
+        "cvRate": 28.57
+      },
+      {
+        "path": "/hotels/amami-island/",
+        "keyEvents": 2,
+        "users": 5,
+        "cvRate": 40
+      },
+      {
+        "path": "/destinations/miyako-island/running/",
+        "keyEvents": 1,
+        "users": 78,
+        "cvRate": 1.28
+      },
+      {
+        "path": "/destinations/yoron-island/beaches/",
+        "keyEvents": 1,
+        "users": 35,
+        "cvRate": 2.86
+      },
+      {
+        "path": "/en/destinations/yoron-island/beaches/",
+        "keyEvents": 1,
+        "users": 5,
+        "cvRate": 20
+      }
+    ]
+  },
+  "conversion": {
+    "totalKeyEvents": 64,
+    "totalRevenue": 509,
+    "topCvPages": [
+      {
+        "path": "/hotels/aka-island/",
+        "keyEvents": 19,
+        "users": 21,
+        "cvRate": 90.48
+      },
+      {
+        "path": "/hotels/yoron-island/",
+        "keyEvents": 12,
+        "users": 19,
+        "cvRate": 63.16
+      },
+      {
+        "path": "/hotels/miyako-island/",
+        "keyEvents": 7,
+        "users": 10,
+        "cvRate": 70
+      },
+      {
+        "path": "/en/hotels/yoron-island/",
+        "keyEvents": 7,
+        "users": 4,
+        "cvRate": 175
+      },
+      {
+        "path": "/destinations/aka-island/",
+        "keyEvents": 5,
+        "users": 62,
+        "cvRate": 8.06
+      },
+      {
+        "path": "/en/destinations/kume-island/",
+        "keyEvents": 3,
+        "users": 6,
+        "cvRate": 50
+      },
+      {
+        "path": "/en/hotels/kume-island/",
+        "keyEvents": 2,
+        "users": 3,
+        "cvRate": 66.67
+      },
+      {
+        "path": "/en/hotels/aka-island/",
+        "keyEvents": 2,
+        "users": 5,
+        "cvRate": 40
+      },
+      {
+        "path": "/en/destinations/aka-island/",
+        "keyEvents": 2,
+        "users": 7,
+        "cvRate": 28.57
+      },
+      {
+        "path": "/hotels/amami-island/",
+        "keyEvents": 2,
+        "users": 5,
+        "cvRate": 40
+      }
+    ],
+    "hotelCvSummary": {
+      "totalKeyEvents": 51,
+      "pages": [
+        {
+          "path": "/hotels/aka-island/",
+          "keyEvents": 19,
+          "cvRate": 90.48
+        },
+        {
+          "path": "/hotels/yoron-island/",
+          "keyEvents": 12,
+          "cvRate": 63.16
+        },
+        {
+          "path": "/hotels/miyako-island/",
+          "keyEvents": 7,
+          "cvRate": 70
+        },
+        {
+          "path": "/en/hotels/yoron-island/",
+          "keyEvents": 7,
+          "cvRate": 175
+        },
+        {
+          "path": "/en/hotels/kume-island/",
+          "keyEvents": 2,
+          "cvRate": 66.67
+        },
+        {
+          "path": "/en/hotels/aka-island/",
+          "keyEvents": 2,
+          "cvRate": 40
+        },
+        {
+          "path": "/hotels/amami-island/",
+          "keyEvents": 2,
+          "cvRate": 40
+        }
+      ]
+    }
+  },
+  "forecastComparison": {
+    "vintageId": "v2_202605",
+    "byStream": [
+      {
+        "stream": "jp_ishigaki",
+        "label": "石垣島 (日本語)",
+        "forecastPv": 275,
+        "actualPv": 40,
+        "accuracy": 14.55
+      },
+      {
+        "stream": "en_ishigaki",
+        "label": "石垣島 (英語)",
+        "forecastPv": 75,
+        "actualPv": 14,
+        "accuracy": 18.67
+      },
+      {
+        "stream": "jp_miyako",
+        "label": "宮古島 (日本語)",
+        "forecastPv": 358,
+        "actualPv": 272,
+        "accuracy": 75.98
+      },
+      {
+        "stream": "en_miyako",
+        "label": "宮古島 (英語)",
+        "forecastPv": 127,
+        "actualPv": 41,
+        "accuracy": 32.28
+      },
+      {
+        "stream": "jp_yoron",
+        "label": "与論島 (日本語)",
+        "forecastPv": 48,
+        "actualPv": 117,
+        "accuracy": 243.75
+      },
+      {
+        "stream": "en_yoron",
+        "label": "与論島 (英語)",
+        "forecastPv": 11,
+        "actualPv": 0,
+        "accuracy": 0
+      },
+      {
+        "stream": "jp_kume",
+        "label": "久米島 (日本語)",
+        "forecastPv": 34,
+        "actualPv": 17,
+        "accuracy": 50
+      },
+      {
+        "stream": "en_kume",
+        "label": "久米島 (英語)",
+        "forecastPv": 11,
+        "actualPv": 0,
+        "accuracy": 0
+      },
+      {
+        "stream": "jp_aka",
+        "label": "阿嘉島 (日本語)",
+        "forecastPv": 38,
+        "actualPv": 106,
+        "accuracy": 278.95
+      },
+      {
+        "stream": "en_aka",
+        "label": "阿嘉島 (英語)",
+        "forecastPv": 7,
+        "actualPv": 0,
+        "accuracy": 0
+      },
+      {
+        "stream": "jp_amami",
+        "label": "奄美大島 (日本語)",
+        "forecastPv": 0,
+        "actualPv": 4,
+        "accuracy": null
+      },
+      {
+        "stream": "en_amami",
+        "label": "奄美大島 (英語)",
+        "forecastPv": 0,
+        "actualPv": 6,
+        "accuracy": null
+      },
+      {
+        "stream": "jp_other",
+        "label": "その他 日本 (日本語)",
+        "forecastPv": 74,
+        "actualPv": 402,
+        "accuracy": 543.24
+      },
+      {
+        "stream": "en_other",
+        "label": "その他 日本 (英語)",
+        "forecastPv": 26,
+        "actualPv": 240,
+        "accuracy": 923.08
+      },
+      {
+        "stream": "cjp",
+        "label": "コンダオ (日本語)",
+        "forecastPv": 54,
+        "actualPv": 41,
+        "accuracy": 75.93
+      },
+      {
+        "stream": "cen",
+        "label": "コンダオ (英語)",
+        "forecastPv": 33,
+        "actualPv": 16,
+        "accuracy": 48.48
+      },
+      {
+        "stream": "hjp",
+        "label": "ホイアン/チャム (日本語)",
+        "forecastPv": 68,
+        "actualPv": 123,
+        "accuracy": 180.88
+      },
+      {
+        "stream": "hen",
+        "label": "ホイアン/チャム (英語)",
+        "forecastPv": 79,
+        "actualPv": 53,
+        "accuracy": 67.09
+      }
+    ],
+    "overallAccuracy": 113.2,
+    "calibrationApplied": {
+      "newVintageId": "v3_202606",
+      "factors": {
+        "jp_ishigaki": 0.3814,
+        "en_ishigaki": 0.432,
+        "jp_miyako": 0.8717,
+        "en_miyako": 0.5682,
+        "jp_yoron": 1.5612,
+        "en_yoron": 0,
+        "jp_kume": 0.7071,
+        "en_kume": 0,
+        "jp_aka": 1.6702,
+        "en_aka": 0,
+        "jp_amami": 1.3974,
+        "en_amami": 0.3055,
+        "jp_other": 2.3308,
+        "en_other": 3.0382,
+        "cjp": 0.8714,
+        "cen": 0.6749,
+        "hjp": 0.8714,
+        "hen": 0.6749
+      }
+    }
+  },
+  "actionItems": [
+    {
+      "category": "ctr",
+      "priority": "高",
+      "description": "Google Search Consoleで表示回数が50回以上ありながらクリックが発生していないページ（CTR 0%）のタイトルタグおよびメタディスクリプションの最適化を行います。",
+      "targetPages": [
+        "https://ritotabi.com/en/hotels/con-dao-island/",
+        "https://ritotabi.com/en/destinations/miyako-island/beaches/",
+        "https://ritotabi.com/en/hotels/da-nang/",
+        "https://ritotabi.com/en/hotels/kume-island/",
+        "https://ritotabi.com/hotels/amami-island/"
+      ]
+    },
+    {
+      "category": "engagement",
+      "priority": "中",
+      "description": "滞在時間が極端に短い（15秒未満）かつ一定以上のトラフィックがあるページのコンテンツ改善を行います。",
+      "targetPages": [
+        "/en/hotels/ishigaki-island/",
+        "/en/hotels/an-bang/",
+        "/en/destinations/ishigaki-island/",
+        "/hotels/amami-island/",
+        "/en/destinations/amami-island/",
+        "/en/hotels/con-dao-island/"
+      ]
+    },
+    {
+      "category": "conversion",
+      "priority": "高",
+      "description": "閲覧数が一定以上（50 PV以上）ありながらコンバージョン（キーイベント）が発生していないページの導線設計およびアフィリエイトリンクの配置を見直します。",
+      "targetPages": [
+        "/",
+        "/destinations/miyako-island/beaches/",
+        "/destinations/cham-island/",
+        "/hotels/da-nang/"
+      ]
+    },
+    {
+      "category": "content",
+      "priority": "低",
+      "description": "新規検出されたページのインデックス状況の監視と内部リンクの構築を行います。",
+      "targetPages": [
+        "/en/hotels/yoron-island/",
+        "/en/destinations/yoron-island/",
+        "/en/destinations/kume-island/",
+        "/en/destinations/yoron-island/beaches/",
+        "/en/hotels/kume-island/",
+        "/en/hotels/aka-island/",
+        "/en/destinations/aka-island/",
+        "/en/hotels/da-nang/",
+        "/en/destinations/yoron-island/running/",
+        "/profile/",
+        "/en/destinations/cham-island/Marble Mountains/"
+      ]
+    }
+  ]
+}
