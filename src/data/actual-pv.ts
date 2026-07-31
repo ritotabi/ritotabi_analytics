@@ -136,4 +136,48 @@ export const ACTUAL_PV_OBJ: BasePVRow[] = [
           "hen": 0
     }
   },
+  {
+    "m": "Jul'26",
+    "mp": "7月",
+    "pv": {
+          "jp_ishigaki": 86,
+          "en_ishigaki": 8,
+          "jp_miyako": 380,
+          "en_miyako": 45,
+          "jp_yoron": 200,
+          "en_yoron": 0,
+          "jp_kume": 7,
+          "en_kume": 0,
+          "jp_aka": 157,
+          "en_aka": 0,
+          "jp_amami": 2,
+          "en_amami": 4,
+          "jp_other": 259,
+          "en_other": 150,
+          "cjp": 66,
+          "cen": 26,
+          "hjp": 106,
+          "hen": 40
+    },
+    "rev": {
+          "jp_ishigaki": 0,
+          "en_ishigaki": 0,
+          "jp_miyako": 0,
+          "en_miyako": 0,
+          "jp_yoron": 0,
+          "en_yoron": 0,
+          "jp_kume": 0,
+          "en_kume": 0,
+          "jp_aka": 0,
+          "en_aka": 0,
+          "jp_amami": 0,
+          "en_amami": 0,
+          "jp_other": 2316,
+          "en_other": 85,
+          "cjp": 0,
+          "cen": 0,
+          "hjp": 0,
+          "hen": 0
+    }
+  },
 ];

@@ -1,5 +1,5 @@
 {
-  "currentVintageId": "v3_202606",
+  "currentVintageId": "v4_202607",
   "vintages": [
     {
       "id": "v0_initial",
@@ -2501,6 +2501,706 @@
             "en_kume": 0,
             "en_aka": 0,
             "en_other": 3038
+          }
+        }
+      ]
+    },
+    {
+      "id": "v4_202607",
+      "createdAt": "2026-07-31T21:50:29.655Z",
+      "label": "7月実績反映キャリブレーション",
+      "trigger": "calibration",
+      "calibration": {
+        "baseMonth": "2026-07",
+        "factors": {
+          "jp_ishigaki": 0.4789,
+          "en_ishigaki": 0.239,
+          "jp_miyako": 0.7057,
+          "en_miyako": 0.5406,
+          "jp_yoron": 1.25,
+          "en_yoron": 0,
+          "jp_kume": 0.3474,
+          "en_kume": 0,
+          "jp_aka": 1.3063,
+          "en_aka": 0,
+          "jp_amami": 1.093,
+          "en_amami": 0.169,
+          "jp_other": 1.0098,
+          "en_other": 0.9564,
+          "cjp": 1.2247,
+          "cen": 1.1402,
+          "hjp": 1.1233,
+          "hen": 0.7207
+        },
+        "streamAccuracy": {
+          "jp_ishigaki": {
+            "forecastPv": 375,
+            "actualPv": 86,
+            "accuracy": 22.93
+          },
+          "en_ishigaki": {
+            "forecastPv": 140,
+            "actualPv": 8,
+            "accuracy": 5.71
+          },
+          "jp_miyako": {
+            "forecastPv": 763,
+            "actualPv": 380,
+            "accuracy": 49.8
+          },
+          "en_miyako": {
+            "forecastPv": 154,
+            "actualPv": 45,
+            "accuracy": 29.22
+          },
+          "jp_yoron": {
+            "forecastPv": 128,
+            "actualPv": 200,
+            "accuracy": 156.25
+          },
+          "en_yoron": {
+            "forecastPv": 0,
+            "actualPv": 0,
+            "accuracy": null
+          },
+          "jp_kume": {
+            "forecastPv": 58,
+            "actualPv": 7,
+            "accuracy": 12.07
+          },
+          "en_kume": {
+            "forecastPv": 0,
+            "actualPv": 0,
+            "accuracy": null
+          },
+          "jp_aka": {
+            "forecastPv": 92,
+            "actualPv": 157,
+            "accuracy": 170.65
+          },
+          "en_aka": {
+            "forecastPv": 0,
+            "actualPv": 0,
+            "accuracy": null
+          },
+          "jp_amami": {
+            "forecastPv": 0,
+            "actualPv": 2,
+            "accuracy": null
+          },
+          "en_amami": {
+            "forecastPv": 0,
+            "actualPv": 4,
+            "accuracy": null
+          },
+          "jp_other": {
+            "forecastPv": 254,
+            "actualPv": 259,
+            "accuracy": 101.97
+          },
+          "en_other": {
+            "forecastPv": 164,
+            "actualPv": 150,
+            "accuracy": 91.46
+          },
+          "cjp": {
+            "forecastPv": 44,
+            "actualPv": 66,
+            "accuracy": 150
+          },
+          "cen": {
+            "forecastPv": 20,
+            "actualPv": 26,
+            "accuracy": 130
+          },
+          "hjp": {
+            "forecastPv": 84,
+            "actualPv": 106,
+            "accuracy": 126.19
+          },
+          "hen": {
+            "forecastPv": 77,
+            "actualPv": 40,
+            "accuracy": 51.95
+          }
+        },
+        "overallAccuracy": 65.28
+      },
+      "forecasts": [
+        {
+          "m": "Apr'26",
+          "mp": "4月",
+          "pv": {
+            "jp_ishigaki": 40,
+            "en_ishigaki": 7,
+            "jp_miyako": 53,
+            "en_miyako": 12,
+            "jp_yoron": 9,
+            "en_yoron": 0,
+            "jp_kume": 2,
+            "en_kume": 0,
+            "jp_aka": 7,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 9,
+            "en_other": 4,
+            "cjp": 9,
+            "cen": 0,
+            "hjp": 0,
+            "hen": 0
+          }
+        },
+        {
+          "m": "May'26",
+          "mp": "5月",
+          "pv": {
+            "jp_ishigaki": 81,
+            "en_ishigaki": 13,
+            "jp_miyako": 106,
+            "en_miyako": 25,
+            "jp_yoron": 18,
+            "en_yoron": 0,
+            "jp_kume": 5,
+            "en_kume": 0,
+            "jp_aka": 12,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 19,
+            "en_other": 10,
+            "cjp": 9,
+            "cen": 2,
+            "hjp": 21,
+            "hen": 5
+          }
+        },
+        {
+          "m": "Jun'26",
+          "mp": "6月",
+          "pv": {
+            "jp_ishigaki": 189,
+            "en_ishigaki": 31,
+            "jp_miyako": 247,
+            "en_miyako": 58,
+            "jp_yoron": 41,
+            "en_yoron": 0,
+            "jp_kume": 11,
+            "en_kume": 0,
+            "jp_aka": 29,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 44,
+            "en_other": 21,
+            "cjp": 33,
+            "cen": 13,
+            "hjp": 57,
+            "hen": 31
+          }
+        },
+        {
+          "m": "Jul'26",
+          "mp": "7月",
+          "pv": {
+            "jp_ishigaki": 471,
+            "en_ishigaki": 78,
+            "jp_miyako": 617,
+            "en_miyako": 147,
+            "jp_yoron": 103,
+            "en_yoron": 0,
+            "jp_kume": 28,
+            "en_kume": 0,
+            "jp_aka": 72,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 110,
+            "en_other": 52,
+            "cjp": 61,
+            "cen": 33,
+            "hjp": 108,
+            "hen": 82
+          }
+        },
+        {
+          "m": "Aug'26",
+          "mp": "8月",
+          "pv": {
+            "jp_ishigaki": 808,
+            "en_ishigaki": 133,
+            "jp_miyako": 1059,
+            "en_miyako": 251,
+            "jp_yoron": 176,
+            "en_yoron": 0,
+            "jp_kume": 49,
+            "en_kume": 0,
+            "jp_aka": 123,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 190,
+            "en_other": 90,
+            "cjp": 102,
+            "cen": 62,
+            "hjp": 181,
+            "hen": 154
+          }
+        },
+        {
+          "m": "Sep'26",
+          "mp": "9月",
+          "pv": {
+            "jp_ishigaki": 504,
+            "en_ishigaki": 83,
+            "jp_miyako": 663,
+            "en_miyako": 157,
+            "jp_yoron": 110,
+            "en_yoron": 0,
+            "jp_kume": 31,
+            "en_kume": 0,
+            "jp_aka": 77,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 118,
+            "en_other": 55,
+            "cjp": 122,
+            "cen": 81,
+            "hjp": 217,
+            "hen": 206
+          }
+        },
+        {
+          "m": "Oct'26",
+          "mp": "10月",
+          "pv": {
+            "jp_ishigaki": 741,
+            "en_ishigaki": 122,
+            "jp_miyako": 970,
+            "en_miyako": 230,
+            "jp_yoron": 161,
+            "en_yoron": 0,
+            "jp_kume": 45,
+            "en_kume": 0,
+            "jp_aka": 112,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 174,
+            "en_other": 82,
+            "cjp": 163,
+            "cen": 122,
+            "hjp": 289,
+            "hen": 309
+          }
+        },
+        {
+          "m": "Nov'26",
+          "mp": "11月",
+          "pv": {
+            "jp_ishigaki": 1010,
+            "en_ishigaki": 166,
+            "jp_miyako": 1323,
+            "en_miyako": 314,
+            "jp_yoron": 220,
+            "en_yoron": 0,
+            "jp_kume": 61,
+            "en_kume": 0,
+            "jp_aka": 153,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 236,
+            "en_other": 112,
+            "cjp": 205,
+            "cen": 163,
+            "hjp": 361,
+            "hen": 412
+          }
+        },
+        {
+          "m": "Dec'26",
+          "mp": "12月",
+          "pv": {
+            "jp_ishigaki": 1212,
+            "en_ishigaki": 200,
+            "jp_miyako": 1588,
+            "en_miyako": 377,
+            "jp_yoron": 264,
+            "en_yoron": 0,
+            "jp_kume": 73,
+            "en_kume": 0,
+            "jp_aka": 184,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 284,
+            "en_other": 134,
+            "cjp": 245,
+            "cen": 204,
+            "hjp": 434,
+            "hen": 515
+          }
+        },
+        {
+          "m": "Jan'27",
+          "mp": "1月",
+          "pv": {
+            "jp_ishigaki": 808,
+            "en_ishigaki": 133,
+            "jp_miyako": 1059,
+            "en_miyako": 251,
+            "jp_yoron": 176,
+            "en_yoron": 0,
+            "jp_kume": 49,
+            "en_kume": 0,
+            "jp_aka": 123,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 190,
+            "en_other": 90,
+            "cjp": 285,
+            "cen": 285,
+            "hjp": 577,
+            "hen": 721
+          }
+        },
+        {
+          "m": "Feb'27",
+          "mp": "2月",
+          "pv": {
+            "jp_ishigaki": 1078,
+            "en_ishigaki": 177,
+            "jp_miyako": 1411,
+            "en_miyako": 335,
+            "jp_yoron": 235,
+            "en_yoron": 0,
+            "jp_kume": 65,
+            "en_kume": 0,
+            "jp_aka": 163,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 252,
+            "en_other": 120,
+            "cjp": 367,
+            "cen": 366,
+            "hjp": 722,
+            "hen": 927
+          }
+        },
+        {
+          "m": "Mar'27",
+          "mp": "3月",
+          "pv": {
+            "jp_ishigaki": 1886,
+            "en_ishigaki": 310,
+            "jp_miyako": 2470,
+            "en_miyako": 587,
+            "jp_yoron": 410,
+            "en_yoron": 0,
+            "jp_kume": 114,
+            "en_kume": 0,
+            "jp_aka": 286,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 442,
+            "en_other": 419,
+            "cjp": 449,
+            "cen": 489,
+            "hjp": 939,
+            "hen": 1235
+          }
+        },
+        {
+          "m": "Apr'27",
+          "mp": "4月",
+          "pv": {
+            "jp_ishigaki": 2694,
+            "en_ishigaki": 444,
+            "jp_miyako": 3529,
+            "en_miyako": 838,
+            "jp_yoron": 586,
+            "en_yoron": 0,
+            "jp_kume": 163,
+            "en_kume": 0,
+            "jp_aka": 409,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 631,
+            "en_other": 298,
+            "cjp": 572,
+            "cen": 733,
+            "hjp": 1300,
+            "hen": 1853
+          }
+        },
+        {
+          "m": "May'27",
+          "mp": "5月",
+          "pv": {
+            "jp_ishigaki": 3704,
+            "en_ishigaki": 610,
+            "jp_miyako": 4852,
+            "en_miyako": 1152,
+            "jp_yoron": 806,
+            "en_yoron": 0,
+            "jp_kume": 224,
+            "en_kume": 0,
+            "jp_aka": 562,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 867,
+            "en_other": 411,
+            "cjp": 735,
+            "cen": 1018,
+            "hjp": 1805,
+            "hen": 2574
+          }
+        },
+        {
+          "m": "Jun'27",
+          "mp": "6月",
+          "pv": {
+            "jp_ishigaki": 3030,
+            "en_ishigaki": 499,
+            "jp_miyako": 3970,
+            "en_miyako": 943,
+            "jp_yoron": 659,
+            "en_yoron": 0,
+            "jp_kume": 183,
+            "en_kume": 0,
+            "jp_aka": 460,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 710,
+            "en_other": 337,
+            "cjp": 817,
+            "cen": 1221,
+            "hjp": 2167,
+            "hen": 3089
+          }
+        },
+        {
+          "m": "Jul'27",
+          "mp": "7月",
+          "pv": {
+            "jp_ishigaki": 5051,
+            "en_ishigaki": 832,
+            "jp_miyako": 6616,
+            "en_miyako": 1571,
+            "jp_yoron": 1099,
+            "en_yoron": 0,
+            "jp_kume": 305,
+            "en_kume": 0,
+            "jp_aka": 765,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1183,
+            "en_other": 560,
+            "cjp": 898,
+            "cen": 1425,
+            "hjp": 2527,
+            "hen": 3604
+          }
+        },
+        {
+          "m": "Aug'27",
+          "mp": "8月",
+          "pv": {
+            "jp_ishigaki": 6061,
+            "en_ishigaki": 998,
+            "jp_miyako": 7939,
+            "en_miyako": 1886,
+            "jp_yoron": 1319,
+            "en_yoron": 0,
+            "jp_kume": 367,
+            "en_kume": 0,
+            "jp_aka": 918,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1420,
+            "en_other": 672,
+            "cjp": 980,
+            "cen": 1629,
+            "hjp": 2888,
+            "hen": 4118
+          }
+        },
+        {
+          "m": "Sep'27",
+          "mp": "9月",
+          "pv": {
+            "jp_ishigaki": 4378,
+            "en_ishigaki": 721,
+            "jp_miyako": 5734,
+            "en_miyako": 1362,
+            "jp_yoron": 953,
+            "en_yoron": 0,
+            "jp_kume": 265,
+            "en_kume": 0,
+            "jp_aka": 664,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1026,
+            "en_other": 486,
+            "cjp": 1062,
+            "cen": 1832,
+            "hjp": 3250,
+            "hen": 4633
+          }
+        },
+        {
+          "m": "Oct'27",
+          "mp": "10月",
+          "pv": {
+            "jp_ishigaki": 5388,
+            "en_ishigaki": 887,
+            "jp_miyako": 7057,
+            "en_miyako": 1676,
+            "jp_yoron": 1173,
+            "en_yoron": 0,
+            "jp_kume": 326,
+            "en_kume": 0,
+            "jp_aka": 816,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1262,
+            "en_other": 598,
+            "cjp": 1143,
+            "cen": 2036,
+            "hjp": 3610,
+            "hen": 5148
+          }
+        },
+        {
+          "m": "Nov'27",
+          "mp": "11月",
+          "pv": {
+            "jp_ishigaki": 6734,
+            "en_ishigaki": 1109,
+            "jp_miyako": 8821,
+            "en_miyako": 2095,
+            "jp_yoron": 1465,
+            "en_yoron": 0,
+            "jp_kume": 407,
+            "en_kume": 0,
+            "jp_aka": 1020,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1577,
+            "en_other": 747,
+            "cjp": 1225,
+            "cen": 2239,
+            "hjp": 3972,
+            "hen": 5663
+          }
+        },
+        {
+          "m": "Dec'27",
+          "mp": "12月",
+          "pv": {
+            "jp_ishigaki": 7274,
+            "en_ishigaki": 1198,
+            "jp_miyako": 9527,
+            "en_miyako": 2262,
+            "jp_yoron": 1583,
+            "en_yoron": 0,
+            "jp_kume": 440,
+            "en_kume": 0,
+            "jp_aka": 1103,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1705,
+            "en_other": 807,
+            "cjp": 1307,
+            "cen": 2443,
+            "hjp": 4333,
+            "hen": 6177
+          }
+        },
+        {
+          "m": "Jan'28",
+          "mp": "1月",
+          "pv": {
+            "jp_ishigaki": 5051,
+            "en_ishigaki": 832,
+            "jp_miyako": 6616,
+            "en_miyako": 1571,
+            "jp_yoron": 1099,
+            "en_yoron": 0,
+            "jp_kume": 305,
+            "en_kume": 0,
+            "jp_aka": 765,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1183,
+            "en_other": 560,
+            "cjp": 1307,
+            "cen": 2443,
+            "hjp": 4333,
+            "hen": 6177
+          }
+        },
+        {
+          "m": "Feb'28",
+          "mp": "2月",
+          "pv": {
+            "jp_ishigaki": 6061,
+            "en_ishigaki": 998,
+            "jp_miyako": 7939,
+            "en_miyako": 1886,
+            "jp_yoron": 1319,
+            "en_yoron": 0,
+            "jp_kume": 367,
+            "en_kume": 0,
+            "jp_aka": 918,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 1420,
+            "en_other": 672,
+            "cjp": 1388,
+            "cen": 2646,
+            "hjp": 4694,
+            "hen": 6692
+          }
+        },
+        {
+          "m": "Mar'28",
+          "mp": "3月",
+          "pv": {
+            "jp_ishigaki": 8620,
+            "en_ishigaki": 1420,
+            "jp_miyako": 11291,
+            "en_miyako": 2681,
+            "jp_yoron": 1875,
+            "en_yoron": 0,
+            "jp_kume": 521,
+            "en_kume": 0,
+            "jp_aka": 1306,
+            "en_aka": 0,
+            "jp_amami": 0,
+            "en_amami": 0,
+            "jp_other": 2020,
+            "en_other": 956,
+            "cjp": 1470,
+            "cen": 2851,
+            "hjp": 5055,
+            "hen": 7207
           }
         }
       ]

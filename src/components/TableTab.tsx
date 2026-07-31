@@ -41,7 +41,7 @@ const TableTab: React.FC<TableTabProps> = ({ data, streams }) => {
   let cumActual = 0;
   let cumPlan = 0;
 
-  const displayData = sortedData.map((row) => {
+  const displayData: (CalculatedRow & { displayCum: string })[] = sortedData.map((row) => {
     const isActual = row.isActual || false;
     const rowTotal = (row.total as number) || 0;
     let cumValue = 0;
